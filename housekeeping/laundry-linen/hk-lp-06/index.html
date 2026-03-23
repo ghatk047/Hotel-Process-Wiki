@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HK-LP-06 — Linen Quality Control &amp; Discard | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🛏️ Housekeeping & Rooms Management</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Housekeeping & Rooms Management</a><span class="sep">›</span><a href="../">Laundry & Linen Operations</a><span class="sep">›</span>Linen Quality Control &amp; Discard</div>
+
+<div class="page-header">
+  <div class="pid-badge">HK-LP-06</div>
+  <h1>Linen Quality Control &amp; Discard</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Laundry & Linen Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Knowcross HotSOS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/hk-lp-06.png" alt="HK-LP-06 — Linen Quality Control &amp; Discard process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Housekeeping Staff</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Laundry Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initial Inspection</td>
+          <td>Housekeeping Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Returned linens from guests or daily inspection of linen inventory</td>
+          <td>Inspection report</td>
+          <td>Less than 5 minutes per item</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Time-consuming manual inspection process</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Quality Assessment</td>
+          <td>Laundry Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Inspection report</td>
+          <td>Quality assessment report</td>
+          <td>Less than 30 minutes per batch of linens</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Subjective quality judgment leading to inconsistencies</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Mark for Cleaning</td>
+          <td>Laundry Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Quality assessment report</td>
+          <td>Cleaning instructions</td>
+          <td>Less than 10 minutes per batch</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Manual data entry for cleaning instructions</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Send to Laundry</td>
+          <td>Laundry Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Cleaning instructions</td>
+          <td>Linen batch sent to laundry</td>
+          <td>Less than 15 minutes per batch</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delays in linen delivery to the laundry</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Monitor Laundry Process</td>
+          <td>Laundry Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Linen batch status updates</td>
+          <td>Cleaning progress report</td>
+          <td>Less than 5 minutes per update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate or delayed laundry status updates</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Final Inspection</td>
+          <td>Housekeeping Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Cleaned linens</td>
+          <td>Inspection report</td>
+          <td>Less than 5 minutes per item</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Need for consistent quality standards across inspections</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Discard Ineligible Linens</td>
+          <td>Housekeeping Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Inspection report</td>
+          <td>Discarded linens list</td>
+          <td>Less than 10 minutes per batch</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Proper disposal of discarded linens to avoid environmental impact</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Inventory</td>
+          <td>Housekeeping Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Discarded linens list</td>
+          <td>Updated linen inventory</td>
+          <td>Less than 15 minutes per batch</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurate tracking of linen inventory levels</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Review and Adjust Process</td>
+          <td>Laundry Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Final inspection reports</td>
+          <td>Process improvement plan</td>
+          <td>Less than 1 hour per week</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Continuous process optimization for efficiency and quality</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> HK-LP-06</li>
+          <li><span class="bullet">Domain</span> Housekeeping &amp; Rooms Management</li>
+          <li><span class="bullet">Group</span> Laundry &amp; Linen Operations</li>
+          <li><span class="bullet">Process</span> Linen Quality Control &amp; Discard</li>
+          <li><span class="bullet">Trigger</span> Daily inspection of linen by Housekeeping staff or upon receiving returned linens from guests.</li>
+          <li><span class="bullet">Outcome</span> Linen items are either cleaned and reused, placed in the laundry for further processing, or discarded if they do not meet quality standards.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes per item inspection time</li><li><span class="bullet">▸</span> Less than 10 minutes per batch cleaning instructions entry</li><li><span class="bullet">▸</span> Less than 15 minutes per batch linen delivery to laundry</li><li><span class="bullet">▸</span> Less than 1 hour per week for process review and adjustment</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">A structured process document for Linen Quality Control &amp; Discard at a Marriott full-service hotel. This ensures that linens meet quality standards and are discarded properly to maintain guest satisfaction.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inconsistent quality standards leading to guest dissatisfaction</li><li><span class="bullet risk">▸</span> Delays in the laundry process affecting room availability</li><li><span class="bullet risk">▸</span> Improper disposal of discarded linens causing environmental issues</li><li><span class="bullet risk">▸</span> Manual data entry errors leading to inventory discrepancies</li><li><span class="bullet risk">▸</span> Subjective judgment in quality assessment causing inconsistencies</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../housekeeping/laundry-linen/hk-lp-05/"><span>◀</span><div><span class="prev-lbl">Previous</span>Guest Laundry Service</div></a>
+  <a href="../../../housekeeping/laundry-linen/hk-lp-07/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Linen Par Level Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; HK-LP-06 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
