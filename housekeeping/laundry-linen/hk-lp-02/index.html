@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HK-LP-02 — Commercial Laundry Processing | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🛏️ Housekeeping & Rooms Management</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Housekeeping & Rooms Management</a><span class="sep">›</span><a href="../">Laundry & Linen Operations</a><span class="sep">›</span>Commercial Laundry Processing</div>
+
+<div class="page-header">
+  <div class="pid-badge">HK-LP-02</div>
+  <h1>Commercial Laundry Processing</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Laundry & Linen Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Birchstreet Procurement</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/hk-lp-02.png" alt="HK-LP-02 — Commercial Laundry Processing process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Housekeeping Staff</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">1.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Laundry Staff</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">1.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Commercial Laundry Staff</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">2.4</span> <span class="step-badge">2.5</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Dirty Laundry</td>
+          <td>Housekeeping Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Dirty laundry items</td>
+          <td>Laundry list with department codes</td>
+          <td>Less than 3 minutes per room inspection</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurate identification and classification of dirty laundry can be challenging due to the variety of items.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Sort Laundry Items</td>
+          <td>Laundry Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Laundry list with department codes</td>
+          <td>Sorted laundry bags by department</td>
+          <td>Less than 5 minutes per bag of laundry</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Sorting items correctly to ensure they are cleaned together can be time-consuming.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Load Laundry Bags into Cart</td>
+          <td>Laundry Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Sorted laundry bags by department</td>
+          <td>Loaded laundry cart</td>
+          <td>Less than 2 minutes per cart load</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring all items are securely loaded and not damaged during transportation.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>Transport Laundry to Commercial Laundry Facility</td>
+          <td>Laundry Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Loaded laundry cart</td>
+          <td>Delivered laundry bags at commercial facility</td>
+          <td>Less than 10 minutes per delivery</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Efficient transportation to avoid delays and ensure timely processing.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Receive Laundry at Commercial Facility</td>
+          <td>Commercial Laundry Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Delivered laundry bags at commercial facility</td>
+          <td>Acknowledged receipt of laundry bags</td>
+          <td>Less than 5 minutes per delivery</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurate tracking and recording of received items to ensure proper processing.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Sort Laundry Items by Color and Type</td>
+          <td>Commercial Laundry Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Acknowledged receipt of laundry bags</td>
+          <td>Sorted laundry items by color and type</td>
+          <td>Less than 10 minutes per bag</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Sorting items correctly to avoid color bleeding and ensure proper cleaning.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Load Laundry Items into Washing Machines</td>
+          <td>Commercial Laundry Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Sorted laundry items by color and type</td>
+          <td>Loaded washing machines</td>
+          <td>Less than 5 minutes per machine load</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring proper loading to maximize efficiency and minimize water usage.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Operate Washing Machines</td>
+          <td>Commercial Laundry Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Loaded washing machines</td>
+          <td>Washed laundry items</td>
+          <td>Less than 30 minutes per load cycle</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Monitoring and adjusting settings for optimal cleaning results.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.5</td>
+          <td>Unload Laundry Items from Washing Machines</td>
+          <td>Commercial Laundry Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Washed laundry items</td>
+          <td>Unloaded and sorted laundry items</td>
+          <td>Less than 10 minutes per machine unload</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling delicate items carefully to avoid damage.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Load Laundry Items into Drying Machines</td>
+          <td>Commercial Laundry Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Unloaded and sorted laundry items</td>
+          <td>Loaded drying machines</td>
+          <td>Less than 5 minutes per machine load</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring proper loading to maximize efficiency and minimize energy usage.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Operate Drying Machines</td>
+          <td>Commercial Laundry Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Loaded drying machines</td>
+          <td>Dried laundry items</td>
+          <td>Less than 45 minutes per load cycle</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Monitoring and adjusting settings for optimal drying results.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Unload Laundry Items from Drying Machines</td>
+          <td>Commercial Laundry Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Dried laundry items</td>
+          <td>Unloaded and sorted laundry items</td>
+          <td>Less than 10 minutes per machine unload</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling delicate items carefully to avoid damage.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> HK-LP-02</li>
+          <li><span class="bullet">Domain</span> Housekeeping &amp; Rooms Management</li>
+          <li><span class="bullet">Group</span> Laundry &amp; Linen Operations</li>
+          <li><span class="bullet">Process</span> Commercial Laundry Processing</li>
+          <li><span class="bullet">Trigger</span> Detection of dirty or soiled commercial laundry items by housekeeping staff during room inspections and other cleaning activities.</li>
+          <li><span class="bullet">Outcome</span> Cleaned and properly sorted commercial laundry items are delivered back to the originating department, ensuring that all linens and uniforms are available for use.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 3 minutes per room inspection</li><li><span class="bullet">▸</span> Less than 5 minutes per bag of laundry</li><li><span class="bullet">▸</span> Less than 2 minutes per cart load</li><li><span class="bullet">▸</span> Less than 10 minutes per delivery</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The Commercial Laundry Processing process at a Marriott full-service hotel involves managing the collection, sorting, and delivery of commercial laundry items. This ensures that all linens and uniforms are cleaned efficiently and returned to their respective departments in a timely manner.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate identification and classification of dirty laundry items</li><li><span class="bullet risk">▸</span> Sorting items incorrectly leading to color bleeding or improper cleaning</li><li><span class="bullet risk">▸</span> Damage to delicate items during transportation or processing</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../housekeeping/laundry-linen/hk-lp-01/"><span>◀</span><div><span class="prev-lbl">Previous</span>Linen Collection &amp; Sorting</div></a>
+  <a href="../../../housekeeping/laundry-linen/hk-lp-03/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Linen Inventory Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; HK-LP-02 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
