@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HK-GC-08 — Out-of-Order Room Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🛏️ Housekeeping & Rooms Management</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Housekeeping & Rooms Management</a><span class="sep">›</span><a href="../">Guest Room Cleaning & Turndown</a><span class="sep">›</span>Out-of-Order Room Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">HK-GC-08</div>
+  <h1>Out-of-Order Room Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Guest Room Cleaning & Turndown</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Marriott Bonvoy CRM</span> <span class="tag">Book4Time</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/hk-gc-08.png" alt="HK-GC-08 — Out-of-Order Room Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Maintenance Staff</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.4</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Maintenance Supervisor</td>
+          <td><span class="step-badge">2.2</span> <span class="step-badge">2.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Report Out-Of-Order Room</td>
+          <td>Maintenance Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room number, issue description</td>
+          <td>Updated room status in Oracle OPERA Cloud</td>
+          <td>Less than 5 minutes to report</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed reporting can lead to extended guest disruption.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Notify Front Desk</td>
+          <td>Maintenance Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room status update</td>
+          <td>Notification sent to Front Desk</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Missed notifications can result in continued guest inconvenience.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Identify Room Type and Amenities</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room number</td>
+          <td>Room type, amenities list</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect identification can lead to improper replacement services.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Assign Maintenance Task</td>
+          <td>Maintenance Supervisor</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room number, issue description</td>
+          <td>Task assigned to maintenance technician</td>
+          <td>Less than 3 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed task assignment can prolong room downtime.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Schedule Technician</td>
+          <td>Maintenance Supervisor</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Task details</td>
+          <td>Scheduled technician arrival time</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Overlapping schedules can delay repairs.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Communicate with Guest</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Room number, scheduled arrival time</td>
+          <td>Guest notification of repair schedule</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Uninformed guests may become frustrated.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Perform Room Repair</td>
+          <td>Maintenance Technician</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room number, task details</td>
+          <td>Completed repair log</td>
+          <td>Less than 20 minutes per issue</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Complex repairs can extend downtime.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Room Status</td>
+          <td>Maintenance Technician</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room number, repair log</td>
+          <td>Updated room status in Oracle OPERA Cloud</td>
+          <td>Less than 3 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect updates can lead to continued issues.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Notify Front Desk of Completion</td>
+          <td>Maintenance Technician</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room number, repair status</td>
+          <td>Notification sent to Front Desk</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Missed notifications can result in continued guest inconvenience.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Verify Room Readiness</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room number, repair status</td>
+          <td>Room readiness confirmation</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Premature room availability can lead to guest dissatisfaction.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> HK-GC-08</li>
+          <li><span class="bullet">Domain</span> Housekeeping &amp; Rooms Management</li>
+          <li><span class="bullet">Group</span> Guest Room Cleaning &amp; Turndown</li>
+          <li><span class="bullet">Process</span> Out-of-Order Room Management</li>
+          <li><span class="bullet">Trigger</span> Detection of an out-of-order room by maintenance staff or guest report.</li>
+          <li><span class="bullet">Outcome</span> Room is restored to operational status with minimal disruption to guests.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes to report out-of-order room</li><li><span class="bullet">▸</span> Less than 1 minute to notify Front Desk</li><li><span class="bullet">▸</span> Less than 20 minutes per repair issue</li><li><span class="bullet">▸</span> Less than 3 minutes to update room status</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">Process to manage out-of-order rooms at a Marriott full-service hotel, ensuring timely communication and resolution.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Delayed reporting by maintenance staff</li><li><span class="bullet risk">▸</span> Missed notifications from maintenance team</li><li><span class="bullet risk">▸</span> Complex repairs causing extended downtime</li><li><span class="bullet risk">▸</span> Incorrect updates in Oracle OPERA Cloud</li><li><span class="bullet risk">▸</span> Premature room availability leading to guest dissatisfaction</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../housekeeping/guest-room-cleaning/hk-gc-07/"><span>◀</span><div><span class="prev-lbl">Previous</span>Lost &amp; Found Management</div></a>
+  <a href="../../../housekeeping/laundry-linen/hk-lp-01/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Linen Collection &amp; Sorting</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; HK-GC-08 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
