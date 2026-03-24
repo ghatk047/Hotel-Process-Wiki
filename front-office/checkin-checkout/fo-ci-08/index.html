@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-CI-08 — Overbooking &amp; Walk Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Check-In & Check-Out Operations</a><span class="sep">›</span>Overbooking &amp; Walk Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-CI-08</div>
+  <h1>Overbooking &amp; Walk Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Check-In & Check-Out Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-ci-08.png" alt="FO-CI-08 — Overbooking &amp; Walk Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.3</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Front Desk Manager</td>
+          <td><span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Monitor Reservations</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Reservation data</td>
+          <td>Overbooking alert</td>
+          <td>Less than 5 min response time to overbooked status detection</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Real-time monitoring of reservations can be challenging due to system integration issues.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Notify Front Desk</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Overbooking alert</td>
+          <td>Notification to Front Desk</td>
+          <td>Less than 2 min notification time</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Communication delays between departments can affect the speed of response.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Assess Room Availability</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Notification from Revenue Manager</td>
+          <td>Room availability report</td>
+          <td>Less than 4 min to generate report</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurate room availability data can be impacted by manual errors or system downtime.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Contact No-Show Guests</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room availability report</td>
+          <td>No-show guest contact log</td>
+          <td>Less than 30 min to contact no-show guests</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>High response rates from no-show guests can delay the process.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Reassign Rooms</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>No-show guest contact log</td>
+          <td>Room reassignment plan</td>
+          <td>Less than 10 min to finalize room assignments</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Complex room configurations can complicate the reassignment process.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Update Reservation System</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room reassignment plan</td>
+          <td>Updated reservation data</td>
+          <td>Less than 5 min to update the system</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System errors during updates can lead to further delays.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Notify Walk-In Guests</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated reservation data</td>
+          <td>Walk-in guest notification log</td>
+          <td>Less than 5 min to notify walk-in guests</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>High volume of walk-ins can overwhelm the front desk.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Adjust Front Desk Schedule</td>
+          <td>Front Desk Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Walk-in guest notification log</td>
+          <td>Updated staff schedule</td>
+          <td>Less than 10 min to adjust the schedule</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Balancing staffing needs with varying guest volumes can be challenging.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Review and Document Process</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated staff schedule</td>
+          <td>Process review report</td>
+          <td>Less than 15 min to complete the review</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Detailed documentation can be time-consuming and may require multiple reviews.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Report to Management</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Process review report</td>
+          <td>Management report</td>
+          <td>Less than 20 min to generate the report</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Generating comprehensive reports can be resource-intensive.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-CI-08</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Check-In &amp; Check-Out Operations</li>
+          <li><span class="bullet">Process</span> Overbooking &amp; Walk Management</li>
+          <li><span class="bullet">Trigger</span> Detection of an overbooked status in the Oracle OPERA Cloud PMS or identification of a no-show by a guest.</li>
+          <li><span class="bullet">Outcome</span> Successful management of overbooking and walk scenarios, ensuring minimal disruption to guests and maintaining hotel occupancy levels.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 min response time to overbooked status detection</li><li><span class="bullet">▸</span> Less than 2 min notification time from Revenue Manager to Front Desk</li><li><span class="bullet">▸</span> Less than 4 min to generate room availability report</li><li><span class="bullet">▸</span> Less than 30 min to contact no-show guests</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The process for managing overbooking and walk management at a Marriott full-service hotel involves monitoring reservations, notifying guests of potential changes, and adjusting room assignments to ensure guest satisfaction and operational efficiency.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> System integration issues affecting real-time monitoring of reservations</li><li><span class="bullet risk">▸</span> Communication delays between departments impacting the speed of response</li><li><span class="bullet risk">▸</span> Complex room configurations complicating the reassignment process</li><li><span class="bullet risk">▸</span> High volume of walk-ins overwhelming the front desk</li><li><span class="bullet risk">▸</span> Balancing staffing needs with varying guest volumes being challenging</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/checkin-checkout/fo-ci-07/"><span>◀</span><div><span class="prev-lbl">Previous</span>No-Show &amp; Cancellation Processing</div></a>
+  <a href="../../../front-office/concierge-services/fo-cs-01/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Concierge Request Fulfilment</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-CI-08 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
