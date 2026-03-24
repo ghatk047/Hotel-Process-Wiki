@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FM-RM-03 — Work Order Prioritisation &amp; Assignment | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🔧 Facilities & Engineering</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Facilities & Engineering</a><span class="sep">›</span><a href="../">Reactive Maintenance & Work Orders</a><span class="sep">›</span>Work Order Prioritisation &amp; Assignment</div>
+
+<div class="page-header">
+  <div class="pid-badge">FM-RM-03</div>
+  <h1>Work Order Prioritisation &amp; Assignment</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Reactive Maintenance & Work Orders</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fm-rm-03.png" alt="FM-RM-03 — Work Order Prioritisation &amp; Assignment process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Guest Services Agent</td>
+          <td><span class="step-badge">1.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Facilities Engineer</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.3</span> <span class="step-badge">3.5</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Facilities Manager</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.2</span> <span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Report Issue</td>
+          <td>Guest Services Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest report or staff observation</td>
+          <td>Work order created in Oracle OPERA Cloud</td>
+          <td>Less than 5 minutes to log the issue</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delays in reporting issues due to system downtime</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Initial Assessment</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Work order details</td>
+          <td>Assessment notes and priority level assigned</td>
+          <td>Less than 10 minutes to assess the issue</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inconsistent prioritization criteria</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Queue Management</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Work order with priority level</td>
+          <td>Work order placed in appropriate queue</td>
+          <td>Less than 3 minutes to queue the work order</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Overloaded queues causing delays</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Resource Allocation</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Queue status and technician availability</td>
+          <td>Technician assigned to work order</td>
+          <td>Less than 5 minutes to assign a technician</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Skill mismatches between issues and technicians</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Notification</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Assigned work order</td>
+          <td>Notification sent to technician</td>
+          <td>Less than 1 minute to send notification</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Technician not receiving notifications</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Work Completion</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Completed work order details</td>
+          <td>Work order marked as completed in Oracle OPERA Cloud</td>
+          <td>Less than 20 minutes to complete the work order</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate completion times</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Quality Check</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Completed work order</td>
+          <td>Work order approved or re-assigned</td>
+          <td>Less than 5 minutes to review the work order</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Poor quality of work leading to re-assignments</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Feedback Loop</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Work order review outcome</td>
+          <td>Feedback recorded in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes to record feedback</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lack of feedback leading to recurring issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Post-Completion Report</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Work order details</td>
+          <td>Post-completion report generated</td>
+          <td>Less than 10 minutes to generate the report</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inadequate reporting affecting future planning</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Closeout</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Post-completion report</td>
+          <td>Work order closed in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes to close the work order</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed closure affecting system integrity</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FM-RM-03</li>
+          <li><span class="bullet">Domain</span> Facilities &amp; Engineering</li>
+          <li><span class="bullet">Group</span> Reactive Maintenance &amp; Work Orders</li>
+          <li><span class="bullet">Process</span> Work Order Prioritisation &amp; Assignment</li>
+          <li><span class="bullet">Trigger</span> Detection of a facility issue via guest reports, staff observations, or automated systems</li>
+          <li><span class="bullet">Outcome</span> Work order is prioritized based on severity and urgency, and assigned to the appropriate technician for timely resolution.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes to log the issue</li><li><span class="bullet">▸</span> Less than 10 minutes to assess the issue</li><li><span class="bullet">▸</span> Less than 3 minutes to queue the work order</li><li><span class="bullet">▸</span> Less than 20 minutes to complete the work order</li><li><span class="bullet">▸</span> Less than 5 minutes to review the work order</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines how reactive maintenance work orders are prioritized and assigned at a full-service Marriott hotel using Oracle OPERA Cloud PMS.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> System downtime affecting reporting and tracking</li><li><span class="bullet risk">▸</span> Inconsistent prioritization criteria leading to delayed resolutions</li><li><span class="bullet risk">▸</span> Skill mismatches between issues and technicians causing inefficiencies</li><li><span class="bullet risk">▸</span> Technician not receiving notifications resulting in missed deadlines</li><li><span class="bullet risk">▸</span> Poor quality of work leading to re-assignments and increased costs</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../facilities/reactive-maintenance/fm-rm-02/"><span>◀</span><div><span class="prev-lbl">Previous</span>Emergency Repair Response</div></a>
+  <a href="../../../facilities/reactive-maintenance/fm-rm-04/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Contractor &amp; Vendor Call-Out Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FM-RM-03 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
