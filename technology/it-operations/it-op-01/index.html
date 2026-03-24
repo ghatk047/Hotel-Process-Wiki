@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT-OP-01 — PMS Administration | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">💻 Technology & Systems</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Technology & Systems</a><span class="sep">›</span><a href="../">IT Operations & Infrastructure</a><span class="sep">›</span>PMS Administration</div>
+
+<div class="page-header">
+  <div class="pid-badge">IT-OP-01</div>
+  <h1>PMS Administration</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">IT Operations & Infrastructure</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Marriott Bonvoy CRM</span> <span class="tag">Birchstreet Procurement</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/it-op-01.png" alt="IT-OP-01 — PMS Administration process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>IT Systems Administrator</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">3.1</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>Customer Relationship Manager</td>
+          <td><span class="step-badge">2.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Procurement Manager</td>
+          <td><span class="step-badge">2.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#10b981"></span>Finance Manager</td>
+          <td><span class="step-badge">3.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#facc15"></span>Human Resources Manager</td>
+          <td><span class="step-badge">3.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Backup Oracle OPERA Cloud Database</td>
+          <td>IT Systems Administrator</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Database backup script</td>
+          <td>Compressed database backup file</td>
+          <td>Completion within 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inadequate storage space for backups</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Update Oracle OPERA Cloud Software</td>
+          <td>IT Systems Administrator</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Software update package</td>
+          <td>Updated software version</td>
+          <td>Completion within 60 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Compatibility issues with existing systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Configure IDeaS G3 RMS Settings</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS</td>
+          <td>Configuration parameters</td>
+          <td>Configured settings in IDeaS G3 RMS</td>
+          <td>Completion within 45 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect configuration leading to data discrepancies</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Sync SynXis CRS with Oracle OPERA Cloud</td>
+          <td>IT Systems Administrator</td>
+          <td>SynXis CRS, Oracle OPERA Cloud</td>
+          <td>Synchronization script</td>
+          <td>Synchronized data in both systems</td>
+          <td>Completion within 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data mismatch between CRS and PMS</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Monitor Marriott Bonvoy CRM for Issues</td>
+          <td>Customer Relationship Manager</td>
+          <td>Marriott Bonvoy CRM</td>
+          <td>Monitoring dashboard</td>
+          <td>Issue report and resolution plan</td>
+          <td>Less than 5 issues identified per day</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>High volume of unresolved customer complaints</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Update Birchstreet Procurement System</td>
+          <td>Procurement Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>New vendor list and contracts</td>
+          <td>Updated procurement system with new vendors</td>
+          <td>Completion within 2 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Vendor contract discrepancies</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Run SAP S/4HANA Financial Reports</td>
+          <td>Finance Manager</td>
+          <td>SAP S/4HANA</td>
+          <td>Financial report templates</td>
+          <td>Generated financial reports</td>
+          <td>Completion within 2 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data entry errors affecting report accuracy</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Review and Approve Workday HCM Changes</td>
+          <td>Human Resources Manager</td>
+          <td>Workday HCM</td>
+          <td>Pending HR changes</td>
+          <td>Approved or rejected HR changes</td>
+          <td>Completion within 1 hour per change request</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Delays in processing HR requests</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Test Microsoft Power BI Dashboards</td>
+          <td>IT Systems Administrator</td>
+          <td>Microsoft Power BI</td>
+          <td>Dashboard templates</td>
+          <td>Functional and accurate dashboards</td>
+          <td>Completion within 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inconsistent data feeds from various systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Conduct Post-Maintenance Review Meeting</td>
+          <td>IT Systems Administrator, Revenue Manager, Customer Relationship Manager, Procurement Manager, Finance Manager, Human Resources Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS, SynXis CRS, Marriott Bonvoy CRM, Birchstreet Procurement, SAP S/4HANA, Workday HCM, Microsoft Power BI</td>
+          <td>Meeting agenda and system status reports</td>
+          <td>Action plan for identified issues</td>
+          <td>Completion within 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Poor communication leading to missed issues</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> IT-OP-01</li>
+          <li><span class="bullet">Domain</span> Technology &amp; Systems</li>
+          <li><span class="bullet">Group</span> IT Operations &amp; Infrastructure</li>
+          <li><span class="bullet">Process</span> PMS Administration</li>
+          <li><span class="bullet">Trigger</span> Scheduled maintenance window or system alert</li>
+          <li><span class="bullet">Outcome</span> Successful completion of PMS administration tasks, ensuring the hotel's reservation and guest management systems are up-to-date and operational.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Database backup completion within 30 minutes</li><li><span class="bullet">▸</span> Software update completion within 60 minutes</li><li><span class="bullet">▸</span> Less than 5 issues identified per day in Marriott Bonvoy CRM</li><li><span class="bullet">▸</span> Completion of financial reports within 2 hours</li><li><span class="bullet">▸</span> Completion of HR changes approval within 1 hour per request</li><li><span class="bullet">▸</span> Functional and accurate dashboards within 1 hour</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The IT-OP-01 process involves managing and maintaining Oracle OPERA Cloud PMS at a Marriott full-service hotel. This ensures seamless operations, data accuracy, and guest satisfaction.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inadequate storage space for database backups</li><li><span class="bullet risk">▸</span> Compatibility issues between systems during updates</li><li><span class="bullet risk">▸</span> Data mismatch between CRS and PMS</li><li><span class="bullet risk">▸</span> Vendor contract discrepancies affecting procurement</li><li><span class="bullet risk">▸</span> Delays in processing HR requests due to communication gaps</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../finance/procurement-supply/fn-pr-08/"><span>◀</span><div><span class="prev-lbl">Previous</span>Supplier Performance Review</div></a>
+  <a href="../../../technology/it-operations/it-op-02/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Network &amp; WiFi Infrastructure Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; IT-OP-01 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
