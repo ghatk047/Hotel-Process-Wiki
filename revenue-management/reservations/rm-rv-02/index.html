@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM-RV-02 — Group Reservation &amp; Block Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">📈 Revenue Management & Distribution</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Revenue Management & Distribution</a><span class="sep">›</span><a href="../">Reservations Operations</a><span class="sep">›</span>Group Reservation &amp; Block Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">RM-RV-02</div>
+  <h1>Group Reservation &amp; Block Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Reservations Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Marriott Bonvoy CRM</span> <span class="tag">Book4Time</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/rm-rv-02.png" alt="RM-RV-02 — Group Reservation &amp; Block Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span> <span class="step-badge">3.5</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Group Reservation Request</td>
+          <td>Revenue Manager</td>
+          <td>SynXis CRS</td>
+          <td>Group reservation request from a travel agent or client</td>
+          <td>Reservation details logged in SynXis CRS</td>
+          <td>Less than 5 minutes to log the request</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling conflicting requests from multiple sources</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Validate Availability and Rates</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Reservation details from SynXis CRS</td>
+          <td>Availability report with rates</td>
+          <td>Less than 10 minutes to generate the report</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Ensuring accurate rate calculations</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Confirm Reservation Details with Client</td>
+          <td>Revenue Manager</td>
+          <td>Marriott Bonvoy CRM, Book4Time</td>
+          <td>Availability report and rates</td>
+          <td>Confirmed reservation details</td>
+          <td>Less than 30 minutes to confirm details</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Negotiating terms with clients</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Create Group Reservation Block in OPERA Cloud</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Confirmed reservation details</td>
+          <td>Group reservation block created in OPERA Cloud</td>
+          <td>Less than 15 minutes to create the block</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling large group sizes</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Assign Rooms and Rates</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Group reservation block in OPERA Cloud</td>
+          <td>Rooms assigned with rates</td>
+          <td>Less than 20 minutes to assign rooms and rates</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Room availability conflicts</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Notify Travel Agent or Client</td>
+          <td>Revenue Manager</td>
+          <td>Marriott Bonvoy CRM, Book4Time</td>
+          <td>Assigned rooms and rates</td>
+          <td>Confirmation email sent to client</td>
+          <td>Less than 5 minutes to send confirmation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring correct contact information</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Group Reservation in SynXis CRS</td>
+          <td>Revenue Manager</td>
+          <td>SynXis CRS</td>
+          <td>Assigned rooms and rates</td>
+          <td>Updated reservation details in SynXis CRS</td>
+          <td>Less than 10 minutes to update the reservation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Synchronization issues between systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Monitor Group Reservation Block</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Ongoing reservation block status</td>
+          <td>Reservation block status report</td>
+          <td>Daily review of the block status</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling last-minute changes</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Handle Cancellations or Changes</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Cancellation or change request from client</td>
+          <td>Updated reservation details</td>
+          <td>Less than 15 minutes to handle the request</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Compensating for lost revenue</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Finalize and Close Reservation Block</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Completed reservation block details</td>
+          <td>Closed reservation block in both systems</td>
+          <td>Less than 5 minutes to finalize the block</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring all data is accurate</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> RM-RV-02</li>
+          <li><span class="bullet">Domain</span> Revenue Management &amp; Distribution</li>
+          <li><span class="bullet">Group</span> Reservations Operations</li>
+          <li><span class="bullet">Process</span> Group Reservation &amp; Block Management</li>
+          <li><span class="bullet">Trigger</span> Receiving a request for a group reservation from a travel agent, corporate client, or directly from a group leader.</li>
+          <li><span class="bullet">Outcome</span> Successful creation and management of the group reservation block with confirmed room assignments, rates, and guest information.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes to log the request</li><li><span class="bullet">▸</span> Less than 10 minutes to generate the report</li><li><span class="bullet">▸</span> Less than 30 minutes to confirm details</li><li><span class="bullet">▸</span> Less than 15 minutes to create the block</li><li><span class="bullet">▸</span> Daily review of the block status</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the steps involved in managing group reservations and blocks at a full-service Marriott hotel using Oracle OPERA Cloud PMS and other key systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Handling conflicting requests from multiple sources</li><li><span class="bullet risk">▸</span> Ensuring accurate rate calculations</li><li><span class="bullet risk">▸</span> Room availability conflicts</li><li><span class="bullet risk">▸</span> Synchronization issues between systems</li><li><span class="bullet risk">▸</span> Compensating for lost revenue</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../revenue-management/reservations/rm-rv-01/"><span>◀</span><div><span class="prev-lbl">Previous</span>Inbound Reservation Handling</div></a>
+  <a href="../../../revenue-management/reservations/rm-rv-03/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Waitlist &amp; Tentative Booking Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; RM-RV-02 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
