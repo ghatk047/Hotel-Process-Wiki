@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SC-SE-05 — Suspicious Person / Package Procedure | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🔒 Safety, Security & Compliance</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Safety, Security & Compliance</a><span class="sep">›</span><a href="../">Security Operations</a><span class="sep">›</span>Suspicious Person / Package Procedure</div>
+
+<div class="page-header">
+  <div class="pid-badge">SC-SE-05</div>
+  <h1>Suspicious Person / Package Procedure</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Security Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Honeywell INNCOM</span> <span class="tag">IDeaS G3 RMS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/sc-se-05.png" alt="SC-SE-05 — Suspicious Person / Package Procedure process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Security Officer</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.4</span> <span class="step-badge">3.5</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Revenue Manager</td>
+          <td><span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Report Suspicious Activity</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Suspicious Person/Package Report Form</td>
+          <td>Logged incident in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed reporting due to unfamiliarity with the system</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Notify Security Team</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Logged incident in Oracle OPERA Cloud</td>
+          <td>Security Alert Notification</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Miscommunication or missed notifications</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Assess Situation</td>
+          <td>Security Officer</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Security Alert Notification</td>
+          <td>Risk Assessment Report</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inconsistent risk assessment criteria</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Initiate Evacuation if Necessary</td>
+          <td>Security Officer</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Risk Assessment Report</td>
+          <td>Evacuation Order</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Coordination issues during evacuation</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Secure the Area</td>
+          <td>Security Officer</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Evacuation Order</td>
+          <td>Area Secured Confirmation</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inadequate security measures</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Document Incident</td>
+          <td>Security Officer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Area Secured Confirmation</td>
+          <td>Incident Report</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incomplete documentation</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Notify Authorities</td>
+          <td>Security Officer</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Incident Report</td>
+          <td>Police Notification Acknowledgment</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delays in notifying authorities</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Review and Update Policies</td>
+          <td>Executive Housekeeper, Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Incident Report</td>
+          <td>Updated Security Policy</td>
+          <td>Less than 1 week</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Resistance to policy changes</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Conduct Debriefing</td>
+          <td>Security Officer, Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Incident Report</td>
+          <td>Debriefing Summary</td>
+          <td>Less than 1 day</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lack of clear communication channels</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Close Incident</td>
+          <td>Security Officer, Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Debriefing Summary</td>
+          <td>Incident Closed Confirmation</td>
+          <td>Less than 1 day</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inconsistent closure criteria</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> SC-SE-05</li>
+          <li><span class="bullet">Domain</span> Safety, Security &amp; Compliance</li>
+          <li><span class="bullet">Group</span> Security Operations</li>
+          <li><span class="bullet">Process</span> Suspicious Person / Package Procedure</li>
+          <li><span class="bullet">Trigger</span> Detection of a suspicious person or package by any hotel staff member.</li>
+          <li><span class="bullet">Outcome</span> The hotel ensures the safety and security of guests, employees, and property while following all relevant compliance requirements.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 2 minutes for reporting suspicious activity</li><li><span class="bullet">▸</span> Less than 1 minute for notifying the security team</li><li><span class="bullet">▸</span> Less than 5 minutes for assessing the situation</li><li><span class="bullet">▸</span> Less than 10 minutes for initiating evacuation if necessary</li><li><span class="bullet">▸</span> Less than 5 minutes for securing the area</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the steps to be taken by Marriott full-service hotels when a suspicious person or package is detected.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Delayed reporting due to unfamiliarity with the system</li><li><span class="bullet risk">▸</span> Miscommunication or missed notifications</li><li><span class="bullet risk">▸</span> Inconsistent risk assessment criteria</li><li><span class="bullet risk">▸</span> Coordination issues during evacuation</li><li><span class="bullet risk">▸</span> Resistance to policy changes</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../security-compliance/security-operations/sc-se-04/"><span>◀</span><div><span class="prev-lbl">Previous</span>Fire Emergency Response &amp; Evacuation</div></a>
+  <a href="../../../security-compliance/security-operations/sc-se-06/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Lost Property Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; SC-SE-05 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
