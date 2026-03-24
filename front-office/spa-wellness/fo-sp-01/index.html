@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-SP-01 — Spa Booking &amp; Appointment Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Spa & Wellness Operations</a><span class="sep">›</span>Spa Booking &amp; Appointment Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-SP-01</div>
+  <h1>Spa Booking &amp; Appointment Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Spa & Wellness Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Book4Time</span> <span class="tag">IDeaS G3 RMS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-sp-01.png" alt="FO-SP-01 — Spa Booking &amp; Appointment Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.3</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Spa Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Spa Receptionist</td>
+          <td><span class="step-badge">3.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Spa Inquiry or Reservation Request</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest inquiry or reservation request via phone, email, online booking platform, or in-person.</td>
+          <td>Spa inquiry or reservation request logged in Oracle OPERA Cloud.</td>
+          <td>Less than 2 minutes per inquiry</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling multiple inquiries simultaneously and ensuring accurate recording of details.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Availability</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Logged spa inquiry or reservation request.</td>
+          <td>Availability check for requested date and time.</td>
+          <td>Less than 1 minute per availability check</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Real-time availability updates across multiple services.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Confirm Availability and Pricing</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Availability check results.</td>
+          <td>Confirmation of availability and pricing for the requested service.</td>
+          <td>Less than 1 minute per confirmation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling last-minute cancellations or changes in availability.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Create Spa Reservation</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Confirmed availability and pricing.</td>
+          <td>Spa reservation created in Oracle OPERA Cloud with all necessary details.</td>
+          <td>Less than 2 minutes per reservation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring data accuracy during high-volume booking periods.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Send Confirmation Email/Text</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Created spa reservation.</td>
+          <td>Confirmation email or text sent to the guest with appointment details.</td>
+          <td>Less than 1 minute per confirmation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling undelivered or bounced emails/texts.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Update Spa Schedule</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Created spa reservation.</td>
+          <td>Spa schedule updated with the new appointment.</td>
+          <td>Less than 1 minute per update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring seamless integration between systems for real-time updates.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Pre-Appointment Communication</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Scheduled spa appointment.</td>
+          <td>Pre-appointment reminder sent to the guest.</td>
+          <td>Less than 1 minute per communication</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling guests who do not respond or cancel last-minute.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Check-In for Spa Service</td>
+          <td>Spa Receptionist</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Guest arrives at the spa.</td>
+          <td>Guest check-in completed with all necessary details recorded.</td>
+          <td>Less than 2 minutes per check-in</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling guests with special requests or dietary restrictions.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Post-Appointment Follow-Up</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Completed spa appointment.</td>
+          <td>Follow-up survey sent to the guest for feedback.</td>
+          <td>Less than 1 minute per follow-up</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring high response rates and accurate feedback collection.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Update Spa Analytics</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Completed spa appointment data.</td>
+          <td>Spa analytics updated with the latest performance metrics.</td>
+          <td>Less than 1 minute per update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling large volumes of data and ensuring accurate reporting.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-SP-01</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Spa &amp; Wellness Operations</li>
+          <li><span class="bullet">Process</span> Spa Booking &amp; Appointment Management</li>
+          <li><span class="bullet">Trigger</span> Guest inquires about booking a spa service or makes a reservation through various channels.</li>
+          <li><span class="bullet">Outcome</span> Successful completion results in a confirmed spa appointment with all necessary details recorded in the system, including guest information, service type, date, time, and any special requests.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 2 minutes per inquiry</li><li><span class="bullet">▸</span> Less than 1 minute per availability check</li><li><span class="bullet">▸</span> Less than 2 minutes per reservation</li><li><span class="bullet">▸</span> Less than 1 minute per confirmation</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the booking and appointment management for spa services at a full-service Marriott hotel using Oracle OPERA Cloud PMS and other Marriott systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> System downtime affecting booking and appointment management.</li><li><span class="bullet risk">▸</span> Data entry errors leading to incorrect reservations or schedules.</li><li><span class="bullet risk">▸</span> High volume of inquiries during peak times causing delays.</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/night-audit/fo-ns-08/"><span>◀</span><div><span class="prev-lbl">Previous</span>End-of-Day Reporting</div></a>
+  <a href="../../../front-office/spa-wellness/fo-sp-02/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Spa Treatment Delivery &amp; Standards</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-SP-01 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
