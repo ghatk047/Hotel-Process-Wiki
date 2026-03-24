@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-CS-05 — Wake-Up Call &amp; Guest Communications | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Concierge & Guest Services</a><span class="sep">›</span>Wake-Up Call &amp; Guest Communications</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-CS-05</div>
+  <h1>Wake-Up Call &amp; Guest Communications</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Concierge & Guest Services</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Marriott Bonvoy CRM</span> <span class="tag">Assa Abloy VingCard</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-cs-05.png" alt="FO-CS-05 — Wake-Up Call &amp; Guest Communications process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.4</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Concierge</td>
+          <td><span class="step-badge">2.3</span> <span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Wake-Up Call Request</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest request via phone, online booking platform, or in-person</td>
+          <td>Wake-up call request logged in Oracle OPERA Cloud</td>
+          <td>Less than 3 minutes to log request</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling multiple requests simultaneously</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Guest Details</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest request details</td>
+          <td>Verified guest information</td>
+          <td>Less than 1 minute to verify</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect or incomplete guest data</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Schedule Wake-Up Call</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Verified guest details and request specifics</td>
+          <td>Scheduled wake-up call in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes to schedule</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Conflicting schedules or system errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Confirm with Guest</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Scheduled wake-up call details</td>
+          <td>Guest confirmation of wake-up call</td>
+          <td>Less than 1 minute to confirm</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Guest unavailability or miscommunication</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Prepare Communication Content</td>
+          <td>Concierge</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Guest preferences and request specifics</td>
+          <td>Communication content prepared</td>
+          <td>Less than 5 minutes to prepare</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Complex or last-minute requests</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Send Wake-Up Call</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Assa Abloy VingCard</td>
+          <td>Scheduled time and prepared content</td>
+          <td>Wake-up call sent to guest room</td>
+          <td>Less than 1 minute to send</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Technical issues with wake-up call system</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Wake-Up Call Response</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest response to wake-up call</td>
+          <td>Response logged in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes to log response</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>No guest response or delayed response</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Follow-Up if Necessary</td>
+          <td>Front Desk Agent, Concierge</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Logged response and request specifics</td>
+          <td>Follow-up action taken or logged</td>
+          <td>Less than 3 minutes to follow up</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling guest complaints or additional requests</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Guest Record</td>
+          <td>Front Desk Agent, Concierge</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Final request status and any notes</td>
+          <td>Guest record updated in Oracle OPERA Cloud and CRM</td>
+          <td>Less than 2 minutes to update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data entry errors or system downtime</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Close Case</td>
+          <td>Front Desk Agent, Concierge</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated guest record and request status</td>
+          <td>Case closed in Oracle OPERA Cloud</td>
+          <td>Less than 1 minute to close case</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Complex cases requiring multiple follow-ups</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-CS-05</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Concierge &amp; Guest Services</li>
+          <li><span class="bullet">Process</span> Wake-Up Call &amp; Guest Communications</li>
+          <li><span class="bullet">Trigger</span> Guest requests a wake-up call or communication service through various channels such as phone, online booking platform, or in-person request.</li>
+          <li><span class="bullet">Outcome</span> Successful completion ensures the guest receives their requested wake-up call or communication at the specified time and content.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 3 minutes to log request</li><li><span class="bullet">▸</span> Less than 1 minute to verify guest details</li><li><span class="bullet">▸</span> Less than 2 minutes to schedule wake-up call</li><li><span class="bullet">▸</span> Less than 1 minute to confirm with guest</li><li><span class="bullet">▸</span> Less than 5 minutes to prepare communication content</li><li><span class="bullet">▸</span> Less than 1 minute to send wake-up call</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process involves initiating and managing wake-up calls and guest communications at a Marriott full-service hotel using Oracle OPERA Cloud PMS and other relevant systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Multiple requests overwhelming the front desk staff</li><li><span class="bullet risk">▸</span> Incorrect or incomplete guest data leading to errors</li><li><span class="bullet risk">▸</span> Conflicting schedules causing missed wake-up calls</li><li><span class="bullet risk">▸</span> Technical issues with the wake-up call system affecting delivery</li><li><span class="bullet risk">▸</span> Data entry errors in Oracle OPERA Cloud and CRM</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/concierge-services/fo-cs-04/"><span>◀</span><div><span class="prev-lbl">Previous</span>Luggage Handling &amp; Storage</div></a>
+  <a href="../../../front-office/concierge-services/fo-cs-06/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Complaint Handling &amp; Service Recovery</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-CS-05 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
