@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM-RV-05 — Deposit &amp; Prepayment Processing | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">📈 Revenue Management & Distribution</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Revenue Management & Distribution</a><span class="sep">›</span><a href="../">Reservations Operations</a><span class="sep">›</span>Deposit &amp; Prepayment Processing</div>
+
+<div class="page-header">
+  <div class="pid-badge">RM-RV-05</div>
+  <h1>Deposit &amp; Prepayment Processing</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Reservations Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">SynXis CRS</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/rm-rv-05.png" alt="RM-RV-05 — Deposit &amp; Prepayment Processing process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.3</span> <span class="step-badge">2.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Reservation Request</td>
+          <td>Revenue Manager</td>
+          <td>SynXis CRS</td>
+          <td>Reservation request from a travel agent or direct booking</td>
+          <td>Confirmed reservation details</td>
+          <td>Less than 2 minutes per reservation</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling multiple concurrent reservations</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Review Reservation Details</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Confirmed reservation details</td>
+          <td>Reservation review report</td>
+          <td>Less than 3 minutes per reservation</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Ensuring accurate room type and rate</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Capture Deposit/Prepayment</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest payment information</td>
+          <td>Payment receipt</td>
+          <td>Less than 5 minutes per transaction</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling different payment methods</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Verify Payment Details</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Payment receipt</td>
+          <td>Verified payment status</td>
+          <td>Less than 2 minutes per transaction</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Ensuring correct payment amount</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update Reservation with Payment</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Verified payment status</td>
+          <td>Updated reservation record</td>
+          <td>Less than 3 minutes per transaction</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Updating multiple reservations simultaneously</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Generate Payment Confirmation</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated reservation record</td>
+          <td>Payment confirmation email</td>
+          <td>Less than 4 minutes per transaction</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Ensuring correct email delivery</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Payment Status</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Payment confirmation email</td>
+          <td>Payment status report</td>
+          <td>Daily review within 24 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Tracking multiple payments</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Resolve Payment Issues</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Payment status report</td>
+          <td>Resolved payment issue</td>
+          <td>Less than 1 hour per issue</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling unexpected payment failures</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update CRM with Payment Information</td>
+          <td>Revenue Manager</td>
+          <td>Marriott Bonvoy CRM</td>
+          <td>Resolved payment issue</td>
+          <td>Updated customer record</td>
+          <td>Less than 2 minutes per update</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Ensuring data consistency across systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Final Review and Closeout</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated customer record</td>
+          <td>Closed reservation case</td>
+          <td>Less than 5 minutes per case</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Closing multiple cases simultaneously</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> RM-RV-05</li>
+          <li><span class="bullet">Domain</span> Revenue Management &amp; Distribution</li>
+          <li><span class="bullet">Group</span> Reservations Operations</li>
+          <li><span class="bullet">Process</span> Deposit &amp; Prepayment Processing</li>
+          <li><span class="bullet">Trigger</span> Guest makes a reservation with a deposit or prepayment</li>
+          <li><span class="bullet">Outcome</span> Successful capture and recording of the deposit or prepayment in the Oracle OPERA Cloud PMS, with confirmation sent to the guest.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 2 minutes per reservation</li><li><span class="bullet">▸</span> Less than 5 minutes per transaction</li><li><span class="bullet">▸</span> Daily review within 24 hours</li><li><span class="bullet">▸</span> Less than 1 hour per issue</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The process of handling deposit and prepayment processing at a Marriott full-service hotel involves capturing payments from guests during reservation booking and ensuring they are correctly recorded in the Oracle OPERA Cloud PMS.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Incorrect payment amount captured</li><li><span class="bullet risk">▸</span> Payment confirmation email not sent</li><li><span class="bullet risk">▸</span> Multiple reservations updated simultaneously</li><li><span class="bullet risk">▸</span> Unexpected payment failures</li><li><span class="bullet risk">▸</span> Data inconsistency across systems</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../revenue-management/reservations/rm-rv-04/"><span>◀</span><div><span class="prev-lbl">Previous</span>Reservation Amendment &amp; Cancellation</div></a>
+  <a href="../../../revenue-management/reservations/rm-rv-06/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>CRS-PMS Synchronisation</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; RM-RV-05 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
