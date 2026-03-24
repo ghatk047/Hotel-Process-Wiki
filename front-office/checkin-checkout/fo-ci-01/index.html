@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-CI-01 — Reservation Pre-Arrival Processing | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Check-In & Check-Out Operations</a><span class="sep">›</span>Reservation Pre-Arrival Processing</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-CI-01</div>
+  <h1>Reservation Pre-Arrival Processing</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Check-In & Check-Out Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">SynXis CRS</span> <span class="tag">Marriott Bonvoy CRM</span> <span class="tag">Knowcross HotSOS</span> <span class="tag">Book4Time</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-ci-01.png" alt="FO-CI-01 — Reservation Pre-Arrival Processing process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.3</span> <span class="step-badge">2.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">3.1</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">2.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Reservation Confirmation</td>
+          <td>Revenue Manager</td>
+          <td>SynXis CRS</td>
+          <td>Reservation details</td>
+          <td>Updated reservation record in SynXis CRS</td>
+          <td>&lt; 3 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed confirmation due to system connectivity issues.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Update Oracle OPERA Cloud</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Reservation details from SynXis CRS</td>
+          <td>Updated reservation record in Oracle OPERA Cloud</td>
+          <td>&lt; 5 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data synchronization errors between systems.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Assign Room Block</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Reservation details and room availability</td>
+          <td>Room block assignment in Oracle OPERA Cloud</td>
+          <td>&lt; 2 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Overbooking due to manual errors.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Prepare Guest Welcome Package</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest preferences and hotel amenities</td>
+          <td>Customized welcome package</td>
+          <td>&lt; 10 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect guest information leading to wrong packages.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update Marriott Bonvoy CRM</td>
+          <td>Revenue Manager</td>
+          <td>Marriott Bonvoy CRM</td>
+          <td>Guest loyalty and reservation details</td>
+          <td>Updated guest profile in Marriott Bonvoy CRM</td>
+          <td>&lt; 4 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data privacy concerns during CRM updates.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Schedule Housekeeping</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room block assignment and guest preferences</td>
+          <td>Scheduled housekeeping tasks in Oracle OPERA Cloud</td>
+          <td>&lt; 5 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Overlooking special cleaning requests.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Confirm Amenities and Services</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest preferences and available amenities</td>
+          <td>Confirmed amenities and services in Oracle OPERA Cloud</td>
+          <td>&lt; 3 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect confirmation of guest requests.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Knowcross HotSOS</td>
+          <td>Front Desk Agent</td>
+          <td>Knowcross HotSOS</td>
+          <td>Reservation details and emergency contact information</td>
+          <td>Updated guest profile in Knowcross HotSOS</td>
+          <td>&lt; 2 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data integrity issues between systems.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Finalize Check-In Process</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>All pre-arrival processing data</td>
+          <td>Completed check-in process in Oracle OPERA Cloud</td>
+          <td>&lt; 10 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System downtime affecting final checks.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Notify Guest of Pre-Arrival Details</td>
+          <td>Front Desk Agent</td>
+          <td>Book4Time</td>
+          <td>Pre-arrival details and guest contact information</td>
+          <td>Notification sent to guest via Book4Time</td>
+          <td>&lt; 2 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect or delayed notifications.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-CI-01</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Check-In &amp; Check-Out Operations</li>
+          <li><span class="bullet">Process</span> Reservation Pre-Arrival Processing</li>
+          <li><span class="bullet">Trigger</span> A reservation is confirmed through the SynXis CRS system.</li>
+          <li><span class="bullet">Outcome</span> All necessary preparations are completed, and the hotel systems are updated with guest information.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> &lt; 3 min for receiving reservation confirmation</li><li><span class="bullet">▸</span> &lt; 5 min for updating Oracle OPERA Cloud</li><li><span class="bullet">▸</span> &lt; 10 min for preparing guest welcome package</li><li><span class="bullet">▸</span> &lt; 2 min for finalizing check-in process</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process involves pre-arrival processing of reservations at a full-service Marriott hotel. It ensures that all necessary preparations are made to facilitate a smooth check-in experience for guests.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Data synchronization errors between systems</li><li><span class="bullet risk">▸</span> Overbooking due to manual errors</li><li><span class="bullet risk">▸</span> Incorrect confirmation of guest requests</li><li><span class="bullet risk">▸</span> System downtime affecting final checks</li><li><span class="bullet risk">▸</span> Incorrect or delayed notifications</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../housekeeping/public-area-cleaning/hk-pc-08/"><span>◀</span><div><span class="prev-lbl">Previous</span>Deep Clean Scheduling &amp; Execution</div></a>
+  <a href="../../../front-office/checkin-checkout/fo-ci-02/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Guest Check-In &amp; Room Assignment</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-CI-01 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
