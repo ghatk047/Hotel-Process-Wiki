@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM-YM-03 — Length-of-Stay Restriction Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">📈 Revenue Management & Distribution</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Revenue Management & Distribution</a><span class="sep">›</span><a href="../">Yield & Rate Management</a><span class="sep">›</span>Length-of-Stay Restriction Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">RM-YM-03</div>
+  <h1>Length-of-Stay Restriction Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Yield & Rate Management</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Marriott Bonvoy CRM</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/rm-ym-03.png" alt="RM-YM-03 — Length-of-Stay Restriction Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">2.2</span> <span class="step-badge">2.4</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ff5733"></span>Front Desk Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">2.1</span> <span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Length-of-Stay Restriction Review</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Current occupancy data, competitive analysis reports</td>
+          <td>Length-of-stay restriction review report</td>
+          <td>Completion within 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accessing real-time occupancy data across multiple systems.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Define New Length-of-Stay Restrictions</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS</td>
+          <td>Length-of-stay restriction review report</td>
+          <td>New length-of-stay restrictions plan</td>
+          <td>Completion within 2 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Balancing short-term occupancy with long-term revenue goals.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Update Room Rates Based on Restrictions</td>
+          <td>Revenue Manager</td>
+          <td>SynXis CRS</td>
+          <td>New length-of-stay restrictions plan</td>
+          <td>Updated room rate matrix</td>
+          <td>Completion within 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Synchronizing rate changes across multiple channels.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Communicate Changes to Front Desk Staff</td>
+          <td>Front Desk Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated room rate matrix</td>
+          <td>Training session notes</td>
+          <td>Completion within 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring consistent communication across all staff.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update CRM System with New Policies</td>
+          <td>Revenue Manager</td>
+          <td>Marriott Bonvoy CRM</td>
+          <td>New length-of-stay restrictions plan</td>
+          <td>Updated CRM policy document</td>
+          <td>Completion within 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Maintaining accurate and up-to-date customer information.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Monitor Occupancy and Revenue Impact</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Real-time occupancy and revenue data</td>
+          <td>Occupancy and revenue impact report</td>
+          <td>Completion within 30 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Interpreting complex data to make informed decisions.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Adjust Restrictions Based on Monitoring Results</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS, SynXis CRS</td>
+          <td>Occupancy and revenue impact report</td>
+          <td>Adjusted length-of-stay restrictions plan</td>
+          <td>Completion within 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Balancing immediate occupancy needs with long-term strategies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Finalize and Document Changes</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Adjusted length-of-stay restrictions plan</td>
+          <td>Finalized length-of-stay restriction document</td>
+          <td>Completion within 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring all changes are documented and compliant.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Review and Report on Process Outcomes</td>
+          <td>Revenue Manager</td>
+          <td>Microsoft Power BI, Oracle OPERA Cloud</td>
+          <td>Finalized length-of-stay restriction document</td>
+          <td>Process outcome report</td>
+          <td>Completion within 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Summarizing and reporting on complex data.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Closeout Meeting with Key Stakeholders</td>
+          <td>Revenue Manager, Front Desk Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Process outcome report</td>
+          <td>Meeting minutes</td>
+          <td>Completion within 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring all stakeholders are aligned and informed.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> RM-YM-03</li>
+          <li><span class="bullet">Domain</span> Revenue Management &amp; Distribution</li>
+          <li><span class="bullet">Group</span> Yield &amp; Rate Management</li>
+          <li><span class="bullet">Process</span> Length-of-Stay Restriction Management</li>
+          <li><span class="bullet">Trigger</span> Revenue Manager identifies an opportunity to adjust length-of-stay restrictions based on demand trends and competitive analysis.</li>
+          <li><span class="bullet">Outcome</span> Successful completion results in optimized room rates, increased occupancy, and improved revenue management strategies.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Completion of length-of-stay restriction review within 1 hour</li><li><span class="bullet">▸</span> Training session notes completed within 30 minutes by Front Desk Manager</li><li><span class="bullet">▸</span> Occupancy and revenue impact report generated within 30 minutes</li><li><span class="bullet">▸</span> Finalized length-of-stay restriction document completed within 1 hour</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process manages length-of-stay restrictions to optimize room occupancy and revenue at a Marriott full-service hotel.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate occupancy data leading to misinformed decisions</li><li><span class="bullet risk">▸</span> Communication gaps between Revenue Manager and Front Desk Staff</li><li><span class="bullet risk">▸</span> Non-compliance with updated policies in CRM system</li><li><span class="bullet risk">▸</span> Difficulty interpreting complex data for informed decision-making</li><li><span class="bullet risk">▸</span> Failure to align all stakeholders during the closeout meeting</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../revenue-management/yield-rate/rm-ym-02/"><span>◀</span><div><span class="prev-lbl">Previous</span>Rate Strategy &amp; Pricing Optimisation</div></a>
+  <a href="../../../revenue-management/yield-rate/rm-ym-04/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Overbooking Level Setting</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; RM-YM-03 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
