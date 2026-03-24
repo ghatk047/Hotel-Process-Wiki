@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB-BQ-03 — Event Day Coordination &amp; Execution | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🍽️ Food & Beverage Operations</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Food & Beverage Operations</a><span class="sep">›</span><a href="../">Banqueting & Events Catering</a><span class="sep">›</span>Event Day Coordination &amp; Execution</div>
+
+<div class="page-header">
+  <div class="pid-badge">FB-BQ-03</div>
+  <h1>Event Day Coordination &amp; Execution</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Banqueting & Events Catering</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Oracle MICROS Simphony</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fb-bq-03.png" alt="FB-BQ-03 — Event Day Coordination &amp; Execution process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Event Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.5</span> <span class="step-badge">3.6</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Banquet Manager</td>
+          <td><span class="step-badge">2.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Catering Manager</td>
+          <td><span class="step-badge">2.2</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#8b5cf6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>Concierge</td>
+          <td><span class="step-badge">3.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Confirm Event Details</td>
+          <td>Event Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Event day checklist</td>
+          <td>Confirmed event details</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect or incomplete event details</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Staff</td>
+          <td>Event Manager</td>
+          <td>Oracle OPERA Cloud, Workday HCM</td>
+          <td>Confirmed event details</td>
+          <td>Staff assignment list</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Insufficient staff availability</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Setup Banquet Hall</td>
+          <td>Banquet Manager</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Staff assignment list</td>
+          <td>Banquet hall setup confirmation</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Technical issues with audio/visual equipment</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Prepare Catering</td>
+          <td>Catering Manager</td>
+          <td>Oracle MICROS Simphony, Birchstreet Procurement</td>
+          <td>Event day checklist</td>
+          <td>Catering preparation confirmation</td>
+          <td>Less than 20 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ingredient shortages</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Event Progress</td>
+          <td>Event Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Banquet hall setup confirmation, catering preparation confirmation</td>
+          <td>Event progress report</td>
+          <td>Less than 5 minutes every hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Delays in event progression</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Handle Guest Issues</td>
+          <td>Front Desk Agent, Concierge</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Guest complaints or issues</td>
+          <td>Issue resolution confirmation</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling difficult guests</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Closeout Event</td>
+          <td>Event Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Event progress report, issue resolution confirmation</td>
+          <td>Event closeout report</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incomplete event documentation</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Update Inventory</td>
+          <td>Catering Manager</td>
+          <td>Oracle MICROS Simphony, SAP S/4HANA</td>
+          <td>Event closeout report</td>
+          <td>Updated inventory list</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect inventory adjustments</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Generate Post-Event Report</td>
+          <td>Event Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Updated inventory list</td>
+          <td>Post-event report</td>
+          <td>Less than 20 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data entry errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.6</td>
+          <td>Review and Improve</td>
+          <td>Event Manager, General Manager</td>
+          <td>Oracle OPERA Cloud, Salesforce</td>
+          <td>Post-event report</td>
+          <td>Improvement plan</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Lack of actionable insights</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FB-BQ-03</li>
+          <li><span class="bullet">Domain</span> Food &amp; Beverage Operations</li>
+          <li><span class="bullet">Group</span> Banqueting &amp; Events Catering</li>
+          <li><span class="bullet">Process</span> Event Day Coordination &amp; Execution</li>
+          <li><span class="bullet">Trigger</span> Reception of event day checklist from Event Manager</li>
+          <li><span class="bullet">Outcome</span> Successful execution of the event with all logistical details managed efficiently, ensuring guest satisfaction.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Event setup time less than 15 minutes</li><li><span class="bullet">▸</span> Catering preparation time less than 20 minutes</li><li><span class="bullet">▸</span> Guest issue resolution time less than 10 minutes</li><li><span class="bullet">▸</span> Inventory update accuracy rate above 98%</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">Event Day Coordination &amp; Execution process at a Marriott full-service hotel involves coordinating and executing banqueting and events catering services using various Marriott systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Technical failures in audio/visual equipment</li><li><span class="bullet risk">▸</span> Ingredient shortages leading to menu changes</li><li><span class="bullet risk">▸</span> Difficult guest management during the event</li><li><span class="bullet risk">▸</span> Incorrect inventory adjustments affecting future events</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../food-beverage/banqueting-events/fb-bq-02/"><span>◀</span><div><span class="prev-lbl">Previous</span>Banquet Room Setup &amp; Layout</div></a>
+  <a href="../../../food-beverage/banqueting-events/fb-bq-04/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Catering Menu Planning &amp; Costing</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FB-BQ-03 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
