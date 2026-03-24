@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM-RV-08 — Long-Stay &amp; Extended Stay Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">📈 Revenue Management & Distribution</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Revenue Management & Distribution</a><span class="sep">›</span><a href="../">Reservations Operations</a><span class="sep">›</span>Long-Stay &amp; Extended Stay Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">RM-RV-08</div>
+  <h1>Long-Stay &amp; Extended Stay Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Reservations Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Book4Time</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/rm-rv-08.png" alt="RM-RV-08 — Long-Stay &amp; Extended Stay Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ff5733"></span>Front Desk Agent</td>
+          <td><span class="step-badge">2.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initial Reservation Review</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Reservation details from SynXis CRS</td>
+          <td>Confirmed reservation in Oracle OPERA Cloud</td>
+          <td>Less than 5 minutes per reservation review</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling last-minute changes or cancellations</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Room Block</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Confirmed reservation details</td>
+          <td>Room block assigned in Oracle OPERA Cloud</td>
+          <td>Less than 3 minutes per room block assignment</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring optimal room utilization</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Send Confirmation Email</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Room block details</td>
+          <td>Confirmation email sent to guest</td>
+          <td>Less than 2 minutes per confirmation email</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring timely and accurate communication</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Monitor Reservation Status</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Room block status updates</td>
+          <td>Reservation status report</td>
+          <td>Daily review within 1 hour of midnight</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling unexpected cancellations or no-shows</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Adjust Room Rates</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS, Oracle OPERA Cloud</td>
+          <td>Reservation status report</td>
+          <td>Updated room rates in Oracle OPERA Cloud</td>
+          <td>Less than 10 minutes per rate adjustment</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Balancing revenue optimization and guest satisfaction</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Communicate Changes to Guest</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Updated room rates</td>
+          <td>Change communication email sent to guest</td>
+          <td>Less than 3 minutes per change communication</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Maintaining positive guest relations</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Prepare Welcome Package</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>Guest check-in details</td>
+          <td>Welcome package prepared and delivered to guest room</td>
+          <td>Less than 10 minutes per welcome package preparation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring timely delivery of amenities</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review Guest Feedback</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Guest feedback from check-out survey</td>
+          <td>Feedback analysis report</td>
+          <td>Within 24 hours of guest departure</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Improving service based on guest feedback</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Reservation System</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Feedback analysis report</td>
+          <td>Updated reservation system with improvements</td>
+          <td>Less than 1 hour per update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Implementing changes efficiently</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Reservation File</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Final reservation details and feedback</td>
+          <td>Closed reservation file in Oracle OPERA Cloud</td>
+          <td>Within 24 hours of guest departure</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring all documentation is complete</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> RM-RV-08</li>
+          <li><span class="bullet">Domain</span> Revenue Management &amp; Distribution</li>
+          <li><span class="bullet">Group</span> Reservations Operations</li>
+          <li><span class="bullet">Process</span> Long-Stay &amp; Extended Stay Management</li>
+          <li><span class="bullet">Trigger</span> A guest books a long-stay or extended stay reservation through the hotel's reservation system (Oracle OPERA Cloud, SynXis CRS).</li>
+          <li><span class="bullet">Outcome</span> Successful management of long-stay and extended stay reservations results in high guest satisfaction, optimized room utilization, and increased revenue.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes per reservation review</li><li><span class="bullet">▸</span> Daily review within 1 hour of midnight</li><li><span class="bullet">▸</span> Less than 10 minutes per rate adjustment</li><li><span class="bullet">▸</span> Within 24 hours of guest departure</li><li><span class="bullet">▸</span> Less than 1 hour per update</li><li><span class="bullet">▸</span> Within 24 hours of guest departure</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">Managing long-stay and extended stay reservations at a Marriott full-service hotel involves coordinating with guests to ensure their comfort and satisfaction while optimizing revenue.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Unexpected cancellations or no-shows affecting room utilization</li><li><span class="bullet risk">▸</span> Balancing revenue optimization with guest satisfaction</li><li><span class="bullet risk">▸</span> Maintaining positive guest relations during communication changes</li><li><span class="bullet risk">▸</span> Ensuring timely delivery of amenities and welcome packages</li><li><span class="bullet risk">▸</span> Implementing changes efficiently based on feedback analysis</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../revenue-management/reservations/rm-rv-07/"><span>◀</span><div><span class="prev-lbl">Previous</span>Reservation Quality Auditing</div></a>
+  <a href="../../../sales-marketing/sales-accounts/sm-sl-01/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Corporate Account Prospecting &amp; RFP</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; RM-RV-08 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
