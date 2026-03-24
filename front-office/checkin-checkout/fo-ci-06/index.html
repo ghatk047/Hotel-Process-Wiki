@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-CI-06 — Group Check-In Coordination | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Check-In & Check-Out Operations</a><span class="sep">›</span>Group Check-In Coordination</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-CI-06</div>
+  <h1>Group Check-In Coordination</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Check-In & Check-Out Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Marriott Bonvoy CRM</span> <span class="tag">Book4Time</span> <span class="tag">Assa Abloy VingCard</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-ci-06.png" alt="FO-CI-06 — Group Check-In Coordination process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#81e6d9"></span>Housekeeping Supervisor</td>
+          <td><span class="step-badge">2.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#facc15"></span>Guest Services Manager</td>
+          <td><span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initial Reservation Review</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Group reservation details</td>
+          <td>Reservation confirmation</td>
+          <td>Less than 5 minutes per reservation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling last-minute changes in group size or preferences</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Room Assignment</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Group reservation confirmation</td>
+          <td>Room assignment list</td>
+          <td>Less than 10 minutes per group</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Managing room availability during high-occupancy periods</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Guest Communication Plan</td>
+          <td>Front Desk Agent</td>
+          <td>Marriott Bonvoy CRM, Book4Time</td>
+          <td>Room assignment list</td>
+          <td>Communication plan with check-in schedule</td>
+          <td>Less than 30 minutes per group</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring all guests receive accurate and timely information</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Check-In Preparation</td>
+          <td>Housekeeping Supervisor</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Room assignment list</td>
+          <td>Prepared rooms for check-in</td>
+          <td>Less than 20 minutes per room</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Maintaining a clean and comfortable environment for guests</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Check-In Process</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Assa Abloy VingCard</td>
+          <td>Guest identification documents</td>
+          <td>Checked-in guests with room keys</td>
+          <td>Less than 2 minutes per guest</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling lost or misplaced identification documents</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Post-Check-In Review</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Checked-in guests list</td>
+          <td>Check-in completion report</td>
+          <td>Less than 5 minutes per group</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Identifying and addressing any issues during the check-in process</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Feedback Collection</td>
+          <td>Guest Services Manager</td>
+          <td>Marriott Bonvoy CRM, Salesforce</td>
+          <td>Check-in completion report</td>
+          <td>Guest feedback form</td>
+          <td>Less than 10 minutes per group</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Encouraging guests to provide timely and accurate feedback</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Follow-Up Actions</td>
+          <td>Guest Services Manager</td>
+          <td>Marriott Bonvoy CRM, Book4Time</td>
+          <td>Guest feedback form</td>
+          <td>Action plan for improvements</td>
+          <td>Less than 15 minutes per group</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Implementing changes based on guest feedback</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-CI-06</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Check-In &amp; Check-Out Operations</li>
+          <li><span class="bullet">Process</span> Group Check-In Coordination</li>
+          <li><span class="bullet">Trigger</span> Receiving a group reservation request in Oracle OPERA Cloud PMS</li>
+          <li><span class="bullet">Outcome</span> Successful completion of the group check-in process, ensuring all guests are checked into their assigned rooms on time with minimal disruption.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes per reservation</li><li><span class="bullet">▸</span> Less than 10 minutes per group for room assignment</li><li><span class="bullet">▸</span> Less than 2 minutes per guest for check-in</li><li><span class="bullet">▸</span> Less than 10 minutes per group for feedback collection</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The Group Check-In Coordination process ensures a smooth and efficient check-in experience for large groups at full-service Marriott hotels. This process involves coordinating with various departments to manage reservations, room assignments, and guest communications.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate or incomplete reservation details leading to miscommunication</li><li><span class="bullet risk">▸</span> Room availability issues during high-occupancy periods</li><li><span class="bullet risk">▸</span> Lost or misplaced identification documents affecting check-in efficiency</li><li><span class="bullet risk">▸</span> Guest dissatisfaction due to poor room preparation or service quality</li><li><span class="bullet risk">▸</span> Delayed feedback collection impacting follow-up actions</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/checkin-checkout/fo-ci-05/"><span>◀</span><div><span class="prev-lbl">Previous</span>Late Check-Out &amp; Early Arrival Management</div></a>
+  <a href="../../../front-office/checkin-checkout/fo-ci-07/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>No-Show &amp; Cancellation Processing</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-CI-06 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
