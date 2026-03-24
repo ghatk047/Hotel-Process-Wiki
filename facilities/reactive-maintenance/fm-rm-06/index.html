@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FM-RM-06 — Maintenance Cost Tracking &amp; Reporting | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🔧 Facilities & Engineering</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Facilities & Engineering</a><span class="sep">›</span><a href="../">Reactive Maintenance & Work Orders</a><span class="sep">›</span>Maintenance Cost Tracking &amp; Reporting</div>
+
+<div class="page-header">
+  <div class="pid-badge">FM-RM-06</div>
+  <h1>Maintenance Cost Tracking &amp; Reporting</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Reactive Maintenance & Work Orders</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">SAP S/4HANA</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fm-rm-06.png" alt="FM-RM-06 — Maintenance Cost Tracking &amp; Reporting process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">3.5</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#10b981"></span>Facilities Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">3.1</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>Maintenance Technician</td>
+          <td><span class="step-badge">2.2</span> <span class="step-badge">2.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Accountant</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Finance Manager</td>
+          <td><span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#8b5cf6"></span>General Manager</td>
+          <td><span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Report Maintenance Issue</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Maintenance request form</td>
+          <td>Work order created in Oracle OPERA Cloud</td>
+          <td>Less than 5 minutes per report</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed reporting due to unclear issue description</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Work Order</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Work order details</td>
+          <td>Assigned work order with technician</td>
+          <td>Less than 30 minutes per assignment</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inefficient allocation of technicians</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Perform Maintenance</td>
+          <td>Maintenance Technician</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Assigned work order</td>
+          <td>Completed maintenance task</td>
+          <td>Less than 60 minutes per task</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inadequate inventory of spare parts</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Record Maintenance Time</td>
+          <td>Maintenance Technician</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Completed task details</td>
+          <td>Updated work order with time spent</td>
+          <td>Less than 5 minutes per record</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Manual data entry errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Invoice Maintenance Cost</td>
+          <td>Accountant</td>
+          <td>SAP S/4HANA</td>
+          <td>Work order with time and materials</td>
+          <td>Maintenance invoice</td>
+          <td>Less than 10 minutes per invoice</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect cost calculation</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review Maintenance Costs</td>
+          <td>Finance Manager</td>
+          <td>SAP S/4HANA</td>
+          <td>Maintenance invoices</td>
+          <td>Cost review report</td>
+          <td>Less than 30 minutes per review</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Overlooking discrepancies in costs</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Approve Maintenance Costs</td>
+          <td>General Manager</td>
+          <td>SAP S/4HANA</td>
+          <td>Cost review report</td>
+          <td>Approved maintenance budget</td>
+          <td>Less than 15 minutes per approval</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Budget overruns due to unapproved expenses</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Generate Maintenance Report</td>
+          <td>Facilities Manager</td>
+          <td>Microsoft Power BI</td>
+          <td>Approved budget and work order data</td>
+          <td>Maintenance cost report</td>
+          <td>Less than 20 minutes per report</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate reporting due to outdated data</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Review and Finalize Report</td>
+          <td>General Manager</td>
+          <td>Microsoft Power BI</td>
+          <td>Maintenance cost report</td>
+          <td>Finalized maintenance cost report</td>
+          <td>Less than 10 minutes per review</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Missing key information in reports</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Distribute Report</td>
+          <td>Executive Housekeeper</td>
+          <td>Microsoft Power BI</td>
+          <td>Finalized maintenance cost report</td>
+          <td>Report distributed to relevant stakeholders</td>
+          <td>Less than 5 minutes per distribution</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed communication of critical information</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FM-RM-06</li>
+          <li><span class="bullet">Domain</span> Facilities &amp; Engineering</li>
+          <li><span class="bullet">Group</span> Reactive Maintenance &amp; Work Orders</li>
+          <li><span class="bullet">Process</span> Maintenance Cost Tracking &amp; Reporting</li>
+          <li><span class="bullet">Trigger</span> Initiation of a reactive maintenance work order in Oracle OPERA Cloud PMS.</li>
+          <li><span class="bullet">Outcome</span> Successful completion produces accurate cost tracking, detailed reporting, and adherence to budget constraints.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes per maintenance report</li><li><span class="bullet">▸</span> Less than 30 minutes per work order assignment</li><li><span class="bullet">▸</span> Less than 60 minutes per maintenance task</li><li><span class="bullet">▸</span> Less than 10 minutes per invoice creation</li><li><span class="bullet">▸</span> Less than 30 minutes per cost review</li><li><span class="bullet">▸</span> Less than 20 minutes per maintenance report generation</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process tracks and reports maintenance costs at a Marriott full-service hotel to ensure financial transparency and operational efficiency.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Delayed reporting due to unclear issue descriptions</li><li><span class="bullet risk">▸</span> Inefficient allocation of technicians</li><li><span class="bullet risk">▸</span> Inadequate inventory of spare parts</li><li><span class="bullet risk">▸</span> Manual data entry errors leading to incorrect cost calculations</li><li><span class="bullet risk">▸</span> Overlooking discrepancies in costs during the review process</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../facilities/reactive-maintenance/fm-rm-05/"><span>◀</span><div><span class="prev-lbl">Previous</span>Repair Completion &amp; Room Return to Service</div></a>
+  <a href="../../../facilities/reactive-maintenance/fm-rm-07/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Capital Works &amp; Renovation Project Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FM-RM-06 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
