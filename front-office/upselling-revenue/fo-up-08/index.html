@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-UP-08 — Nor1 / Upgrade System Administration | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Upselling & Revenue Optimisation</a><span class="sep">›</span>Nor1 / Upgrade System Administration</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-UP-08</div>
+  <h1>Nor1 / Upgrade System Administration</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Upselling & Revenue Optimisation</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-up-08.png" alt="FO-UP-08 — Nor1 / Upgrade System Administration process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>IT Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>IT Specialist</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.3</span> <span class="step-badge">2.3</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#84cc16"></span>Front Desk Agent</td>
+          <td><span class="step-badge">3.1</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Upgrade Request</td>
+          <td>IT Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Upgrade request form</td>
+          <td>Approved upgrade plan</td>
+          <td>Less than 24 hours for approval</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Delays in IT approvals can halt operational improvements.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>System Assessment</td>
+          <td>IT Specialist</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Current system configuration and usage data</td>
+          <td>Assessment report with upgrade recommendations</td>
+          <td>Less than 2 days for assessment</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inaccurate assessments can lead to ineffective upgrades.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Resource Allocation</td>
+          <td>IT Manager, Revenue Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Assessment report</td>
+          <td>Allocated resources and budget for upgrade</td>
+          <td>Less than 4 days for allocation</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Insufficient resource allocation can delay upgrades.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Backup Data</td>
+          <td>IT Specialist</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Current system data</td>
+          <td>Complete backup of all critical data</td>
+          <td>Less than 1 hour for backup</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data loss can lead to operational disruptions.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Install Updates</td>
+          <td>IT Specialist</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Approved upgrade plan</td>
+          <td>Updated system configuration</td>
+          <td>Less than 8 hours for installation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System downtime can impact guest services.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Configure New Settings</td>
+          <td>IT Specialist, Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Upgrade recommendations</td>
+          <td>Configured system settings for optimal performance</td>
+          <td>Less than 2 days for configuration</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Misconfigured settings can reduce system efficiency.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Test System Functionality</td>
+          <td>IT Specialist, Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Updated system configuration</td>
+          <td>System functionality test report</td>
+          <td>Less than 1 day for testing</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Undetected issues can cause operational failures.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Train Staff</td>
+          <td>IT Specialist, Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>System functionality test report</td>
+          <td>Trained staff on new system features</td>
+          <td>Less than 2 days for training</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Untrained staff can lead to operational inefficiencies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Monitor Performance</td>
+          <td>IT Specialist, Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Trained staff</td>
+          <td>Performance monitoring report</td>
+          <td>Continuous monitoring for 1 week post-upgrade</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Post-upgrade performance issues can impact guest satisfaction.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Final Review and Documentation</td>
+          <td>IT Manager, Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Performance monitoring report</td>
+          <td>Final review document with recommendations</td>
+          <td>Less than 1 day for final review</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lack of documentation can hinder future upgrades.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-UP-08</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Upselling &amp; Revenue Optimisation</li>
+          <li><span class="bullet">Process</span> Nor1 / Upgrade System Administration</li>
+          <li><span class="bullet">Trigger</span> Detection of outdated system configurations impacting operational efficiency</li>
+          <li><span class="bullet">Outcome</span> Successful completion results in optimized system administration, improved guest experiences, increased revenue, and enhanced operational efficiency.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 24 hours for upgrade request approval</li><li><span class="bullet">▸</span> Less than 2 days for system assessment</li><li><span class="bullet">▸</span> Less than 8 hours for system installation</li><li><span class="bullet">▸</span> Continuous monitoring for 1 week post-upgrade</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">A process to upgrade system administration at a Marriott full-service hotel focusing on front office and guest services, aiming to enhance upselling and revenue optimization.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Data loss during backup or restoration</li><li><span class="bullet risk">▸</span> System downtime impacting guest services</li><li><span class="bullet risk">▸</span> Misconfigured settings reducing system efficiency</li><li><span class="bullet risk">▸</span> Untrained staff leading to operational inefficiencies</li><li><span class="bullet risk">▸</span> Post-upgrade performance issues affecting guest satisfaction</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/upselling-revenue/fo-up-07/"><span>◀</span><div><span class="prev-lbl">Previous</span>Ancillary Revenue Reporting</div></a>
+  <a href="../../../food-beverage/restaurant-bar/fb-ro-01/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Table Reservation Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-UP-08 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
