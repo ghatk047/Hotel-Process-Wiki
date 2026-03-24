@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM-RV-07 — Reservation Quality Auditing | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">📈 Revenue Management & Distribution</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Revenue Management & Distribution</a><span class="sep">›</span><a href="../">Reservations Operations</a><span class="sep">›</span>Reservation Quality Auditing</div>
+
+<div class="page-header">
+  <div class="pid-badge">RM-RV-07</div>
+  <h1>Reservation Quality Auditing</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Reservations Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Marriott Bonvoy CRM</span> <span class="tag">Microsoft Power BI</span> <span class="tag">SAP S/4HANA</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/rm-rv-07.png" alt="RM-RV-07 — Reservation Quality Auditing process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">2.4</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Front Desk Agent</td>
+          <td><span class="step-badge">2.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">3.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Audit</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Audit checklist</td>
+          <td>Audit log</td>
+          <td>Less than 5 minutes per reservation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling unexpected discrepancies during the audit.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Review Reservations</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Reservation data from Oracle OPERA Cloud</td>
+          <td>List of discrepancies</td>
+          <td>Less than 10 minutes per reservation</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Time-consuming manual review process.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Identify Issues</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>List of discrepancies</td>
+          <td>Detailed issue report</td>
+          <td>Less than 20 minutes per reservation</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Accurate identification of complex issues.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Notify Relevant Team</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Detailed issue report</td>
+          <td>Notification to relevant team</td>
+          <td>Less than 5 minutes per reservation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Effective communication with different teams.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Correct Issues</td>
+          <td>Revenue Manager, Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Notification to relevant team</td>
+          <td>Updated reservation data</td>
+          <td>Less than 15 minutes per reservation</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Timely correction of issues.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Verify Corrections</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated reservation data</td>
+          <td>Verification report</td>
+          <td>Less than 10 minutes per reservation</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Ensuring all corrections are accurate.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Compile Audit Report</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Verification report</td>
+          <td>Final audit report</td>
+          <td>Less than 30 minutes per reservation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Generating comprehensive reports.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Review Audit Report</td>
+          <td>Revenue Manager, Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Final audit report</td>
+          <td>Approved audit report</td>
+          <td>Less than 15 minutes per reservation</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Ensuring the report meets all required standards.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Archive Audit Report</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SAP S/4HANA</td>
+          <td>Approved audit report</td>
+          <td>Archived audit report</td>
+          <td>Less than 5 minutes per reservation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Properly archiving and managing reports.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Notify Stakeholders</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Approved audit report</td>
+          <td>Notification to stakeholders</td>
+          <td>Less than 10 minutes per reservation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Effective communication with all stakeholders.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> RM-RV-07</li>
+          <li><span class="bullet">Domain</span> Revenue Management &amp; Distribution</li>
+          <li><span class="bullet">Group</span> Reservations Operations</li>
+          <li><span class="bullet">Process</span> Reservation Quality Auditing</li>
+          <li><span class="bullet">Trigger</span> Scheduled weekly audit by Revenue Management team or upon detection of reservation discrepancies.</li>
+          <li><span class="bullet">Outcome</span> Successful completion produces an audited list of reservations with any identified issues corrected, ensuring data accuracy and compliance with Marriott's standards.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes per reservation for initiating the audit</li><li><span class="bullet">▸</span> Less than 10 minutes per reservation for reviewing reservations</li><li><span class="bullet">▸</span> Less than 20 minutes per reservation for identifying issues</li><li><span class="bullet">▸</span> Less than 30 minutes per reservation for compiling the audit report</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The Reservation Quality Auditing process ensures that reservations at a Marriott full-service hotel are accurate and meet high standards of quality. This process is crucial for maintaining customer satisfaction and optimizing revenue management.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Data entry errors leading to incorrect reservations</li><li><span class="bullet risk">▸</span> Communication breakdowns between teams affecting issue resolution</li><li><span class="bullet risk">▸</span> Inaccurate identification of complex issues during the review process</li><li><span class="bullet risk">▸</span> Delays in archiving and managing reports</li><li><span class="bullet risk">▸</span> Miscommunication with stakeholders regarding the audit report</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../revenue-management/reservations/rm-rv-06/"><span>◀</span><div><span class="prev-lbl">Previous</span>CRS-PMS Synchronisation</div></a>
+  <a href="../../../revenue-management/reservations/rm-rv-08/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Long-Stay &amp; Extended Stay Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; RM-RV-07 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
