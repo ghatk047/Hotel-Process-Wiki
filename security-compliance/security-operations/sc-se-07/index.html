@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SC-SE-07 — Security Incident Reporting | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🔒 Safety, Security & Compliance</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Safety, Security & Compliance</a><span class="sep">›</span><a href="../">Security Operations</a><span class="sep">›</span>Security Incident Reporting</div>
+
+<div class="page-header">
+  <div class="pid-badge">SC-SE-07</div>
+  <h1>Security Incident Reporting</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Security Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Knowcross HotSOS</span> <span class="tag">Amadeus Delphi.fdc</span> <span class="tag">Book4Time</span> <span class="tag">Microsoft Power BI</span> <span class="tag">Salesforce</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/sc-se-07.png" alt="SC-SE-07 — Security Incident Reporting process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Security Officer</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.3</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>General Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.2</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Front Desk Agent</td>
+          <td><span class="step-badge">2.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Incident</td>
+          <td>Security Officer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Observation of suspicious activity or breach detection</td>
+          <td>Incident report form</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>False positives can lead to unnecessary investigations.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Notify Management</td>
+          <td>General Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Incident report form</td>
+          <td>Acknowledgment of receipt</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delays in communication can escalate the situation.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Initiate Internal Investigation</td>
+          <td>Security Officer</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Incident report form</td>
+          <td>Investigation plan</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Limited access to surveillance footage can hinder the investigation.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Document Incident Details</td>
+          <td>Security Officer</td>
+          <td>Oracle OPERA Cloud, Knowcross HotSOS</td>
+          <td>Investigation findings</td>
+          <td>Detailed incident report</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Complex incidents require thorough documentation.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Report to Authorities</td>
+          <td>Security Officer</td>
+          <td>Oracle OPERA Cloud, Amadeus Delphi.fdc</td>
+          <td>Detailed incident report</td>
+          <td>Police report</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Coordination with local law enforcement can be challenging.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Notify Guests Affected</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Incident report form</td>
+          <td>Notification sent to affected guests</td>
+          <td>Less than 2 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Effective communication with guests is crucial.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review and Update Security Protocols</td>
+          <td>General Manager, Security Officer</td>
+          <td>Oracle OPERA Cloud, SAP S/4HANA</td>
+          <td>Detailed incident report</td>
+          <td>Updated security protocols</td>
+          <td>Less than 24 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Implementing changes without thorough review can lead to vulnerabilities.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Conduct After-Action Review</td>
+          <td>General Manager, Security Officer</td>
+          <td>Oracle OPERA Cloud, Workday HCM</td>
+          <td>Incident report form, updated security protocols</td>
+          <td>After-action review report</td>
+          <td>Less than 48 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lack of participation from all stakeholders can affect the effectiveness of the review.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Archive Incident Report</td>
+          <td>Security Officer</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>After-action review report</td>
+          <td>Archived incident report</td>
+          <td>Less than 1 week</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring data security and compliance during archiving.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Review and Update Training Programs</td>
+          <td>General Manager, Security Officer</td>
+          <td>Oracle OPERA Cloud, Salesforce</td>
+          <td>After-action review report</td>
+          <td>Updated training programs</td>
+          <td>Less than 1 month</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Training programs must be relevant and engaging to staff.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> SC-SE-07</li>
+          <li><span class="bullet">Domain</span> Safety, Security &amp; Compliance</li>
+          <li><span class="bullet">Group</span> Security Operations</li>
+          <li><span class="bullet">Process</span> Security Incident Reporting</li>
+          <li><span class="bullet">Trigger</span> Detection of a security breach or suspicious activity by any staff member, guest, or external party.</li>
+          <li><span class="bullet">Outcome</span> The incident is logged, investigated, reported to the appropriate authorities, and documented for future reference. The hotel's security protocols are reviewed and improved if necessary.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Incident identification within 2 minutes</li><li><span class="bullet">▸</span> Management notification within 5 minutes</li><li><span class="bullet">▸</span> Internal investigation initiation within 10 minutes</li><li><span class="bullet">▸</span> Detailed incident documentation within 30 minutes</li><li><span class="bullet">▸</span> Police report submission within 1 hour</li><li><span class="bullet">▸</span> Guest notification within 2 hours</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines how to report a security incident at a Marriott full-service hotel using Oracle OPERA Cloud PMS and other key systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> False positives leading to unnecessary investigations</li><li><span class="bullet risk">▸</span> Delays in communication affecting incident response time</li><li><span class="bullet risk">▸</span> Limited access to surveillance footage hindering the investigation</li><li><span class="bullet risk">▸</span> Complex incidents requiring thorough documentation</li><li><span class="bullet risk">▸</span> Coordination with local law enforcement being challenging</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../security-compliance/security-operations/sc-se-06/"><span>◀</span><div><span class="prev-lbl">Previous</span>Lost Property Management</div></a>
+  <a href="../../../security-compliance/security-operations/sc-se-08/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>VIP &amp; Celebrity Security Protocol</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; SC-SE-07 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
