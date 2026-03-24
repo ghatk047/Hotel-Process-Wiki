@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FM-RM-08 — Asset Register &amp; Lifecycle Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🔧 Facilities & Engineering</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Facilities & Engineering</a><span class="sep">›</span><a href="../">Reactive Maintenance & Work Orders</a><span class="sep">›</span>Asset Register &amp; Lifecycle Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">FM-RM-08</div>
+  <h1>Asset Register &amp; Lifecycle Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Reactive Maintenance & Work Orders</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Assa Abloy VingCard</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fm-rm-08.png" alt="FM-RM-08 — Asset Register &amp; Lifecycle Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Facilities Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">2.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">2.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Maintenance Technician</td>
+          <td><span class="step-badge">2.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Asset Identification</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Purchase Order or Work Order</td>
+          <td>Asset Record in Oracle OPERA Cloud</td>
+          <td>Less than 5 minutes per asset</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling discrepancies between purchase orders and actual assets received.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Asset Registration</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Asset Record in Oracle OPERA Cloud</td>
+          <td>Registered Asset in Oracle OPERA Cloud</td>
+          <td>Less than 3 minutes per asset</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring all necessary fields are correctly populated.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Asset Tagging</td>
+          <td>Facilities Manager</td>
+          <td>Assa Abloy VingCard</td>
+          <td>Registered Asset in Oracle OPERA Cloud</td>
+          <td>Tagged Asset</td>
+          <td>Less than 2 minutes per asset</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Physical tagging errors leading to misidentification.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Maintenance Request Creation</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Work Order from Maintenance Log</td>
+          <td>Maintenance Request in Oracle OPERA Cloud</td>
+          <td>Less than 4 minutes per request</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delays in creating work orders due to system downtime.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Maintenance Task Assignment</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Maintenance Request in Oracle OPERA Cloud</td>
+          <td>Assigned Maintenance Task in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes per task</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Overlooking critical tasks due to high volume.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Maintenance Execution</td>
+          <td>Maintenance Technician</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Assigned Maintenance Task in Oracle OPERA Cloud</td>
+          <td>Completed Maintenance Record in Oracle OPERA Cloud</td>
+          <td>Less than 15 minutes per task</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inconsistent maintenance schedules affecting guest experience.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Asset Condition Assessment</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Completed Maintenance Record in Oracle OPERA Cloud</td>
+          <td>Updated Asset Condition Report in Oracle OPERA Cloud</td>
+          <td>Less than 5 minutes per asset</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Neglecting thorough condition checks leading to unexpected failures.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Asset Decommissioning</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated Asset Condition Report in Oracle OPERA Cloud</td>
+          <td>Decommissioned Asset Record in Oracle OPERA Cloud</td>
+          <td>Less than 3 minutes per asset</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Proper disposal procedures not followed, causing environmental issues.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Asset Retirement</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Decommissioned Asset Record in Oracle OPERA Cloud</td>
+          <td>Retired Asset Record in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes per asset</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data integrity issues during retirement process.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FM-RM-08</li>
+          <li><span class="bullet">Domain</span> Facilities &amp; Engineering</li>
+          <li><span class="bullet">Group</span> Reactive Maintenance &amp; Work Orders</li>
+          <li><span class="bullet">Process</span> Asset Register &amp; Lifecycle Management</li>
+          <li><span class="bullet">Trigger</span> Initiated by a Facilities Manager upon identification of a new asset purchase or existing asset requiring maintenance.</li>
+          <li><span class="bullet">Outcome</span> A comprehensive asset register is maintained with updated information on all assets, ensuring efficient reactive maintenance and work order management.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes per asset for Asset Identification and Registration</li><li><span class="bullet">▸</span> Less than 4 minutes per request for Maintenance Request Creation</li><li><span class="bullet">▸</span> Less than 15 minutes per task for Maintenance Execution</li><li><span class="bullet">▸</span> Less than 3 minutes per asset for Decommissioning and Retirement</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The process ensures accurate tracking and management of hotel assets throughout their lifecycle, from procurement to decommissioning.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> System downtime affecting asset tracking and maintenance processes.</li><li><span class="bullet risk">▸</span> Inconsistent maintenance schedules leading to guest dissatisfaction.</li><li><span class="bullet risk">▸</span> Data integrity issues during the decommissioning process.</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../facilities/reactive-maintenance/fm-rm-07/"><span>◀</span><div><span class="prev-lbl">Previous</span>Capital Works &amp; Renovation Project Management</div></a>
+  <a href="../../../finance/accounting-finance/fn-ac-01/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Accounts Payable Processing</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FM-RM-08 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
