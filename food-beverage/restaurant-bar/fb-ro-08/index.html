@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB-RO-08 — Restaurant Closing &amp; Cash Reconciliation | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🍽️ Food & Beverage Operations</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Food & Beverage Operations</a><span class="sep">›</span><a href="../">Restaurant & Bar Operations</a><span class="sep">›</span>Restaurant Closing &amp; Cash Reconciliation</div>
+
+<div class="page-header">
+  <div class="pid-badge">FB-RO-08</div>
+  <h1>Restaurant Closing &amp; Cash Reconciliation</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Restaurant & Bar Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Oracle MICROS Simphony</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fb-ro-08.png" alt="FB-RO-08 — Restaurant Closing &amp; Cash Reconciliation process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Food &amp; Beverage Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#f59e0b"></span>Cashier</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.5</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Area Manager</td>
+          <td><span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Close Restaurant in Oracle OPERA Cloud</td>
+          <td>Food &amp; Beverage Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Restaurant operations data</td>
+          <td>Closed restaurant status in PMS</td>
+          <td>&lt; 5 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Technical issues with Oracle OPERA Cloud</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Run Cash Audit Report in IDeaS G3 RMS</td>
+          <td>Food &amp; Beverage Manager</td>
+          <td>IDeaS G3 RMS</td>
+          <td>Cash drawer data</td>
+          <td>Cash audit report</td>
+          <td>&lt; 10 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate cash counts</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Count Cash Drawer</td>
+          <td>Cashier</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Physical cash and coins</td>
+          <td>Cash count record</td>
+          <td>&lt; 3 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling of large amounts of cash</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Reconcile Cash Drawer with Report</td>
+          <td>Cashier</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Cash count record and cash audit report</td>
+          <td>Reconciliation report</td>
+          <td>&lt; 5 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Discrepancies between physical count and reports</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Adjust Cash Drawer if Necessary</td>
+          <td>Food &amp; Beverage Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Reconciliation report</td>
+          <td>Adjusted cash drawer record</td>
+          <td>&lt; 5 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling discrepancies and ensuring compliance</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Lock Cash Drawer</td>
+          <td>Cashier</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Adjusted cash drawer record</td>
+          <td>Locked cash drawer status</td>
+          <td>&lt; 2 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Physical security of cash</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Oracle OPERA Cloud with Final Totals</td>
+          <td>Food &amp; Beverage Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Final totals from reconciliation</td>
+          <td>Updated financial records in PMS</td>
+          <td>&lt; 5 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data entry errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Generate Daily Sales Report</td>
+          <td>Food &amp; Beverage Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Financial records and sales data</td>
+          <td>Daily sales report</td>
+          <td>&lt; 10 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Complexity in generating comprehensive reports</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Review and Approve Daily Sales Report</td>
+          <td>Area Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Daily sales report</td>
+          <td>Approved daily sales report</td>
+          <td>&lt; 10 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Reviewing large volumes of data</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Secure Cash Drawer and Report for Next Day</td>
+          <td>Cashier</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Locked cash drawer and approved report</td>
+          <td>Secured cash drawer and documented report</td>
+          <td>&lt; 5 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring proper documentation and security</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FB-RO-08</li>
+          <li><span class="bullet">Domain</span> Food &amp; Beverage Operations</li>
+          <li><span class="bullet">Group</span> Restaurant &amp; Bar Operations</li>
+          <li><span class="bullet">Process</span> Restaurant Closing &amp; Cash Reconciliation</li>
+          <li><span class="bullet">Trigger</span> The end of the business day when all dining services have concluded.</li>
+          <li><span class="bullet">Outcome</span> Successful completion ensures accurate financial records, secure cash handling, and adherence to operational protocols.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> &lt; 5 min for closing restaurant in Oracle OPERA Cloud</li><li><span class="bullet">▸</span> &lt; 10 min for running cash audit report in IDeaS G3 RMS</li><li><span class="bullet">▸</span> &lt; 3 min for counting cash drawer</li><li><span class="bullet">▸</span> &lt; 5 min for updating Oracle OPERA Cloud with final totals</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the steps for closing a restaurant and reconciling cash at a full-service Marriott hotel using Oracle OPERA Cloud PMS.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Technical issues with Oracle OPERA Cloud affecting restaurant closure and reconciliation</li><li><span class="bullet risk">▸</span> Inaccurate cash counts leading to discrepancies in financial records</li><li><span class="bullet risk">▸</span> Handling of large amounts of cash and ensuring physical security</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../food-beverage/restaurant-bar/fb-ro-07/"><span>◀</span><div><span class="prev-lbl">Previous</span>Breakfast Buffet Setup &amp; Management</div></a>
+  <a href="../../../food-beverage/banqueting-events/fb-bq-01/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Event Enquiry &amp; BEO Creation</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FB-RO-08 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
