@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT-DG-07 — CRM Data Quality &amp; Deduplication | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">💻 Technology & Systems</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Technology & Systems</a><span class="sep">›</span><a href="../">Digital Guest Experience</a><span class="sep">›</span>CRM Data Quality &amp; Deduplication</div>
+
+<div class="page-header">
+  <div class="pid-badge">IT-DG-07</div>
+  <h1>CRM Data Quality &amp; Deduplication</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Digital Guest Experience</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Marriott Bonvoy CRM</span> <span class="tag">Microsoft Power BI</span> <span class="tag">Knowcross HotSOS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/it-dg-07.png" alt="IT-DG-07 — CRM Data Quality &amp; Deduplication process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>IT Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">3.1</span> <span class="step-badge">3.4</span> <span class="step-badge">3.5</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>CRM Specialist</td>
+          <td><span class="step-badge">2.2</span> <span class="step-badge">2.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#eab308"></span>Executive Manager</td>
+          <td><span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Data Extraction from Oracle OPERA Cloud</td>
+          <td>IT Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest profile data</td>
+          <td>Extracted guest data file</td>
+          <td>Completion within 2 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data extraction errors due to system updates</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Data Integration with IDeaS G3 RMS</td>
+          <td>IT Manager</td>
+          <td>IDeaS G3 RMS</td>
+          <td>Extracted guest data file</td>
+          <td>Integrated guest data file</td>
+          <td>Completion within 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Integration conflicts with existing data structures</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Data Deduplication using SynXis CRS</td>
+          <td>IT Manager</td>
+          <td>SynXis CRS</td>
+          <td>Integrated guest data file</td>
+          <td>Deduplicated guest data file</td>
+          <td>Completion within 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>High volume of duplicate entries</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Data Validation with Marriott Bonvoy CRM</td>
+          <td>CRM Specialist</td>
+          <td>Marriott Bonvoy CRM</td>
+          <td>Deduplicated guest data file</td>
+          <td>Validated guest data file</td>
+          <td>Completion within 2 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Manual validation errors due to complex data rules</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Data Enrichment using Book4Time</td>
+          <td>CRM Specialist</td>
+          <td>Book4Time</td>
+          <td>Validated guest data file</td>
+          <td>Enriched guest data file</td>
+          <td>Completion within 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate booking data affecting enrichment</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Data Upload to Oracle MICROS Simphony</td>
+          <td>IT Manager</td>
+          <td>Oracle MICROS Simphony</td>
+          <td>Enriched guest data file</td>
+          <td>Uploaded guest data</td>
+          <td>Completion within 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System compatibility issues during upload</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Data Reporting with Microsoft Power BI</td>
+          <td>IT Manager</td>
+          <td>Microsoft Power BI</td>
+          <td>Uploaded guest data</td>
+          <td>CRM Data Quality Report</td>
+          <td>Completion within 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Slow performance affecting report generation</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Review and Approval by Executive Team</td>
+          <td>Executive Manager</td>
+          <td>Email</td>
+          <td>CRM Data Quality Report</td>
+          <td>Approved CRM Data Quality Report</td>
+          <td>Completion within 24 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Disagreement on data quality metrics</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Data Deployment to Production Systems</td>
+          <td>IT Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS, SynXis CRS, Marriott Bonvoy CRM</td>
+          <td>Approved CRM Data Quality Report</td>
+          <td>Deployed guest data across systems</td>
+          <td>Completion within 2 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System downtime affecting deployment</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Post-Deployment Monitoring with Knowcross HotSOS</td>
+          <td>IT Manager</td>
+          <td>Knowcross HotSOS</td>
+          <td>Deployed guest data</td>
+          <td>Monitoring report</td>
+          <td>Completion within 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>False positives in monitoring alerts</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> IT-DG-07</li>
+          <li><span class="bullet">Domain</span> Technology &amp; Systems</li>
+          <li><span class="bullet">Group</span> Digital Guest Experience</li>
+          <li><span class="bullet">Process</span> CRM Data Quality &amp; Deduplication</li>
+          <li><span class="bullet">Trigger</span> Monthly review of CRM data quality metrics identified through Knowcross HotSOS system alerts.</li>
+          <li><span class="bullet">Outcome</span> A clean, accurate, and deduplicated CRM database that supports targeted marketing campaigns and personalized guest experiences.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Data extraction within 2 hours</li><li><span class="bullet">▸</span> Data integration within 1 hour</li><li><span class="bullet">▸</span> Data deduplication within 30 minutes</li><li><span class="bullet">▸</span> CRM data validation completion within 2 hours</li><li><span class="bullet">▸</span> Data enrichment within 1 hour</li><li><span class="bullet">▸</span> Data deployment within 2 hours</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">Ensures high-quality and deduplicated CRM data to enhance guest experience and operational efficiency at a Marriott full-service hotel.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> System compatibility issues during data extraction and upload</li><li><span class="bullet risk">▸</span> Manual validation errors affecting data accuracy</li><li><span class="bullet risk">▸</span> Disagreements on data quality metrics among executive team</li><li><span class="bullet risk">▸</span> False positives in monitoring alerts leading to unnecessary interventions</li><li><span class="bullet risk">▸</span> Inaccurate booking data impacting enrichment processes</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../technology/digital-guest/it-dg-06/"><span>◀</span><div><span class="prev-lbl">Previous</span>Guest Feedback Platform Management</div></a>
+  <a href="../../../technology/digital-guest/it-dg-08/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Data Analytics &amp; BI Reporting</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; IT-DG-07 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
