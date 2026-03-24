@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-NS-05 — Cash Handling &amp; Float Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Night Audit & Front Desk Operations</a><span class="sep">›</span>Cash Handling &amp; Float Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-NS-05</div>
+  <h1>Cash Handling &amp; Float Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Night Audit & Front Desk Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-ns-05.png" alt="FO-NS-05 — Cash Handling &amp; Float Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Front Desk Supervisor</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">3.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#f59e0b"></span>Revenue Manager</td>
+          <td><span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.2</span> <span class="step-badge">3.5</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Count Cash in Registers</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Physical cash from registers</td>
+          <td>Cash count report</td>
+          <td>Less than 5 minutes per register</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling large volumes of cash efficiently</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Cash Count with Supervisor</td>
+          <td>Front Desk Supervisor</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Cash count report from Front Desk Agent</td>
+          <td>Verified cash count report</td>
+          <td>Less than 3 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring accuracy in cash counts</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Enter Cash Count into Oracle OPERA Cloud</td>
+          <td>Front Desk Supervisor</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Verified cash count report</td>
+          <td>Updated PMS with cash balances</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data entry errors in the PMS</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Adjust Float if Necessary</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated PMS with cash balances</td>
+          <td>Adjusted float amount</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Determining the correct float adjustment</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Document Float Adjustments</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Adjusted float amount</td>
+          <td>Float adjustment documentation</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Maintaining accurate records of float adjustments</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review Night Audit Report</td>
+          <td>Front Desk Supervisor</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Night audit report</td>
+          <td>Approved night audit report</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Identifying discrepancies in the night audit</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Resolve Any Discrepancies</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Approved night audit report with discrepancies</td>
+          <td>Corrected night audit report</td>
+          <td>Less than 30 minutes per discrepancy</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Efficiently resolving cash handling issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Finalize Cash Handling Record</td>
+          <td>Front Desk Supervisor</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Corrected night audit report</td>
+          <td>Finalized cash handling record</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Completing the final documentation</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Secure Cash and Registers</td>
+          <td>Front Desk Agent</td>
+          <td>None</td>
+          <td>Finalized cash handling record</td>
+          <td>Secured cash and registers</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring physical security of cash</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Report to Management</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Finalized cash handling record</td>
+          <td>Management report</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Communicating cash handling results to management</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-NS-05</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Night Audit &amp; Front Desk Operations</li>
+          <li><span class="bullet">Process</span> Cash Handling &amp; Float Management</li>
+          <li><span class="bullet">Trigger</span> End of business day</li>
+          <li><span class="bullet">Outcome</span> Accurate cash reconciliation, updated Oracle OPERA Cloud PMS with correct balances, and documented float adjustments.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Cash count accuracy rate &gt; 98%</li><li><span class="bullet">▸</span> Time to complete cash handling &lt; 1 hour</li><li><span class="bullet">▸</span> Float adjustment frequency &lt; once per day</li><li><span class="bullet">▸</span> Night audit discrepancy resolution time &lt; 30 minutes</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The FO-NS-05 process ensures proper cash handling and float management at a full-service Marriott hotel, maintaining financial accuracy and operational efficiency.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Incorrect cash counts leading to financial discrepancies</li><li><span class="bullet risk">▸</span> Security breaches of physical cash and registers</li><li><span class="bullet risk">▸</span> Data entry errors in Oracle OPERA Cloud affecting financial records</li><li><span class="bullet risk">▸</span> Inefficient float management causing operational delays</li><li><span class="bullet risk">▸</span> Non-compliance with Marriott's cash handling policies</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/night-audit/fo-ns-04/"><span>◀</span><div><span class="prev-lbl">Previous</span>Rate &amp; Package Posting</div></a>
+  <a href="../../../front-office/night-audit/fo-ns-06/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Foreign Currency Exchange</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-NS-05 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
