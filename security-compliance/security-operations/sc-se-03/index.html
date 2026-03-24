@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SC-SE-03 — Perimeter &amp; Car Park Security | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🔒 Safety, Security & Compliance</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Safety, Security & Compliance</a><span class="sep">›</span><a href="../">Security Operations</a><span class="sep">›</span>Perimeter &amp; Car Park Security</div>
+
+<div class="page-header">
+  <div class="pid-badge">SC-SE-03</div>
+  <h1>Perimeter &amp; Car Park Security</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Security Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Assa Abloy VingCard</span> <span class="tag">Honeywell INNCOM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/sc-se-03.png" alt="SC-SE-03 — Perimeter &amp; Car Park Security process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Security Officer</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Security Manager</td>
+          <td><span class="step-badge">2.2</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>General Manager</td>
+          <td><span class="step-badge">3.5</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Monitor Security Cameras</td>
+          <td>Security Officer</td>
+          <td>Assa Abloy VingCard, Honeywell INNCOM</td>
+          <td>Live video feed from perimeter and car park cameras</td>
+          <td>Incident report</td>
+          <td>Response time less than 2 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>High volume of camera feeds to monitor</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Identify Incident</td>
+          <td>Security Officer</td>
+          <td>Oracle OPERA Cloud, Assa Abloy VingCard</td>
+          <td>Incident report from Step 1.1</td>
+          <td>Incident classification and priority</td>
+          <td>Classification within 5 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Accurate identification of incidents in real-time</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Notify Security Team</td>
+          <td>Security Officer</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Incident classification and priority from Step 1.2</td>
+          <td>Alert to security team</td>
+          <td>Notification within 1 minute</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Effective communication with the security team</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Dispatch Security Personnel</td>
+          <td>Security Manager</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Alert from Step 2.1</td>
+          <td>Dispatch order to security personnel</td>
+          <td>Dispatch within 2 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Timely dispatch of security personnel</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Assess Incident</td>
+          <td>Security Officer</td>
+          <td>Oracle OPERA Cloud, Assa Abloy VingCard</td>
+          <td>Incident report from Step 1.1 and dispatch order from Step 2.2</td>
+          <td>Incident assessment report</td>
+          <td>Assessment within 5 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Detailed incident assessment</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Contain Incident</td>
+          <td>Security Officer</td>
+          <td>Oracle OPERA Cloud, Assa Abloy VingCard</td>
+          <td>Incident assessment report from Step 2.3</td>
+          <td>Containment actions taken</td>
+          <td>Containment within 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Effective containment of the incident</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Report Incident to Authorities</td>
+          <td>Security Manager</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Incident report from Step 1.1 and containment actions from Step 3.1</td>
+          <td>Police report</td>
+          <td>Report within 20 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Accurate reporting to authorities</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Review Incident</td>
+          <td>Security Manager</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Incident report from Step 1.1 and police report from Step 3.2</td>
+          <td>Incident review report</td>
+          <td>Review within 24 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Comprehensive incident review</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Update Security Protocols</td>
+          <td>Security Manager</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Incident review report from Step 3.3</td>
+          <td>Updated security protocols</td>
+          <td>Protocols updated within 7 days</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Effective protocol updates</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Notify Stakeholders</td>
+          <td>General Manager</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Incident review report from Step 3.3 and updated protocols from Step 3.4</td>
+          <td>Stakeholder notification</td>
+          <td>Notification within 2 days</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Effective communication with stakeholders</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> SC-SE-03</li>
+          <li><span class="bullet">Domain</span> Safety, Security &amp; Compliance</li>
+          <li><span class="bullet">Group</span> Security Operations</li>
+          <li><span class="bullet">Process</span> Perimeter &amp; Car Park Security</li>
+          <li><span class="bullet">Trigger</span> Detection of unauthorized access attempt to the hotel's perimeter or car park</li>
+          <li><span class="bullet">Outcome</span> Successful identification, containment, and resolution of the security incident with minimal disruption to hotel operations.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Response time less than 2 minutes</li><li><span class="bullet">▸</span> Classification within 5 minutes</li><li><span class="bullet">▸</span> Dispatch within 2 minutes</li><li><span class="bullet">▸</span> Containment within 10 minutes</li><li><span class="bullet">▸</span> Report within 20 minutes</li><li><span class="bullet">▸</span> Protocols updated within 7 days</li><li><span class="bullet">▸</span> Notification within 2 days</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">A structured process document for managing perimeter and car park security at a Marriott full-service hotel using Oracle OPERA Cloud PMS.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inadequate camera coverage leading to missed incidents</li><li><span class="bullet risk">▸</span> Delayed response from security team due to communication issues</li><li><span class="bullet risk">▸</span> Failure to accurately assess the incident severity</li><li><span class="bullet risk">▸</span> Difficulty in effectively containing the incident</li><li><span class="bullet risk">▸</span> Errors in reporting to authorities affecting legal implications</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../security-compliance/security-operations/sc-se-02/"><span>◀</span><div><span class="prev-lbl">Previous</span>CCTV Monitoring &amp; Incident Detection</div></a>
+  <a href="../../../security-compliance/security-operations/sc-se-04/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Fire Emergency Response &amp; Evacuation</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; SC-SE-03 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
