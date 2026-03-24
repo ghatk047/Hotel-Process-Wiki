@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM-CH-07 — Channel Performance Analysis | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">📈 Revenue Management & Distribution</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Revenue Management & Distribution</a><span class="sep">›</span><a href="../">Channel & Distribution Management</a><span class="sep">›</span>Channel Performance Analysis</div>
+
+<div class="page-header">
+  <div class="pid-badge">RM-CH-07</div>
+  <h1>Channel Performance Analysis</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Channel & Distribution Management</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/rm-ch-07.png" alt="RM-CH-07 — Channel Performance Analysis process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.4</span> <span class="step-badge">3.5</span> <span class="step-badge">3.6</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Property Manager</td>
+          <td><span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Data Extraction from Oracle OPERA Cloud</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Reservation data</td>
+          <td>Extracted reservation data report</td>
+          <td>Less than 30 minutes for extraction</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data extraction errors due to system updates</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Data Integration with IDeaS G3 RMS</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS</td>
+          <td>Extracted reservation data report</td>
+          <td>Integrated data in IDeaS G3 RMS</td>
+          <td>Less than 1 hour for integration</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Integration issues with new system versions</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Channel Performance Analysis</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS</td>
+          <td>Integrated data in IDeaS G3 RMS</td>
+          <td>Channel performance analysis report</td>
+          <td>Less than 2 hours for analysis</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Complexity of analyzing multiple channels</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Review and Interpretation</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS</td>
+          <td>Channel performance analysis report</td>
+          <td>Interpreted insights document</td>
+          <td>Less than 1 hour for review</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Understanding complex data trends</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Strategic Recommendations</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS</td>
+          <td>Interpreted insights document</td>
+          <td>Strategic recommendations report</td>
+          <td>Less than 2 hours for recommendations</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Balancing different revenue sources</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Implementation Plan Development</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS</td>
+          <td>Strategic recommendations report</td>
+          <td>Implementation plan document</td>
+          <td>Less than 1 hour for planning</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Resource allocation and prioritization</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Approval Process</td>
+          <td>Property Manager</td>
+          <td>None</td>
+          <td>Implementation plan document</td>
+          <td>Approved implementation plan</td>
+          <td>Less than 1 day for approval</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Approval delays due to conflicting priorities</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Execution of Implementation Plan</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Approved implementation plan</td>
+          <td>Executed changes in systems</td>
+          <td>Less than 2 days for execution</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>System downtime during updates</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Monitoring and Adjustment</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Executed changes in systems</td>
+          <td>Continuous monitoring and adjustment report</td>
+          <td>Daily monitoring with adjustments as needed</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Real-time data analysis for quick adjustments</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.6</td>
+          <td>Reporting and Documentation</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Continuous monitoring and adjustment report</td>
+          <td>Final channel performance analysis document</td>
+          <td>Less than 1 week for reporting</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Documentation errors due to complex data</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> RM-CH-07</li>
+          <li><span class="bullet">Domain</span> Revenue Management &amp; Distribution</li>
+          <li><span class="bullet">Group</span> Channel &amp; Distribution Management</li>
+          <li><span class="bullet">Process</span> Channel Performance Analysis</li>
+          <li><span class="bullet">Trigger</span> Monthly review of channel performance data</li>
+          <li><span class="bullet">Outcome</span> Improved revenue management decisions based on analyzed channel performance metrics</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 30 minutes for data extraction</li><li><span class="bullet">▸</span> Less than 1 hour for integration</li><li><span class="bullet">▸</span> Less than 2 hours for analysis</li><li><span class="bullet">▸</span> Less than 1 hour for review</li><li><span class="bullet">▸</span> Less than 2 days for execution</li><li><span class="bullet">▸</span> Daily monitoring with adjustments as needed</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process involves analyzing channel performance to optimize revenue management strategies at a full-service Marriott hotel using Oracle OPERA Cloud PMS and other key systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Data extraction errors due to system updates</li><li><span class="bullet risk">▸</span> Integration issues with new system versions</li><li><span class="bullet risk">▸</span> Understanding complex data trends</li><li><span class="bullet risk">▸</span> Balancing different revenue sources</li><li><span class="bullet risk">▸</span> System downtime during updates</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../revenue-management/channel-distribution/rm-ch-06/"><span>◀</span><div><span class="prev-lbl">Previous</span>Corporate Rate Loading &amp; Management</div></a>
+  <a href="../../../revenue-management/channel-distribution/rm-ch-08/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Rate Parity Monitoring &amp; Enforcement</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; RM-CH-07 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
