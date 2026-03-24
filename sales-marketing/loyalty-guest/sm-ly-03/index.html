@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SM-LY-03 — Points Redemption &amp; Award Fulfilment | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🎯 Sales, Marketing & Loyalty</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Sales, Marketing & Loyalty</a><span class="sep">›</span><a href="../">Loyalty & Guest Relationship</a><span class="sep">›</span>Points Redemption &amp; Award Fulfilment</div>
+
+<div class="page-header">
+  <div class="pid-badge">SM-LY-03</div>
+  <h1>Points Redemption &amp; Award Fulfilment</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Loyalty & Guest Relationship</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/sm-ly-03.png" alt="SM-LY-03 — Points Redemption &amp; Award Fulfilment process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Redemption Request Received</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest request through Marriott Bonvoy app or website</td>
+          <td>Redemption request logged in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes to log the request</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling multiple redemption requests simultaneously</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Redemption Eligibility</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Redemption request details</td>
+          <td>Eligibility verification report</td>
+          <td>Less than 5 minutes to verify eligibility</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Complexity in verifying points and award availability</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Approve Redemption Request</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Eligibility verification report</td>
+          <td>Approved redemption request in Oracle OPERA Cloud</td>
+          <td>Less than 1 minute to approve the request</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Overlooking approval requirements</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update Hotel Inventory</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Approved redemption request</td>
+          <td>Updated inventory status in Oracle OPERA Cloud and IDeaS G3 RMS</td>
+          <td>Less than 2 minutes to update inventory</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring accurate inventory tracking</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Allocate Points for Redemption</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Approved redemption request and updated inventory status</td>
+          <td>Points allocated in Oracle OPERA Cloud and Marriott Bonvoy CRM</td>
+          <td>Less than 1 minute to allocate points</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect point allocation</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Notify Guest of Redemption Status</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Allocated points and updated inventory status</td>
+          <td>Redemption confirmation sent to guest via email or app</td>
+          <td>Less than 1 minute to send notification</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring timely communication with guests</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Prepare Award for Fulfillment</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Redemption confirmation and award details</td>
+          <td>Award prepared for guest (e.g., room upgrade, dining credit)</td>
+          <td>Less than 5 minutes to prepare the award</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling special requests or last-minute changes</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Fulfill Award to Guest</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Prepared award and guest details</td>
+          <td>Award fulfilled and recorded in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes to fulfill the award</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring smooth transaction flow</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Update Loyalty Program Records</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Fulfilled award details</td>
+          <td>Updated loyalty program records in Oracle OPERA Cloud and Marriott Bonvoy CRM</td>
+          <td>Less than 1 minute to update records</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Maintaining accurate loyalty data</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> SM-LY-03</li>
+          <li><span class="bullet">Domain</span> Sales, Marketing &amp; Loyalty</li>
+          <li><span class="bullet">Group</span> Loyalty &amp; Guest Relationship</li>
+          <li><span class="bullet">Process</span> Points Redemption &amp; Award Fulfilment</li>
+          <li><span class="bullet">Trigger</span> A guest initiates the redemption of loyalty points through the Marriott Bonvoy app, website, or directly with a hotel staff member.</li>
+          <li><span class="bullet">Outcome</span> The guest receives the requested award (e.g., room upgrade, dining credit) in exchange for their loyalty points.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Redemption request logged in Oracle OPERA Cloud within 2 minutes</li><li><span class="bullet">▸</span> Eligibility verification completed within 5 minutes</li><li><span class="bullet">▸</span> Award prepared and fulfilled within 7 minutes</li><li><span class="bullet">▸</span> Loyalty program records updated within 1 minute</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines how Marriott Bonvoy loyalty points are redeemed and awards are fulfilled at a full-service Marriott hotel.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Incorrect redemption eligibility verification leading to guest dissatisfaction</li><li><span class="bullet risk">▸</span> Inventory mismanagement causing overbooking or underutilization</li><li><span class="bullet risk">▸</span> Communication delays between systems resulting in award fulfillment issues</li><li><span class="bullet risk">▸</span> Data entry errors affecting loyalty point allocation and tracking</li><li><span class="bullet risk">▸</span> System downtime impacting the speed of redemption processing</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../sales-marketing/loyalty-guest/sm-ly-02/"><span>◀</span><div><span class="prev-lbl">Previous</span>Points Accrual &amp; Posting Management</div></a>
+  <a href="../../../sales-marketing/loyalty-guest/sm-ly-04/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Elite Status Recognition &amp; Benefits</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; SM-LY-03 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
