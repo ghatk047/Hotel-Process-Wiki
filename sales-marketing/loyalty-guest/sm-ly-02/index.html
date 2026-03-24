@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SM-LY-02 — Points Accrual &amp; Posting Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🎯 Sales, Marketing & Loyalty</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Sales, Marketing & Loyalty</a><span class="sep">›</span><a href="../">Loyalty & Guest Relationship</a><span class="sep">›</span>Points Accrual &amp; Posting Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">SM-LY-02</div>
+  <h1>Points Accrual &amp; Posting Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Loyalty & Guest Relationship</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Marriott Bonvoy CRM</span> <span class="tag">IDeaS G3 RMS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/sm-ly-02.png" alt="SM-LY-02 — Points Accrual &amp; Posting Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">2.1</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#4ade80"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.2</span> <span class="step-badge">3.2</span> <span class="step-badge">3.4</span> <span class="step-badge">3.5</span> <span class="step-badge">3.6</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">3.1</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Guest Loyalty Status</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest check-in details</td>
+          <td>Loyalty status and points balance</td>
+          <td>Less than 2 minutes per transaction</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Incorrect loyalty status identification can lead to inaccurate points accrual.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Calculate Points for Transaction</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Transaction details (room rate, dining charges, spa services)</td>
+          <td>Points calculation based on loyalty program rules</td>
+          <td>Less than 1 minute per transaction</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Complex point accrual rules can lead to manual errors.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Post Points to Loyalty System</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Points calculation and guest details</td>
+          <td>Updated loyalty account with points</td>
+          <td>Less than 1 minute per transaction</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System connectivity issues can delay points posting.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Verify Points Posting</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Guest account details</td>
+          <td>Verification of points posted to loyalty account</td>
+          <td>Less than 2 minutes per transaction</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Manual verification can be time-consuming and prone to errors.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Generate Loyalty Statement</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Guest account details</td>
+          <td>Loyalty statement with points summary</td>
+          <td>Less than 1 minute per transaction</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate data can lead to incorrect loyalty statements.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Send Loyalty Statement via Email</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Loyalty statement and guest contact details</td>
+          <td>Email with loyalty statement sent to guest</td>
+          <td>Less than 1 minute per transaction</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Email delivery failures can result in missed communication opportunities.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Guest Profile with Points Information</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Guest account details and points information</td>
+          <td>Updated guest profile in loyalty system</td>
+          <td>Less than 1 minute per transaction</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Outdated guest profiles can lead to missed opportunities for upselling.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Monitor Points Accrual and Posting</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Daily transaction logs</td>
+          <td>Report on points accrual and posting accuracy</td>
+          <td>Less than 30 minutes per day</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inconsistent data entry can affect overall loyalty program performance.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Adjust Points if Necessary</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Audit report and transaction details</td>
+          <td>Adjusted points in guest accounts</td>
+          <td>Less than 1 minute per adjustment</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Manual adjustments can be time-consuming and error-prone.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.6</td>
+          <td>Closeout Process Review</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Daily transaction logs and audit reports</td>
+          <td>Review of points accrual and posting process for improvements</td>
+          <td>Less than 1 hour per day</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Continuous improvement requires ongoing monitoring and feedback.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> SM-LY-02</li>
+          <li><span class="bullet">Domain</span> Sales, Marketing &amp; Loyalty</li>
+          <li><span class="bullet">Group</span> Loyalty &amp; Guest Relationship</li>
+          <li><span class="bullet">Process</span> Points Accrual &amp; Posting Management</li>
+          <li><span class="bullet">Trigger</span> Guest check-in/check-out, reservation confirmation, room service orders, spa treatments, dining transactions</li>
+          <li><span class="bullet">Outcome</span> Accurate points accrual and posting to guest accounts in Marriott Bonvoy CRM system.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 2 minutes per transaction for loyalty status identification and points calculation</li><li><span class="bullet">▸</span> Less than 1 minute per transaction for posting points to the loyalty system</li><li><span class="bullet">▸</span> Less than 1 minute per transaction for generating and sending loyalty statements</li><li><span class="bullet">▸</span> Less than 30 minutes per day for monitoring points accrual and posting</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">Process for managing points accrual and posting in Marriott Bonvoy loyalty program at a full-service hotel.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate data entry leading to incorrect points accrual</li><li><span class="bullet risk">▸</span> System connectivity issues affecting points posting</li><li><span class="bullet risk">▸</span> Manual verification errors resulting in inaccurate loyalty statements</li><li><span class="bullet risk">▸</span> Email delivery failures causing missed communication opportunities</li><li><span class="bullet risk">▸</span> Outdated guest profiles impacting upselling opportunities</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../sales-marketing/loyalty-guest/sm-ly-01/"><span>◀</span><div><span class="prev-lbl">Previous</span>Marriott Bonvoy Enrolment &amp; Onboarding</div></a>
+  <a href="../../../sales-marketing/loyalty-guest/sm-ly-03/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Points Redemption &amp; Award Fulfilment</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; SM-LY-02 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
