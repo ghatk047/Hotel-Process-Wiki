@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB-KT-01 — Menu Engineering &amp; Recipe Costing | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🍽️ Food & Beverage Operations</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Food & Beverage Operations</a><span class="sep">›</span><a href="../">Kitchen & Culinary Operations</a><span class="sep">›</span>Menu Engineering &amp; Recipe Costing</div>
+
+<div class="page-header">
+  <div class="pid-badge">FB-KT-01</div>
+  <h1>Menu Engineering &amp; Recipe Costing</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Kitchen & Culinary Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">Microsoft Power BI</span> <span class="tag">Book4Time</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fb-kt-01.png" alt="FB-KT-01 — Menu Engineering &amp; Recipe Costing process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Executive Chef</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Culinary Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.2</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Sous Chef</td>
+          <td><span class="step-badge">2.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#8b5cf6"></span>Kitchen Manager</td>
+          <td><span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Menu Item Proposal</td>
+          <td>Executive Chef</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>New menu item proposal with concept and initial cost estimate</td>
+          <td>Proposed menu item details in Oracle OPERA Cloud</td>
+          <td>Less than 1 hour to input data</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Accurate costing of ingredients</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Cost Analysis</td>
+          <td>Culinary Manager</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>Proposed menu item details from Oracle OPERA Cloud</td>
+          <td>Detailed cost analysis report</td>
+          <td>Less than 2 hours to complete analysis</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ingredient price volatility</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Review and Approval</td>
+          <td>Executive Chef</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Detailed cost analysis report</td>
+          <td>Approved menu item with final costs</td>
+          <td>Less than 1 hour to review and approve</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Budget constraints</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Recipe Development</td>
+          <td>Sous Chef</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Approved menu item with final costs</td>
+          <td>Developed recipe with ingredient quantities and preparation methods</td>
+          <td>Less than 4 hours to develop recipe</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ingredient availability</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Cost Verification</td>
+          <td>Culinary Manager</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>Developed recipe with ingredient quantities and preparation methods</td>
+          <td>Verified cost report</td>
+          <td>Less than 2 hours to verify costs</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Price discrepancies</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Menu Item Implementation</td>
+          <td>Executive Chef</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Verified cost report</td>
+          <td>Implemented menu item in Oracle OPERA Cloud PMS</td>
+          <td>Less than 1 hour to implement</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System integration issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Training for Staff</td>
+          <td>Kitchen Manager</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Implemented menu item in Oracle OPERA Cloud PMS</td>
+          <td>Trained kitchen staff on new menu item preparation</td>
+          <td>Less than 2 hours to train staff</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Staff resistance to change</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Monitoring and Feedback</td>
+          <td>Culinary Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Trained kitchen staff on new menu item preparation</td>
+          <td>Menu performance report with feedback</td>
+          <td>Daily monitoring for first week, then weekly</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Sales performance</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Adjustments and Optimization</td>
+          <td>Executive Chef</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Menu performance report with feedback</td>
+          <td>Optimized menu item based on feedback</td>
+          <td>Less than 1 hour to review and adjust</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Customer satisfaction</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Final Implementation</td>
+          <td>Kitchen Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Optimized menu item based on feedback</td>
+          <td>Finalized implementation of optimized menu item in Oracle OPERA Cloud PMS</td>
+          <td>Less than 1 hour to finalize</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System downtime</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FB-KT-01</li>
+          <li><span class="bullet">Domain</span> Food &amp; Beverage Operations</li>
+          <li><span class="bullet">Group</span> Kitchen &amp; Culinary Operations</li>
+          <li><span class="bullet">Process</span> Menu Engineering &amp; Recipe Costing</li>
+          <li><span class="bullet">Trigger</span> New menu item request from culinary team</li>
+          <li><span class="bullet">Outcome</span> Approved menu item with accurate recipe costs, ready for implementation in Oracle OPERA Cloud PMS.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 1 hour to input data in Oracle OPERA Cloud</li><li><span class="bullet">▸</span> Less than 2 hours to complete cost analysis</li><li><span class="bullet">▸</span> Less than 1 hour to review and approve menu item</li><li><span class="bullet">▸</span> Daily monitoring for first week, then weekly menu performance report</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">Menu Engineering &amp; Recipe Costing process at a Marriott full-service hotel involves developing and costing new menu items to ensure profitability while maintaining quality.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Ingredient price volatility leading to inaccurate costing</li><li><span class="bullet risk">▸</span> Budget constraints affecting approval of new menu items</li><li><span class="bullet risk">▸</span> Staff resistance to change during training sessions</li><li><span class="bullet risk">▸</span> Sales performance below expectations due to new menu item introduction</li><li><span class="bullet risk">▸</span> System downtime impacting final implementation of optimized menu item</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../food-beverage/banqueting-events/fb-bq-08/"><span>◀</span><div><span class="prev-lbl">Previous</span>Group Dining &amp; Special Menus</div></a>
+  <a href="../../../food-beverage/kitchen-culinary/fb-kt-02/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Food Purchasing &amp; Receiving</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FB-KT-01 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
