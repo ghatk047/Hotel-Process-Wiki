@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SM-FR-03 — Franchise Fee Calculation &amp; Remittance | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🎯 Sales, Marketing & Loyalty</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Sales, Marketing & Loyalty</a><span class="sep">›</span><a href="../">Franchise & Brand Management</a><span class="sep">›</span>Franchise Fee Calculation &amp; Remittance</div>
+
+<div class="page-header">
+  <div class="pid-badge">SM-FR-03</div>
+  <h1>Franchise Fee Calculation &amp; Remittance</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Franchise & Brand Management</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">SAP S/4HANA</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/sm-fr-03.png" alt="SM-FR-03 — Franchise Fee Calculation &amp; Remittance process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Accountant</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Financial Report</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Monthly financial report from Oracle OPERA Cloud</td>
+          <td>Verified financial report</td>
+          <td>Less than 2 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate data entry leading to incorrect calculations</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Extract Revenue Data</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Verified financial report</td>
+          <td>Extracted revenue data</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data extraction errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Calculate Franchise Fee</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Extracted revenue data</td>
+          <td>Calculated franchise fee</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect formula application</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Prepare Payment Document</td>
+          <td>Accountant</td>
+          <td>SAP S/4HANA</td>
+          <td>Calculated franchise fee</td>
+          <td>Payment document</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect payment amount</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Review Payment Document</td>
+          <td>Accountant</td>
+          <td>SAP S/4HANA</td>
+          <td>Payment document</td>
+          <td>Approved payment document</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>No specific pain point</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Initiate Payment Process</td>
+          <td>Accountant</td>
+          <td>SAP S/4HANA</td>
+          <td>Approved payment document</td>
+          <td>Payment initiated</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Payment processing delays</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Confirm Payment Receipt</td>
+          <td>Accountant</td>
+          <td>SAP S/4HANA</td>
+          <td>Payment initiated</td>
+          <td>Payment receipt confirmation</td>
+          <td>Less than 2 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>No specific pain point</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Financial Records</td>
+          <td>Accountant</td>
+          <td>SAP S/4HANA</td>
+          <td>Payment receipt confirmation</td>
+          <td>Updated financial records</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data entry errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Generate Payment Report</td>
+          <td>Accountant</td>
+          <td>SAP S/4HANA</td>
+          <td>Updated financial records</td>
+          <td>Payment report</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Report generation errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Archive Payment Document</td>
+          <td>Accountant</td>
+          <td>SAP S/4HANA</td>
+          <td>Payment report</td>
+          <td>Archived payment document</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Document storage issues</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> SM-FR-03</li>
+          <li><span class="bullet">Domain</span> Sales, Marketing &amp; Loyalty</li>
+          <li><span class="bullet">Group</span> Franchise &amp; Brand Management</li>
+          <li><span class="bullet">Process</span> Franchise Fee Calculation &amp; Remittance</li>
+          <li><span class="bullet">Trigger</span> Monthly financial report generation</li>
+          <li><span class="bullet">Outcome</span> Franchise fee calculated and paid to Marriott International on time</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 2 hours for receiving and verifying financial report</li><li><span class="bullet">▸</span> Less than 30 minutes for extracting revenue data</li><li><span class="bullet">▸</span> Less than 1 hour for calculating franchise fee</li><li><span class="bullet">▸</span> Less than 30 minutes for preparing payment document</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The process for calculating and remitting franchise fees at a Marriott full-service hotel involves gathering financial data, performing calculations, and ensuring timely payments to the franchisor.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Data entry errors leading to incorrect calculations</li><li><span class="bullet risk">▸</span> Payment processing delays</li><li><span class="bullet risk">▸</span> Incorrect formula application during calculation</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../sales-marketing/franchise-brand/sm-fr-02/"><span>◀</span><div><span class="prev-lbl">Previous</span>Brand Standard Audit &amp; Quality Assurance</div></a>
+  <a href="../../../sales-marketing/franchise-brand/sm-fr-04/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Brand Conversion &amp; Rebranding Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; SM-FR-03 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
