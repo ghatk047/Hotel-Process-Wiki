@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM-CH-08 — Rate Parity Monitoring &amp; Enforcement | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">📈 Revenue Management & Distribution</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Revenue Management & Distribution</a><span class="sep">›</span><a href="../">Channel & Distribution Management</a><span class="sep">›</span>Rate Parity Monitoring &amp; Enforcement</div>
+
+<div class="page-header">
+  <div class="pid-badge">RM-CH-08</div>
+  <h1>Rate Parity Monitoring &amp; Enforcement</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Channel & Distribution Management</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/rm-ch-08.png" alt="RM-CH-08 — Rate Parity Monitoring &amp; Enforcement process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">2.4</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Review Daily Rate Parity Report</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Daily Rate Parity Report</td>
+          <td>List of Discrepancies</td>
+          <td>Less than 30 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling large volumes of discrepancies manually.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Identify Root Causes</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>List of Discrepancies</td>
+          <td>Root Cause Analysis Report</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Determining the underlying issues causing rate discrepancies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Update Rates in Oracle OPERA Cloud</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Root Cause Analysis Report</td>
+          <td>Updated Rate Sheet</td>
+          <td>Less than 30 min per update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring all updates are correctly applied to avoid further discrepancies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Sync Rates with SynXis CRS</td>
+          <td>Revenue Manager</td>
+          <td>SynXis CRS, Oracle OPERA Cloud</td>
+          <td>Updated Rate Sheet</td>
+          <td>Confirmation of Sync</td>
+          <td>Less than 15 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Maintaining real-time synchronization between systems.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Update Rates in IDeaS G3 RMS</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS, Oracle OPERA Cloud</td>
+          <td>Updated Rate Sheet</td>
+          <td>Confirmation of Update</td>
+          <td>Less than 15 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring consistent rate updates across multiple systems.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Notify Channel Managers</td>
+          <td>Revenue Manager</td>
+          <td>Email, Marriott Bonvoy CRM</td>
+          <td>Updated Rate Sheet</td>
+          <td>Notification Email</td>
+          <td>Less than 30 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Effective communication with channel managers to ensure they are aware of changes.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Rate Parity Post-Update</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS, IDeaS G3 RMS</td>
+          <td>Updated Rate Sheet</td>
+          <td>Post-Update Report</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Continuous monitoring to ensure no new discrepancies arise.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Document Findings and Actions</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Post-Update Report</td>
+          <td>Rate Parity Monitoring Log</td>
+          <td>Less than 30 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Maintaining accurate documentation for audit and future reference.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Review and Adjust Policies</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Rate Parity Monitoring Log</td>
+          <td>Updated Rate Management Policy</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Adapting policies to prevent future rate discrepancies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Report to Executive Team</td>
+          <td>Revenue Manager</td>
+          <td>Microsoft Power BI, Email</td>
+          <td>Updated Rate Management Policy</td>
+          <td>Executive Report</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Communicating findings and recommendations to senior management.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> RM-CH-08</li>
+          <li><span class="bullet">Domain</span> Revenue Management &amp; Distribution</li>
+          <li><span class="bullet">Group</span> Channel &amp; Distribution Management</li>
+          <li><span class="bullet">Process</span> Rate Parity Monitoring &amp; Enforcement</li>
+          <li><span class="bullet">Trigger</span> Daily automated report from Oracle OPERA Cloud highlighting discrepancies in rate parity.</li>
+          <li><span class="bullet">Outcome</span> All identified rate discrepancies are resolved, ensuring accurate and consistent pricing across all channels.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 30 min for reviewing daily rate parity report</li><li><span class="bullet">▸</span> Less than 1 hour for identifying root causes</li><li><span class="bullet">▸</span> Less than 30 min per update for Oracle OPERA Cloud</li><li><span class="bullet">▸</span> Less than 15 min for syncing rates with SynXis CRS</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The Rate Parity Monitoring &amp; Enforcement process ensures that all hotel rates are consistent across various distribution channels and systems to maximize revenue.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate updates leading to further discrepancies</li><li><span class="bullet risk">▸</span> Communication gaps between revenue managers and channel managers</li><li><span class="bullet risk">▸</span> System synchronization issues causing data inconsistencies</li><li><span class="bullet risk">▸</span> Failure to document findings and actions thoroughly</li><li><span class="bullet risk">▸</span> Policy adjustments not being implemented effectively</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../revenue-management/channel-distribution/rm-ch-07/"><span>◀</span><div><span class="prev-lbl">Previous</span>Channel Performance Analysis</div></a>
+  <a href="../../../revenue-management/reservations/rm-rv-01/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Inbound Reservation Handling</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; RM-CH-08 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

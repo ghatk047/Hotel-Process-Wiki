@@ -1,0 +1,78 @@
+%%{init: {'theme':'base','themeVariables':{'fontSize':'12px','fontFamily':'Inter, Arial, sans-serif'}}}%%
+flowchart TB
+
+  subgraph RECRUIT["🎯 Talent Acquisition"]
+    direction LR
+    WORKDAY_REC["Workday Recruiting\nJob posting · ATS · Offer management"]
+    LINKEDIN["LinkedIn Talent\nJob adverts · Candidate sourcing"]
+    BGCHECK["Background Check\nSterling · Checkr"]
+    LINKEDIN    -->|"candidates"| WORKDAY_REC
+    BGCHECK     -->|"clearance result"| WORKDAY_REC
+  end
+
+  subgraph CORE_HCM["👥 Workday HCM — Core"]
+    direction LR
+    WORKDAY_CORE["Workday Core HCM\nEmployee record · Org chart · Positions"]
+    WORKDAY_PAY["Workday Payroll\nGross · Net · Tax · Benefits"]
+    WORKDAY_COMP["Workday Compensation\nSalary · Bonus · Incentive plans"]
+    WORKDAY_CORE -->|"payroll input"| WORKDAY_PAY
+    WORKDAY_CORE -->|"comp data"| WORKDAY_COMP
+  end
+
+  subgraph SCHEDULE["📅 Workforce Scheduling"]
+    direction LR
+    WORKDAY_TIME["Workday Time Tracking\nClockIn · Absence · OT approval"]
+    SCHEDULING["HotSchedules · Fourth\nShift scheduling · Demand-based rostering"]
+    OPERA_OCC["OPERA Occupancy Forecast\nRooms sold · Arrival volumes"]
+    OPERA_OCC  -->|"occupancy forecast"| SCHEDULING
+    SCHEDULING -->|"approved schedule"| WORKDAY_TIME
+  end
+
+  subgraph LEARN["📚 Learning & Development"]
+    direction LR
+    WORKDAY_LMS["Workday Learning\nCourse catalogue · Completions · Compliance"]
+    MARRIOTT_LMS["Marriott LMS\nBrand standards · Service culture · Safety"]
+    CORNERSTONE["Cornerstone OnDemand\nLeadership development · 360 feedback"]
+    MARRIOTT_LMS -->|"content sync"| WORKDAY_LMS
+  end
+
+  subgraph PERFORMANCE["⭐ Performance & Engagement"]
+    direction LR
+    WORKDAY_PERF["Workday Performance\nGoals · Reviews · Calibration"]
+    GLINT["Glint\nEmployee engagement survey"]
+    RECOGNITION["Marriott Spirit to Serve\nPeer recognition · Awards"]
+    GLINT -->|"engagement scores"| WORKDAY_PERF
+  end
+
+  subgraph FINANCE_HR["💰 Finance Integration"]
+    direction LR
+    SAP5["SAP S/4HANA\nLabour cost · Dept P&L · Headcount"]
+    POWERBI7["Power BI\nLabour productivity · Turnover · CPLH"]
+  end
+
+  WORKDAY_REC  -->|"new hire data"| WORKDAY_CORE
+  WORKDAY_CORE -->|"labour costs"| SAP5
+  WORKDAY_PAY  -->|"payroll journal"| SAP5
+  WORKDAY_TIME -->|"hours worked"| WORKDAY_PAY
+  WORKDAY_COMP -->|"comp costs"| SAP5
+  SAP5         -->|"cost data"| POWERBI7
+  WORKDAY_CORE -->|"headcount"| POWERBI7
+  WORKDAY_LMS  -->|"training compliance"| WORKDAY_PERF
+  CORNERSTONE  -->|"leadership pipeline"| WORKDAY_PERF
+  WORKDAY_PERF -->|"performance data"| WORKDAY_COMP
+
+  classDef rec  fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
+  classDef core fill:#003366,color:#fff,stroke:#003366
+  classDef sched fill:#f0fdf4,stroke:#16a34a,color:#14532d
+  classDef learn fill:#fdf4ff,stroke:#9333ea,color:#581c87
+  classDef perf  fill:#fff7ed,stroke:#ea580c,color:#7c2d12
+  classDef fin   fill:#f5f3ff,stroke:#7c3aed,color:#4c1d95
+  classDef hub   fill:#e85d00,color:#fff,stroke:#e85d00
+
+  class WORKDAY_REC,LINKEDIN,BGCHECK rec
+  class WORKDAY_CORE hub
+  class WORKDAY_PAY,WORKDAY_COMP core
+  class WORKDAY_TIME,SCHEDULING,OPERA_OCC sched
+  class WORKDAY_LMS,MARRIOTT_LMS,CORNERSTONE learn
+  class WORKDAY_PERF,GLINT,RECOGNITION perf
+  class SAP5,POWERBI7 fin

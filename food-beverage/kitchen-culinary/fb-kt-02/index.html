@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB-KT-02 — Food Purchasing &amp; Receiving | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🍽️ Food & Beverage Operations</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Food & Beverage Operations</a><span class="sep">›</span><a href="../">Kitchen & Culinary Operations</a><span class="sep">›</span>Food Purchasing &amp; Receiving</div>
+
+<div class="page-header">
+  <div class="pid-badge">FB-KT-02</div>
+  <h1>Food Purchasing &amp; Receiving</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Kitchen & Culinary Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">Microsoft Power BI</span> <span class="tag">Honeywell INNCOM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fb-kt-02.png" alt="FB-KT-02 — Food Purchasing &amp; Receiving process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Executive Chef</td>
+          <td><span class="step-badge">1.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Purchasing Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#f59e0b"></span>Kitchen Staff</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Menu Planning &amp; Forecasting</td>
+          <td>Executive Chef</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Weekly menu plan</td>
+          <td>Forecasted inventory needs</td>
+          <td>Less than 2 hours for forecasting</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate forecasts leading to over or understocking</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Vendor Selection</td>
+          <td>Purchasing Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Forecasted inventory needs</td>
+          <td>Selected vendors list</td>
+          <td>Less than 4 hours for vendor selection</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>High cost of ingredients</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Order Placement</td>
+          <td>Purchasing Manager</td>
+          <td>Birchstreet Procurement, Oracle OPERA Cloud</td>
+          <td>Selected vendors list</td>
+          <td>Purchase orders</td>
+          <td>Less than 1 hour for order placement</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ordering errors leading to delays</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Receiving Orders</td>
+          <td>Kitchen Staff</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Delivered orders</td>
+          <td>Inventory adjustments</td>
+          <td>Less than 30 minutes for receiving per order</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Damaged or incorrect items received</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Inventory Verification</td>
+          <td>Kitchen Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Received orders</td>
+          <td>Verified inventory records</td>
+          <td>Less than 1 hour for verification</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inventory discrepancies</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Stock Rotation</td>
+          <td>Kitchen Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Verified inventory records</td>
+          <td>Updated stock levels</td>
+          <td>Less than 1 hour for rotation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Expired or spoiled items</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Reporting &amp; Analysis</td>
+          <td>Purchasing Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Inventory data</td>
+          <td>Purchase reports</td>
+          <td>Less than 2 hours for reporting</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lack of visibility into inventory trends</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Vendor Performance Review</td>
+          <td>Purchasing Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Purchase reports</td>
+          <td>Vendor performance evaluations</td>
+          <td>Less than 1 hour for review</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inconsistent vendor quality</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Order Adjustments</td>
+          <td>Purchasing Manager</td>
+          <td>Birchstreet Procurement, Oracle OPERA Cloud</td>
+          <td>Vendor performance evaluations</td>
+          <td>Adjusted purchase orders</td>
+          <td>Less than 1 hour for adjustments</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Difficulty in managing multiple vendors</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Closeout &amp; Documentation</td>
+          <td>Purchasing Manager</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>Adjusted purchase orders</td>
+          <td>Closed purchase cycle documentation</td>
+          <td>Less than 1 hour for closeout</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incomplete or inaccurate documentation</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FB-KT-02</li>
+          <li><span class="bullet">Domain</span> Food &amp; Beverage Operations</li>
+          <li><span class="bullet">Group</span> Kitchen &amp; Culinary Operations</li>
+          <li><span class="bullet">Process</span> Food Purchasing &amp; Receiving</li>
+          <li><span class="bullet">Trigger</span> Weekly menu planning by the Executive Chef</li>
+          <li><span class="bullet">Outcome</span> Accurate procurement of food items, timely delivery, and updated inventory records in Oracle OPERA Cloud.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Forecasting accuracy within 5% of actual usage</li><li><span class="bullet">▸</span> Order placement accuracy rate above 98%</li><li><span class="bullet">▸</span> Inventory verification completion time less than 1 hour</li><li><span class="bullet">▸</span> Vendor performance review cycle time under 2 hours</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The Food Purchasing &amp; Receiving process at a Marriott full-service hotel involves ordering ingredients and managing inventory to ensure smooth kitchen operations.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate menu forecasting leading to stockouts or overstocking</li><li><span class="bullet risk">▸</span> Vendor reliability issues affecting timely deliveries</li><li><span class="bullet risk">▸</span> Quality control problems with received goods</li><li><span class="bullet risk">▸</span> Data entry errors in Oracle OPERA Cloud causing inventory discrepancies</li><li><span class="bullet risk">▸</span> Difficulty in managing multiple vendors and contracts</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../food-beverage/kitchen-culinary/fb-kt-01/"><span>◀</span><div><span class="prev-lbl">Previous</span>Menu Engineering &amp; Recipe Costing</div></a>
+  <a href="../../../food-beverage/kitchen-culinary/fb-kt-03/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Cold Chain &amp; Storage Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FB-KT-02 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

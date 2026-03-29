@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB-BQ-04 — Catering Menu Planning &amp; Costing | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🍽️ Food & Beverage Operations</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Food & Beverage Operations</a><span class="sep">›</span><a href="../">Banqueting & Events Catering</a><span class="sep">›</span>Catering Menu Planning &amp; Costing</div>
+
+<div class="page-header">
+  <div class="pid-badge">FB-BQ-04</div>
+  <h1>Catering Menu Planning &amp; Costing</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Banqueting & Events Catering</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Oracle MICROS Simphony</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fb-bq-04.png" alt="FB-BQ-04 — Catering Menu Planning &amp; Costing process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Banquet Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.4</span> <span class="step-badge">2.4</span> <span class="step-badge">3.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Executive Chef</td>
+          <td><span class="step-badge">1.3</span> <span class="step-badge">2.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Cost Controller</td>
+          <td><span class="step-badge">2.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Review Event Details</td>
+          <td>Banquet Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Event booking details from Oracle OPERA Cloud</td>
+          <td>Event summary document</td>
+          <td>Less than 5 minutes per event review</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling last-minute changes in event scope</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Identify Dietary Requirements</td>
+          <td>Banquet Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest dietary preferences from Oracle OPERA Cloud</td>
+          <td>Dietary requirements document</td>
+          <td>Less than 3 minutes per event review</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accommodating multiple dietary restrictions</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Select Menu Items</td>
+          <td>Executive Chef</td>
+          <td>Oracle MICROS Simphony</td>
+          <td>Dietary requirements document</td>
+          <td>Preliminary menu draft</td>
+          <td>Less than 20 minutes per menu selection</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Balancing flavor and cost</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>Review Menu with Client</td>
+          <td>Banquet Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Preliminary menu draft</td>
+          <td>Client feedback document</td>
+          <td>Less than 30 minutes per review session</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Negotiating changes with clients</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Finalize Menu Items</td>
+          <td>Executive Chef</td>
+          <td>Oracle MICROS Simphony</td>
+          <td>Client feedback document</td>
+          <td>Finalized menu document</td>
+          <td>Less than 30 minutes per finalization</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring menu items are available</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Calculate Costs</td>
+          <td>Cost Controller</td>
+          <td>Oracle MICROS Simphony, Birchstreet Procurement</td>
+          <td>Finalized menu document</td>
+          <td>Costing report</td>
+          <td>Less than 45 minutes per costing calculation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurate ingredient pricing</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Prepare Costing Presentation</td>
+          <td>Banquet Manager</td>
+          <td>Microsoft Power BI</td>
+          <td>Costing report</td>
+          <td>Costing presentation document</td>
+          <td>Less than 15 minutes per presentation preparation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Visualizing complex data</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Present Costing to Client</td>
+          <td>Banquet Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Costing presentation document</td>
+          <td>Client approval document</td>
+          <td>Less than 30 minutes per presentation session</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Negotiating budget constraints</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Update Event Details with Menu and Costing</td>
+          <td>Banquet Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Client approval document, finalized menu document, costing report</td>
+          <td>Updated event booking details in Oracle OPERA Cloud</td>
+          <td>Less than 10 minutes per update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data entry errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Confirm Menu and Costing with Chef</td>
+          <td>Executive Chef</td>
+          <td>Oracle MICROS Simphony</td>
+          <td>Updated event booking details from Oracle OPERA Cloud</td>
+          <td>Confirmation document</td>
+          <td>Less than 10 minutes per confirmation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring menu items are ready</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FB-BQ-04</li>
+          <li><span class="bullet">Domain</span> Food &amp; Beverage Operations</li>
+          <li><span class="bullet">Group</span> Banqueting &amp; Events Catering</li>
+          <li><span class="bullet">Process</span> Catering Menu Planning &amp; Costing</li>
+          <li><span class="bullet">Trigger</span> Receiving a new event booking request with specific dietary requirements or special requests from the client</li>
+          <li><span class="bullet">Outcome</span> A detailed catering menu plan with associated costs, presented to the client for approval, ensuring alignment with their preferences and financial constraints.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Event review time: Less than 5 minutes per event</li><li><span class="bullet">▸</span> Menu selection time: Less than 20 minutes per menu</li><li><span class="bullet">▸</span> Costing calculation time: Less than 45 minutes per costing</li><li><span class="bullet">▸</span> Presentation preparation time: Less than 15 minutes per presentation</li><li><span class="bullet">▸</span> Data entry accuracy rate: Greater than 98%</li><li><span class="bullet">▸</span> Client approval rate: Greater than 95%</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The FB-BQ-04 process involves planning and costing catering menus for banquets and events at a Marriott full-service hotel. This ensures that all food and beverage offerings meet guest expectations while staying within budget.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate dietary requirements leading to guest dissatisfaction</li><li><span class="bullet risk">▸</span> Menu items not available, causing delays</li><li><span class="bullet risk">▸</span> Costing errors resulting in budget overruns</li><li><span class="bullet risk">▸</span> Difficulty negotiating with clients on menu and costs</li><li><span class="bullet risk">▸</span> Data entry errors affecting event planning</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../food-beverage/banqueting-events/fb-bq-03/"><span>◀</span><div><span class="prev-lbl">Previous</span>Event Day Coordination &amp; Execution</div></a>
+  <a href="../../../food-beverage/banqueting-events/fb-bq-05/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Audio-Visual Setup &amp; Support</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FB-BQ-04 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

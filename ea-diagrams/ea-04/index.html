@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EA-04 · F&amp;B Operations Integration · Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <a href="../../">Home</a>
+  <a href="../../ea-diagrams/">EA Diagrams</a>
+  <a href="https://github.com/ghatk047/Hotel-Process-Wiki" target="_blank">GitHub</a>
+</nav>
+
+<div class="breadcrumb">
+  <a href="../../">Home</a><span class="sep">›</span>
+  <a href="../../ea-diagrams/">EA Diagrams</a><span class="sep">›</span>
+  EA-04 · F&amp;B Operations Integration
+</div>
+
+<div class="page-header">
+  <div class="pid-badge">EA-04</div>
+  <h1>F&amp;B Operations Integration</h1>
+  <div class="meta">
+    <span class="tag">✅ Published</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">MICROS POS to kitchen display to inventory to procurement to finance</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🗺️ Enterprise Architecture Diagram
+    <span style="font-size:.75rem;font-weight:400;color:var(--muted);margin-left:1rem">
+      Click to open fullscreen · Scroll to zoom · Drag to pan · Double-click to reset
+    </span>
+  </div>
+  <div class="card-body">
+    <div class="diagram-wrap" style="text-align:center;background:#f8fafc;border-radius:6px;padding:1rem;">
+      <img src="../../assets/img/ea-04.png"
+           alt="EA-04 — F&amp;B Operations Integration"
+           style="max-width:100%;max-height:600px;width:auto;height:auto;
+                  object-fit:contain;border-radius:4px;cursor:zoom-in;
+                  box-shadow:0 2px 12px rgba(0,0,0,.1);"
+           loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 Architecture Notes</div>
+  <div class="card-body">
+    <p style="font-size:.9rem;color:#374151;line-height:1.8;max-width:860px">
+      This diagram maps the full Marriott F&amp;B technology stack from guest order to financial close. Oracle MICROS Simphony POS is the operational hub capturing orders, routing to kitchen display systems, and posting charges directly to OPERA guest folios. Amadeus Delphi.fdc manages banqueting and events with BEO generation and catering charges. Inventory flows through Crunchtime for recipe costing and waste tracking, feeding purchase requirements to Birchstreet procurement. All costs and revenues ultimately consolidate in SAP S/4HANA for period-end financial reporting.
+    </p>
+  </div>
+</div>
+
+<div class="page-nav" style="display:flex;justify-content:space-between;padding:1.5rem 2rem 2.5rem">
+  <a href="../ea-03/" style="display:flex;align-items:center;gap:.5rem;text-decoration:none;color:var(--secondary);font-size:.875rem">◀ Revenue &amp; Distribution Architecture</a>
+  <a href="../ea-05/" style="display:flex;align-items:center;gap:.5rem;text-decoration:none;color:var(--secondary);font-size:.875rem;margin-left:auto">Property Operations Ecosystem ▶</a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; EA-04 &middot; Ref: Marriott International
+</footer>
+<script src="../../assets/js/wiki.js"></script>
+</body>
+</html>

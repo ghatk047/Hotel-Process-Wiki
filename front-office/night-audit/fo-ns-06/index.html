@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-NS-06 — Foreign Currency Exchange | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Night Audit & Front Desk Operations</a><span class="sep">›</span>Foreign Currency Exchange</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-NS-06</div>
+  <h1>Foreign Currency Exchange</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Night Audit & Front Desk Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Oracle MICROS Simphony</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-ns-06.png" alt="FO-NS-06 — Foreign Currency Exchange process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">2.4</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Revenue Manager</td>
+          <td><span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Currency Exchange Request</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest request</td>
+          <td>Exchange rate quote</td>
+          <td>Less than 2 minutes to provide the quote</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling multiple currency exchange requests simultaneously</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Guest Information</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest identification</td>
+          <td>Verified guest information</td>
+          <td>Less than 1 minute to verify</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect or incomplete guest information</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Select Exchange Rate</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Exchange rate quote</td>
+          <td>Selected exchange rate</td>
+          <td>Less than 30 seconds to select</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Outdated or inaccurate exchange rates</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Process Payment</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Oracle MICROS Simphony</td>
+          <td>Payment details</td>
+          <td>Processed payment receipt</td>
+          <td>Less than 1 minute to process</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling multiple payment methods</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Dispense Foreign Currency</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Selected exchange rate and processed payment</td>
+          <td>Foreign currency dispensed to guest</td>
+          <td>Less than 1 minute to dispense</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Insufficient foreign currency stock</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Update PMS System</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Transaction details</td>
+          <td>Updated guest ledger and transaction record</td>
+          <td>Less than 1 minute to update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data entry errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Generate Exchange Receipt</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Transaction details</td>
+          <td>Exchange receipt for guest</td>
+          <td>Less than 30 seconds to generate</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Printing issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Confirm Transaction with Guest</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Exchange receipt</td>
+          <td>Guest confirmation of transaction</td>
+          <td>Less than 1 minute to confirm</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling guest inquiries or disputes</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Audit Transaction</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Transaction record</td>
+          <td>Audited transaction report</td>
+          <td>Less than 5 minutes to audit</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Complexity of auditing multiple transactions</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Update Inventory</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Dispensed currency amount</td>
+          <td>Updated currency inventory record</td>
+          <td>Less than 1 minute to update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Manual tracking of currency stock</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-NS-06</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Night Audit &amp; Front Desk Operations</li>
+          <li><span class="bullet">Process</span> Foreign Currency Exchange</li>
+          <li><span class="bullet">Trigger</span> A guest requests to exchange foreign currency at the front desk.</li>
+          <li><span class="bullet">Outcome</span> Successful completion of the currency exchange transaction, with accurate conversion rates applied, and all relevant records updated in the PMS system.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 2 minutes to provide the exchange rate quote</li><li><span class="bullet">▸</span> Less than 1 minute to verify guest information</li><li><span class="bullet">▸</span> Less than 30 seconds to select the exchange rate</li><li><span class="bullet">▸</span> Less than 1 minute to process payment</li><li><span class="bullet">▸</span> Less than 1 minute to dispense foreign currency</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The Foreign Currency Exchange process at a Marriott full-service hotel involves handling currency exchange requests from guests, ensuring accurate transactions, and maintaining compliance with financial policies.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Incorrect or incomplete guest information leading to failed transactions</li><li><span class="bullet risk">▸</span> Outdated or inaccurate exchange rates affecting financial accuracy</li><li><span class="bullet risk">▸</span> Insufficient foreign currency stock causing transaction delays</li><li><span class="bullet risk">▸</span> Data entry errors in the PMS system resulting in incorrect records</li><li><span class="bullet risk">▸</span> Printing issues preventing the issuance of exchange receipts</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/night-audit/fo-ns-05/"><span>◀</span><div><span class="prev-lbl">Previous</span>Cash Handling &amp; Float Management</div></a>
+  <a href="../../../front-office/night-audit/fo-ns-07/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Inter-department Charge Routing</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-NS-06 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

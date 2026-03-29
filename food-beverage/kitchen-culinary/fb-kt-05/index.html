@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB-KT-05 — Kitchen Production Planning | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🍽️ Food & Beverage Operations</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Food & Beverage Operations</a><span class="sep">›</span><a href="../">Kitchen & Culinary Operations</a><span class="sep">›</span>Kitchen Production Planning</div>
+
+<div class="page-header">
+  <div class="pid-badge">FB-KT-05</div>
+  <h1>Kitchen Production Planning</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Kitchen & Culinary Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Oracle MICROS Simphony</span> <span class="tag">Birchstreet Procurement</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fb-kt-05.png" alt="FB-KT-05 — Kitchen Production Planning process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Executive Chef</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Kitchen Manager</td>
+          <td><span class="step-badge">2.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#81e6d9"></span>Kitchen Staff</td>
+          <td><span class="step-badge">2.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Daily Forecast</td>
+          <td>Executive Chef</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Daily forecast data</td>
+          <td>Updated production plan</td>
+          <td>Less than 30 minutes to update the plan</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate forecasts leading to over or underproduction.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Review Menu and Inventory</td>
+          <td>Executive Chef</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>Menu items, inventory levels</td>
+          <td>Inventory check report</td>
+          <td>Less than 1 hour to review</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Running out of key ingredients affecting menu availability.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Create Production Schedule</td>
+          <td>Executive Chef</td>
+          <td>Oracle OPERA Cloud, Oracle MICROS Simphony</td>
+          <td>Forecast data, inventory report</td>
+          <td>Production schedule</td>
+          <td>Less than 2 hours to create</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Complex scheduling leading to staff burnout.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Assign Staff to Tasks</td>
+          <td>Kitchen Manager</td>
+          <td>Oracle OPERA Cloud, Oracle MICROS Simphony</td>
+          <td>Production schedule</td>
+          <td>Staff assignment list</td>
+          <td>Less than 1 hour to assign</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inadequate staffing leading to operational delays.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Prepare Ingredients</td>
+          <td>Kitchen Staff</td>
+          <td>Oracle MICROS Simphony</td>
+          <td>Production schedule, staff assignment list</td>
+          <td>Prepared ingredients</td>
+          <td>Less than 4 hours to prepare</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ingredient preparation delays affecting service speed.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Production Progress</td>
+          <td>Kitchen Manager</td>
+          <td>Oracle MICROS Simphony, Oracle OPERA Cloud</td>
+          <td>Production schedule, prepared ingredients</td>
+          <td>Production status report</td>
+          <td>Less than 30 minutes to monitor</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Lack of real-time monitoring leading to production bottlenecks.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Adjust Production as Needed</td>
+          <td>Executive Chef, Kitchen Manager</td>
+          <td>Oracle MICROS Simphony, Oracle OPERA Cloud</td>
+          <td>Production status report</td>
+          <td>Adjusted production plan</td>
+          <td>Less than 1 hour to adjust</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inability to adapt quickly leading to food waste or service delays.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Conduct End-of-Day Review</td>
+          <td>Executive Chef, Kitchen Manager</td>
+          <td>Oracle OPERA Cloud, Oracle MICROS Simphony</td>
+          <td>Production status report, adjusted production plan</td>
+          <td>End-of-day review report</td>
+          <td>Less than 1 hour to review</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Insufficient review leading to continuous operational issues.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Update Inventory Levels</td>
+          <td>Kitchen Staff, Executive Chef</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>End-of-day review report</td>
+          <td>Updated inventory levels</td>
+          <td>Less than 30 minutes to update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Outdated inventory levels affecting future production planning.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Report Issues and Improvements</td>
+          <td>Executive Chef, Kitchen Manager</td>
+          <td>Oracle OPERA Cloud, Oracle MICROS Simphony</td>
+          <td>End-of-day review report</td>
+          <td>Issue and improvement report</td>
+          <td>Less than 1 hour to report</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lack of reporting leading to unresolved operational challenges.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FB-KT-05</li>
+          <li><span class="bullet">Domain</span> Food &amp; Beverage Operations</li>
+          <li><span class="bullet">Group</span> Kitchen &amp; Culinary Operations</li>
+          <li><span class="bullet">Process</span> Kitchen Production Planning</li>
+          <li><span class="bullet">Trigger</span> Daily forecast update from Oracle OPERA Cloud</li>
+          <li><span class="bullet">Outcome</span> A well-coordinated kitchen operation that meets daily demand with optimal resource utilization.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 30 minutes to update the production plan</li><li><span class="bullet">▸</span> Less than 1 hour to assign staff</li><li><span class="bullet">▸</span> Less than 4 hours to prepare ingredients</li><li><span class="bullet">▸</span> Less than 30 minutes to monitor production progress</li><li><span class="bullet">▸</span> Less than 1 hour to adjust production as needed</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The Kitchen Production Planning process at a Marriott full-service hotel involves forecasting demand, creating production schedules, and ensuring efficient kitchen operations to meet guest expectations.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate forecasts leading to over or underproduction.</li><li><span class="bullet risk">▸</span> Running out of key ingredients affecting menu availability.</li><li><span class="bullet risk">▸</span> Complex scheduling leading to staff burnout.</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../food-beverage/kitchen-culinary/fb-kt-04/"><span>◀</span><div><span class="prev-lbl">Previous</span>HACCP &amp; Food Safety Compliance</div></a>
+  <a href="../../../food-beverage/kitchen-culinary/fb-kt-06/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Food Wastage Tracking &amp; Reduction</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FB-KT-05 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

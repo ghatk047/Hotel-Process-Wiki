@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB-RO-06 — All-Day Dining Operations | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🍽️ Food & Beverage Operations</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Food & Beverage Operations</a><span class="sep">›</span><a href="../">Restaurant & Bar Operations</a><span class="sep">›</span>All-Day Dining Operations</div>
+
+<div class="page-header">
+  <div class="pid-badge">FB-RO-06</div>
+  <h1>All-Day Dining Operations</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Restaurant & Bar Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Oracle MICROS Simphony</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fb-ro-06.png" alt="FB-RO-06 — All-Day Dining Operations process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">3.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Food &amp; Beverage Manager</td>
+          <td><span class="step-badge">1.3</span> <span class="step-badge">2.3</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#8b5cf6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Pre-Open Preparation</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud, Knowcross HotSOS</td>
+          <td>Cleaning checklist, inventory list</td>
+          <td>Clean and stocked dining area</td>
+          <td>Completion time less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring all areas are spotless before opening.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Staff Scheduling</td>
+          <td>Front Desk Agent, Revenue Manager</td>
+          <td>SynXis CRS, Oracle OPERA Cloud</td>
+          <td>Daily schedule template</td>
+          <td>Scheduled staff list for the day</td>
+          <td>Less than 5 minutes per shift adjustment</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Balancing staffing needs with budget constraints.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Inventory Check</td>
+          <td>Executive Housekeeper, Food &amp; Beverage Manager</td>
+          <td>Oracle MICROS Simphony, Birchstreet Procurement</td>
+          <td>Stock levels, menu items</td>
+          <td>Updated inventory report</td>
+          <td>Completion within 15 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurate tracking of perishable goods.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Open Restaurant and Bar</td>
+          <td>Front Desk Agent, Food &amp; Beverage Manager</td>
+          <td>Oracle OPERA Cloud, Amadeus Delphi.fdc</td>
+          <td>Opening time, reservation list</td>
+          <td>Opened restaurant and bar with reservations ready</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling last-minute changes in reservations.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Monitor Dining Area</td>
+          <td>Executive Housekeeper, Food &amp; Beverage Staff</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Dining area status updates</td>
+          <td>Clean and orderly dining environment</td>
+          <td>Continuous monitoring with less than 1 minute intervals</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Maintaining cleanliness during peak hours.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Manage Reservations</td>
+          <td>Front Desk Agent, Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Reservation requests, availability</td>
+          <td>Confirmed or declined reservations</td>
+          <td>Less than 2 minutes per reservation</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling high demand for reservations.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Close Restaurant and Bar</td>
+          <td>Front Desk Agent, Food &amp; Beverage Manager</td>
+          <td>Oracle OPERA Cloud, Amadeus Delphi.fdc</td>
+          <td>Closing time, final reservations</td>
+          <td>Closed restaurant and bar with all guests served</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring no reservations are missed.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Post-Close Cleanup</td>
+          <td>Executive Housekeeper, Food &amp; Beverage Staff</td>
+          <td>Oracle OPERA Cloud, Knowcross HotSOS</td>
+          <td>Dining area status, inventory levels</td>
+          <td>Clean and stocked dining area for the next day</td>
+          <td>Completion within 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Efficiently cleaning up after a busy day.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Review and Report</td>
+          <td>Food &amp; Beverage Manager, Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Sales data, customer feedback</td>
+          <td>Daily operational report</td>
+          <td>Completion within 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Analyzing large volumes of data for insights.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FB-RO-06</li>
+          <li><span class="bullet">Domain</span> Food &amp; Beverage Operations</li>
+          <li><span class="bullet">Group</span> Restaurant &amp; Bar Operations</li>
+          <li><span class="bullet">Process</span> All-Day Dining Operations</li>
+          <li><span class="bullet">Trigger</span> Scheduled opening of the restaurant and bar services in the morning</li>
+          <li><span class="bullet">Outcome</span> Successful operation of all-day dining with high customer satisfaction and efficient resource utilization.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Completion time for pre-open preparation less than 30 minutes</li><li><span class="bullet">▸</span> Less than 5 minutes per shift adjustment in staff scheduling</li><li><span class="bullet">▸</span> Inventory check completion within 15 minutes</li><li><span class="bullet">▸</span> Less than 10 minutes to open restaurant and bar</li><li><span class="bullet">▸</span> Continuous monitoring with less than 1 minute intervals for dining area status</li><li><span class="bullet">▸</span> Completion of post-close cleanup within 30 minutes</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">Operational process for managing all-day dining operations at a full-service Marriott hotel, ensuring smooth service and efficient use of resources.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate inventory tracking leading to stockouts or overstocking</li><li><span class="bullet risk">▸</span> Staff shortages during peak hours affecting customer service</li><li><span class="bullet risk">▸</span> Delayed reservations causing guest dissatisfaction</li><li><span class="bullet risk">▸</span> Difficulty in maintaining cleanliness during high traffic periods</li><li><span class="bullet risk">▸</span> Errors in data analysis leading to incorrect operational insights</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../food-beverage/restaurant-bar/fb-ro-05/"><span>◀</span><div><span class="prev-lbl">Previous</span>Bar Operations &amp; Cocktail Service</div></a>
+  <a href="../../../food-beverage/restaurant-bar/fb-ro-07/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Breakfast Buffet Setup &amp; Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FB-RO-06 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

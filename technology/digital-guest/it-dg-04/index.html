@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT-DG-04 — High-Speed Internet Service Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">💻 Technology & Systems</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Technology & Systems</a><span class="sep">›</span><a href="../">Digital Guest Experience</a><span class="sep">›</span>High-Speed Internet Service Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">IT-DG-04</div>
+  <h1>High-Speed Internet Service Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Digital Guest Experience</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Knowcross HotSOS</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/it-dg-04.png" alt="IT-DG-04 — High-Speed Internet Service Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.3</span> <span class="step-badge">1.2</span> <span class="step-badge">2.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>IT Support Technician</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>IT Manager</td>
+          <td><span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Guest Request</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest request for high-speed internet</td>
+          <td>Updated guest profile in Oracle OPERA Cloud</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling multiple requests simultaneously</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Room Availability</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest room number</td>
+          <td>Room status and internet availability</td>
+          <td>Less than 30 seconds</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Incorrect room information</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Assign Internet Service</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room number and internet package details</td>
+          <td>Internet service activated in Oracle OPERA Cloud</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Technical issues with the PMS system</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Monitor Internet Speed</td>
+          <td>IT Support Technician</td>
+          <td>Knowcross HotSOS</td>
+          <td>Room number and internet service details</td>
+          <td>Internet speed report</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Network congestion during peak hours</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Troubleshoot Slow Speeds</td>
+          <td>IT Support Technician</td>
+          <td>Knowcross HotSOS</td>
+          <td>Internet speed report and room details</td>
+          <td>Resolved issue or escalation to higher support</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Persistent network issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Update Guest Status</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Resolution details and guest feedback</td>
+          <td>Updated guest profile in Oracle OPERA Cloud</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect information entry</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review Monthly Reports</td>
+          <td>IT Manager</td>
+          <td>Microsoft Power BI</td>
+          <td>Monthly internet service data</td>
+          <td>Performance analysis report</td>
+          <td>Less than 2 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Data interpretation challenges</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Plan Improvements</td>
+          <td>IT Manager</td>
+          <td>Microsoft Power BI</td>
+          <td>Performance analysis report and feedback</td>
+          <td>Improvement plan</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Resource allocation issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Implement Changes</td>
+          <td>IT Support Technician</td>
+          <td>Knowcross HotSOS</td>
+          <td>Improvement plan and technical specifications</td>
+          <td>Updated network infrastructure</td>
+          <td>Less than 2 days</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Vendor coordination delays</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Conduct Post-Implementation Review</td>
+          <td>IT Manager</td>
+          <td>Microsoft Power BI</td>
+          <td>Post-implementation data and feedback</td>
+          <td>Final report and recommendations</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data collection challenges</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> IT-DG-04</li>
+          <li><span class="bullet">Domain</span> Technology &amp; Systems</li>
+          <li><span class="bullet">Group</span> Digital Guest Experience</li>
+          <li><span class="bullet">Process</span> High-Speed Internet Service Management</li>
+          <li><span class="bullet">Trigger</span> Guest requests for high-speed internet access</li>
+          <li><span class="bullet">Outcome</span> Successful provisioning and maintenance of high-speed internet services to guests, with minimal downtime and maximum speed.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 1 minute for guest request processing</li><li><span class="bullet">▸</span> Less than 5 minutes for internet speed monitoring</li><li><span class="bullet">▸</span> Less than 2 hours for monthly report review</li><li><span class="bullet">▸</span> Less than 2 days for implementation of changes</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the management of high-speed internet service at a Marriott full-service hotel, ensuring seamless connectivity and guest satisfaction.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Network congestion during peak hotel occupancy</li><li><span class="bullet risk">▸</span> Technical issues with the PMS system</li><li><span class="bullet risk">▸</span> Persistent network issues affecting guest experience</li><li><span class="bullet risk">▸</span> Resource allocation challenges in IT department</li><li><span class="bullet risk">▸</span> Vendor coordination delays impacting project timelines</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../technology/digital-guest/it-dg-03/"><span>◀</span><div><span class="prev-lbl">Previous</span>In-Room Entertainment System Management</div></a>
+  <a href="../../../technology/digital-guest/it-dg-05/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Digital Signage &amp; Wayfinding</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; IT-DG-04 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-CI-04 — Express Check-Out Processing | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Check-In & Check-Out Operations</a><span class="sep">›</span>Express Check-Out Processing</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-CI-04</div>
+  <h1>Express Check-Out Processing</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Check-In & Check-Out Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Marriott Bonvoy CRM</span> <span class="tag">SynXis CRS</span> <span class="tag">IDeaS G3 RMS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-ci-04.png" alt="FO-CI-04 — Express Check-Out Processing process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span> <span class="step-badge">3.5</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Express Check-Out Request</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest request</td>
+          <td>Express check-out flag set in PMS</td>
+          <td>less than 30 seconds</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Identifying express requests amidst high traffic</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Room Status and Charges</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room number</td>
+          <td>Room status and charges displayed</td>
+          <td>less than 1 minute</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Accurate room status verification</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Process Payment</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Payment details</td>
+          <td>Payment confirmation</td>
+          <td>less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling multiple payment methods</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update Room Status</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room number</td>
+          <td>Room status updated to 'Vacant'</td>
+          <td>less than 30 seconds</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Ensuring room is marked as vacant immediately</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Generate Receipt</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest details and charges</td>
+          <td>Digital receipt sent to guest's email</td>
+          <td>less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Email delivery issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Notify Housekeeping</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room number</td>
+          <td>Housekeeping notification sent</td>
+          <td>less than 30 seconds</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring timely housekeeping notifications</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update CRM System</td>
+          <td>Front Desk Agent</td>
+          <td>Marriott Bonvoy CRM</td>
+          <td>Guest details and stay information</td>
+          <td>CRM record updated</td>
+          <td>less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data accuracy in CRM updates</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Finalize Departure</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest confirmation</td>
+          <td>Departure finalized</td>
+          <td>less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling last-minute changes</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Close Out Transaction</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Final payment details</td>
+          <td>Transaction closed</td>
+          <td>less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Closing transactions with multiple payments</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Confirm Departure to Guest</td>
+          <td>Front Desk Agent</td>
+          <td>None</td>
+          <td>Guest presence</td>
+          <td>Departure confirmed verbally</td>
+          <td>less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring guest satisfaction with express check-out</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-CI-04</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Check-In &amp; Check-Out Operations</li>
+          <li><span class="bullet">Process</span> Express Check-Out Processing</li>
+          <li><span class="bullet">Trigger</span> Guest indicates readiness to check out and requests express service</li>
+          <li><span class="bullet">Outcome</span> Successful completion results in the guest's account being settled, room status updated, and a receipt issued without delays.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Express check-out completion time less than 10 minutes</li><li><span class="bullet">▸</span> Payment processing accuracy rate above 98%</li><li><span class="bullet">▸</span> Room status update accuracy rate above 95%</li><li><span class="bullet">▸</span> Digital receipt delivery success rate above 99%</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">Express check-out processing at a Marriott full-service hotel involves quickly finalizing guest departure procedures while ensuring all necessary tasks are completed efficiently.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> High traffic leading to missed express requests</li><li><span class="bullet risk">▸</span> Payment processing errors causing delays</li><li><span class="bullet risk">▸</span> CRM data entry errors affecting guest loyalty programs</li><li><span class="bullet risk">▸</span> Housekeeping notification failures resulting in dirty rooms</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/checkin-checkout/fo-ci-03/"><span>◀</span><div><span class="prev-lbl">Previous</span>VIP &amp; Loyalty Member Arrival</div></a>
+  <a href="../../../front-office/checkin-checkout/fo-ci-05/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Late Check-Out &amp; Early Arrival Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-CI-04 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT-OP-05 — Cybersecurity Monitoring &amp; Incident Response | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">💻 Technology & Systems</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Technology & Systems</a><span class="sep">›</span><a href="../">IT Operations & Infrastructure</a><span class="sep">›</span>Cybersecurity Monitoring &amp; Incident Response</div>
+
+<div class="page-header">
+  <div class="pid-badge">IT-OP-05</div>
+  <h1>Cybersecurity Monitoring &amp; Incident Response</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">IT Operations & Infrastructure</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Knowcross HotSOS</span> <span class="tag">Honeywell INNCOM</span> <span class="tag">Assa Abloy VingCard</span> <span class="tag">Microsoft Power BI</span> <span class="tag">Salesforce</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/it-op-05.png" alt="IT-OP-05 — Cybersecurity Monitoring &amp; Incident Response process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>IT Security Analyst</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ff5733"></span>IT Manager</td>
+          <td><span class="step-badge">1.3</span> <span class="step-badge">2.3</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#68a0c0"></span>Hotel Management</td>
+          <td><span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Incident</td>
+          <td>IT Security Analyst</td>
+          <td>Knowcross HotSOS</td>
+          <td>Security alert or report</td>
+          <td>Incident ticket in Oracle OPERA Cloud</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>False positives leading to unnecessary alerts and response times.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Classify Incident</td>
+          <td>IT Security Analyst</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Incident ticket</td>
+          <td>Incident classification (e.g., low, medium, high)</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Misclassification leading to delayed response or overreaction.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Contain Incident</td>
+          <td>IT Security Analyst</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Incident classification</td>
+          <td>Isolated affected systems or areas</td>
+          <td>Less than 15 minutes for low incidents, less than 30 minutes for medium incidents, less than 60 minutes for high incidents</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Difficulty in isolating systems without affecting core operations.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Eradicate Threat</td>
+          <td>IT Security Analyst</td>
+          <td>Oracle OPERA Cloud, Assa Abloy VingCard</td>
+          <td>Isolated affected systems</td>
+          <td>Threat eradicated and system restored</td>
+          <td>Less than 30 minutes for low incidents, less than 60 minutes for medium incidents, less than 120 minutes for high incidents</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Persistent threats that require multiple eradication attempts.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review Incident</td>
+          <td>IT Security Analyst</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Incident resolution report</td>
+          <td>Root cause analysis and improvement plan</td>
+          <td>Less than 24 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lack of comprehensive data for thorough review.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Policies and Procedures</td>
+          <td>IT Security Analyst, IT Manager</td>
+          <td>Oracle OPERA Cloud, Salesforce</td>
+          <td>Root cause analysis and improvement plan</td>
+          <td>Updated security policies and procedures</td>
+          <td>Less than 48 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Resistance to change in established processes.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Notify Stakeholders</td>
+          <td>IT Security Analyst, IT Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Teams</td>
+          <td>Incident classification and containment status</td>
+          <td>Notification to relevant stakeholders (e.g., hotel management, guests)</td>
+          <td>Less than 15 minutes for low incidents, less than 30 minutes for medium incidents, less than 60 minutes for high incidents</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Effective communication during critical situations.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Restore Systems</td>
+          <td>IT Security Analyst, IT Manager</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Threat eradicated and system restored</td>
+          <td>Normal operations resumed</td>
+          <td>Less than 30 minutes for low incidents, less than 60 minutes for medium incidents, less than 120 minutes for high incidents</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System downtime affecting guest services.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Conduct Post-Incident Review Meeting</td>
+          <td>IT Security Analyst, IT Manager, Hotel Management</td>
+          <td>Oracle OPERA Cloud, Microsoft Teams</td>
+          <td>Incident resolution report and improvement plan</td>
+          <td>Action items and follow-up tasks</td>
+          <td>Less than 24 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Coordination among multiple departments for effective review.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Implement Improvements</td>
+          <td>IT Security Analyst, IT Manager</td>
+          <td>Oracle OPERA Cloud, Salesforce</td>
+          <td>Action items and follow-up tasks</td>
+          <td>Implemented security improvements</td>
+          <td>Less than 7 days</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Resource constraints affecting the implementation of recommended changes.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> IT-OP-05</li>
+          <li><span class="bullet">Domain</span> Technology &amp; Systems</li>
+          <li><span class="bullet">Group</span> IT Operations &amp; Infrastructure</li>
+          <li><span class="bullet">Process</span> Cybersecurity Monitoring &amp; Incident Response</li>
+          <li><span class="bullet">Trigger</span> Detection of a cybersecurity threat or incident through monitoring tools, alerts from IT staff, or reports from employees.</li>
+          <li><span class="bullet">Outcome</span> Successful containment, eradication, and recovery from the cyber incident with minimal impact on operations and guest experience.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Incident detection time: Less than 5 minutes</li><li><span class="bullet">▸</span> Containment time: Less than 60 minutes for high incidents</li><li><span class="bullet">▸</span> Eradication time: Less than 120 minutes for high incidents</li><li><span class="bullet">▸</span> Review and policy update time: Less than 48 hours</li><li><span class="bullet">▸</span> System restoration time: Less than 120 minutes for high incidents</li><li><span class="bullet">▸</span> Post-incident review meeting time: Less than 24 hours</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">Cybersecurity Monitoring &amp; Incident Response process at a Marriott full-service hotel ensures timely detection and resolution of security incidents to protect critical systems and data.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> False positives leading to unnecessary alerts and response times.</li><li><span class="bullet risk">▸</span> Misclassification of incidents affecting response priorities.</li><li><span class="bullet risk">▸</span> Difficulty in isolating systems without impacting core operations.</li><li><span class="bullet risk">▸</span> Persistent threats requiring multiple eradication attempts.</li><li><span class="bullet risk">▸</span> Resistance to change in established processes.</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../technology/it-operations/it-op-04/"><span>◀</span><div><span class="prev-lbl">Previous</span>Guest Technology Support</div></a>
+  <a href="../../../technology/it-operations/it-op-06/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Data Backup &amp; Business Continuity</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; IT-OP-05 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

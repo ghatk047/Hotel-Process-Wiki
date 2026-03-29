@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB-KT-07 — Allergen Management &amp; Labelling | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🍽️ Food & Beverage Operations</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Food & Beverage Operations</a><span class="sep">›</span><a href="../">Kitchen & Culinary Operations</a><span class="sep">›</span>Allergen Management &amp; Labelling</div>
+
+<div class="page-header">
+  <div class="pid-badge">FB-KT-07</div>
+  <h1>Allergen Management &amp; Labelling</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Kitchen & Culinary Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Oracle MICROS Simphony</span> <span class="tag">Knowcross HotSOS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fb-kt-07.png" alt="FB-KT-07 — Allergen Management &amp; Labelling process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Kitchen Manager</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Kitchen Staff</td>
+          <td><span class="step-badge">2.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#8b5cf6"></span>Waitstaff</td>
+          <td><span class="step-badge">3.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>Executive Chef</td>
+          <td><span class="step-badge">3.4</span> <span class="step-badge">3.5</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Guest Request</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest request for allergen-free meal or specific allergy warning label</td>
+          <td>Updated guest profile in Oracle OPERA Cloud with dietary preferences</td>
+          <td>Less than 2 minutes per request</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling multiple requests simultaneously and ensuring accuracy</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Notify Kitchen Manager</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated guest profile</td>
+          <td>Notification to Kitchen Manager via Oracle OPERA Cloud</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring timely communication between departments</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Review Allergen Information</td>
+          <td>Kitchen Manager</td>
+          <td>Oracle OPERA Cloud, Oracle MICROS Simphony</td>
+          <td>Notification from Front Desk Agent</td>
+          <td>Verified allergen information for menu items</td>
+          <td>Less than 5 minutes per item</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Accessing and verifying accurate allergen data</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Prepare Allergen-Free Menu</td>
+          <td>Kitchen Manager</td>
+          <td>Oracle MICROS Simphony</td>
+          <td>Verified allergen information</td>
+          <td>Allergen-free menu for the guest</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Managing kitchen workflow and ensuring timely preparation</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Label Menu Items</td>
+          <td>Kitchen Staff</td>
+          <td>Oracle MICROS Simphony, Knowcross HotSOS</td>
+          <td>Allergen-free menu</td>
+          <td>Properly labeled menu items</td>
+          <td>Less than 2 minutes per item</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Consistency in labeling and accuracy</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Serve Allergen-Free Meal</td>
+          <td>Waitstaff</td>
+          <td>Oracle OPERA Cloud, Oracle MICROS Simphony</td>
+          <td>Properly labeled menu items</td>
+          <td>Served allergen-free meal to guest</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling multiple tables and ensuring correct serving</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Confirm Guest Satisfaction</td>
+          <td>Waitstaff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Served allergen-free meal</td>
+          <td>Guest satisfaction confirmation in Oracle OPERA Cloud</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Ensuring guest feedback and addressing any issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Allergen Data</td>
+          <td>Kitchen Manager</td>
+          <td>Oracle MICROS Simphony, Oracle OPERA Cloud</td>
+          <td>Guest satisfaction confirmation</td>
+          <td>Updated allergen data in Oracle MICROS Simphony and Oracle OPERA Cloud</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Maintaining up-to-date allergen information</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Review and Improve</td>
+          <td>Executive Chef</td>
+          <td>Oracle MICROS Simphony, Oracle OPERA Cloud</td>
+          <td>Updated allergen data</td>
+          <td>Improvement plan for allergen management</td>
+          <td>Less than 1 hour per week</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Continuous improvement and process optimization</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Communicate with Front Desk</td>
+          <td>Executive Chef</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Improvement plan</td>
+          <td>Communication to Front Desk Agent via Oracle OPERA Cloud</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Effective communication across departments</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FB-KT-07</li>
+          <li><span class="bullet">Domain</span> Food &amp; Beverage Operations</li>
+          <li><span class="bullet">Group</span> Kitchen &amp; Culinary Operations</li>
+          <li><span class="bullet">Process</span> Allergen Management &amp; Labelling</li>
+          <li><span class="bullet">Trigger</span> A guest requests an allergen-free meal or a specific allergy warning label on their menu items.</li>
+          <li><span class="bullet">Outcome</span> Accurate allergen information is provided to guests, and all relevant menu items are properly labeled. The hotel maintains compliance with local food safety regulations and ensures guest satisfaction.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 2 minutes per guest request</li><li><span class="bullet">▸</span> Less than 1 minute for notification to Kitchen Manager</li><li><span class="bullet">▸</span> Less than 5 minutes per allergen information review</li><li><span class="bullet">▸</span> Less than 10 minutes for preparing an allergen-free menu</li><li><span class="bullet">▸</span> Less than 2 minutes per labeled menu item</li><li><span class="bullet">▸</span> Less than 1 hour per week for continuous improvement</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process ensures proper allergen management and labeling in full-service Marriott hotels to comply with food safety regulations and cater to guests with dietary restrictions.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate allergen data leading to guest dissatisfaction or health risks</li><li><span class="bullet risk">▸</span> Delays in communication between departments affecting service quality</li><li><span class="bullet risk">▸</span> Mislabeling of menu items causing confusion and potential safety issues</li><li><span class="bullet risk">▸</span> Difficulty in managing kitchen workflow during peak times</li><li><span class="bullet risk">▸</span> Failure to continuously improve allergen management processes</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../food-beverage/kitchen-culinary/fb-kt-06/"><span>◀</span><div><span class="prev-lbl">Previous</span>Food Wastage Tracking &amp; Reduction</div></a>
+  <a href="../../../food-beverage/kitchen-culinary/fb-kt-08/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Supplier Quality Auditing</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FB-KT-07 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

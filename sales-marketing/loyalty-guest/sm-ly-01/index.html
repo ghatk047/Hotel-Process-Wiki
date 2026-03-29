@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SM-LY-01 — Marriott Bonvoy Enrolment &amp; Onboarding | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🎯 Sales, Marketing & Loyalty</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Sales, Marketing & Loyalty</a><span class="sep">›</span><a href="../">Loyalty & Guest Relationship</a><span class="sep">›</span>Marriott Bonvoy Enrolment &amp; Onboarding</div>
+
+<div class="page-header">
+  <div class="pid-badge">SM-LY-01</div>
+  <h1>Marriott Bonvoy Enrolment &amp; Onboarding</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Loyalty & Guest Relationship</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Marriott Bonvoy CRM</span> <span class="tag">Salesforce</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/sm-ly-01.png" alt="SM-LY-01 — Marriott Bonvoy Enrolment &amp; Onboarding process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.5</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>Marketing Specialist</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.5</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Technical Support Specialist</td>
+          <td><span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Guest Eligibility</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest check-in data</td>
+          <td>Eligibility status</td>
+          <td>less than 2 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Incorrect identification of guest eligibility can lead to missed enrollment opportunities.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Prompt Enrollment Offer</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Eligibility status</td>
+          <td>Enrollment offer to guest</td>
+          <td>less than 1 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Guest refusal or technical issues during enrollment can delay the process.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Capture Enrollment Details</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Guest consent and details</td>
+          <td>Enrollment form</td>
+          <td>less than 2 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate data entry can lead to failed enrollment.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Verify Enrollment Details</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Enrollment form</td>
+          <td>Verified enrollment details</td>
+          <td>less than 1 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Missed verification can result in incorrect data entry.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Activate Enrollment</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Verified enrollment details</td>
+          <td>Activated loyalty account</td>
+          <td>less than 1 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System failures during activation can cause delays.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Send Welcome Email</td>
+          <td>Marketing Specialist</td>
+          <td>Marriott Bonvoy CRM, Salesforce</td>
+          <td>Activated loyalty account details</td>
+          <td>Welcome email sent to guest</td>
+          <td>less than 5 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Email delivery failures can lead to missed communication.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Guest Profile</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Activated loyalty account details</td>
+          <td>Updated guest profile in Oracle OPERA Cloud</td>
+          <td>less than 1 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Profile update errors can cause inconsistencies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Track Enrollment Progress</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Enrollment data</td>
+          <td>Enrollment progress report</td>
+          <td>daily</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lack of tracking can lead to undetected issues.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Resolve Enrollment Issues</td>
+          <td>Technical Support Specialist</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Enrollment progress report</td>
+          <td>Resolved enrollment issues</td>
+          <td>less than 30 min for minor issues, less than 1 hour for major issues</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Unresolved issues can lead to guest dissatisfaction.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Follow-Up with Guest</td>
+          <td>Front Desk Agent, Marketing Specialist</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Resolved enrollment issues</td>
+          <td>Guest feedback on enrollment experience</td>
+          <td>less than 1 day</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Poor follow-up can lead to negative guest experiences.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> SM-LY-01</li>
+          <li><span class="bullet">Domain</span> Sales, Marketing &amp; Loyalty</li>
+          <li><span class="bullet">Group</span> Loyalty &amp; Guest Relationship</li>
+          <li><span class="bullet">Process</span> Marriott Bonvoy Enrolment &amp; Onboarding</li>
+          <li><span class="bullet">Trigger</span> Guest check-in</li>
+          <li><span class="bullet">Outcome</span> Successful enrollment of guest into Marriott Bonvoy with associated benefits activated.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Enrollment offer promptness: less than 1 min</li><li><span class="bullet">▸</span> Data entry accuracy: 99%</li><li><span class="bullet">▸</span> Activation success rate: 98%</li><li><span class="bullet">▸</span> Email delivery rate: 95%</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The process of enrolling and onboarding guests into Marriott Bonvoy loyalty program at a full-service Marriott hotel.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Incorrect guest eligibility identification</li><li><span class="bullet risk">▸</span> Technical issues during enrollment process</li><li><span class="bullet risk">▸</span> Inaccurate data entry leading to failed enrollment</li><li><span class="bullet risk">▸</span> System failures during activation</li><li><span class="bullet risk">▸</span> Email delivery failures</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../sales-marketing/marketing-digital/sm-mk-08/"><span>◀</span><div><span class="prev-lbl">Previous</span>Marketing Performance Analytics</div></a>
+  <a href="../../../sales-marketing/loyalty-guest/sm-ly-02/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Points Accrual &amp; Posting Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; SM-LY-01 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

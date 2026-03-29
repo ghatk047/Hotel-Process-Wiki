@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FM-RM-01 — Guest Room Defect Reporting &amp; Work Order Creation | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🔧 Facilities & Engineering</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Facilities & Engineering</a><span class="sep">›</span><a href="../">Reactive Maintenance & Work Orders</a><span class="sep">›</span>Guest Room Defect Reporting &amp; Work Order Creation</div>
+
+<div class="page-header">
+  <div class="pid-badge">FM-RM-01</div>
+  <h1>Guest Room Defect Reporting &amp; Work Order Creation</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Reactive Maintenance & Work Orders</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fm-rm-01.png" alt="FM-RM-01 — Guest Room Defect Reporting &amp; Work Order Creation process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">4.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#10b981"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">1.3</span> <span class="step-badge">2.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>Facilities Manager</td>
+          <td><span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Guest Complaint</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest complaint via phone, in-person, or online form</td>
+          <td>Complaint logged in Oracle OPERA Cloud</td>
+          <td>Less than 3 minutes to log complaint</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling multiple complaints simultaneously</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Defect Code</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Logged complaint in Oracle OPERA Cloud</td>
+          <td>Defect code assigned to the complaint</td>
+          <td>Less than 1 minute to assign defect code</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect defect code assignment</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Create Work Order</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Defect code assigned in Oracle OPERA Cloud</td>
+          <td>Work order created in Oracle OPERA Cloud</td>
+          <td>Less than 5 minutes to create work order</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delays in creating work orders</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Prioritize Work Order</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Created work order in Oracle OPERA Cloud</td>
+          <td>Work order prioritized based on severity and impact</td>
+          <td>Less than 2 minutes to prioritize work order</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Overlooking critical defects</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Assign Work Order to Technician</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Prioritized work order in Oracle OPERA Cloud</td>
+          <td>Work order assigned to a technician</td>
+          <td>Less than 3 minutes to assign work order</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inefficient technician assignment</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Schedule Technician</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Assigned work order in Oracle OPERA Cloud</td>
+          <td>Technician scheduled to perform the repair</td>
+          <td>Less than 5 minutes to schedule technician</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Overbooking technicians</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Notify Guest of Repair</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Scheduled work order in Oracle OPERA Cloud</td>
+          <td>Guest notified via phone or email about the repair schedule</td>
+          <td>Less than 2 minutes to notify guest</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Missed notifications</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Complete Work Order</td>
+          <td>Technician</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Scheduled work order in Oracle OPERA Cloud</td>
+          <td>Work order completed and documented in Oracle OPERA Cloud</td>
+          <td>Less than 10 minutes to complete work order</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incomplete or inaccurate repair documentation</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Verify Work Order Completion</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Completed work order in Oracle OPERA Cloud</td>
+          <td>Work order verified and closed in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes to verify work order</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Reopening completed work orders</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Notify Guest of Completion</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Verified work order in Oracle OPERA Cloud</td>
+          <td>Guest notified via phone or email about the completion of repair</td>
+          <td>Less than 2 minutes to notify guest</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Missed notifications</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FM-RM-01</li>
+          <li><span class="bullet">Domain</span> Facilities &amp; Engineering</li>
+          <li><span class="bullet">Group</span> Reactive Maintenance &amp; Work Orders</li>
+          <li><span class="bullet">Process</span> Guest Room Defect Reporting &amp; Work Order Creation</li>
+          <li><span class="bullet">Trigger</span> Guest reports a defect in their room</li>
+          <li><span class="bullet">Outcome</span> Defect is logged, prioritized, and resolved with minimal disruption to the guest's stay.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 3 minutes to log complaint</li><li><span class="bullet">▸</span> Less than 1 minute to assign defect code</li><li><span class="bullet">▸</span> Less than 5 minutes to create work order</li><li><span class="bullet">▸</span> Less than 2 minutes to prioritize work order</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines how guest room defects are reported and work orders are created at a Marriott full-service hotel using Oracle OPERA Cloud PMS.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Overlooking critical defects</li><li><span class="bullet risk">▸</span> Inefficient technician assignment</li><li><span class="bullet risk">▸</span> Missed notifications</li><li><span class="bullet risk">▸</span> Incomplete or inaccurate repair documentation</li><li><span class="bullet risk">▸</span> Reopening completed work orders</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../facilities/energy-environment/fm-em-08/"><span>◀</span><div><span class="prev-lbl">Previous</span>Environmental Incident Response</div></a>
+  <a href="../../../facilities/reactive-maintenance/fm-rm-02/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Emergency Repair Response</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FM-RM-01 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SM-SL-03 — MICE Sales | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🎯 Sales, Marketing & Loyalty</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Sales, Marketing & Loyalty</a><span class="sep">›</span><a href="../">Sales & Account Management</a><span class="sep">›</span>MICE Sales</div>
+
+<div class="page-header">
+  <div class="pid-badge">SM-SL-03</div>
+  <h1>MICE Sales</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Sales & Account Management</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Salesforce</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/sm-sl-03.png" alt="SM-SL-03 — MICE Sales process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Sales Executive</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.5</span> <span class="step-badge">3.6</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Event Planner</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#eab308"></span>Event Coordinator</td>
+          <td><span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initial Contact</td>
+          <td>Sales Executive</td>
+          <td>Oracle OPERA Cloud, Salesforce</td>
+          <td>Client inquiry</td>
+          <td>Contact record in CRM</td>
+          <td>&lt; 5 min response time</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling large volume of inquiries efficiently</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Qualify Lead</td>
+          <td>Sales Executive</td>
+          <td>Oracle OPERA Cloud, Salesforce</td>
+          <td>Contact record</td>
+          <td>Qualified lead status in CRM</td>
+          <td>&lt; 10 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Accurately qualifying leads</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Proposal Preparation</td>
+          <td>Sales Executive</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Qualified lead status</td>
+          <td>Event proposal</td>
+          <td>&lt; 30 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Creating detailed and competitive proposals</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Proposal Presentation</td>
+          <td>Sales Executive</td>
+          <td>Microsoft Power BI, Salesforce</td>
+          <td>Event proposal</td>
+          <td>Client acceptance</td>
+          <td>&lt; 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Effective presentation and negotiation skills</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Event Planning</td>
+          <td>Event Planner</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Client acceptance</td>
+          <td>Event plan and budget</td>
+          <td>&lt; 2 days</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Coordinating with multiple departments for event logistics</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Resource Allocation</td>
+          <td>Event Planner</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>Event plan and budget</td>
+          <td>Allocated resources</td>
+          <td>&lt; 1 day</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring adequate resource availability</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Event Execution</td>
+          <td>Event Coordinator</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Allocated resources</td>
+          <td>Smooth event execution</td>
+          <td>&lt; 1 day</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling unexpected issues during the event</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Post-Event Evaluation</td>
+          <td>Sales Executive, Event Planner</td>
+          <td>Oracle OPERA Cloud, Salesforce</td>
+          <td>Event execution details</td>
+          <td>Evaluation report</td>
+          <td>&lt; 2 days</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Gathering feedback from all stakeholders</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Feedback Loop</td>
+          <td>Sales Executive, Event Planner</td>
+          <td>Oracle OPERA Cloud, Salesforce</td>
+          <td>Evaluation report</td>
+          <td>Improvement actions</td>
+          <td>&lt; 1 week</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Implementing changes based on feedback</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.6</td>
+          <td>Client Follow-Up</td>
+          <td>Sales Executive</td>
+          <td>Oracle OPERA Cloud, Salesforce</td>
+          <td>Improvement actions</td>
+          <td>Client satisfaction survey</td>
+          <td>&lt; 2 weeks</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Maintaining client relationships post-event</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> SM-SL-03</li>
+          <li><span class="bullet">Domain</span> Sales, Marketing &amp; Loyalty</li>
+          <li><span class="bullet">Group</span> Sales &amp; Account Management</li>
+          <li><span class="bullet">Process</span> MICE Sales</li>
+          <li><span class="bullet">Trigger</span> Receiving a potential MICE event inquiry from a client</li>
+          <li><span class="bullet">Outcome</span> Successful booking and management of the MICE event with satisfied client.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> &lt; 5 min response time for initial contact</li><li><span class="bullet">▸</span> &lt; 10 min qualification lead time</li><li><span class="bullet">▸</span> &lt; 30 min proposal preparation time</li><li><span class="bullet">▸</span> &lt; 1 hour proposal presentation time</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">Process for managing MICE (Meetings, Incentives, Conferences, Exhibitions) sales at a Marriott full-service hotel.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate lead qualification leading to missed sales opportunities</li><li><span class="bullet risk">▸</span> Resource allocation delays affecting event timeline</li><li><span class="bullet risk">▸</span> Unexpected issues during event execution impacting guest satisfaction</li><li><span class="bullet risk">▸</span> Poor feedback handling and implementation of improvement actions</li><li><span class="bullet risk">▸</span> Client dissatisfaction due to inadequate follow-up post-event</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../sales-marketing/sales-accounts/sm-sl-02/"><span>◀</span><div><span class="prev-lbl">Previous</span>Contract Negotiation &amp; Rate Agreement</div></a>
+  <a href="../../../sales-marketing/sales-accounts/sm-sl-04/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Travel Management Company Relations</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; SM-SL-03 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

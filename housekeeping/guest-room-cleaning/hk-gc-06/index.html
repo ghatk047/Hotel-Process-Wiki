@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HK-GC-06 — Minibar Restocking &amp; Billing | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🛏️ Housekeeping & Rooms Management</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Housekeeping & Rooms Management</a><span class="sep">›</span><a href="../">Guest Room Cleaning & Turndown</a><span class="sep">›</span>Minibar Restocking &amp; Billing</div>
+
+<div class="page-header">
+  <div class="pid-badge">HK-GC-06</div>
+  <h1>Minibar Restocking &amp; Billing</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Guest Room Cleaning & Turndown</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">Oracle MICROS Simphony</span> <span class="tag">IDeaS G3 RMS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/hk-gc-06.png" alt="HK-GC-06 — Minibar Restocking &amp; Billing process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Pantry Manager</td>
+          <td><span class="step-badge">1.3</span> <span class="step-badge">2.1</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#f59e0b"></span>Housekeeping Staff</td>
+          <td><span class="step-badge">2.2</span> <span class="step-badge">2.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Front Desk Agent</td>
+          <td><span class="step-badge">3.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#84cc16"></span>Revenue Manager</td>
+          <td><span class="step-badge">3.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Review Minibar Stock Levels</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Minibar inventory report</td>
+          <td>Stock level analysis</td>
+          <td>Less than 5 minutes per room</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inaccurate stock levels leading to over or under stocking.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Prepare Minibar Restocking List</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Stock level analysis</td>
+          <td>Minibar restocking list</td>
+          <td>Less than 3 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Missing items on the restocking list.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Order Minibar Items</td>
+          <td>Pantry Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Minibar restocking list</td>
+          <td>Purchase order confirmation</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delays in item delivery.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Receive Minibar Items</td>
+          <td>Pantry Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Purchase order confirmation</td>
+          <td>Received items list</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Damaged or incorrect items received.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Stock Minibar Items</td>
+          <td>Housekeeping Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Received items list</td>
+          <td>Minibar stocked</td>
+          <td>Less than 15 minutes per room</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect item placement.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Verify Minibar Stock</td>
+          <td>Housekeeping Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Minibar stocked</td>
+          <td>Stock verification report</td>
+          <td>Less than 5 minutes per room</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Incorrect stock levels after restocking.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Bill Consumed Items</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Stock verification report</td>
+          <td>Guest bill with minibar charges</td>
+          <td>Less than 5 minutes per room</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect billing of items.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Confirm Billing Accuracy</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest bill with minibar charges</td>
+          <td>Billing confirmation</td>
+          <td>Less than 5 minutes per room</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Disputes over billing accuracy.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Minibar Inventory</td>
+          <td>Pantry Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Billing confirmation</td>
+          <td>Updated inventory record</td>
+          <td>Less than 5 minutes per room</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Outdated inventory records.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Closeout Process</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated inventory record</td>
+          <td>Process completion report</td>
+          <td>Less than 5 minutes per room</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incomplete process documentation.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> HK-GC-06</li>
+          <li><span class="bullet">Domain</span> Housekeeping &amp; Rooms Management</li>
+          <li><span class="bullet">Group</span> Guest Room Cleaning &amp; Turndown</li>
+          <li><span class="bullet">Process</span> Minibar Restocking &amp; Billing</li>
+          <li><span class="bullet">Trigger</span> Guest check-in or upon request from housekeeping staff</li>
+          <li><span class="bullet">Outcome</span> Minibar is fully stocked with approved beverages and snacks, and accurate charges are reflected in the guest's account.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes per room for stock level analysis and verification</li><li><span class="bullet">▸</span> Less than 10 minutes for item ordering</li><li><span class="bullet">▸</span> Less than 15 minutes per room for minibar stocking</li><li><span class="bullet">▸</span> Less than 5 minutes per room for billing confirmation and process completion</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The process of restocking minibars and billing guests for items consumed at Marriott full-service hotels.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Incorrect or incomplete inventory data leading to over or under stocking</li><li><span class="bullet risk">▸</span> Delays in item delivery affecting guest satisfaction</li><li><span class="bullet risk">▸</span> Errors in billing leading to disputes with guests</li><li><span class="bullet risk">▸</span> Outdated inventory records causing stock discrepancies</li><li><span class="bullet risk">▸</span> Incomplete process documentation resulting in operational inefficiencies</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../housekeeping/guest-room-cleaning/hk-gc-05/"><span>◀</span><div><span class="prev-lbl">Previous</span>Linen &amp; Towel Management</div></a>
+  <a href="../../../housekeeping/guest-room-cleaning/hk-gc-07/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Lost &amp; Found Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; HK-GC-06 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

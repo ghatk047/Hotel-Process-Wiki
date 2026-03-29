@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-CI-02 — Guest Check-In &amp; Room Assignment | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Check-In & Check-Out Operations</a><span class="sep">›</span>Guest Check-In &amp; Room Assignment</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-CI-02</div>
+  <h1>Guest Check-In &amp; Room Assignment</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Check-In & Check-Out Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Assa Abloy VingCard</span> <span class="tag">Honeywell INNCOM</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-ci-02.png" alt="FO-CI-02 — Guest Check-In &amp; Room Assignment process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Housekeeping Supervisor</td>
+          <td><span class="step-badge">1.4</span> <span class="step-badge">3.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Guest Arrival Notification</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Reservation details or walk-in information</td>
+          <td>Acknowledgment of arrival</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling last-minute changes in reservations</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Reservation Details</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest identification documents</td>
+          <td>Confirmed reservation details</td>
+          <td>Less than 3 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Dealing with expired reservations</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Assign Room</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room availability data</td>
+          <td>Assigned room number</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling no available rooms</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>Prepare Room for Check-In</td>
+          <td>Housekeeping Supervisor</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Assigned room number</td>
+          <td>Room ready for occupancy</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Ensuring room cleanliness and amenities</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Collect Payment</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Guest payment method</td>
+          <td>Payment confirmation</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling cash payments and change</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Issue Room Key</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Assa Abloy VingCard</td>
+          <td>Assigned room number</td>
+          <td>Room key</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Replacing lost or damaged keys</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Provide Check-In Information</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Guest preferences and amenities</td>
+          <td>Check-in information sheet</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Communicating complex hotel policies</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Update Reservation Status</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Check-in confirmation</td>
+          <td>Updated reservation record</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling system downtime</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Notify Housekeeping of Occupancy</td>
+          <td>Housekeeping Supervisor</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Occupied room number</td>
+          <td>Occupancy update</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Updating multiple systems simultaneously</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Confirm Check-In with Guest</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Guest feedback</td>
+          <td>Check-in confirmation</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling guest complaints</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-CI-02</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Check-In &amp; Check-Out Operations</li>
+          <li><span class="bullet">Process</span> Guest Check-In &amp; Room Assignment</li>
+          <li><span class="bullet">Trigger</span> Guest arrival notification via reservation system or direct walk-in</li>
+          <li><span class="bullet">Outcome</span> Successful check-in with assigned room, confirmed reservations, and updated guest records in the Oracle OPERA Cloud system.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Room assignment within 2 minutes (95% of the time)</li><li><span class="bullet">▸</span> Payment collection within 5 minutes (100% of the time)</li><li><span class="bullet">▸</span> Check-in confirmation within 3 minutes (98% of the time)</li><li><span class="bullet">▸</span> Housekeeping room readiness within 10 minutes (99% of the time)</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The FO-CI-02 process involves checking in guests and assigning rooms at a full-service Marriott hotel using Oracle OPERA Cloud PMS. This ensures smooth operations and guest satisfaction.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> System downtime affecting reservation and check-in processes</li><li><span class="bullet risk">▸</span> Incorrect room assignments due to system errors</li><li><span class="bullet risk">▸</span> Payment processing delays leading to guest dissatisfaction</li><li><span class="bullet risk">▸</span> Lost or damaged keys impacting guest experience</li><li><span class="bullet risk">▸</span> Inaccurate check-in information causing confusion</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/checkin-checkout/fo-ci-01/"><span>◀</span><div><span class="prev-lbl">Previous</span>Reservation Pre-Arrival Processing</div></a>
+  <a href="../../../front-office/checkin-checkout/fo-ci-03/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>VIP &amp; Loyalty Member Arrival</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-CI-02 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB-RO-05 — Bar Operations &amp; Cocktail Service | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🍽️ Food & Beverage Operations</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Food & Beverage Operations</a><span class="sep">›</span><a href="../">Restaurant & Bar Operations</a><span class="sep">›</span>Bar Operations &amp; Cocktail Service</div>
+
+<div class="page-header">
+  <div class="pid-badge">FB-RO-05</div>
+  <h1>Bar Operations &amp; Cocktail Service</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Restaurant & Bar Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">Workday HCM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fb-ro-05.png" alt="FB-RO-05 — Bar Operations &amp; Cocktail Service process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Bar Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span> <span class="step-badge">3.5</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ff0000"></span>Bar Staff</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Shift Start Preparation</td>
+          <td>Bar Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Shift schedule, previous day's sales report</td>
+          <td>Shift checklist, inventory count sheet</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate inventory counts leading to stockouts or overstocking.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Inventory Check</td>
+          <td>Bar Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Inventory count sheet</td>
+          <td>Updated inventory levels in Oracle OPERA Cloud</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Manual errors in inventory tracking.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Order Supplies</td>
+          <td>Bar Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Inventory levels, supplier information</td>
+          <td>Purchase order confirmation</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Delays in supply delivery affecting service quality.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Staff Scheduling</td>
+          <td>Bar Manager</td>
+          <td>Oracle OPERA Cloud, Workday HCM</td>
+          <td>Shift schedule, employee availability</td>
+          <td>Scheduled shifts in Oracle OPERA Cloud</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Staff shortages or overstaffing leading to inefficiencies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Customer Service Training</td>
+          <td>Bar Manager</td>
+          <td>Oracle OPERA Cloud, Knowcross HotSOS</td>
+          <td>Training materials, employee list</td>
+          <td>Trained staff, updated training records in Oracle OPERA Cloud</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inconsistent service quality due to lack of training.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Sales Monitoring</td>
+          <td>Bar Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Current sales data</td>
+          <td>Sales report, trend analysis</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inability to track sales trends affecting inventory decisions.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>End of Shift Inventory Check</td>
+          <td>Bar Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Inventory count sheet, end-of-shift report</td>
+          <td>Updated inventory levels in Oracle OPERA Cloud</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Manual errors in inventory tracking.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Shift End Reporting</td>
+          <td>Bar Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Sales report, inventory levels</td>
+          <td>Shift summary report, performance metrics</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incomplete or inaccurate reporting affecting decision-making.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Review and Adjustments</td>
+          <td>Bar Manager</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>Shift summary report, supplier information</td>
+          <td>Adjusted inventory levels, updated procurement orders</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inadequate adjustments leading to stockouts or overstocking.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Closeout and Documentation</td>
+          <td>Bar Manager</td>
+          <td>Oracle OPERA Cloud, Workday HCM</td>
+          <td>Shift summary report, employee attendance</td>
+          <td>Closed shift record, updated employee records in Oracle OPERA Cloud</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incomplete documentation affecting payroll and compliance.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FB-RO-05</li>
+          <li><span class="bullet">Domain</span> Food &amp; Beverage Operations</li>
+          <li><span class="bullet">Group</span> Restaurant &amp; Bar Operations</li>
+          <li><span class="bullet">Process</span> Bar Operations &amp; Cocktail Service</li>
+          <li><span class="bullet">Trigger</span> The start of each shift or when a new reservation is made that includes bar services</li>
+          <li><span class="bullet">Outcome</span> Successful completion results in well-managed bar operations with optimized inventory levels, satisfied customers, and accurate financial records.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Inventory accuracy rate &gt; 98%</li><li><span class="bullet">▸</span> Shift preparation time &lt; 5 minutes</li><li><span class="bullet">▸</span> Sales monitoring frequency every 10 minutes</li><li><span class="bullet">▸</span> End of shift reporting completion &lt; 15 minutes</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the operations and cocktail service procedures at a full-service Marriott hotel using Oracle OPERA Cloud PMS. It ensures efficient bar management, including inventory control, staff scheduling, and customer service.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Supply chain disruptions affecting inventory levels</li><li><span class="bullet risk">▸</span> Employee turnover leading to inconsistent service quality</li><li><span class="bullet risk">▸</span> Manual errors in inventory tracking causing stockouts or overstocking</li><li><span class="bullet risk">▸</span> Inadequate training resulting in poor customer service</li><li><span class="bullet risk">▸</span> Incomplete documentation affecting payroll and compliance</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../food-beverage/restaurant-bar/fb-ro-04/"><span>◀</span><div><span class="prev-lbl">Previous</span>Food &amp; Beverage Service Standards</div></a>
+  <a href="../../../food-beverage/restaurant-bar/fb-ro-06/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>All-Day Dining Operations</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FB-RO-05 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

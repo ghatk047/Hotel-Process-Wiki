@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FN-PR-04 — Food &amp; Beverage Purchasing | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">💰 Finance & Procurement</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Finance & Procurement</a><span class="sep">›</span><a href="../">Procurement & Supply Chain</a><span class="sep">›</span>Food &amp; Beverage Purchasing</div>
+
+<div class="page-header">
+  <div class="pid-badge">FN-PR-04</div>
+  <h1>Food &amp; Beverage Purchasing</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Procurement & Supply Chain</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">SAP S/4HANA</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fn-pr-04.png" alt="FN-PR-04 — Food &amp; Beverage Purchasing process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Food &amp; Beverage Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Procurement Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">1.4</span> <span class="step-badge">2.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#eab308"></span>Accounts Payable Specialist</td>
+          <td><span class="step-badge">2.2</span> <span class="step-badge">2.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Finance Manager</td>
+          <td><span class="step-badge">2.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Reorder Items</td>
+          <td>Food &amp; Beverage Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Inventory report from Oracle OPERA Cloud</td>
+          <td>Reorder list</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect inventory levels leading to overstocking or stockouts.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Review Vendor Contracts</td>
+          <td>Procurement Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Reorder list</td>
+          <td>Approved vendor list</td>
+          <td>Less than 60 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Outdated or non-existent contracts with preferred vendors.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Create Purchase Orders</td>
+          <td>Procurement Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Approved vendor list</td>
+          <td>Purchase orders</td>
+          <td>Less than 45 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Manual errors in purchase order creation.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>Send Purchase Orders to Vendors</td>
+          <td>Procurement Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Purchase orders</td>
+          <td>Acknowledgment from vendors</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delays in vendor response times.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Monitor Order Status</td>
+          <td>Procurement Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Acknowledgment from vendors</td>
+          <td>Order status report</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Lost or delayed purchase orders.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Receive Invoices</td>
+          <td>Accounts Payable Specialist</td>
+          <td>SAP S/4HANA</td>
+          <td>Order status report</td>
+          <td>Invoices</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect or incomplete invoices.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Approve Invoices</td>
+          <td>Finance Manager</td>
+          <td>SAP S/4HANA</td>
+          <td>Invoices</td>
+          <td>Approved invoices</td>
+          <td>Less than 60 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Delayed or erroneous invoice approvals.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Process Payments</td>
+          <td>Accounts Payable Specialist</td>
+          <td>SAP S/4HANA</td>
+          <td>Approved invoices</td>
+          <td>Payment confirmation</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Payment processing delays.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Receive Goods</td>
+          <td>Food &amp; Beverage Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Payment confirmation</td>
+          <td>Goods received note</td>
+          <td>Less than 60 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Damaged or incorrect goods delivery.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Inventory</td>
+          <td>Food &amp; Beverage Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Goods received note</td>
+          <td>Updated inventory report</td>
+          <td>Less than 45 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Manual errors in inventory updates.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FN-PR-04</li>
+          <li><span class="bullet">Domain</span> Finance &amp; Procurement</li>
+          <li><span class="bullet">Group</span> Procurement &amp; Supply Chain</li>
+          <li><span class="bullet">Process</span> Food &amp; Beverage Purchasing</li>
+          <li><span class="bullet">Trigger</span> Inventory levels fall below reorder points</li>
+          <li><span class="bullet">Outcome</span> Successful procurement and delivery of required food and beverage items to maintain operational standards.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 30 minutes for identifying reorder items</li><li><span class="bullet">▸</span> Less than 60 minutes for reviewing vendor contracts</li><li><span class="bullet">▸</span> Less than 45 minutes for creating purchase orders</li><li><span class="bullet">▸</span> Less than 15 minutes for monitoring order status</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the Food &amp; Beverage purchasing procedure at a Marriott full-service hotel, ensuring efficient procurement and management of culinary supplies.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Vendor contract expiration leading to supply chain disruptions</li><li><span class="bullet risk">▸</span> Manual errors in purchase order creation affecting delivery times</li><li><span class="bullet risk">▸</span> Payment processing delays causing cash flow issues</li><li><span class="bullet risk">▸</span> Incorrect goods delivery impacting guest satisfaction</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../finance/procurement-supply/fn-pr-03/"><span>◀</span><div><span class="prev-lbl">Previous</span>Tender &amp; RFP Management</div></a>
+  <a href="../../../finance/procurement-supply/fn-pr-05/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>OS&amp;E Procurement</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FN-PR-04 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

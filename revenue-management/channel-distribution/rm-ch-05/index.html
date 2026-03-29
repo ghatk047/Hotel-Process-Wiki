@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM-CH-05 — Wholesale &amp; Tour Operator Contracting | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">📈 Revenue Management & Distribution</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Revenue Management & Distribution</a><span class="sep">›</span><a href="../">Channel & Distribution Management</a><span class="sep">›</span>Wholesale &amp; Tour Operator Contracting</div>
+
+<div class="page-header">
+  <div class="pid-badge">RM-CH-05</div>
+  <h1>Wholesale &amp; Tour Operator Contracting</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Channel & Distribution Management</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">SAP S/4HANA</span> <span class="tag">Salesforce</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/rm-ch-05.png" alt="RM-CH-05 — Wholesale &amp; Tour Operator Contracting process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.3</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Legal Department</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Sales Executive</td>
+          <td><span class="step-badge">1.3</span> <span class="step-badge">3.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#8b5cf6"></span>Hotel General Manager</td>
+          <td><span class="step-badge">2.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>IT Department</td>
+          <td><span class="step-badge">2.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Contract Request</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Contract request form</td>
+          <td>Contract initiation record in Oracle OPERA Cloud</td>
+          <td>Less than 24 hours to initiate contract request</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delays in initiating the contract request due to incomplete forms</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Review and Approve Contract Terms</td>
+          <td>Legal Department</td>
+          <td>Oracle OPERA Cloud, SAP S/4HANA</td>
+          <td>Contract draft</td>
+          <td>Approved contract terms</td>
+          <td>Less than 3 business days to review and approve</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Complex legal negotiations delaying contract approval</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Negotiate Contract Details</td>
+          <td>Revenue Manager, Sales Executive</td>
+          <td>Oracle OPERA Cloud, Amadeus Delphi.fdc</td>
+          <td>Approved contract terms</td>
+          <td>Finalized contract details</td>
+          <td>Less than 5 business days to finalize negotiations</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Difficulties in reaching agreement on key terms</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Prepare Contract Document</td>
+          <td>Legal Department, Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Word</td>
+          <td>Finalized contract details</td>
+          <td>Executable contract document</td>
+          <td>Less than 2 business days to prepare the document</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Errors in contract document preparation leading to rework</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Sign Contract Document</td>
+          <td>Hotel General Manager, Legal Department</td>
+          <td>Oracle OPERA Cloud, Salesforce</td>
+          <td>Executable contract document</td>
+          <td>Signed contract record in Oracle OPERA Cloud</td>
+          <td>Less than 1 business day to sign the contract</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delays in obtaining necessary signatures</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Integrate Contract into Revenue Management Systems</td>
+          <td>Revenue Manager, IT Department</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS, SynXis CRS</td>
+          <td>Signed contract record</td>
+          <td>Integrated contract data in revenue management systems</td>
+          <td>Less than 2 business days to integrate</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Technical issues during integration causing data discrepancies</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Contract Performance</td>
+          <td>Revenue Manager, Sales Executive</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Integrated contract data</td>
+          <td>Performance report</td>
+          <td>Daily monitoring and weekly performance reports</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inaccurate reporting leading to missed opportunities</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Review and Adjust Contract Terms</td>
+          <td>Revenue Manager, Legal Department</td>
+          <td>Oracle OPERA Cloud, SAP S/4HANA</td>
+          <td>Performance report</td>
+          <td>Adjusted contract terms</td>
+          <td>Less than 1 business day to review and adjust</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Difficulty in adjusting contract terms due to legal constraints</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Renew or Terminate Contract</td>
+          <td>Revenue Manager, Legal Department</td>
+          <td>Oracle OPERA Cloud, Salesforce</td>
+          <td>Adjusted contract terms</td>
+          <td>Renewed or terminated contract record</td>
+          <td>Less than 1 business day to renew or terminate</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Complexity in contract renewal process</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> RM-CH-05</li>
+          <li><span class="bullet">Domain</span> Revenue Management &amp; Distribution</li>
+          <li><span class="bullet">Group</span> Channel &amp; Distribution Management</li>
+          <li><span class="bullet">Process</span> Wholesale &amp; Tour Operator Contracting</li>
+          <li><span class="bullet">Trigger</span> Initiation of a new contract negotiation with a wholesale or tour operator</li>
+          <li><span class="bullet">Outcome</span> Successful execution of a signed contract with the wholesale or tour operator, ensuring seamless integration into the hotel's revenue management systems.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 24 hours to initiate contract request</li><li><span class="bullet">▸</span> Less than 3 business days to review and approve contract terms</li><li><span class="bullet">▸</span> Less than 5 business days to finalize negotiations</li><li><span class="bullet">▸</span> Less than 2 business days to prepare the executable contract document</li><li><span class="bullet">▸</span> Less than 1 business day to sign the contract</li><li><span class="bullet">▸</span> Less than 2 business days to integrate contract into revenue management systems</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The process RM-CH-05 outlines the steps for contracting with wholesale and tour operators at a full-service Marriott hotel using Oracle OPERA Cloud PMS.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Delays in initiating the contract request due to incomplete forms</li><li><span class="bullet risk">▸</span> Complex legal negotiations delaying contract approval</li><li><span class="bullet risk">▸</span> Difficulties in reaching agreement on key terms during negotiations</li><li><span class="bullet risk">▸</span> Errors in contract document preparation leading to rework</li><li><span class="bullet risk">▸</span> Technical issues during integration causing data discrepancies</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../revenue-management/channel-distribution/rm-ch-04/"><span>◀</span><div><span class="prev-lbl">Previous</span>Metasearch Bidding &amp; CPC Management</div></a>
+  <a href="../../../revenue-management/channel-distribution/rm-ch-06/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Corporate Rate Loading &amp; Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; RM-CH-05 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SM-LY-08 — Post-Stay Survey &amp; NPS Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🎯 Sales, Marketing & Loyalty</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Sales, Marketing & Loyalty</a><span class="sep">›</span><a href="../">Loyalty & Guest Relationship</a><span class="sep">›</span>Post-Stay Survey &amp; NPS Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">SM-LY-08</div>
+  <h1>Post-Stay Survey &amp; NPS Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Loyalty & Guest Relationship</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Microsoft Power BI</span> <span class="tag">Marriott Bonvoy CRM</span> <span class="tag">Salesforce</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/sm-ly-08.png" alt="SM-LY-08 — Post-Stay Survey &amp; NPS Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#eab308"></span>Guest Services Coordinator</td>
+          <td><span class="step-badge">1.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Data Analyst</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#10b981"></span>Loyalty Manager</td>
+          <td><span class="step-badge">2.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>General Manager</td>
+          <td><span class="step-badge">2.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Post-Stay Survey</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest check-out information</td>
+          <td>Post-stay survey request sent to guest's device</td>
+          <td>Survey completion rate &gt; 80%</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring timely and accurate data entry for seamless survey initiation</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Send Survey Reminder</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Survey request status</td>
+          <td>Reminder email sent to guest</td>
+          <td>Response rate within 24 hours &gt; 70%</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling multiple channels for survey reminders</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Collect Survey Responses</td>
+          <td>Guest Services Coordinator</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest responses</td>
+          <td>Survey data stored in Oracle OPERA Cloud</td>
+          <td>Data entry accuracy &gt; 95%</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Managing large volumes of survey data efficiently</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Analyze Survey Data</td>
+          <td>Data Analyst</td>
+          <td>Microsoft Power BI</td>
+          <td>Survey data from Oracle OPERA Cloud</td>
+          <td>Analytics report</td>
+          <td>Report generation time &lt; 30 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Integrating multiple data sources for comprehensive analysis</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update NPS Score</td>
+          <td>Loyalty Manager</td>
+          <td>Marriott Bonvoy CRM</td>
+          <td>Analytics report</td>
+          <td>Updated NPS score in Marriott Bonvoy CRM</td>
+          <td>NPS score update frequency &gt; monthly</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Maintaining consistency across different platforms for accurate NPS tracking</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Identify Actionable Insights</td>
+          <td>General Manager</td>
+          <td>Microsoft Power BI</td>
+          <td>Analytics report</td>
+          <td>Action plan document</td>
+          <td>Time to identify insights &lt; 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Prioritizing insights for immediate action</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Implement Improvements</td>
+          <td>Department Heads</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Action plan document</td>
+          <td>Service improvement measures implemented</td>
+          <td>Improvement implementation rate &gt; 90%</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Coordinating cross-departmental efforts for effective service enhancements</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Monitor Improvement Impact</td>
+          <td>Data Analyst</td>
+          <td>Microsoft Power BI</td>
+          <td>Service improvement measures</td>
+          <td>Impact analysis report</td>
+          <td>Impact monitoring frequency &gt; weekly</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Measuring the long-term impact of implemented changes</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Adjust Strategies Based on Impact Analysis</td>
+          <td>Loyalty Manager</td>
+          <td>Marriott Bonvoy CRM</td>
+          <td>Impact analysis report</td>
+          <td>Strategic adjustments document</td>
+          <td>Strategy adjustment rate &gt; quarterly</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Balancing short-term improvements with long-term loyalty goals</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Report to Senior Management</td>
+          <td>General Manager</td>
+          <td>Microsoft Power BI, Salesforce</td>
+          <td>Strategic adjustments document</td>
+          <td>Executive summary report</td>
+          <td>Reporting frequency &gt; monthly</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Communicating complex data insights to non-technical stakeholders</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> SM-LY-08</li>
+          <li><span class="bullet">Domain</span> Sales, Marketing &amp; Loyalty</li>
+          <li><span class="bullet">Group</span> Loyalty &amp; Guest Relationship</li>
+          <li><span class="bullet">Process</span> Post-Stay Survey &amp; NPS Management</li>
+          <li><span class="bullet">Trigger</span> Guest departure</li>
+          <li><span class="bullet">Outcome</span> Successful completion of the process results in updated guest satisfaction data, improved NPS scores, and enhanced loyalty programs.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Survey completion rate &gt; 80%</li><li><span class="bullet">▸</span> Response rate within 24 hours &gt; 70%</li><li><span class="bullet">▸</span> Data entry accuracy &gt; 95%</li><li><span class="bullet">▸</span> NPS score update frequency &gt; monthly</li><li><span class="bullet">▸</span> Improvement implementation rate &gt; 90%</li><li><span class="bullet">▸</span> Strategy adjustment rate &gt; quarterly</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The process involves collecting post-stay feedback from guests to improve service quality and manage Net Promoter Score (NPS) at a Marriott full-service hotel.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Low survey response rates leading to inaccurate data</li><li><span class="bullet risk">▸</span> Inconsistent data entry causing errors in analysis</li><li><span class="bullet risk">▸</span> Difficulty in coordinating cross-departmental efforts for improvements</li><li><span class="bullet risk">▸</span> Challenges in measuring the long-term impact of implemented changes</li><li><span class="bullet risk">▸</span> Communication barriers when reporting complex data insights to senior management</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../sales-marketing/loyalty-guest/sm-ly-07/"><span>◀</span><div><span class="prev-lbl">Previous</span>Anniversary &amp; Special Occasion Management</div></a>
+  <a href="../../../sales-marketing/franchise-brand/sm-fr-01/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Franchise Agreement Onboarding &amp; Property Setup</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; SM-LY-08 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-SP-05 — Therapist Scheduling &amp; Utilisation | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Spa & Wellness Operations</a><span class="sep">›</span>Therapist Scheduling &amp; Utilisation</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-SP-05</div>
+  <h1>Therapist Scheduling &amp; Utilisation</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Spa & Wellness Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-sp-05.png" alt="FO-SP-05 — Therapist Scheduling &amp; Utilisation process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Spa Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">2.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Front Desk Agent</td>
+          <td><span class="step-badge">2.1</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Demand Forecast</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Demand forecast report from IDeaS G3 RMS</td>
+          <td>Updated demand forecast in Oracle OPERA Cloud</td>
+          <td>Less than 15 minutes to update forecast</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate demand forecasts leading to over or underutilization of therapists.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Review Therapist Availability</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Therapist availability calendar</td>
+          <td>Availability report</td>
+          <td>Less than 5 minutes to generate report</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Manual tracking of therapist schedules leading to errors.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Allocate Therapists</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Availability report and demand forecast</td>
+          <td>Therapist schedule for the week</td>
+          <td>Less than 10 minutes to allocate therapists</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Difficulty in balancing therapist workload across different services.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Confirm Appointments</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest reservation details</td>
+          <td>Confirmed appointment in Oracle OPERA Cloud</td>
+          <td>Less than 3 minutes per confirmation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Missed appointments due to incorrect scheduling.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Notify Therapists</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Therapist schedule for the day</td>
+          <td>Notification sent to therapists</td>
+          <td>Less than 5 minutes per notification</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Late notifications causing therapist no-shows.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Monitor Appointments</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Real-time appointment status</td>
+          <td>Appointment monitoring report</td>
+          <td>Less than 10 minutes to generate report</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>No real-time tracking of appointments leading to last-minute changes.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Evaluate Therapist Performance</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Appointment data and feedback forms</td>
+          <td>Performance evaluation report</td>
+          <td>Less than 20 minutes to generate report</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lack of structured performance evaluation leading to inconsistent service quality.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Adjust Schedule Based on Feedback</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Performance evaluation report</td>
+          <td>Adjusted therapist schedule</td>
+          <td>Less than 15 minutes to adjust schedule</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inability to quickly adapt schedules based on feedback.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update CRM with Feedback</td>
+          <td>Spa Manager</td>
+          <td>Marriott Bonvoy CRM</td>
+          <td>Guest feedback and therapist performance data</td>
+          <td>Updated guest profiles in CRM</td>
+          <td>Less than 10 minutes per update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Manual updating of CRM leading to outdated information.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Report Utilization Metrics</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Therapist utilization data</td>
+          <td>Utilization report</td>
+          <td>Less than 10 minutes to generate report</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lack of accurate metrics for resource allocation decisions.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-SP-05</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Spa &amp; Wellness Operations</li>
+          <li><span class="bullet">Process</span> Therapist Scheduling &amp; Utilisation</li>
+          <li><span class="bullet">Trigger</span> A request from the Spa Manager to schedule therapists based on demand forecasts and availability.</li>
+          <li><span class="bullet">Outcome</span> Successful scheduling of therapists, optimized utilization, and accurate tracking of appointments and performance metrics.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 15 minutes to update demand forecast</li><li><span class="bullet">▸</span> Less than 5 minutes to generate availability report</li><li><span class="bullet">▸</span> Less than 10 minutes to allocate therapists</li><li><span class="bullet">▸</span> Less than 3 minutes per appointment confirmation</li><li><span class="bullet">▸</span> Less than 20 minutes to generate performance evaluation report</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines how a full-service Marriott hotel schedules and utilizes therapists for spa and wellness services. It ensures efficient resource allocation and guest satisfaction.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate demand forecasts leading to over or underutilization of therapists.</li><li><span class="bullet risk">▸</span> Manual tracking of therapist schedules leading to errors.</li><li><span class="bullet risk">▸</span> Difficulty in balancing therapist workload across different services.</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/spa-wellness/fo-sp-04/"><span>◀</span><div><span class="prev-lbl">Previous</span>Spa Retail &amp; Product Sales</div></a>
+  <a href="../../../front-office/spa-wellness/fo-sp-06/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Spa Membership &amp; Package Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-SP-05 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

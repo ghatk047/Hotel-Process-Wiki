@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FM-RM-02 — Emergency Repair Response | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🔧 Facilities & Engineering</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Facilities & Engineering</a><span class="sep">›</span><a href="../">Reactive Maintenance & Work Orders</a><span class="sep">›</span>Emergency Repair Response</div>
+
+<div class="page-header">
+  <div class="pid-badge">FM-RM-02</div>
+  <h1>Emergency Repair Response</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Reactive Maintenance & Work Orders</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IBM Maximo</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fm-rm-02.png" alt="FM-RM-02 — Emergency Repair Response process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Facilities &amp; Engineering Technician</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">2.1</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Facilities &amp; Engineering Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">2.2</span> <span class="step-badge">3.2</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Front Desk Agent</td>
+          <td><span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Emergency Issue</td>
+          <td>Facilities &amp; Engineering Technician</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest report or technician observation</td>
+          <td>Emergency repair ticket in Oracle OPERA Cloud</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delays in reporting issues can lead to prolonged guest discomfort.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Prioritize Issue</td>
+          <td>Facilities &amp; Engineering Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Emergency repair ticket</td>
+          <td>Priority level assigned to the ticket</td>
+          <td>Less than 3 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Incorrect prioritization can lead to inefficient resource allocation.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Dispatch Technician</td>
+          <td>Facilities &amp; Engineering Manager</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>Prioritized ticket</td>
+          <td>Technician dispatched with necessary tools and parts</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delays in dispatch can prolong the repair time.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Assess Issue</td>
+          <td>Facilities &amp; Engineering Technician</td>
+          <td>Oracle OPERA Cloud, IBM Maximo</td>
+          <td>Dispatched to site</td>
+          <td>Detailed assessment report</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inaccurate assessments can lead to ineffective repairs.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Order Parts</td>
+          <td>Facilities &amp; Engineering Manager</td>
+          <td>Birchstreet Procurement, Oracle OPERA Cloud</td>
+          <td>Assessment report</td>
+          <td>Parts order confirmation</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delays in part delivery can extend repair times.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Perform Repair</td>
+          <td>Facilities &amp; Engineering Technician</td>
+          <td>Oracle OPERA Cloud, IBM Maximo</td>
+          <td>Parts and tools</td>
+          <td>Repair completion report</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Suboptimal repair techniques can lead to recurring issues.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Verify Repair</td>
+          <td>Facilities &amp; Engineering Technician</td>
+          <td>Oracle OPERA Cloud, IBM Maximo</td>
+          <td>Repair completion report</td>
+          <td>Verification report</td>
+          <td>Less than 20 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inadequate verification can result in unresolved issues.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update PMS</td>
+          <td>Facilities &amp; Engineering Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Verification report</td>
+          <td>Updated repair status in Oracle OPERA Cloud</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Outdated PMS information can lead to confusion.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Notify Guest</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Updated repair status</td>
+          <td>Guest notification</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lack of communication can cause guest dissatisfaction.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Close Ticket</td>
+          <td>Facilities &amp; Engineering Manager</td>
+          <td>Oracle OPERA Cloud, IBM Maximo</td>
+          <td>Guest notification confirmation</td>
+          <td>Closed repair ticket</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Open tickets can lead to ongoing concerns.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FM-RM-02</li>
+          <li><span class="bullet">Domain</span> Facilities &amp; Engineering</li>
+          <li><span class="bullet">Group</span> Reactive Maintenance &amp; Work Orders</li>
+          <li><span class="bullet">Process</span> Emergency Repair Response</li>
+          <li><span class="bullet">Trigger</span> Detection of an urgent maintenance issue by Facilities &amp; Engineering staff or guest report through Oracle OPERA Cloud PMS.</li>
+          <li><span class="bullet">Outcome</span> Successful completion results in the timely repair of the facility issue with minimal disruption to guests and hotel operations.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes for issue identification and prioritization</li><li><span class="bullet">▸</span> Less than 10 minutes for technician dispatch</li><li><span class="bullet">▸</span> Less than 30 minutes for parts ordering</li><li><span class="bullet">▸</span> Less than 20 minutes for repair verification</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the emergency repair response procedure at a Marriott full-service hotel, ensuring quick and efficient resolution of facility issues that impact guest comfort and safety.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate initial assessment leading to ineffective repairs</li><li><span class="bullet risk">▸</span> Delays in part delivery due to procurement issues</li><li><span class="bullet risk">▸</span> Suboptimal repair techniques causing recurring problems</li><li><span class="bullet risk">▸</span> Outdated PMS information resulting in confusion</li><li><span class="bullet risk">▸</span> Lack of communication with guests leading to dissatisfaction</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../facilities/reactive-maintenance/fm-rm-01/"><span>◀</span><div><span class="prev-lbl">Previous</span>Guest Room Defect Reporting &amp; Work Order Creation</div></a>
+  <a href="../../../facilities/reactive-maintenance/fm-rm-03/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Work Order Prioritisation &amp; Assignment</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FM-RM-02 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-NS-04 — Rate &amp; Package Posting | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Night Audit & Front Desk Operations</a><span class="sep">›</span>Rate &amp; Package Posting</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-NS-04</div>
+  <h1>Rate &amp; Package Posting</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Night Audit & Front Desk Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-ns-04.png" alt="FO-NS-04 — Rate &amp; Package Posting process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Front Desk Agent</td>
+          <td><span class="step-badge">3.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Review Rate &amp; Package Information</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Rate and package details from external sources</td>
+          <td>Verified rate and package information</td>
+          <td>Less than 5 minutes per review</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inconsistent data formats from different sources</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Enter Rates into Oracle OPERA Cloud</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Verified rate and package information</td>
+          <td>Updated rates in Oracle OPERA Cloud</td>
+          <td>Less than 10 minutes per entry</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System downtime affecting data entry</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Sync Rates with IDeaS G3 RMS</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS</td>
+          <td>Updated rates in Oracle OPERA Cloud</td>
+          <td>Rates synchronized with IDeaS G3 RMS</td>
+          <td>Less than 2 minutes per sync</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data discrepancies between systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update SynXis CRS with Rates</td>
+          <td>Revenue Manager</td>
+          <td>SynXis CRS</td>
+          <td>Rates synchronized with IDeaS G3 RMS</td>
+          <td>Updated rates in SynXis CRS</td>
+          <td>Less than 5 minutes per update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Integration issues between systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Notify Front Desk of Changes</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated rates in SynXis CRS</td>
+          <td>Notification to Front Desk</td>
+          <td>Less than 1 minute per notification</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Communication delays between departments</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Verify Rates on Property Website</td>
+          <td>Front Desk Agent</td>
+          <td>SynXis CRS</td>
+          <td>Notification from Revenue Manager</td>
+          <td>Verification of rates on property website</td>
+          <td>Less than 3 minutes per verification</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Outdated or incorrect information on the website</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Marriott Bonvoy CRM</td>
+          <td>Revenue Manager</td>
+          <td>Marriott Bonvoy CRM</td>
+          <td>Verified rates on property website</td>
+          <td>Updated rates in Marriott Bonvoy CRM</td>
+          <td>Less than 5 minutes per update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data entry errors affecting loyalty program</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Final Review and Approval</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated rates in Marriott Bonvoy CRM</td>
+          <td>Approval of rate posting</td>
+          <td>Less than 2 minutes per review</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Lack of clear communication on changes</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Closeout and Documentation</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Approval from Executive Housekeeper</td>
+          <td>Closed out process with documentation</td>
+          <td>Less than 1 minute per closeout</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lost or misplaced documents</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-NS-04</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Night Audit &amp; Front Desk Operations</li>
+          <li><span class="bullet">Process</span> Rate &amp; Package Posting</li>
+          <li><span class="bullet">Trigger</span> Initiation by a Revenue Manager or Front Desk Agent upon receiving new rate or package information from external sources such as travel agencies, online platforms, or internal marketing teams.</li>
+          <li><span class="bullet">Outcome</span> Successful completion results in updated rates and packages being posted in Oracle OPERA Cloud PMS, IDeaS G3 RMS, SynXis CRS, and other relevant systems, ensuring that all guests receive accurate pricing information during the reservation process.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes per rate review</li><li><span class="bullet">▸</span> Less than 10 minutes per data entry in Oracle OPERA Cloud</li><li><span class="bullet">▸</span> Less than 2 minutes per system sync</li><li><span class="bullet">▸</span> Less than 3 minutes per website verification</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The process of posting rates and packages in a full-service Marriott hotel involves ensuring that all pricing information is accurately entered into the Oracle OPERA Cloud PMS and other relevant systems to maintain consistency across the property's operations.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Data discrepancies between systems affecting reservations</li><li><span class="bullet risk">▸</span> Integration issues leading to outdated pricing information</li><li><span class="bullet risk">▸</span> Communication delays causing confusion among staff</li><li><span class="bullet risk">▸</span> Lost or misplaced documents impacting process efficiency</li><li><span class="bullet risk">▸</span> System downtime disrupting data entry operations</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/night-audit/fo-ns-03/"><span>◀</span><div><span class="prev-lbl">Previous</span>Guest Folio Management</div></a>
+  <a href="../../../front-office/night-audit/fo-ns-05/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Cash Handling &amp; Float Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-NS-04 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
