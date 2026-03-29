@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EA-06 · Loyalty &amp; CRM Architecture · Hotel Process Wiki</title>
+  
+<style>
+.sidebar {
+  position: fixed;
+  top: 0; left: 0;
+  width: 260px;
+  height: 100vh;
+  overflow-y: auto;
+  background: #1a3c5e;
+  color: #cbd5e1;
+  font-size: 12px;
+  z-index: 200;
+  padding-bottom: 2rem;
+  transition: transform .25s;
+}
+.sidebar-brand {
+  display: flex; align-items: center; gap: .5rem;
+  padding: 1rem 1rem .75rem;
+  font-weight: 700; font-size: .95rem; color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  text-decoration: none;
+}
+.sidebar-section { border-bottom: 1px solid rgba(255,255,255,.07); }
+.sidebar-domain {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: .55rem 1rem;
+  font-weight: 600; font-size: .78rem; text-transform: uppercase;
+  letter-spacing: .06em; color: #94a3b8;
+  cursor: pointer; user-select: none;
+}
+.sidebar-domain:hover { color: #fff; }
+.sidebar-domain .chevron { font-size: .65rem; transition: transform .2s; }
+.sidebar-domain.open .chevron { transform: rotate(90deg); }
+.sidebar-l2 { display: none; padding: 0 0 .25rem; }
+.sidebar-l2.open { display: block; }
+.sidebar-l2-link {
+  display: block; padding: .4rem 1rem .4rem 1.5rem;
+  color: #e2e8f0; text-decoration: none; font-weight: 600; font-size: .8rem;
+}
+.sidebar-l2-link:hover { color: #fff; background: rgba(255,255,255,.06); }
+.sidebar-l3 { padding: 0; }
+.sidebar-l3-link {
+  display: flex; align-items: center; gap: .4rem;
+  padding: .28rem 1rem .28rem 2rem;
+  color: #94a3b8; text-decoration: none; font-size: .75rem;
+}
+.sidebar-l3-link:hover { color: #e2e8f0; background: rgba(255,255,255,.05); }
+.sidebar-l3-link.active { color: #fff; background: rgba(255,255,255,.1); font-weight: 600; }
+.sidebar-l3-link .pid {
+  font-size: .68rem; font-weight: 700; color: #60a5fa;
+  min-width: 52px; flex-shrink: 0;
+}
+.sidebar-toggle {
+  position: fixed; top: .75rem; left: 268px;
+  background: #1a3c5e; color: #fff; border: none;
+  width: 22px; height: 36px; border-radius: 0 6px 6px 0;
+  cursor: pointer; font-size: .7rem; z-index: 201;
+  transition: left .25s;
+}
+.sidebar-collapsed .sidebar { transform: translateX(-260px); }
+.sidebar-collapsed .sidebar-toggle { left: 8px; }
+.sidebar-collapsed .main-content { margin-left: 0 !important; }
+.main-content { margin-left: 260px; transition: margin-left .25s; }
+@media (max-width: 768px) {
+  .sidebar { transform: translateX(-260px); }
+  .main-content { margin-left: 0; }
+  .sidebar-toggle { left: 8px; }
+}
+</style>
+</head>
+<body>
+<nav class="sidebar" id="sidebar">
+  <a class="sidebar-brand" href="../../">🏨 Hotel Process Wiki</a>
+  <div class="sidebar-section">
+    <div class="sidebar-domain" data-slug="housekeeping"><span>🛏️ Housekeeping & Rooms Management</span><span class="chevron">▶</span></div>
+    <div class="sidebar-l2">
+      <a class="sidebar-l2-link" href="../../housekeeping/guest-room-cleaning/">HK-GC — Guest Room Cleaning &amp; Turndown</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../housekeeping/laundry-linen/">HK-LP — Laundry &amp; Linen Operations</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../housekeeping/public-area-cleaning/">HK-PC — Public Area &amp; Cleaning Operations</a>
+      <div class="sidebar-l3">
+      </div>
+    </div>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-domain" data-slug="front-office"><span>🏨 Front Office & Guest Services</span><span class="chevron">▶</span></div>
+    <div class="sidebar-l2">
+      <a class="sidebar-l2-link" href="../../front-office/checkin-checkout/">FO-CI — Check-In &amp; Check-Out Operations</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../front-office/concierge-services/">FO-CS — Concierge &amp; Guest Services</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../front-office/night-audit/">FO-NS — Night Audit &amp; Front Desk Operations</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../front-office/spa-wellness/">FO-SP — Spa &amp; Wellness Operations</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../front-office/upselling-revenue/">FO-UP — Upselling &amp; Revenue Optimisation</a>
+      <div class="sidebar-l3">
+      </div>
+    </div>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-domain" data-slug="food-beverage"><span>🍽️ Food & Beverage Operations</span><span class="chevron">▶</span></div>
+    <div class="sidebar-l2">
+      <a class="sidebar-l2-link" href="../../food-beverage/restaurant-bar/">FB-RO — Restaurant &amp; Bar Operations</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../food-beverage/banqueting-events/">FB-BQ — Banqueting &amp; Events Catering</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../food-beverage/kitchen-culinary/">FB-KT — Kitchen &amp; Culinary Operations</a>
+      <div class="sidebar-l3">
+      </div>
+    </div>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-domain" data-slug="revenue-management"><span>📈 Revenue Management & Distribution</span><span class="chevron">▶</span></div>
+    <div class="sidebar-l2">
+      <a class="sidebar-l2-link" href="../../revenue-management/yield-rate/">RM-YM — Yield &amp; Rate Management</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../revenue-management/channel-distribution/">RM-CH — Channel &amp; Distribution Management</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../revenue-management/reservations/">RM-RV — Reservations Operations</a>
+      <div class="sidebar-l3">
+      </div>
+    </div>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-domain" data-slug="sales-marketing"><span>🎯 Sales, Marketing & Loyalty</span><span class="chevron">▶</span></div>
+    <div class="sidebar-l2">
+      <a class="sidebar-l2-link" href="../../sales-marketing/sales-accounts/">SM-SL — Sales &amp; Account Management</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../sales-marketing/marketing-digital/">SM-MK — Marketing &amp; Digital</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../sales-marketing/loyalty-guest/">SM-LY — Loyalty &amp; Guest Relationship</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../sales-marketing/franchise-brand/">SM-FR — Franchise &amp; Brand Management</a>
+      <div class="sidebar-l3">
+      </div>
+    </div>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-domain" data-slug="human-resources"><span>👥 Human Resources & Training</span><span class="chevron">▶</span></div>
+    <div class="sidebar-l2">
+      <a class="sidebar-l2-link" href="../../human-resources/talent-workforce/">HR-TL — Talent &amp; Workforce Management</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../human-resources/learning-development/">HR-LR — Learning &amp; Development</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../human-resources/employee-wellbeing/">HR-EW — Employee Wellbeing &amp; Engagement</a>
+      <div class="sidebar-l3">
+      </div>
+    </div>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-domain" data-slug="facilities"><span>🔧 Facilities & Engineering</span><span class="chevron">▶</span></div>
+    <div class="sidebar-l2">
+      <a class="sidebar-l2-link" href="../../facilities/preventive-maintenance/">FM-PM — Preventive Maintenance</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../facilities/energy-environment/">FM-EM — Energy &amp; Environment Management</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../facilities/reactive-maintenance/">FM-RM — Reactive Maintenance &amp; Work Orders</a>
+      <div class="sidebar-l3">
+      </div>
+    </div>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-domain" data-slug="finance"><span>💰 Finance & Procurement</span><span class="chevron">▶</span></div>
+    <div class="sidebar-l2">
+      <a class="sidebar-l2-link" href="../../finance/accounting-finance/">FN-AC — Accounting &amp; Financial Control</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../finance/procurement-supply/">FN-PR — Procurement &amp; Supply Chain</a>
+      <div class="sidebar-l3">
+      </div>
+    </div>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-domain" data-slug="technology"><span>💻 Technology & Systems</span><span class="chevron">▶</span></div>
+    <div class="sidebar-l2">
+      <a class="sidebar-l2-link" href="../../technology/it-operations/">IT-OP — IT Operations &amp; Infrastructure</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../technology/digital-guest/">IT-DG — Digital Guest Experience</a>
+      <div class="sidebar-l3">
+      </div>
+    </div>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-domain" data-slug="security-compliance"><span>🔒 Safety, Security & Compliance</span><span class="chevron">▶</span></div>
+    <div class="sidebar-l2">
+      <a class="sidebar-l2-link" href="../../security-compliance/security-operations/">SC-SE — Security Operations</a>
+      <div class="sidebar-l3">
+      </div>
+      <a class="sidebar-l2-link" href="../../security-compliance/compliance-risk/">SC-CL — Compliance &amp; Risk Management</a>
+      <div class="sidebar-l3">
+      </div>
+    </div>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-domain open" data-slug="ea-diagrams"><span>🗺️ EA Diagrams</span><span class="chevron">▶</span></div>
+    <div class="sidebar-l2 open">
+      <a class="sidebar-l2-link" href="../../ea-diagrams/">All EA Diagrams</a>
+      <div class="sidebar-l3">
+        <a class="sidebar-l3-link" href="../../ea-diagrams/ea-01/"><span class="pid">EA-01</span>Hotel System Landscape</a>
+        <a class="sidebar-l3-link" href="../../ea-diagrams/ea-02/"><span class="pid">EA-02</span>Guest Journey Data Flow</a>
+        <a class="sidebar-l3-link" href="../../ea-diagrams/ea-03/"><span class="pid">EA-03</span>Revenue &amp; Distribution Architecture</a>
+        <a class="sidebar-l3-link" href="../../ea-diagrams/ea-04/"><span class="pid">EA-04</span>F&amp;B Operations Integration</a>
+        <a class="sidebar-l3-link" href="../../ea-diagrams/ea-05/"><span class="pid">EA-05</span>Property Operations Ecosystem</a>
+        <a class="sidebar-l3-link active" href="../../ea-diagrams/ea-06/"><span class="pid">EA-06</span>Loyalty &amp; CRM Architecture</a>
+        <a class="sidebar-l3-link" href="../../ea-diagrams/ea-07/"><span class="pid">EA-07</span>HR &amp; Workforce Technology Stack</a>
+        <a class="sidebar-l3-link" href="../../ea-diagrams/ea-08/"><span class="pid">EA-08</span>Finance &amp; Procurement Technology Stack</a>
+        <a class="sidebar-l3-link" href="../../ea-diagrams/ea-09/"><span class="pid">EA-09</span>IT &amp; Digital Guest Experience Architecture</a>
+        <a class="sidebar-l3-link" href="../../ea-diagrams/ea-10/"><span class="pid">EA-10</span>Sales, MICE &amp; Franchise Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<button class="sidebar-toggle" id="sidebarToggle" title="Toggle sidebar">◀</button>
+<div class="main-content">
+  <nav class="nav" style="margin-left:0">
+    <span class="brand">🏨 Hotel Process Wiki</span>
+    <a href="../../">Home</a>
+    <a href="../../ea-diagrams/">EA Diagrams</a>
+    <a href="https://github.com/ghatk047/Hotel-Process-Wiki" target="_blank">GitHub</a>
+  </nav>
+
+  <div class="breadcrumb">
+    <a href="../../">Home</a><span class="sep">›</span>
+    <a href="../../ea-diagrams/">EA Diagrams</a><span class="sep">›</span>
+    <span>EA-06 · Loyalty &amp; CRM Architecture</span>
+  </div>
+
+  <div class="page-header">
+    <div class="pid-badge">EA-06</div>
+    <h1>Loyalty &amp; CRM Architecture</h1>
+    <div class="meta">
+      <span class="tag">✅ Published</span>
+      <span class="tag">Ref: Marriott International</span>
+      <span class="tag">Marriott Bonvoy platform — enrolment, points, elite status, </span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">🗺️ Enterprise Architecture Diagram</div>
+    <div class="card-body">
+      <div class="diagram-wrap">
+        <img src="../../assets/img/ea-06.png"
+             alt="EA-06 — Loyalty &amp; CRM Architecture"
+             loading="lazy">
+      </div>
+      <p style="text-align:center;font-size:.78rem;color:#94a3b8;margin-top:.5rem">
+        Click diagram to open fullscreen &nbsp;|&nbsp; Scroll to zoom &nbsp;|&nbsp; Drag to pan
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">📋 Architecture Notes</div>
+    <div class="card-body">
+      <p style="font-size:.9rem;color:#374151;line-height:1.8;max-width:860px">
+        This diagram maps the Marriott Bonvoy loyalty and CRM technology ecosystem. The Bonvoy Platform is the central loyalty engine, managing 196 million member profiles, points accrual rules, elite tier calculations, and award inventory. OPERA Cloud PMS feeds stay data and charges to Bonvoy for points posting. Salesforce CRM manages corporate accounts, group sales, and TMC relationships. The Bonvoy App serves as the primary member touchpoint for booking, digital key, chat, and points management. Post-stay survey data from Qualtrics feeds NPS scores back to Salesforce for account health tracking and service recovery.
+      </p>
+    </div>
+  </div>
+
+  <div class="page-nav">
+    <a class="pn-btn" href="../ea-05/"><span>←</span><span>Property Operations Ecosystem</span></a>
+    <a class="pn-btn" href="../ea-07/" style="margin-left:auto;text-align:right"><span>HR &amp; Workforce Technology Stack</span><span>→</span></a>
+  </div>
+
+  <footer class="footer">
+    Hotel Process Wiki &middot; EA-06 &middot; Ref: Marriott International &middot; Updated 2026-03-29 09:26
+  </footer>
+</div>
+
+<script>
+(function(){
+  var sidebar  = document.getElementById('sidebar');
+  var toggle   = document.getElementById('sidebarToggle');
+  var body     = document.body;
+
+  // Accordion
+  document.querySelectorAll('.sidebar-domain').forEach(function(el){
+    el.addEventListener('click', function(){
+      var l2 = el.nextElementSibling;
+      var open = el.classList.toggle('open');
+      if(l2) l2.classList.toggle('open', open);
+    });
+  });
+
+  // Toggle collapse
+  if(toggle){
+    toggle.addEventListener('click', function(){
+      body.classList.toggle('sidebar-collapsed');
+      toggle.textContent = body.classList.contains('sidebar-collapsed') ? '▶' : '◀';
+    });
+  }
+})();
+</script>
+<script src="../../assets/js/wiki.js"></script>
+</body>
+</html>
