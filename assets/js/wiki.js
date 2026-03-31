@@ -320,4 +320,29 @@ function initLightbox() {
 document.addEventListener('DOMContentLoaded', function(){
   injectSidebar();
   initLightbox();
+
+  /* ── SEARCH — redirect to search.html on Enter ── */
+  const searchBox = document.getElementById('searchBox');
+  if (searchBox) {
+    function getSearchUrl(q) {
+      const logo = document.querySelector('a.topbar-logo, a[class*="logo"]');
+      const base = logo ? logo.getAttribute('href') : '/';
+      const root = base.endsWith('/') ? base : base + '/';
+      return root + 'search.html?q=' + encodeURIComponent(q.trim());
+    }
+    searchBox.addEventListener('keydown', e => {
+      if (e.key === 'Enter' && searchBox.value.trim()) {
+        window.location.href = getSearchUrl(searchBox.value);
+      }
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === '/' && document.activeElement !== searchBox) {
+        e.preventDefault(); searchBox.focus(); searchBox.select();
+      }
+      if (e.key === 'Escape' && document.activeElement === searchBox) {
+        searchBox.value = ''; searchBox.blur();
+      }
+    });
+  }
+
 });
