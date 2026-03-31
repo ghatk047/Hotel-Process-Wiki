@@ -312,3 +312,23 @@ body {
   .attr-grid { grid-template-columns: 1fr; }
   .l4-table { display: block; overflow-x: auto; }
 }
+
+/* ── SEARCH (topbar input → navigates to search.html on Enter) ──────────── */
+#searchBox, .search-box, [id="searchBox"] {
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 6px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 12px;
+  outline: none;
+  padding: 5px 10px;
+  transition: all .15s;
+  width: 200px;
+}
+#searchBox:focus, .search-box:focus {
+  background: rgba(255,255,255,.18);
+  border-color: #e87722;
+  width: 240px;
+}
+#searchBox::placeholder, .search-box::placeholder { color: rgba(255,255,255,.4); }
