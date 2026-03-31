@@ -332,3 +332,21 @@ body {
   width: 240px;
 }
 #searchBox::placeholder, .search-box::placeholder { color: rgba(255,255,255,.4); }
+
+/* ── Topbar search box ── */
+nav.nav { display:flex; align-items:center; gap:12px; }
+.topbar-search {
+  margin-left:auto;
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:6px;
+  color:#fff;
+  font-size:12px;
+  font-family:inherit;
+  outline:none;
+  padding:5px 10px;
+  width:190px;
+  transition:all .15s;
+}
+.topbar-search:focus { border-color:#e87722; width:240px; background:rgba(255,255,255,.18); }
+.topbar-search::placeholder { color:rgba(255,255,255,.4); }
