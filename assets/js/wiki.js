@@ -321,28 +321,37 @@ document.addEventListener('DOMContentLoaded', function(){
   injectSidebar();
   initLightbox();
 
-  /* ── SEARCH — redirect to search.html on Enter ── */
-  const searchBox = document.getElementById('searchBox');
-  if (searchBox) {
-    function getSearchUrl(q) {
-      const logo = document.querySelector('a.topbar-logo, a[class*="logo"]');
-      const base = logo ? logo.getAttribute('href') : '/';
-      const root = base.endsWith('/') ? base : base + '/';
-      return root + 'search.html?q=' + encodeURIComponent(q.trim());
+  /* ── SEARCH — inject box + redirect to search.html on Enter ── */
+  (function() {
+    function getSiteRoot() {
+      var parts = window.location.pathname.split('/');
+      var idx = parts.indexOf('Hotel-Process-Wiki');
+      if (idx >= 0) return parts.slice(0, idx + 1).join('/') + '/';
+      return '/';
     }
-    searchBox.addEventListener('keydown', e => {
-      if (e.key === 'Enter' && searchBox.value.trim()) {
-        window.location.href = getSearchUrl(searchBox.value);
-      }
+    function getSearchUrl(q) {
+      return getSiteRoot() + 'search.html?q=' + encodeURIComponent(q.trim());
+    }
+    // Inject into <nav class="nav"> topbar
+    var topnav = document.querySelector('nav.nav');
+    if (topnav && !document.getElementById('searchBox')) {
+      var inp = document.createElement('input');
+      inp.type = 'text'; inp.id = 'searchBox';
+      inp.placeholder = 'Search… (/)'; inp.autocomplete = 'off';
+      inp.style.cssText = 'background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:6px;color:#fff;font-size:12px;outline:none;padding:5px 10px;width:190px;margin-left:auto;font-family:inherit;transition:all .15s;';
+      inp.addEventListener('focus', function(){ inp.style.borderColor='#e87722'; inp.style.width='240px'; });
+      inp.addEventListener('blur',  function(){ inp.style.borderColor='rgba(255,255,255,.25)'; inp.style.width='190px'; });
+      topnav.appendChild(inp);
+    }
+    var searchBox = document.getElementById('searchBox');
+    if (!searchBox) return;
+    searchBox.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' && searchBox.value.trim()) window.location.href = getSearchUrl(searchBox.value);
+      if (e.key === 'Escape') { searchBox.value = ''; searchBox.blur(); }
     });
-    document.addEventListener('keydown', e => {
-      if (e.key === '/' && document.activeElement !== searchBox) {
-        e.preventDefault(); searchBox.focus(); searchBox.select();
-      }
-      if (e.key === 'Escape' && document.activeElement === searchBox) {
-        searchBox.value = ''; searchBox.blur();
-      }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === '/' && document.activeElement !== searchBox) { e.preventDefault(); searchBox.focus(); searchBox.select(); }
     });
-  }
+  })();
 
 });
