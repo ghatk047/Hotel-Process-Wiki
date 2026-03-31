@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT-DG-06 — Guest Feedback Platform Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">💻 Technology & Systems</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Technology & Systems</a><span class="sep">›</span><a href="../">Digital Guest Experience</a><span class="sep">›</span>Guest Feedback Platform Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">IT-DG-06</div>
+  <h1>Guest Feedback Platform Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Digital Guest Experience</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Microsoft Power BI</span> <span class="tag">Oracle MICROS Simphony</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/it-dg-06.png" alt="IT-DG-06 — Guest Feedback Platform Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Guest Services Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">3.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Guest Services Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">2.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#81b29a"></span>Department Head (e.g., Housekeeping Manager)</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#f59e0b"></span>Department Staff (e.g., Housekeeper)</td>
+          <td><span class="step-badge">2.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Revenue Manager</td>
+          <td><span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#16a34a"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Guest Feedback</td>
+          <td>Guest Services Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Digital feedback submission</td>
+          <td>Feedback logged in Oracle OPERA Cloud</td>
+          <td>&lt; 3 min response time</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling large volumes of feedback simultaneously</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Categorize Feedback</td>
+          <td>Guest Services Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Logged feedback</td>
+          <td>Categorized feedback (e.g., cleanliness, service, amenities)</td>
+          <td>&lt; 5 min per feedback item</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurate categorization of mixed feedback</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Assign Feedback to Department</td>
+          <td>Guest Services Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Categorized feedback</td>
+          <td>Feedback assigned to relevant department (e.g., Housekeeping, Front Desk)</td>
+          <td>&lt; 2 min per assignment</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring correct department receives feedback</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Review Feedback</td>
+          <td>Department Head (e.g., Housekeeping Manager)</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Assigned feedback</td>
+          <td>Feedback reviewed and noted for action items</td>
+          <td>&lt; 10 min per review</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling sensitive or complex feedback</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Develop Action Plan</td>
+          <td>Department Head (e.g., Housekeeping Manager)</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Reviewed feedback</td>
+          <td>Action plan with responsible party and timeline</td>
+          <td>&lt; 15 min per action plan</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Creating actionable plans from general feedback</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Execute Action Plan</td>
+          <td>Department Staff (e.g., Housekeeper)</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Action plan</td>
+          <td>Feedback addressed and resolved</td>
+          <td>&lt; 1 day for minor issues, &lt; 3 days for major issues</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Resource allocation for addressing high-priority feedback</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Monitor Progress</td>
+          <td>Guest Services Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Action plan status updates</td>
+          <td>Progress report to Guest Services Team</td>
+          <td>&lt; 1 hour per day</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Tracking multiple action plans simultaneously</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Gather Feedback Responses</td>
+          <td>Guest Services Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Resolved feedback items</td>
+          <td>Feedback responses to guests</td>
+          <td>&lt; 2 min per response</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Personalizing responses for each guest</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Analyze Feedback Trends</td>
+          <td>Revenue Manager</td>
+          <td>Microsoft Power BI</td>
+          <td>Collected feedback data</td>
+          <td>Trend analysis report</td>
+          <td>&lt; 1 day per week</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Identifying actionable trends from large datasets</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Implement Improvements</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Trend analysis report</td>
+          <td>Operational improvements based on feedback</td>
+          <td>&lt; 1 week per improvement</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Aligning departmental efforts with hotel-wide goals</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> IT-DG-06</li>
+          <li><span class="bullet">Domain</span> Technology &amp; Systems</li>
+          <li><span class="bullet">Group</span> Digital Guest Experience</li>
+          <li><span class="bullet">Process</span> Guest Feedback Platform Management</li>
+          <li><span class="bullet">Trigger</span> Guest submits feedback via digital channels (e.g., mobile app, website, in-room tablet)</li>
+          <li><span class="bullet">Outcome</span> Effective handling of guest feedback leading to improved guest satisfaction and operational improvements.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> &lt; 3 min response time for feedback collection</li><li><span class="bullet">▸</span> &lt; 10 min per feedback review</li><li><span class="bullet">▸</span> &lt; 1 day for minor issues, &lt; 3 days for major issues in action plan execution</li><li><span class="bullet">▸</span> &lt; 2 min per feedback response</li><li><span class="bullet">▸</span> &lt; 1 day per week for trend analysis</li><li><span class="bullet">▸</span> &lt; 1 week per improvement implementation</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the management of a guest feedback platform at a full-service Marriott hotel, ensuring timely collection, analysis, and response to guest feedback.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> High volume of feedback leading to delays in processing</li><li><span class="bullet risk">▸</span> Inaccurate categorization or assignment of feedback</li><li><span class="bullet risk">▸</span> Resistance from departments to implement changes based on feedback</li><li><span class="bullet risk">▸</span> Difficulty in personalizing responses to each guest</li><li><span class="bullet risk">▸</span> Challenges in aligning departmental efforts with hotel-wide goals</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../technology/digital-guest/it-dg-05/"><span>◀</span><div><span class="prev-lbl">Previous</span>Digital Signage &amp; Wayfinding</div></a>
+  <a href="../../../technology/digital-guest/it-dg-07/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>CRM Data Quality &amp; Deduplication</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; IT-DG-06 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

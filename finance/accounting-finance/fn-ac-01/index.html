@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FN-AC-01 — Accounts Payable Processing | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">💰 Finance & Procurement</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Finance & Procurement</a><span class="sep">›</span><a href="../">Accounting & Financial Control</a><span class="sep">›</span>Accounts Payable Processing</div>
+
+<div class="page-header">
+  <div class="pid-badge">FN-AC-01</div>
+  <h1>Accounts Payable Processing</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Accounting & Financial Control</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">SAP S/4HANA</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fn-ac-01.png" alt="FN-AC-01 — Accounts Payable Processing process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Accounts Payable Clerk</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#10b981"></span>Accounts Payable Supervisor</td>
+          <td><span class="step-badge">2.2</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>Internal Auditor</td>
+          <td><span class="step-badge">4.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Finance Manager</td>
+          <td><span class="step-badge">4.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Invoice Receipt</td>
+          <td>Accounts Payable Clerk</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Vendor invoice or automatic system-generated invoice</td>
+          <td>Recorded invoice in Oracle OPERA Cloud</td>
+          <td>Less than 10 minutes per invoice</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling discrepancies between received invoices and purchase orders.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Invoice Validation</td>
+          <td>Accounts Payable Clerk</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Recorded invoice in Oracle OPERA Cloud</td>
+          <td>Validated invoice with approval status</td>
+          <td>Less than 5 minutes per invoice</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Ensuring all required fields are correctly filled.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Payment Processing</td>
+          <td>Accounts Payable Clerk</td>
+          <td>Oracle OPERA Cloud, SAP S/4HANA</td>
+          <td>Validated invoice with approval status</td>
+          <td>Processed payment to vendor</td>
+          <td>Less than 30 minutes per payment</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Integrating with multiple banking systems for payment processing.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update Financial Records</td>
+          <td>Accounts Payable Clerk</td>
+          <td>Oracle OPERA Cloud, SAP S/4HANA</td>
+          <td>Processed payment to vendor</td>
+          <td>Updated financial records in Oracle OPERA Cloud and SAP S/4HANA</td>
+          <td>Less than 10 minutes per record update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Synchronizing data across multiple systems.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Generate Payment Report</td>
+          <td>Accounts Payable Supervisor</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Updated financial records in Oracle OPERA Cloud and SAP S/4HANA</td>
+          <td>Payment report for review</td>
+          <td>Less than 1 hour per report generation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Generating accurate reports from complex data.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Review and Approve Payment Report</td>
+          <td>Accounts Payable Supervisor</td>
+          <td>Microsoft Power BI</td>
+          <td>Payment report for review</td>
+          <td>Approved payment report</td>
+          <td>Less than 1 hour per review</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Ensuring compliance with financial policies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Closeout Process</td>
+          <td>Accounts Payable Clerk</td>
+          <td>Oracle OPERA Cloud, SAP S/4HANA</td>
+          <td>Approved payment report</td>
+          <td>Closed accounts payable cycle</td>
+          <td>Less than 1 hour per closeout</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling late payments and reconciling discrepancies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">4.1</td>
+          <td>Audit Trail Review</td>
+          <td>Internal Auditor</td>
+          <td>Oracle OPERA Cloud, SAP S/4HANA</td>
+          <td>Closed accounts payable cycle</td>
+          <td>Audit report</td>
+          <td>Less than 2 hours per audit</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Ensuring all transactions are accurately recorded.</td>
+        </tr>
+        <tr>
+          <td class="step-num">4.2</td>
+          <td>Final Approval and Payment</td>
+          <td>Finance Manager</td>
+          <td>Oracle OPERA Cloud, SAP S/4HANA</td>
+          <td>Audit report</td>
+          <td>Final approval and payment to vendor</td>
+          <td>Less than 1 hour per approval</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Making final decisions based on audit findings.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FN-AC-01</li>
+          <li><span class="bullet">Domain</span> Finance &amp; Procurement</li>
+          <li><span class="bullet">Group</span> Accounting &amp; Financial Control</li>
+          <li><span class="bullet">Process</span> Accounts Payable Processing</li>
+          <li><span class="bullet">Trigger</span> Receipt of an invoice from a vendor or automatic generation of an invoice through the Oracle OPERA Cloud PMS system.</li>
+          <li><span class="bullet">Outcome</span> Successful completion produces a fully processed and paid invoice, updated financial records in Oracle OPERA Cloud, and accurate reporting for financial control.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 10 minutes per invoice receipt and validation</li><li><span class="bullet">▸</span> Less than 30 minutes per payment processing</li><li><span class="bullet">▸</span> Less than 10 minutes per financial record update</li><li><span class="bullet">▸</span> Less than 1 hour per report generation and review</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The Accounts Payable Processing (FN-AC-01) is a critical financial process at a Marriott full-service hotel. It ensures timely and accurate payment of invoices to vendors while maintaining compliance with internal controls.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Data discrepancies between Oracle OPERA Cloud and SAP S/4HANA</li><li><span class="bullet risk">▸</span> Payment delays due to system integration issues</li><li><span class="bullet risk">▸</span> Audit findings leading to additional payment processing time</li><li><span class="bullet risk">▸</span> Vendor disputes over invoice accuracy</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../facilities/reactive-maintenance/fm-rm-08/"><span>◀</span><div><span class="prev-lbl">Previous</span>Asset Register &amp; Lifecycle Management</div></a>
+  <a href="../../../finance/accounting-finance/fn-ac-02/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Accounts Receivable &amp; City Ledger</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FN-AC-01 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

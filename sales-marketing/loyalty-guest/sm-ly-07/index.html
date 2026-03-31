@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SM-LY-07 — Anniversary &amp; Special Occasion Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🎯 Sales, Marketing & Loyalty</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Sales, Marketing & Loyalty</a><span class="sep">›</span><a href="../">Loyalty & Guest Relationship</a><span class="sep">›</span>Anniversary &amp; Special Occasion Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">SM-LY-07</div>
+  <h1>Anniversary &amp; Special Occasion Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Loyalty & Guest Relationship</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Oracle MICROS Simphony</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/sm-ly-07.png" alt="SM-LY-07 — Anniversary &amp; Special Occasion Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Event Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#81e6d9"></span>Revenue Manager</td>
+          <td><span class="step-badge">2.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>Executive Chef</td>
+          <td><span class="step-badge">2.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Transportation Coordinator</td>
+          <td><span class="step-badge">2.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Event Coordinator</td>
+          <td><span class="step-badge">3.1</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Event Request</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Event request form from guest or internal team</td>
+          <td>Event request logged in Oracle OPERA Cloud</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling conflicting event requests</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Event Coordinator</td>
+          <td>Event Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Logged event request</td>
+          <td>Assigned event coordinator and communication plan</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring proper resource allocation</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Confirm Room Availability</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Event details and guest list</td>
+          <td>Confirmed room block with availability status</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Managing last-minute changes in room bookings</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Coordinate Catering Services</td>
+          <td>Executive Chef</td>
+          <td>Oracle MICROS Simphony</td>
+          <td>Menu preferences and guest dietary restrictions</td>
+          <td>Catering plan and menu finalized</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Adjusting menus for special dietary needs</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Arrange Transportation Services</td>
+          <td>Transportation Coordinator</td>
+          <td>SynXis CRS, Book4Time</td>
+          <td>Guest transportation preferences and schedule</td>
+          <td>Transportation arrangements confirmed</td>
+          <td>Less than 20 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling unforeseen travel disruptions</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Execute Event Logistics</td>
+          <td>Event Coordinator</td>
+          <td>Oracle OPERA Cloud, Knowcross HotSOS</td>
+          <td>Finalized event plan and guest list</td>
+          <td>Event executed with minimal disruptions</td>
+          <td>Less than 2 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Managing on-site emergencies</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Post-Event Review</td>
+          <td>Event Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Event execution details and guest feedback</td>
+          <td>Post-event report and action plan</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Gathering comprehensive feedback</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Guest Records</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Event details and guest satisfaction scores</td>
+          <td>Guest records updated with event information</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring data accuracy</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Closeout Event Budget</td>
+          <td>Finance Manager</td>
+          <td>SAP S/4HANA</td>
+          <td>Event expenses and budget details</td>
+          <td>Finalized event budget report</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Tracking all associated costs</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> SM-LY-07</li>
+          <li><span class="bullet">Domain</span> Sales, Marketing &amp; Loyalty</li>
+          <li><span class="bullet">Group</span> Loyalty &amp; Guest Relationship</li>
+          <li><span class="bullet">Process</span> Anniversary &amp; Special Occasion Management</li>
+          <li><span class="bullet">Trigger</span> Anniversary or special occasion event is scheduled by the hotel or requested by a guest through the Marriott Bonvoy CRM system.</li>
+          <li><span class="bullet">Outcome</span> Successful execution of the anniversary or special occasion event with high guest satisfaction, optimized resource allocation, and accurate tracking of all related activities and expenses.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Event request processing time: Less than 5 minutes</li><li><span class="bullet">▸</span> Room availability confirmation time: Less than 15 minutes</li><li><span class="bullet">▸</span> Catering plan finalization time: Less than 30 minutes</li><li><span class="bullet">▸</span> Transportation arrangements time: Less than 20 minutes</li><li><span class="bullet">▸</span> Event execution disruption rate: Less than 5%</li><li><span class="bullet">▸</span> Post-event review completion time: Less than 1 hour</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines how a Marriott full-service hotel manages anniversary and special occasion events, ensuring seamless coordination between departments and systems to enhance guest experiences.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Conflicting event requests leading to room allocation issues</li><li><span class="bullet risk">▸</span> Menu adjustments for special dietary needs causing delays</li><li><span class="bullet risk">▸</span> Unforeseen travel disruptions affecting transportation arrangements</li><li><span class="bullet risk">▸</span> On-site emergencies during event execution</li><li><span class="bullet risk">▸</span> Data accuracy errors in guest records update</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../sales-marketing/loyalty-guest/sm-ly-06/"><span>◀</span><div><span class="prev-lbl">Previous</span>Guest Preference Capture &amp; Personalisation</div></a>
+  <a href="../../../sales-marketing/loyalty-guest/sm-ly-08/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Post-Stay Survey &amp; NPS Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; SM-LY-07 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

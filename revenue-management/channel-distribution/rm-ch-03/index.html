@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM-CH-03 — Direct Website Rate Parity Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">📈 Revenue Management & Distribution</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Revenue Management & Distribution</a><span class="sep">›</span><a href="../">Channel & Distribution Management</a><span class="sep">›</span>Direct Website Rate Parity Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">RM-CH-03</div>
+  <h1>Direct Website Rate Parity Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Channel & Distribution Management</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">SynXis CRS</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/rm-ch-03.png" alt="RM-CH-03 — Direct Website Rate Parity Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Daily Rate Review</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Rate data from Oracle OPERA Cloud</td>
+          <td>Rate review checklist</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inconsistent rate updates across channels</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Review Direct Website Rates</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Rate review checklist</td>
+          <td>Direct website rate analysis report</td>
+          <td>Less than 45 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Manual data entry errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Compare with Other Channels</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS, IDeaS G3 RMS</td>
+          <td>Direct website rate analysis report</td>
+          <td>Rate parity comparison report</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Lack of automated comparison tools</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Identify Rate Discrepancies</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS, IDeaS G3 RMS</td>
+          <td>Rate parity comparison report</td>
+          <td>Discrepancy log</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Time-consuming manual identification</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Adjust Direct Website Rates</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Discrepancy log</td>
+          <td>Updated rate data</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inaccurate rate adjustments</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Verify Rate Updates</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Updated rate data</td>
+          <td>Verification report</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Missed updates due to verification errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Communicate with Property Team</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Verification report</td>
+          <td>Communication log</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inconsistent communication channels</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Monitor Rate Parity Compliance</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS, IDeaS G3 RMS</td>
+          <td>Verification report</td>
+          <td>Compliance report</td>
+          <td>Daily</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Non-compliance with rate parity policies</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Adjust as Necessary</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Compliance report</td>
+          <td>Adjusted rates</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Delayed adjustments affecting revenue</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Document Adjustments</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Adjusted rates</td>
+          <td>Adjustment log</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Lack of clear documentation</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> RM-CH-03</li>
+          <li><span class="bullet">Domain</span> Revenue Management &amp; Distribution</li>
+          <li><span class="bullet">Group</span> Channel &amp; Distribution Management</li>
+          <li><span class="bullet">Process</span> Direct Website Rate Parity Management</li>
+          <li><span class="bullet">Trigger</span> Daily rate review by Revenue Management team</li>
+          <li><span class="bullet">Outcome</span> Achieved consistent pricing across all channels, enhancing revenue management effectiveness.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Rate review completion time: Less than 30 minutes</li><li><span class="bullet">▸</span> Rate adjustment accuracy: 95%</li><li><span class="bullet">▸</span> Compliance check frequency: Daily</li><li><span class="bullet">▸</span> Communication log completeness: 100%</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">Manage and ensure parity of direct website rates with other distribution channels to optimize revenue.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate rate data entry leading to discrepancies</li><li><span class="bullet risk">▸</span> Manual verification errors affecting compliance</li><li><span class="bullet risk">▸</span> Delayed communication impacting rate adjustments</li><li><span class="bullet risk">▸</span> Non-compliance with rate parity policies due to human error</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../revenue-management/channel-distribution/rm-ch-02/"><span>◀</span><div><span class="prev-lbl">Previous</span>GDS Distribution Management</div></a>
+  <a href="../../../revenue-management/channel-distribution/rm-ch-04/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Metasearch Bidding &amp; CPC Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; RM-CH-03 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

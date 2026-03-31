@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HK-GC-05 — Linen &amp; Towel Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🛏️ Housekeeping & Rooms Management</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Housekeeping & Rooms Management</a><span class="sep">›</span><a href="../">Guest Room Cleaning & Turndown</a><span class="sep">›</span>Linen &amp; Towel Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">HK-GC-05</div>
+  <h1>Linen &amp; Towel Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Guest Room Cleaning & Turndown</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">Knowcross HotSOS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/hk-gc-05.png" alt="HK-GC-05 — Linen &amp; Towel Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">2.1</span> <span class="step-badge">3.1</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Procurement Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.2</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Receiving Clerk</td>
+          <td><span class="step-badge">1.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#8b5cf6"></span>Housekeeping Staff</td>
+          <td><span class="step-badge">2.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Daily Linen Inventory Review</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Linen inventory report</td>
+          <td>Inventory review notes</td>
+          <td>Less than 5 minutes per room type</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inaccurate inventory counts leading to stockouts or overstocking.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Order Linens and Towels</td>
+          <td>Procurement Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Inventory review notes, order templates</td>
+          <td>Purchase orders</td>
+          <td>Less than 30 minutes per day</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delays in supplier delivery affecting room readiness.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Receive Linens and Towels</td>
+          <td>Receiving Clerk</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Purchase orders, delivery notes</td>
+          <td>Inventory update</td>
+          <td>Less than 15 minutes per order</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Damaged or incorrect items received from suppliers.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Sort and Inspect Linens</td>
+          <td>Housekeeping Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Received linens, inspection checklist</td>
+          <td>Inspection report</td>
+          <td>Less than 20 minutes per batch</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inconsistent quality of linens from different suppliers.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Store Sorted Linens</td>
+          <td>Housekeeping Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Inspection report, storage guidelines</td>
+          <td>Storage records</td>
+          <td>Less than 10 minutes per batch</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect storage leading to damage or loss.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Assign Linens for Room Preparation</td>
+          <td>Housekeeping Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room preparation list, linen inventory</td>
+          <td>Linen assignment sheet</td>
+          <td>Less than 5 minutes per room</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inefficient linen distribution causing delays in room readiness.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Linen Usage</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Daily usage reports, occupancy data</td>
+          <td>Usage analysis report</td>
+          <td>Less than 20 minutes per day</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Overlooking trends leading to stockouts or excess inventory.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Adjust Linen Orders Based on Usage</td>
+          <td>Procurement Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Usage analysis report, order templates</td>
+          <td>Adjusted purchase orders</td>
+          <td>Less than 30 minutes per week</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate forecasting leading to stock imbalances.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Review and Optimize Linen Management Process</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Process review checklist, feedback from staff</td>
+          <td>Process improvement plan</td>
+          <td>Less than 1 hour per month</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Lack of continuous process improvement leading to inefficiencies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Communicate Changes and Updates</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud, Knowcross HotSOS</td>
+          <td>Process improvement plan, communication templates</td>
+          <td>Communication logs</td>
+          <td>Less than 30 minutes per update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Poor communication leading to confusion or non-compliance.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> HK-GC-05</li>
+          <li><span class="bullet">Domain</span> Housekeeping &amp; Rooms Management</li>
+          <li><span class="bullet">Group</span> Guest Room Cleaning &amp; Turndown</li>
+          <li><span class="bullet">Process</span> Linen &amp; Towel Management</li>
+          <li><span class="bullet">Trigger</span> Daily check-in of guests, end-of-day housekeeping report, or inventory alerts from Oracle OPERA Cloud PMS.</li>
+          <li><span class="bullet">Outcome</span> Successful completion results in all guest rooms having an adequate supply of clean linens and towels, with minimal waste and efficient use of resources.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes per room type for inventory review</li><li><span class="bullet">▸</span> Less than 30 minutes per day for ordering linens</li><li><span class="bullet">▸</span> Less than 15 minutes per order for receiving linens</li><li><span class="bullet">▸</span> Less than 20 minutes per batch for sorting and inspecting linens</li><li><span class="bullet">▸</span> Less than 1 hour per month for process improvement planning</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The Linen &amp; Towel Management process at a Marriott full-service hotel ensures that guest rooms are provided with clean and sufficient linens and towels for optimal guest satisfaction.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate inventory counts leading to stockouts or overstocking.</li><li><span class="bullet risk">▸</span> Delays in supplier delivery affecting room readiness.</li><li><span class="bullet risk">▸</span> Damaged or incorrect items received from suppliers.</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../housekeeping/guest-room-cleaning/hk-gc-04/"><span>◀</span><div><span class="prev-lbl">Previous</span>Room Inspection &amp; Quality Check</div></a>
+  <a href="../../../housekeeping/guest-room-cleaning/hk-gc-06/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Minibar Restocking &amp; Billing</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; HK-GC-05 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

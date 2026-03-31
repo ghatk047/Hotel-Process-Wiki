@@ -1,0 +1,87 @@
+%%{init: {'theme':'base','themeVariables':{'fontSize':'12px','fontFamily':'Inter, Arial, sans-serif'}}}%%
+flowchart LR
+
+  subgraph BOOK["📅 Booking"]
+    direction TB
+    CHANNEL["OTA · GDS · Direct\nBooking channel"]
+    SYNXIS2["SynXis CRS\nRate · Availability"]
+    OPERA2["OPERA Cloud PMS\nReservation created"]
+    CHANNEL -->|"booking request"| SYNXIS2
+    SYNXIS2 -->|"confirmed reservation"| OPERA2
+  end
+
+  subgraph PREARRIVAL["✈️ Pre-Arrival"]
+    direction TB
+    EMAIL["Pre-Arrival Email\nMarriott.com / Bonvoy"]
+    NOR12["Nor1 Upsell\nUpgrade offer sent"]
+    APP["Bonvoy App\nMobile check-in · preferences"]
+    OPERA2  -->|"reservation data"| EMAIL
+    OPERA2  -->|"eligible for upgrade"| NOR12
+    OPERA2  -->|"sync reservation"| APP
+  end
+
+  subgraph ARRIVAL["🏨 Arrival & Check-In"]
+    direction TB
+    OPERA3["OPERA PMS\nRoom assignment"]
+    VINGCARD2["VingCard\nDigital key issued"]
+    INNCOM2["INNCOM GRMS\nRoom temp · DND set"]
+    KNOWCROSS2["Knowcross\nRoom ready confirmed"]
+    KNOWCROSS2 -->|"clean status"| OPERA3
+    OPERA3     -->|"room number"| VINGCARD2
+    OPERA3     -->|"arrival signal"| INNCOM2
+  end
+
+  subgraph STAY["🛎️ During Stay"]
+    direction TB
+    MICROS2["MICROS Simphony\nF&B charges"]
+    SPA2["Book4Time\nSpa charges"]
+    ALICE2["Alice\nGuest requests"]
+    FOLIO["OPERA Folio\nAll charges consolidated"]
+    MICROS2 -->|"POS charges"| FOLIO
+    SPA2    -->|"spa charges"| FOLIO
+    ALICE2  -->|"service charges"| FOLIO
+  end
+
+  subgraph CHECKOUT["💳 Checkout"]
+    direction TB
+    FOLIO2["Final Folio\nOPERA Cashiering"]
+    PAYMENT["Payment Gateway\nCredit card · city ledger"]
+    SAP2["SAP S/4HANA\nRevenue posting · AR"]
+    FOLIO2  -->|"settlement"| PAYMENT
+    PAYMENT -->|"revenue entry"| SAP2
+  end
+
+  subgraph POSTSTAY["⭐ Post-Stay"]
+    direction TB
+    BONVOY2["Bonvoy CRM\nPoints posted"]
+    SURVEY["Post-Stay Survey\nMedallion · Qualtrics"]
+    SALESFORCE2["Salesforce\nNPS · account update"]
+    BONVOY2   -->|"points balance"| APP
+    SURVEY    -->|"NPS score"| SALESFORCE2
+    SALESFORCE2-->|"loyalty tier update"| BONVOY2
+  end
+
+  OPERA2     -->|"stay confirmed"| ARRIVAL
+  APP        -->|"mobile check-in"| OPERA3
+  NOR12      -->|"accepted upgrade"| OPERA3
+  ARRIVAL    -->|"checked-in"| STAY
+  STAY       -->|"checkout request"| CHECKOUT
+  CHECKOUT   -->|"stay complete"| POSTSTAY
+  SAP2       -->|"revenue recognised"| POWERBI2["Power BI\nRevPAR · KPIs"]
+  BONVOY2    -->|"loyalty data"| POWERBI2
+
+  classDef book  fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
+  classDef pre   fill:#f0fdf4,stroke:#16a34a,color:#14532d
+  classDef arr   fill:#fff7ed,stroke:#ea580c,color:#7c2d12
+  classDef stay  fill:#fdf4ff,stroke:#9333ea,color:#581c87
+  classDef chk   fill:#fff1f2,stroke:#e11d48,color:#881337
+  classDef post  fill:#f5f3ff,stroke:#7c3aed,color:#4c1d95
+  classDef bi    fill:#003366,color:#fff,stroke:#003366
+
+  class CHANNEL,SYNXIS2,OPERA2 book
+  class EMAIL,NOR12,APP pre
+  class OPERA3,VINGCARD2,INNCOM2,KNOWCROSS2 arr
+  class MICROS2,SPA2,ALICE2,FOLIO stay
+  class FOLIO2,PAYMENT,SAP2 chk
+  class BONVOY2,SURVEY,SALESFORCE2 post
+  class POWERBI2 bi

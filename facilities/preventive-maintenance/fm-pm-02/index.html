@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FM-PM-02 — Guest Room Preventive Maintenance | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🔧 Facilities & Engineering</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Facilities & Engineering</a><span class="sep">›</span><a href="../">Preventive Maintenance</a><span class="sep">›</span>Guest Room Preventive Maintenance</div>
+
+<div class="page-header">
+  <div class="pid-badge">FM-PM-02</div>
+  <h1>Guest Room Preventive Maintenance</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Preventive Maintenance</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IBM Maximo</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">Book4Time</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fm-pm-02.png" alt="FM-PM-02 — Guest Room Preventive Maintenance process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Facilities Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.4</span> <span class="step-badge">3.5</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Housekeeping Technician</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#81e6d9"></span>Front Desk Agent</td>
+          <td><span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Maintenance Plan</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Maintenance schedule</td>
+          <td>Updated maintenance plan</td>
+          <td>Less than 30 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Overlooking critical maintenance tasks</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Tasks to Technicians</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud, IBM Maximo</td>
+          <td>Updated maintenance plan</td>
+          <td>Task assignments</td>
+          <td>Less than 5 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inefficient task distribution</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Inspect Room Equipment</td>
+          <td>Housekeeping Technician</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Task assignments</td>
+          <td>Inspection report</td>
+          <td>Less than 15 min per room</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Overlooking minor issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Replace or Repair Items</td>
+          <td>Housekeeping Technician</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>Inspection report</td>
+          <td>Maintenance log</td>
+          <td>Less than 30 min per item</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed procurement of replacement parts</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Clean and Sanitize Room</td>
+          <td>Housekeeping Technician</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Maintenance log</td>
+          <td>Cleaning report</td>
+          <td>Less than 45 min per room</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inadequate cleaning protocols</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Update Maintenance Records</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud, IBM Maximo</td>
+          <td>Cleaning report</td>
+          <td>Updated maintenance records</td>
+          <td>Less than 10 min per room</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Manual data entry errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Review and Adjust Maintenance Schedule</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated maintenance records</td>
+          <td>Adjusted maintenance schedule</td>
+          <td>Less than 15 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inflexible scheduling</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Notify Guest of Maintenance Completion</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Adjusted maintenance schedule</td>
+          <td>Notification sent to guest</td>
+          <td>Less than 5 min per notification</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed communication</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Conduct Post-Maintenance Review</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud, IBM Maximo</td>
+          <td>Notification sent to guest</td>
+          <td>Post-maintenance review report</td>
+          <td>Less than 30 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lack of follow-up</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Update Training Materials</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud, IBM Maximo</td>
+          <td>Post-maintenance review report</td>
+          <td>Updated training materials</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Outdated training content</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FM-PM-02</li>
+          <li><span class="bullet">Domain</span> Facilities &amp; Engineering</li>
+          <li><span class="bullet">Group</span> Preventive Maintenance</li>
+          <li><span class="bullet">Process</span> Guest Room Preventive Maintenance</li>
+          <li><span class="bullet">Trigger</span> Scheduled maintenance cycle or system alert indicating potential issues</li>
+          <li><span class="bullet">Outcome</span> Ensures guest rooms are maintained in optimal condition, reducing operational costs and enhancing guest satisfaction.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 30 min for initiating maintenance plan</li><li><span class="bullet">▸</span> Less than 5 min for assigning tasks to technicians</li><li><span class="bullet">▸</span> Less than 15 min per room for inspecting room equipment</li><li><span class="bullet">▸</span> Less than 30 min per item for replacing or repairing items</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the steps for conducting guest room preventive maintenance at a full-service Marriott hotel using Oracle OPERA Cloud PMS and other relevant systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Overlooking critical maintenance tasks</li><li><span class="bullet risk">▸</span> Inefficient task distribution</li><li><span class="bullet risk">▸</span> Delayed procurement of replacement parts</li><li><span class="bullet risk">▸</span> Inadequate cleaning protocols</li><li><span class="bullet risk">▸</span> Manual data entry errors</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../facilities/preventive-maintenance/fm-pm-01/"><span>◀</span><div><span class="prev-lbl">Previous</span>Planned Maintenance Scheduling</div></a>
+  <a href="../../../facilities/preventive-maintenance/fm-pm-03/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>HVAC &amp; MEP Systems Maintenance</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FM-PM-02 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

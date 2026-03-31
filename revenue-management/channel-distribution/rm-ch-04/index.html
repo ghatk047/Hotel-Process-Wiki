@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM-CH-04 — Metasearch Bidding &amp; CPC Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">📈 Revenue Management & Distribution</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Revenue Management & Distribution</a><span class="sep">›</span><a href="../">Channel & Distribution Management</a><span class="sep">›</span>Metasearch Bidding &amp; CPC Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">RM-CH-04</div>
+  <h1>Metasearch Bidding &amp; CPC Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Channel & Distribution Management</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/rm-ch-04.png" alt="RM-CH-04 — Metasearch Bidding &amp; CPC Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Monitor Occupancy Rates</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Daily occupancy report</td>
+          <td>Occupancy analysis dashboard</td>
+          <td>Less than 15 minutes to generate the dashboard</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inaccurate data leading to incorrect bidding strategies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Analyze Competitor Pricing</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Competitor pricing data</td>
+          <td>Pricing analysis report</td>
+          <td>Less than 20 minutes to complete the analysis</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Outdated competitor data affecting bidding decisions.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Review Event Calendar</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Event calendar</td>
+          <td>Event impact assessment</td>
+          <td>Less than 10 minutes to review the calendar</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Missing event information leading to missed opportunities.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Adjust Metasearch Bids</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Occupancy analysis dashboard, pricing analysis report, event impact assessment</td>
+          <td>Updated metasearch bid strategy</td>
+          <td>Less than 30 minutes to adjust bids</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Manual adjustments leading to errors in bidding strategies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Optimize CPC Settings</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Occupancy analysis dashboard, pricing analysis report, event impact assessment</td>
+          <td>Updated CPC settings</td>
+          <td>Less than 30 minutes to optimize CPCs</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inefficient CPC management leading to higher advertising costs.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Deploy New Bidding Strategy</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Updated metasearch bid strategy, updated CPC settings</td>
+          <td>Bidding strategy deployment confirmation</td>
+          <td>Less than 10 minutes to deploy the new strategy</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Delayed deployment causing missed opportunities.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Performance Metrics</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Bidding strategy deployment confirmation</td>
+          <td>Performance metrics dashboard</td>
+          <td>Less than 15 minutes to generate the dashboard</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inaccurate performance data affecting decision-making.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Analyze Performance Data</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Performance metrics dashboard</td>
+          <td>Performance analysis report</td>
+          <td>Less than 20 minutes to complete the analysis</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Outdated performance data leading to suboptimal strategies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Adjust Bidding Strategy Based on Performance</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Performance analysis report</td>
+          <td>Adjusted bidding strategy</td>
+          <td>Less than 30 minutes to adjust the strategy</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Manual adjustments leading to errors in bidding strategies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Deploy Adjusted Bidding Strategy</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Adjusted bidding strategy</td>
+          <td>Bidding strategy deployment confirmation</td>
+          <td>Less than 10 minutes to deploy the new strategy</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Delayed deployment causing missed opportunities.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> RM-CH-04</li>
+          <li><span class="bullet">Domain</span> Revenue Management &amp; Distribution</li>
+          <li><span class="bullet">Group</span> Channel &amp; Distribution Management</li>
+          <li><span class="bullet">Process</span> Metasearch Bidding &amp; CPC Management</li>
+          <li><span class="bullet">Trigger</span> Daily at 7 AM, triggered by the Revenue Management System (RMS) detecting low occupancy rates or upcoming events that may affect booking patterns.</li>
+          <li><span class="bullet">Outcome</span> Optimized metasearch bids and CPC settings across all relevant distribution channels to maximize revenue while maintaining competitive pricing.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 15 minutes to generate occupancy analysis dashboard</li><li><span class="bullet">▸</span> Less than 20 minutes to complete competitor pricing analysis</li><li><span class="bullet">▸</span> Less than 10 minutes to review event calendar</li><li><span class="bullet">▸</span> Less than 30 minutes to adjust metasearch bids and CPC settings</li><li><span class="bullet">▸</span> Less than 10 minutes to deploy new bidding strategy</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines how Marriott Bonvoy manages metasearch bidding and CPC (Cost Per Click) management to optimize online hotel bookings through various distribution channels.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate occupancy data leading to incorrect bidding strategies.</li><li><span class="bullet risk">▸</span> Outdated competitor pricing data affecting bidding decisions.</li><li><span class="bullet risk">▸</span> Missing event information leading to missed opportunities.</li><li><span class="bullet risk">▸</span> Manual adjustments causing errors in bidding strategies.</li><li><span class="bullet risk">▸</span> Delayed deployment of new strategies resulting in suboptimal performance.</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../revenue-management/channel-distribution/rm-ch-03/"><span>◀</span><div><span class="prev-lbl">Previous</span>Direct Website Rate Parity Management</div></a>
+  <a href="../../../revenue-management/channel-distribution/rm-ch-05/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Wholesale &amp; Tour Operator Contracting</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; RM-CH-04 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

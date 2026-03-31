@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-CI-03 — VIP &amp; Loyalty Member Arrival | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Check-In & Check-Out Operations</a><span class="sep">›</span>VIP &amp; Loyalty Member Arrival</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-CI-03</div>
+  <h1>VIP &amp; Loyalty Member Arrival</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Check-In & Check-Out Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Marriott Bonvoy CRM</span> <span class="tag">Assa Abloy VingCard</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-ci-03.png" alt="FO-CI-03 — VIP &amp; Loyalty Member Arrival process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">2.3</span> <span class="step-badge">2.4</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">2.4</span> <span class="step-badge">3.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify VIP/Loyalty Reservation</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Reservation details</td>
+          <td>VIP/Loyalty status flagged</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Incorrectly identifying VIP status can lead to missed benefits.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Prepare Welcome Package</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>VIP/Loyalty member details</td>
+          <td>Welcome package prepared</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed delivery of welcome packages can affect guest satisfaction.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Greet Guest at Reception</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest arrival notification</td>
+          <td>Personalized greeting</td>
+          <td>Less than 30 seconds</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Rushing through greetings can lead to a lack of personal touch.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Check-In Guest</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Guest details and reservation information</td>
+          <td>Checked-in guest record</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Errors in check-in can cause delays and confusion.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Assign VIP Room</td>
+          <td>Front Desk Agent, Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Guest preferences and availability</td>
+          <td>Room assignment confirmation</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Incorrect room assignments can lead to guest dissatisfaction.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Update CRM with VIP Status</td>
+          <td>Front Desk Agent, Revenue Manager</td>
+          <td>Marriott Bonvoy CRM</td>
+          <td>Guest details and VIP status</td>
+          <td>Updated CRM record</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Outdated CRM data can affect future interactions.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Provide Room Key</td>
+          <td>Front Desk Agent, Assa Abloy VingCard</td>
+          <td>Oracle OPERA Cloud, Assa Abloy VingCard</td>
+          <td>Guest details and room assignment</td>
+          <td>Room key issued</td>
+          <td>Less than 30 seconds</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lost or misplaced keys can cause inconvenience.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Confirm Amenities and Services</td>
+          <td>Front Desk Agent, Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud, Oracle MICROS Simphony</td>
+          <td>Guest requests</td>
+          <td>Service confirmation</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Unmet guest requests can lead to negative reviews.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Capture Feedback and Preferences</td>
+          <td>Front Desk Agent, Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Guest feedback</td>
+          <td>Updated guest profile</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ignoring guest feedback can affect loyalty and future bookings.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Finalize Check-In Process</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>All check-in details</td>
+          <td>Completed check-in record</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incomplete records can lead to operational errors.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-CI-03</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Check-In &amp; Check-Out Operations</li>
+          <li><span class="bullet">Process</span> VIP &amp; Loyalty Member Arrival</li>
+          <li><span class="bullet">Trigger</span> Detection of a VIP or loyalty member reservation in the Oracle OPERA Cloud PMS system.</li>
+          <li><span class="bullet">Outcome</span> Successful check-in with personalized services and accurate data capture for future reference.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 2 minutes for VIP/Loyalty status identification</li><li><span class="bullet">▸</span> Less than 5 minutes to prepare a welcome package</li><li><span class="bullet">▸</span> Less than 30 seconds for greeting guests at reception</li><li><span class="bullet">▸</span> Less than 1 minute to update CRM with VIP status</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The process for handling VIP and loyalty member arrivals at a full-service Marriott hotel involves seamless check-in procedures, personalized guest experiences, and efficient use of various Marriott systems to ensure satisfaction.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Incorrectly identifying VIP status leading to missed benefits</li><li><span class="bullet risk">▸</span> Delayed delivery of welcome packages affecting guest satisfaction</li><li><span class="bullet risk">▸</span> Errors in check-in causing delays and confusion</li><li><span class="bullet risk">▸</span> Unmet guest requests leading to negative reviews</li><li><span class="bullet risk">▸</span> Ignoring guest feedback affecting loyalty and future bookings</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/checkin-checkout/fo-ci-02/"><span>◀</span><div><span class="prev-lbl">Previous</span>Guest Check-In &amp; Room Assignment</div></a>
+  <a href="../../../front-office/checkin-checkout/fo-ci-04/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Express Check-Out Processing</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-CI-03 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

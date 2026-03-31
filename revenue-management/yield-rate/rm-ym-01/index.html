@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM-YM-01 — Demand Forecasting &amp; Pickup Analysis | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">📈 Revenue Management & Distribution</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Revenue Management & Distribution</a><span class="sep">›</span><a href="../">Yield & Rate Management</a><span class="sep">›</span>Demand Forecasting &amp; Pickup Analysis</div>
+
+<div class="page-header">
+  <div class="pid-badge">RM-YM-01</div>
+  <h1>Demand Forecasting &amp; Pickup Analysis</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Yield & Rate Management</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeas G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/rm-ym-01.png" alt="RM-YM-01 — Demand Forecasting &amp; Pickup Analysis process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span> <span class="step-badge">3.5</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>General Manager</td>
+          <td><span class="step-badge">3.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Data Collection</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Historical booking data, current occupancy rates</td>
+          <td>Collected data file</td>
+          <td>Less than 2 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate or incomplete data from Oracle OPERA Cloud</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Data Integration</td>
+          <td>Revenue Manager</td>
+          <td>IDeas G3 RMS</td>
+          <td>Collected data file</td>
+          <td>Integrated data set</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data synchronization issues between Oracle OPERA Cloud and IDeas G3 RMS</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Demand Forecasting</td>
+          <td>Revenue Manager</td>
+          <td>IDeas G3 RMS</td>
+          <td>Integrated data set</td>
+          <td>Forecasted demand report</td>
+          <td>Less than 4 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate forecasting due to external factors not captured in the model</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Rate Optimization Analysis</td>
+          <td>Revenue Manager</td>
+          <td>IDeas G3 RMS</td>
+          <td>Forecasted demand report</td>
+          <td>Recommended rate adjustments</td>
+          <td>Less than 3 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Balancing revenue and occupancy rates to maximize profitability</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Pickup Analysis</td>
+          <td>Revenue Manager</td>
+          <td>SynXis CRS</td>
+          <td>Current booking data</td>
+          <td>Pickup analysis report</td>
+          <td>Less than 2 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inconsistent pickup rates across different channels</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Report Compilation</td>
+          <td>Revenue Manager</td>
+          <td>Microsoft Power BI</td>
+          <td>Forecasted demand report, recommended rate adjustments, pickup analysis report</td>
+          <td>Final report with insights and recommendations</td>
+          <td>Less than 2 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Complex data visualization to ensure clarity in the final report</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Review and Approval</td>
+          <td>Executive Housekeeper, General Manager</td>
+          <td>Microsoft Power BI</td>
+          <td>Final report with insights and recommendations</td>
+          <td>Approved action plan</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Aligning different stakeholders on the recommended rate adjustments</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Implementation of Rate Adjustments</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Approved action plan</td>
+          <td>Updated rate schedule</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Synchronization issues between Oracle OPERA Cloud and SynXis CRS</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Monitoring and Adjustment</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeas G3 RMS</td>
+          <td>Current occupancy rates, booking trends</td>
+          <td>Adjustment report</td>
+          <td>Daily monitoring</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Continuous monitoring to respond quickly to market changes</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Documentation and Reporting</td>
+          <td>Revenue Manager</td>
+          <td>Microsoft Power BI</td>
+          <td>Adjustment report</td>
+          <td>Updated documentation and reporting for future reference</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Maintaining accurate and up-to-date documentation</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> RM-YM-01</li>
+          <li><span class="bullet">Domain</span> Revenue Management &amp; Distribution</li>
+          <li><span class="bullet">Group</span> Yield &amp; Rate Management</li>
+          <li><span class="bullet">Process</span> Demand Forecasting &amp; Pickup Analysis</li>
+          <li><span class="bullet">Trigger</span> Weekly business review meeting or monthly system update</li>
+          <li><span class="bullet">Outcome</span> A detailed report with recommended rate adjustments, pickup analysis, and forecasted demand for the upcoming period, leading to improved revenue performance.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Data collection within 2 hours</li><li><span class="bullet">▸</span> Forecasting accuracy rate above 80%</li><li><span class="bullet">▸</span> Rate optimization recommendation implementation within 1 hour</li><li><span class="bullet">▸</span> Pickup analysis report generated daily</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The Demand Forecasting &amp; Pickup Analysis process at a Marriott full-service hotel involves analyzing historical data and current trends to predict future demand and optimize room rates. This ensures optimal revenue management by adjusting pricing strategies based on anticipated occupancy levels.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate data leading to poor forecasting</li><li><span class="bullet risk">▸</span> Synchronization issues between Oracle OPERA Cloud and IDeas G3 RMS</li><li><span class="bullet risk">▸</span> Disagreement among stakeholders on rate adjustments</li><li><span class="bullet risk">▸</span> External market changes not captured in the model</li><li><span class="bullet risk">▸</span> Technical failures affecting system availability</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../food-beverage/kitchen-culinary/fb-kt-08/"><span>◀</span><div><span class="prev-lbl">Previous</span>Supplier Quality Auditing</div></a>
+  <a href="../../../revenue-management/yield-rate/rm-ym-02/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Rate Strategy &amp; Pricing Optimisation</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; RM-YM-01 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR-TL-03 — Workforce Scheduling &amp; Rostering | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">👥 Human Resources & Training</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Human Resources & Training</a><span class="sep">›</span><a href="../">Talent & Workforce Management</a><span class="sep">›</span>Workforce Scheduling &amp; Rostering</div>
+
+<div class="page-header">
+  <div class="pid-badge">HR-TL-03</div>
+  <h1>Workforce Scheduling &amp; Rostering</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Talent & Workforce Management</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Book4Time</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/hr-tl-03.png" alt="HR-TL-03 — Workforce Scheduling &amp; Rostering process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Hotel General Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Human Resources Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Workforce Scheduler</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#8b5cf6"></span>Department Heads</td>
+          <td><span class="step-badge">2.3</span> <span class="step-badge">2.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Review Business Demand</td>
+          <td>Hotel General Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Business demand report from Oracle OPERA Cloud</td>
+          <td>Updated business demand analysis document</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inaccurate business demand forecasts leading to over or under staffing</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Gather Employee Availability</td>
+          <td>Human Resources Manager</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Employee availability data from Oracle OPERA Cloud and Book4Time</td>
+          <td>Compiled employee availability report</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Missing or incomplete employee availability information</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Create Initial Schedule</td>
+          <td>Workforce Scheduler</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Business demand analysis and employee availability report</td>
+          <td>Initial workforce schedule draft</td>
+          <td>Less than 2 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Balancing business needs with employee preferences</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Review and Adjust Schedule</td>
+          <td>Hotel General Manager, Human Resources Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Initial workforce schedule draft</td>
+          <td>Finalized workforce schedule</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Ensuring compliance with labor laws and union agreements</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Communicate Schedule to Employees</td>
+          <td>Human Resources Manager, Department Heads</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Finalized workforce schedule</td>
+          <td>Employee communication plan and confirmation of receipt</td>
+          <td>Less than 30 minutes per department</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Low employee response rates or dissatisfaction with the schedule</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Monitor Schedule Compliance</td>
+          <td>Workforce Scheduler, Department Heads</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Employee time tracking data from Oracle OPERA Cloud</td>
+          <td>Compliance report and adjustments if necessary</td>
+          <td>Daily review within 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling last-minute schedule changes due to unforeseen circumstances</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Evaluate Schedule Effectiveness</td>
+          <td>Hotel General Manager, Human Resources Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Operational performance data from Oracle OPERA Cloud and Microsoft Power BI</td>
+          <td>Schedule effectiveness evaluation report</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Identifying areas for improvement in scheduling processes</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Schedule Based on Evaluation</td>
+          <td>Workforce Scheduler, Human Resources Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Schedule effectiveness evaluation report</td>
+          <td>Updated workforce schedule for the next period</td>
+          <td>Less than 2 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Implementing changes without disrupting current operations</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Document and Archive Schedule</td>
+          <td>Human Resources Manager, Workforce Scheduler</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Finalized workforce schedule for the period</td>
+          <td>Archived schedule document</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring all historical data is securely stored</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Review and Improve Process</td>
+          <td>Hotel General Manager, Human Resources Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Schedule effectiveness evaluation report</td>
+          <td>Process improvement plan</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Continuous process optimization without compromising quality</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> HR-TL-03</li>
+          <li><span class="bullet">Domain</span> Human Resources &amp; Training</li>
+          <li><span class="bullet">Group</span> Talent &amp; Workforce Management</li>
+          <li><span class="bullet">Process</span> Workforce Scheduling &amp; Rostering</li>
+          <li><span class="bullet">Trigger</span> Weekly or bi-weekly based on business demand, holidays, and employee availability</li>
+          <li><span class="bullet">Outcome</span> A well-balanced workforce schedule that optimizes labor costs, enhances guest satisfaction, and complies with labor laws</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 30 minutes for business demand review</li><li><span class="bullet">▸</span> Less than 1 hour for schedule creation and adjustments</li><li><span class="bullet">▸</span> Daily review within 1 hour of schedule compliance monitoring</li><li><span class="bullet">▸</span> Less than 1 hour for schedule effectiveness evaluation</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">HR-TL-03 outlines the process for workforce scheduling and rostering at a Marriott full-service hotel. This ensures efficient staff deployment across various departments to meet operational needs.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate business demand forecasts leading to over or under staffing</li><li><span class="bullet risk">▸</span> Missing or incomplete employee availability information</li><li><span class="bullet risk">▸</span> Balancing business needs with employee preferences</li><li><span class="bullet risk">▸</span> Handling last-minute schedule changes due to unforeseen circumstances</li><li><span class="bullet risk">▸</span> Implementing changes without disrupting current operations</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../human-resources/talent-workforce/hr-tl-02/"><span>◀</span><div><span class="prev-lbl">Previous</span>Onboarding &amp; Induction Programme</div></a>
+  <a href="../../../human-resources/talent-workforce/hr-tl-04/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Payroll &amp; Benefits Administration</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; HR-TL-03 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

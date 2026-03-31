@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HK-LP-04 — Uniform Laundering &amp; Issue | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🛏️ Housekeeping & Rooms Management</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Housekeeping & Rooms Management</a><span class="sep">›</span><a href="../">Laundry & Linen Operations</a><span class="sep">›</span>Uniform Laundering &amp; Issue</div>
+
+<div class="page-header">
+  <div class="pid-badge">HK-LP-04</div>
+  <h1>Uniform Laundering &amp; Issue</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Laundry & Linen Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/hk-lp-04.png" alt="HK-LP-04 — Uniform Laundering &amp; Issue process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Laundry Manager</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">2.4</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#eab308"></span>Front Desk Agent</td>
+          <td><span class="step-badge">3.1</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Uniform Shortage</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Inventory report from Oracle OPERA Cloud</td>
+          <td>Uniform shortage report</td>
+          <td>Less than 24 hours to identify</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Manual inventory checks can lead to inaccuracies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Log Uniform Request</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Uniform shortage report</td>
+          <td>Logged request in Oracle OPERA Cloud</td>
+          <td>Less than 30 minutes to log</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed logging can cause further shortages.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Prepare Uniforms for Laundry</td>
+          <td>Laundry Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Logged request</td>
+          <td>Uniforms sorted and prepared for washing</td>
+          <td>Less than 4 hours to prepare</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect sorting can damage uniforms.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Initiate Laundry Process</td>
+          <td>Laundry Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Sorted uniforms</td>
+          <td>Laundry order placed in Oracle OPERA Cloud</td>
+          <td>Less than 1 hour to initiate</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delays in laundry processing can lead to shortages.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Monitor Laundry Progress</td>
+          <td>Laundry Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Laundry order status updates</td>
+          <td>Updated laundry progress report</td>
+          <td>Less than 15 minutes per update</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Lack of real-time monitoring can cause delays.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Inspect Cleaned Uniforms</td>
+          <td>Laundry Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Cleaned uniforms</td>
+          <td>Inspection report and approved uniform list</td>
+          <td>Less than 2 hours to inspect</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Missed defects can lead to guest complaints.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Issue Uniforms to Staff</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Approved uniform list</td>
+          <td>Uniforms issued and recorded in Oracle OPERA Cloud</td>
+          <td>Less than 30 minutes per staff member</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect issuance can cause confusion.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Inventory in Oracle OPERA Cloud</td>
+          <td>Laundry Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Issued uniforms list</td>
+          <td>Updated inventory report</td>
+          <td>Less than 1 hour to update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Outdated inventory can lead to shortages.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Review and Close Process</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated inventory report</td>
+          <td>Process closure report</td>
+          <td>Less than 1 hour to review</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Neglecting reviews can lead to recurring issues.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> HK-LP-04</li>
+          <li><span class="bullet">Domain</span> Housekeeping &amp; Rooms Management</li>
+          <li><span class="bullet">Group</span> Laundry &amp; Linen Operations</li>
+          <li><span class="bullet">Process</span> Uniform Laundering &amp; Issue</li>
+          <li><span class="bullet">Trigger</span> Inventory check reveals low stock of specific uniform types or staff report missing/unfit uniforms.</li>
+          <li><span class="bullet">Outcome</span> Uniforms are cleaned, inspected, and issued to staff in a timely manner, ensuring operational readiness and guest satisfaction.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 24 hours to identify uniform shortage</li><li><span class="bullet">▸</span> Less than 30 minutes to log request</li><li><span class="bullet">▸</span> Less than 4 hours to prepare uniforms for laundry</li><li><span class="bullet">▸</span> Less than 1 hour to initiate laundry process</li><li><span class="bullet">▸</span> Less than 2 hours to inspect cleaned uniforms</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The process for handling uniform laundering and issuing new uniforms at a full-service Marriott hotel.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Incorrect inventory checks leading to inaccurate shortage identification</li><li><span class="bullet risk">▸</span> Delays in logging requests causing further shortages</li><li><span class="bullet risk">▸</span> Incorrect sorting of uniforms damaging them during the laundry process</li><li><span class="bullet risk">▸</span> Missed defects in inspected uniforms leading to guest complaints</li><li><span class="bullet risk">▸</span> Incorrect issuance of uniforms causing confusion among staff</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../housekeeping/laundry-linen/hk-lp-03/"><span>◀</span><div><span class="prev-lbl">Previous</span>Linen Inventory Management</div></a>
+  <a href="../../../housekeeping/laundry-linen/hk-lp-05/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Guest Laundry Service</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; HK-LP-04 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

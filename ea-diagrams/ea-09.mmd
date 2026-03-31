@@ -1,0 +1,75 @@
+%%{init: {'theme':'base','themeVariables':{'fontSize':'12px','fontFamily':'Inter, Arial, sans-serif'}}}%%
+flowchart TB
+
+  subgraph NETWORK["🌐 Network Infrastructure"]
+    direction LR
+    CISCO["Cisco Infrastructure\nCore switches · AP · SD-WAN"]
+    GUEST_WIFI["Guest WiFi\nMeraki · Captive portal · BW mgmt"]
+    OPS_LAN["Operations LAN\nPMS · POS · Housekeeping · VLAN segmented"]
+    PCI_NET["PCI Network\nPayment terminals · Isolated VLAN"]
+    CISCO    -->|"VLAN routing"| GUEST_WIFI
+    CISCO    -->|"VLAN routing"| OPS_LAN
+    CISCO    -->|"isolated segment"| PCI_NET
+  end
+
+  subgraph SECURITY_IT["🔐 Cybersecurity"]
+    direction LR
+    PALOALTO["Palo Alto NGFW\nNext-gen firewall · IPS · URL filtering"]
+    SPLUNK["Splunk SIEM\nLog aggregation · Threat detection · SOC"]
+    CROWDSTRIKE["CrowdStrike\nEDR · Endpoint protection · Threat hunting"]
+    QUALYS["Qualys\nVulnerability scanning · Patch compliance"]
+    PALOALTO -->|"firewall logs"| SPLUNK
+    CROWDSTRIKE-->|"endpoint alerts"| SPLUNK
+  end
+
+  subgraph DIGITAL_GUEST["📱 Digital Guest Experience"]
+    direction LR
+    BONVOY_DIGITAL["Bonvoy App\nMobile check-in · Digital key · In-app chat"]
+    DIGITAL_KEY["VingCard VISIONLINE\nBLE digital key · Mobile access"]
+    INNCOM5["INNCOM GRMS\nRoom controls · Temp · TV · Lighting"]
+    INROOM_ENT["Samsung LYNK\nIn-room entertainment · Casting · VOD"]
+    SIGNAGE["Digital Signage\nWayfinding · Events · Promotions"]
+    BONVOY_DIGITAL -->|"key provisioning"| DIGITAL_KEY
+    BONVOY_DIGITAL -->|"room controls"| INNCOM5
+  end
+
+  subgraph GUEST_TECH["💻 Guest Technology Services"]
+    direction LR
+    HELPDESK["IT Helpdesk\nServiceNow · Guest tech support"]
+    PRINTING["Print Services\nCloud print · Business centre"]
+    AV["AV Systems\nCrestron · Polycom · Meeting room tech"]
+  end
+
+  subgraph ENTERPRISE_IT["🏢 Enterprise IT Platform"]
+    direction LR
+    O365["Microsoft 365\nEmail · Teams · SharePoint · OneDrive"]
+    AZURE["Microsoft Azure\nCloud hosting · DR · Backup"]
+    VMWARE["VMware\nVirtualisation · On-premise servers"]
+    SERVICENOW["ServiceNow\nITSM · Change mgmt · Incident"]
+    O365 -->|"identity"| AZURE
+  end
+
+  GUEST_WIFI     -->|"guest internet"| BONVOY_DIGITAL
+  OPS_LAN        -->|"system connectivity"| HELPDESK
+  PALOALTO       -->|"network protection"| CISCO
+  QUALYS         -->|"vuln reports"| SERVICENOW
+  SPLUNK         -->|"incidents"| SERVICENOW
+  SERVICENOW     -->|"tickets"| HELPDESK
+  INNCOM5        -->|"room data"| SPLUNK
+  DIGITAL_KEY    -->|"access log"| SPLUNK
+  AZURE          -->|"DR failover"| VMWARE
+  BONVOY_DIGITAL -->|"feedback"| HELPDESK
+
+  classDef net  fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
+  classDef sec  fill:#fff1f2,stroke:#e11d48,color:#881337
+  classDef dig  fill:#f0fdf4,stroke:#16a34a,color:#14532d
+  classDef gt   fill:#fff7ed,stroke:#ea580c,color:#7c2d12
+  classDef ent  fill:#f5f3ff,stroke:#7c3aed,color:#4c1d95
+  classDef hub  fill:#003366,color:#fff,stroke:#003366
+
+  class CISCO hub
+  class GUEST_WIFI,OPS_LAN,PCI_NET net
+  class PALOALTO,SPLUNK,CROWDSTRIKE,QUALYS sec
+  class BONVOY_DIGITAL,DIGITAL_KEY,INNCOM5,INROOM_ENT,SIGNAGE dig
+  class HELPDESK,PRINTING,AV gt
+  class O365,AZURE,VMWARE,SERVICENOW ent

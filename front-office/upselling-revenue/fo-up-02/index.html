@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-UP-02 — Check-In Room Upgrade Upselling | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Upselling & Revenue Optimisation</a><span class="sep">›</span>Check-In Room Upgrade Upselling</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-UP-02</div>
+  <h1>Check-In Room Upgrade Upselling</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Upselling & Revenue Optimisation</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Knowcross HotSOS</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-up-02.png" alt="FO-UP-02 — Check-In Room Upgrade Upselling process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.4</span> <span class="step-badge">2.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#f59e0b"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">1.5</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">2.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Upsell Opportunity</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest check-in information</td>
+          <td>Upsell opportunity identified</td>
+          <td>&lt; 3 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Identifying upsell opportunities without guest interaction</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Research Room Options</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Guest preferences and availability data</td>
+          <td>Room upgrade options list</td>
+          <td>&lt; 5 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accessing real-time room availability</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Prepare Upsell Pitch</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Room upgrade options list</td>
+          <td>Upsell pitch script</td>
+          <td>&lt; 2 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Customizing upsell pitch for each guest</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>Initiate Upsell Conversation</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Upsell pitch script</td>
+          <td>Guest response to upsell</td>
+          <td>&lt; 2 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling guest objections</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.5</td>
+          <td>Handle Guest Objections</td>
+          <td>Front Desk Agent, Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Guest response to upsell</td>
+          <td>Objection resolution plan</td>
+          <td>&lt; 3 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Dealing with persistent guest objections</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Confirm Room Upgrade</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Objection resolution plan</td>
+          <td>Room upgrade confirmation</td>
+          <td>&lt; 2 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring seamless room change process</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update Reservation System</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Room upgrade confirmation</td>
+          <td>Updated reservation record</td>
+          <td>&lt; 1 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Synchronizing changes across multiple systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Notify Housekeeping</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud, Knowcross HotSOS</td>
+          <td>Updated reservation record</td>
+          <td>Housekeeping notification</td>
+          <td>&lt; 1 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring timely room preparation</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Capture Upsell Data</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Room upgrade confirmation</td>
+          <td>Upsell data record</td>
+          <td>&lt; 2 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurate data entry for analytics</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Review Upsell Performance</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS, Microsoft Power BI</td>
+          <td>Upsell data record</td>
+          <td>Upsell performance report</td>
+          <td>&lt; 10 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Generating actionable insights from data</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-UP-02</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Upselling &amp; Revenue Optimisation</li>
+          <li><span class="bullet">Process</span> Check-In Room Upgrade Upselling</li>
+          <li><span class="bullet">Trigger</span> Guest arrives and checks into the hotel</li>
+          <li><span class="bullet">Outcome</span> Successful upselling of a higher-tiered room to increase revenue per stay</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> &lt; 3 min for identifying upsell opportunities</li><li><span class="bullet">▸</span> &lt; 5 min for researching room options</li><li><span class="bullet">▸</span> &lt; 2 min for preparing upsell pitch</li><li><span class="bullet">▸</span> &lt; 10 min for reviewing upsell performance</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">A structured process document for upselling room upgrades during check-in at a Marriott full-service hotel using Oracle OPERA Cloud PMS.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Real-time data synchronization issues between systems</li><li><span class="bullet risk">▸</span> Handling guest objections and maintaining a positive interaction</li><li><span class="bullet risk">▸</span> Ensuring accurate data entry for analytics</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/upselling-revenue/fo-up-01/"><span>◀</span><div><span class="prev-lbl">Previous</span>Pre-Arrival Upsell Campaign Management</div></a>
+  <a href="../../../front-office/upselling-revenue/fo-up-03/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Package &amp; Add-On Selling</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-UP-02 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

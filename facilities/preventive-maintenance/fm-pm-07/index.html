@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FM-PM-07 — Kitchen Equipment Service | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🔧 Facilities & Engineering</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Facilities & Engineering</a><span class="sep">›</span><a href="../">Preventive Maintenance</a><span class="sep">›</span>Kitchen Equipment Service</div>
+
+<div class="page-header">
+  <div class="pid-badge">FM-PM-07</div>
+  <h1>Kitchen Equipment Service</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Preventive Maintenance</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Birchstreet Procurement</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fm-pm-07.png" alt="FM-PM-07 — Kitchen Equipment Service process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Facilities Engineer</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.4</span> <span class="step-badge">2.5</span> <span class="step-badge">3.1</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ff9900"></span>Procurement Manager</td>
+          <td><span class="step-badge">2.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#66b3ff"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">3.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Review Maintenance Schedule</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Maintenance schedule</td>
+          <td>Updated maintenance log</td>
+          <td>Less than 5 minutes per review</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Overdue equipment maintenance can lead to unexpected downtime</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Identify Equipment for Maintenance</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Maintenance log</td>
+          <td>List of equipment needing maintenance</td>
+          <td>Less than 3 minutes per identification</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Neglecting critical equipment can affect food quality and safety</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Prepare Maintenance Checklist</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>List of equipment needing maintenance</td>
+          <td>Maintenance checklist</td>
+          <td>Less than 5 minutes per checklist</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incomplete checklists can lead to missed issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Order Replacement Parts</td>
+          <td>Procurement Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Maintenance checklist</td>
+          <td>Purchase order for parts</td>
+          <td>Less than 10 minutes per order</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed part delivery can cause extended downtime</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Schedule Maintenance Window</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Maintenance checklist and parts order confirmation</td>
+          <td>Scheduled maintenance window</td>
+          <td>Less than 15 minutes per scheduling</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Overlapping maintenance windows can disrupt operations</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Perform Equipment Maintenance</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Scheduled maintenance window and checklist</td>
+          <td>Maintenance report</td>
+          <td>Less than 30 minutes per equipment</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Equipment malfunction during maintenance can lead to further delays</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.5</td>
+          <td>Test Equipment Functionality</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Maintenance report</td>
+          <td>Equipment test results</td>
+          <td>Less than 10 minutes per test</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Non-functional equipment can affect kitchen operations</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Update Maintenance Log</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Equipment test results</td>
+          <td>Updated maintenance log</td>
+          <td>Less than 5 minutes per update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Outdated logs can lead to missed maintenance windows</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Notify Kitchen Staff</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated maintenance log and test results</td>
+          <td>Notification to kitchen staff</td>
+          <td>Less than 5 minutes per notification</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Uninformed kitchen staff can lead to operational inefficiencies</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Review Maintenance Report</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Maintenance report and test results</td>
+          <td>Final maintenance review</td>
+          <td>Less than 10 minutes per review</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Neglected reviews can lead to recurring issues</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FM-PM-07</li>
+          <li><span class="bullet">Domain</span> Facilities &amp; Engineering</li>
+          <li><span class="bullet">Group</span> Preventive Maintenance</li>
+          <li><span class="bullet">Process</span> Kitchen Equipment Service</li>
+          <li><span class="bullet">Trigger</span> Scheduled maintenance checks or reports of equipment malfunction</li>
+          <li><span class="bullet">Outcome</span> Ensured kitchen equipment is functioning optimally, reducing downtime and improving guest satisfaction</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes per review of maintenance schedule</li><li><span class="bullet">▸</span> Less than 10 minutes per order for replacement parts</li><li><span class="bullet">▸</span> Less than 30 minutes per equipment during maintenance</li><li><span class="bullet">▸</span> Less than 5 minutes per update to the maintenance log</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the steps for maintaining kitchen equipment in a full-service Marriott hotel using Oracle OPERA Cloud PMS and other relevant systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Overdue equipment maintenance leading to unexpected downtime</li><li><span class="bullet risk">▸</span> Neglecting critical equipment affecting food quality and safety</li><li><span class="bullet risk">▸</span> Delayed part delivery causing extended downtime</li><li><span class="bullet risk">▸</span> Equipment malfunction during maintenance leading to further delays</li><li><span class="bullet risk">▸</span> Non-functional equipment disrupting kitchen operations</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../facilities/preventive-maintenance/fm-pm-06/"><span>◀</span><div><span class="prev-lbl">Previous</span>Elevator &amp; Escalator Maintenance</div></a>
+  <a href="../../../facilities/preventive-maintenance/fm-pm-08/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Emergency Generator Testing</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FM-PM-07 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

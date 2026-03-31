@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT-OP-04 — Guest Technology Support | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">💻 Technology & Systems</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Technology & Systems</a><span class="sep">›</span><a href="../">IT Operations & Infrastructure</a><span class="sep">›</span>Guest Technology Support</div>
+
+<div class="page-header">
+  <div class="pid-badge">IT-OP-04</div>
+  <h1>Guest Technology Support</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">IT Operations & Infrastructure</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">SynXis CRS</span> <span class="tag">Knowcross HotSOS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/it-op-04.png" alt="IT-OP-04 — Guest Technology Support process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">3.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#f59e0b"></span>IT Support Specialist</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>IT Support Manager</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Guest Request</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest request via phone, email, or in-person</td>
+          <td>Logged ticket in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling multiple requests simultaneously</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Identify Issue Type</td>
+          <td>IT Support Specialist</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Logged ticket in Oracle OPERA Cloud</td>
+          <td>Issue categorization (e.g., Wi-Fi, room technology)</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurate issue identification</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Assign to Specialist</td>
+          <td>IT Support Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Categorized ticket</td>
+          <td>Assigned ticket to appropriate specialist</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Resource allocation</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Diagnose Issue</td>
+          <td>IT Support Specialist</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Assigned ticket</td>
+          <td>Diagnosis report</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Complex issue resolution</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Resolve Issue</td>
+          <td>IT Support Specialist</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Diagnosis report</td>
+          <td>Resolved ticket</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Technical complexity</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Verify Resolution</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Resolved ticket</td>
+          <td>Verification of guest satisfaction</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Guest feedback</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Close Ticket</td>
+          <td>IT Support Specialist</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Verification of guest satisfaction</td>
+          <td>Closed ticket in Oracle OPERA Cloud</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ticket closure process</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Knowledge Base</td>
+          <td>IT Support Manager</td>
+          <td>Knowcross HotSOS</td>
+          <td>Resolved ticket details</td>
+          <td>Updated knowledge base article</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Knowledge base maintenance</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Review and Improve</td>
+          <td>IT Support Manager</td>
+          <td>Oracle OPERA Cloud, Knowcross HotSOS</td>
+          <td>Closed ticket details</td>
+          <td>Improvement plan or action items</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Continuous improvement</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> IT-OP-04</li>
+          <li><span class="bullet">Domain</span> Technology &amp; Systems</li>
+          <li><span class="bullet">Group</span> IT Operations &amp; Infrastructure</li>
+          <li><span class="bullet">Process</span> Guest Technology Support</li>
+          <li><span class="bullet">Trigger</span> Guest initiates a request for technology support through various channels such as phone, email, or in-person at the front desk.</li>
+          <li><span class="bullet">Outcome</span> The issue is resolved to the satisfaction of the guest, with minimal disruption to their stay.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 2 minutes for receiving and logging a guest request</li><li><span class="bullet">▸</span> Less than 1 minute for assigning a ticket to a specialist</li><li><span class="bullet">▸</span> Less than 5 minutes for diagnosing an issue</li><li><span class="bullet">▸</span> Less than 10 minutes for resolving an issue</li><li><span class="bullet">▸</span> Less than 2 minutes for verifying resolution with the guest</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the steps involved in providing guest technology support at a full-service Marriott hotel using Oracle OPERA Cloud PMS and other key systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Overlooking critical issues due to high volume of requests</li><li><span class="bullet risk">▸</span> Inaccurate diagnosis leading to prolonged resolution times</li><li><span class="bullet risk">▸</span> Difficulty in maintaining up-to-date knowledge base articles</li><li><span class="bullet risk">▸</span> Resource allocation challenges during peak periods</li><li><span class="bullet risk">▸</span> Guest dissatisfaction due to unresolved or delayed issues</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../technology/it-operations/it-op-03/"><span>◀</span><div><span class="prev-lbl">Previous</span>POS System Management</div></a>
+  <a href="../../../technology/it-operations/it-op-05/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Cybersecurity Monitoring &amp; Incident Response</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; IT-OP-04 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

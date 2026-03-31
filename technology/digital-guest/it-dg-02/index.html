@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT-DG-02 — Digital Key &amp; Mobile Check-In | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">💻 Technology & Systems</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Technology & Systems</a><span class="sep">›</span><a href="../">Digital Guest Experience</a><span class="sep">›</span>Digital Key &amp; Mobile Check-In</div>
+
+<div class="page-header">
+  <div class="pid-badge">IT-DG-02</div>
+  <h1>Digital Key &amp; Mobile Check-In</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Digital Guest Experience</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Assa Abloy VingCard</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Birchstreet Procurement</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/it-dg-02.png" alt="IT-DG-02 — Digital Key &amp; Mobile Check-In process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>IT Director</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.3</span> <span class="step-badge">2.1</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Procurement Manager</td>
+          <td><span class="step-badge">1.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>Systems Analyst</td>
+          <td><span class="step-badge">1.3</span> <span class="step-badge">2.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Systems Engineer</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#8b5cf6"></span>QA Engineer</td>
+          <td><span class="step-badge">2.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#eab308"></span>Front Desk Manager</td>
+          <td><span class="step-badge">2.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#10b981"></span>Training Coordinator</td>
+          <td><span class="step-badge">2.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>General Manager</td>
+          <td><span class="step-badge">3.1</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Project Plan</td>
+          <td>IT Director</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Project requirements document</td>
+          <td>Project plan with timelines and milestones</td>
+          <td>Completion within 1 week</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Resource allocation for project team</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Vendor Selection</td>
+          <td>IT Director, Procurement Manager</td>
+          <td>Birchstreet Procurement, Oracle MICROS Simphony</td>
+          <td>RFP document</td>
+          <td>Selected vendor for digital key solution</td>
+          <td>Decision within 2 weeks</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Vendor compatibility with existing systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>System Integration Planning</td>
+          <td>IT Director, Systems Analyst</td>
+          <td>Oracle OPERA Cloud, Assa Abloy VingCard</td>
+          <td>Integration requirements document</td>
+          <td>Integration plan with timelines</td>
+          <td>Plan completed within 1 week</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data flow between systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Deploy Digital Key Solution</td>
+          <td>IT Director, Systems Engineer</td>
+          <td>Oracle OPERA Cloud, Assa Abloy VingCard</td>
+          <td>Integration plan</td>
+          <td>Digital key solution deployed in test environment</td>
+          <td>Deployment within 2 weeks</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Technical issues during deployment</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Conduct Testing</td>
+          <td>IT Director, QA Engineer</td>
+          <td>Oracle OPERA Cloud, Assa Abloy VingCard</td>
+          <td>Test scenarios document</td>
+          <td>Testing report with issues identified</td>
+          <td>Testing completed within 1 week</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Identifying all edge cases for testing</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Resolve Issues</td>
+          <td>IT Director, Systems Engineer</td>
+          <td>Oracle OPERA Cloud, Assa Abloy VingCard</td>
+          <td>Testing report</td>
+          <td>Resolved issues and updated integration plan</td>
+          <td>Issues resolved within 1 week</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Complex technical issues requiring multiple iterations</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Train Front Desk Staff</td>
+          <td>Front Desk Manager, Training Coordinator</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Training materials</td>
+          <td>Trained staff ready for digital key and mobile check-in</td>
+          <td>Training completed within 1 day</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Staff resistance to new technology</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Go Live</td>
+          <td>IT Director, General Manager</td>
+          <td>Oracle OPERA Cloud, Assa Abloy VingCard</td>
+          <td>Final approval from stakeholders</td>
+          <td>Digital key and mobile check-in system live in production</td>
+          <td>Go live within 1 day</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Unexpected technical issues post-go live</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Monitor System Performance</td>
+          <td>IT Director, Systems Analyst</td>
+          <td>Oracle OPERA Cloud, Assa Abloy VingCard</td>
+          <td>Performance metrics</td>
+          <td>System performance report</td>
+          <td>Daily monitoring for 1 week</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Maintaining system stability under high load</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Review and Optimize</td>
+          <td>IT Director, Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>System performance report</td>
+          <td>Optimized system configuration and process improvements</td>
+          <td>Review completed within 1 week</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Balancing guest experience with operational efficiency</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> IT-DG-02</li>
+          <li><span class="bullet">Domain</span> Technology &amp; Systems</li>
+          <li><span class="bullet">Group</span> Digital Guest Experience</li>
+          <li><span class="bullet">Process</span> Digital Key &amp; Mobile Check-In</li>
+          <li><span class="bullet">Trigger</span> Hotel management initiates the process to enhance guest experience through digital key and mobile check-in capabilities.</li>
+          <li><span class="bullet">Outcome</span> Successful completion results in the implementation of digital key and mobile check-in, improving guest convenience and operational efficiency.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Project plan completed within 1 week</li><li><span class="bullet">▸</span> Deployment within 2 weeks</li><li><span class="bullet">▸</span> Testing completed within 1 week</li><li><span class="bullet">▸</span> Issues resolved within 1 week</li><li><span class="bullet">▸</span> Training completed within 1 day</li><li><span class="bullet">▸</span> Go live within 1 day</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the steps involved in enabling digital keys and mobile check-in at a Marriott full-service hotel using Oracle OPERA Cloud PMS and other relevant systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Vendor compatibility issues with existing systems</li><li><span class="bullet risk">▸</span> Technical deployment failures</li><li><span class="bullet risk">▸</span> Staff resistance to new technology</li><li><span class="bullet risk">▸</span> Unexpected technical issues post-go live</li><li><span class="bullet risk">▸</span> Balancing guest experience with operational efficiency</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../technology/digital-guest/it-dg-01/"><span>◀</span><div><span class="prev-lbl">Previous</span>Guest App Management</div></a>
+  <a href="../../../technology/digital-guest/it-dg-03/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>In-Room Entertainment System Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; IT-DG-02 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

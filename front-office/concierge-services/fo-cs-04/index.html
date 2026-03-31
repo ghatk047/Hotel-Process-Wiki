@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-CS-04 — Luggage Handling &amp; Storage | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Concierge & Guest Services</a><span class="sep">›</span>Luggage Handling &amp; Storage</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-CS-04</div>
+  <h1>Luggage Handling &amp; Storage</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Concierge & Guest Services</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-cs-04.png" alt="FO-CS-04 — Luggage Handling &amp; Storage process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Housekeeping Staff</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fde047"></span>Concierge</td>
+          <td><span class="step-badge">1.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Luggage at Check-In</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest luggage</td>
+          <td>Luggage tag with guest information</td>
+          <td>Less than 3 minutes per piece of luggage</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling heavy or fragile items</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Scan Luggage Tag</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Luggage tag</td>
+          <td>Updated guest profile with luggage information</td>
+          <td>Less than 1 minute per scan</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Barcode scanner malfunctions</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Store Luggage in Appropriate Area</td>
+          <td>Housekeeping Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Luggage tag information</td>
+          <td>Stored luggage in designated area</td>
+          <td>Less than 5 minutes per piece of luggage</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Limited storage space</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update Luggage Status in PMS</td>
+          <td>Housekeeping Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Luggage location information</td>
+          <td>Updated PMS record</td>
+          <td>Less than 2 minutes per update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System connectivity issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Retrieve Luggage at Checkout</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest request for luggage retrieval</td>
+          <td>Delivered luggage to guest</td>
+          <td>Less than 5 minutes per piece of luggage</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect luggage location</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Luggage Status as Retrieved</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Confirmation of luggage retrieval</td>
+          <td>Updated PMS record</td>
+          <td>Less than 1 minute per update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System connectivity issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Monitor Luggage Storage Area</td>
+          <td>Housekeeping Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Real-time monitoring data</td>
+          <td>No action required if all is well, otherwise initiate corrective actions</td>
+          <td>Continuous monitoring</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Overcrowded storage areas</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Handle Special Requests</td>
+          <td>Concierge</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest special requests for luggage handling</td>
+          <td>Action taken based on request</td>
+          <td>Less than 10 minutes per request</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Complex or unusual requests</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Prepare Luggage for Departure</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest departure information</td>
+          <td>Luggage prepared and ready for transport</td>
+          <td>Less than 5 minutes per piece of luggage</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Late checkouts</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Update Final Luggage Status</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Final luggage status information</td>
+          <td>Updated PMS record</td>
+          <td>Less than 2 minutes per update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System connectivity issues</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-CS-04</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Concierge &amp; Guest Services</li>
+          <li><span class="bullet">Process</span> Luggage Handling &amp; Storage</li>
+          <li><span class="bullet">Trigger</span> Guest arrival and check-in</li>
+          <li><span class="bullet">Outcome</span> Properly managed and stored luggage for guests, ensuring timely retrieval upon checkout or request.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 3 minutes per piece of luggage at check-in and retrieval</li><li><span class="bullet">▸</span> Continuous monitoring of luggage storage area</li><li><span class="bullet">▸</span> Less than 10 minutes per special request handling</li><li><span class="bullet">▸</span> Less than 2 minutes per PMS record update</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the handling and storage of luggage at a full-service Marriott hotel using Oracle OPERA Cloud PMS. It ensures efficient management of guest luggage from check-in to departure.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> System connectivity issues affecting real-time updates</li><li><span class="bullet risk">▸</span> Overcrowded storage areas leading to inefficiencies</li><li><span class="bullet risk">▸</span> Complex or unusual requests from guests</li><li><span class="bullet risk">▸</span> Late checkouts causing delays in luggage preparation</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/concierge-services/fo-cs-03/"><span>◀</span><div><span class="prev-lbl">Previous</span>Restaurant Reservation &amp; Ticketing</div></a>
+  <a href="../../../front-office/concierge-services/fo-cs-05/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Wake-Up Call &amp; Guest Communications</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-CS-04 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

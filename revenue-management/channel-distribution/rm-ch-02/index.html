@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM-CH-02 — GDS Distribution Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">📈 Revenue Management & Distribution</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Revenue Management & Distribution</a><span class="sep">›</span><a href="../">Channel & Distribution Management</a><span class="sep">›</span>GDS Distribution Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">RM-CH-02</div>
+  <h1>GDS Distribution Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Channel & Distribution Management</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">SynXis CRS</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Amadeus Delphi.fdc</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/rm-ch-02.png" alt="RM-CH-02 — GDS Distribution Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Distribution Update</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Rate changes or inventory updates</td>
+          <td>Distribution update request</td>
+          <td>Less than 5 minutes to initiate</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Manual entry errors leading to incorrect distribution</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Rate and Inventory Data</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Distribution update request</td>
+          <td>Verified rate and inventory data</td>
+          <td>Less than 10 minutes to verify</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data discrepancies between systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Push Rates to SynXis CRS</td>
+          <td>Revenue Manager</td>
+          <td>SynXis CRS</td>
+          <td>Verified rate and inventory data</td>
+          <td>Updated rates in SynXis CRS</td>
+          <td>Less than 2 minutes per GDS</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Network issues affecting data push</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Push Rates to IDeaS G3 RMS</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS</td>
+          <td>Verified rate and inventory data</td>
+          <td>Updated rates in IDeaS G3 RMS</td>
+          <td>Less than 2 minutes per GDS</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System downtime affecting distribution</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Push Rates to Amadeus Delphi.fdc</td>
+          <td>Revenue Manager</td>
+          <td>Amadeus Delphi.fdc</td>
+          <td>Verified rate and inventory data</td>
+          <td>Updated rates in Amadeus Delphi.fdc</td>
+          <td>Less than 2 minutes per GDS</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Complex integration issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Distribution Status</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated rates in GDS systems</td>
+          <td>Distribution status report</td>
+          <td>Less than 5 minutes to generate report</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Delayed updates affecting availability</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Resolve Distribution Issues</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS, IDeaS G3 RMS, Amadeus Delphi.fdc</td>
+          <td>Distribution status report</td>
+          <td>Resolved distribution issues</td>
+          <td>Less than 15 minutes per issue</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Manual intervention required for complex issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Marriott Bonvoy CRM</td>
+          <td>Revenue Manager</td>
+          <td>Marriott Bonvoy CRM</td>
+          <td>Resolved distribution issues</td>
+          <td>Updated CRM system with accurate data</td>
+          <td>Less than 5 minutes to update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data synchronization errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Generate Final Report</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated CRM system with accurate data</td>
+          <td>Final distribution report</td>
+          <td>Less than 5 minutes to generate</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Report generation delays</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> RM-CH-02</li>
+          <li><span class="bullet">Domain</span> Revenue Management &amp; Distribution</li>
+          <li><span class="bullet">Group</span> Channel &amp; Distribution Management</li>
+          <li><span class="bullet">Process</span> GDS Distribution Management</li>
+          <li><span class="bullet">Trigger</span> Daily rate changes, new promotions, or updates in hotel inventory</li>
+          <li><span class="bullet">Outcome</span> Accurate distribution of room rates and availability across all relevant GDS systems, leading to optimized bookings and increased revenue.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes to initiate distribution update</li><li><span class="bullet">▸</span> Less than 10 minutes to verify rate and inventory data</li><li><span class="bullet">▸</span> Less than 2 minutes per GDS for pushing rates</li><li><span class="bullet">▸</span> Less than 5 minutes to generate distribution status report</li><li><span class="bullet">▸</span> Less than 15 minutes per issue to resolve distribution issues</li><li><span class="bullet">▸</span> Less than 5 minutes to update CRM system with accurate data</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The GDS Distribution Management process ensures that room rates and availability are accurately distributed across various Global Distribution Systems (GDS) to maximize hotel revenue.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Manual entry errors leading to incorrect distribution</li><li><span class="bullet risk">▸</span> Network issues affecting data push</li><li><span class="bullet risk">▸</span> System downtime affecting distribution</li><li><span class="bullet risk">▸</span> Complex integration issues</li><li><span class="bullet risk">▸</span> Data synchronization errors</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../revenue-management/channel-distribution/rm-ch-01/"><span>◀</span><div><span class="prev-lbl">Previous</span>OTA Channel Management</div></a>
+  <a href="../../../revenue-management/channel-distribution/rm-ch-03/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Direct Website Rate Parity Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; RM-CH-02 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

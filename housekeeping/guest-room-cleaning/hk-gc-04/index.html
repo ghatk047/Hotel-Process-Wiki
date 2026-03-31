@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HK-GC-04 — Room Inspection &amp; Quality Check | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🛏️ Housekeeping & Rooms Management</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Housekeeping & Rooms Management</a><span class="sep">›</span><a href="../">Guest Room Cleaning & Turndown</a><span class="sep">›</span>Room Inspection &amp; Quality Check</div>
+
+<div class="page-header">
+  <div class="pid-badge">HK-GC-04</div>
+  <h1>Room Inspection &amp; Quality Check</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Guest Room Cleaning & Turndown</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/hk-gc-04.png" alt="HK-GC-04 — Room Inspection &amp; Quality Check process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Housekeeper</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Supervisor</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Room Inspection</td>
+          <td>Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room assignment from Oracle OPERA Cloud</td>
+          <td>Inspection checklist</td>
+          <td>Less than 2 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Accessing the correct room in a large hotel</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Check Room Amenities</td>
+          <td>Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Inspection checklist</td>
+          <td>Updated inspection checklist with notes on amenities</td>
+          <td>Less than 5 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Missing or broken amenities</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Inspect Room Cleanliness</td>
+          <td>Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Inspection checklist</td>
+          <td>Updated inspection checklist with notes on cleanliness</td>
+          <td>Less than 5 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Dirty or cluttered rooms</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Report Issues to Supervisor</td>
+          <td>Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated inspection checklist</td>
+          <td>Issue report</td>
+          <td>Less than 3 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Communication delays with supervisors</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Assign Corrective Actions</td>
+          <td>Supervisor</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Issue report</td>
+          <td>Corrective action plan</td>
+          <td>Less than 5 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Overlooking critical issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Execute Corrective Actions</td>
+          <td>Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Corrective action plan</td>
+          <td>Completed tasks</td>
+          <td>Less than 10 min per task</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inefficient execution of tasks</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Final Room Check</td>
+          <td>Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Completed tasks</td>
+          <td>Final inspection checklist</td>
+          <td>Less than 5 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Negligent final checks</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Oracle OPERA Cloud</td>
+          <td>Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Final inspection checklist</td>
+          <td>Updated room status in Oracle OPERA Cloud</td>
+          <td>Less than 3 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data entry errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Notify Front Desk of Room Availability</td>
+          <td>Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated room status in Oracle OPERA Cloud</td>
+          <td>Notification to Front Desk</td>
+          <td>Less than 2 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed notifications</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Document Inspection Results</td>
+          <td>Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Final inspection checklist</td>
+          <td>Inspection report</td>
+          <td>Less than 5 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incomplete documentation</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> HK-GC-04</li>
+          <li><span class="bullet">Domain</span> Housekeeping &amp; Rooms Management</li>
+          <li><span class="bullet">Group</span> Guest Room Cleaning &amp; Turndown</li>
+          <li><span class="bullet">Process</span> Room Inspection &amp; Quality Check</li>
+          <li><span class="bullet">Trigger</span> Scheduled daily or after guest departure</li>
+          <li><span class="bullet">Outcome</span> Clean, well-maintained rooms ready for the next guest, documented inspection results, and resolved issues</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Room inspection time: less than 30 min</li><li><span class="bullet">▸</span> Corrective action completion rate: 95% within 24 hours</li><li><span class="bullet">▸</span> Data entry accuracy: 98%</li><li><span class="bullet">▸</span> Notification delay to Front Desk: less than 10 min</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The HK-GC-04 process involves a detailed room inspection and quality check to ensure guest satisfaction and hotel standards are met. This process is initiated by housekeeping staff and executed using Oracle OPERA Cloud PMS, with outcomes including documented issues and corrective actions.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inconsistent inspection standards across housekeeping staff</li><li><span class="bullet risk">▸</span> Delayed corrective actions leading to guest dissatisfaction</li><li><span class="bullet risk">▸</span> Data entry errors in Oracle OPERA Cloud affecting room availability</li><li><span class="bullet risk">▸</span> Supervisors overlooking critical issues during inspections</li><li><span class="bullet risk">▸</span> Housekeepers neglecting final checks, resulting in undetected problems</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../housekeeping/guest-room-cleaning/hk-gc-03/"><span>◀</span><div><span class="prev-lbl">Previous</span>Departure Room Deep Clean</div></a>
+  <a href="../../../housekeeping/guest-room-cleaning/hk-gc-05/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Linen &amp; Towel Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; HK-GC-04 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

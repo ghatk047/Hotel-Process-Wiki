@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HK-GC-07 — Lost &amp; Found Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🛏️ Housekeeping & Rooms Management</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Housekeeping & Rooms Management</a><span class="sep">›</span><a href="../">Guest Room Cleaning & Turndown</a><span class="sep">›</span>Lost &amp; Found Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">HK-GC-07</div>
+  <h1>Lost &amp; Found Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Guest Room Cleaning & Turndown</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/hk-gc-07.png" alt="HK-GC-07 — Lost &amp; Found Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#4ade80"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">3.4</span> <span class="step-badge">3.5</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>Housekeeping Staff</td>
+          <td><span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Lost Item Report</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest report via phone, email, or in-person</td>
+          <td>Lost item report logged in Oracle OPERA Cloud</td>
+          <td>Less than 3 minutes to log the report</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling multiple reports simultaneously</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Notify Executive Housekeeper</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Lost item report</td>
+          <td>Notification to Executive Housekeeper</td>
+          <td>Less than 5 minutes to notify</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring timely communication</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Assign Search Team</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Notification from Front Desk Agent</td>
+          <td>Search team assigned and notified</td>
+          <td>Less than 10 minutes to assign</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Coordinating with multiple departments</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Search for Lost Item</td>
+          <td>Housekeeping Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Assigned search task</td>
+          <td>Search log and findings</td>
+          <td>Less than 30 minutes per room searched</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Efficiently searching large areas</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Report Search Results</td>
+          <td>Housekeeping Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Search log and findings</td>
+          <td>Updated report in Oracle OPERA Cloud</td>
+          <td>Less than 5 minutes to update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurately documenting search results</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Notify Guest of Item Found</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Search report with item found</td>
+          <td>Notification to guest</td>
+          <td>Less than 5 minutes to notify</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling sensitive information</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Arrange Item Retrieval</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest's confirmation to retrieve item</td>
+          <td>Arrangement for item retrieval</td>
+          <td>Less than 10 minutes to arrange</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Coordinating with guest schedules</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Retrieve and Hand Over Item</td>
+          <td>Housekeeping Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Arrangement for item retrieval</td>
+          <td>Item handed over to guest</td>
+          <td>Less than 5 minutes per retrieval</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring secure handover</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Update Lost &amp; Found Log</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Item retrieval confirmation</td>
+          <td>Updated lost &amp; found log</td>
+          <td>Less than 5 minutes to update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Maintaining accurate logs</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Close Lost Item Case</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated lost &amp; found log</td>
+          <td>Closed case in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes to close</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Finalizing case documentation</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> HK-GC-07</li>
+          <li><span class="bullet">Domain</span> Housekeeping &amp; Rooms Management</li>
+          <li><span class="bullet">Group</span> Guest Room Cleaning &amp; Turndown</li>
+          <li><span class="bullet">Process</span> Lost &amp; Found Management</li>
+          <li><span class="bullet">Trigger</span> A guest reports a lost item to housekeeping or front desk staff.</li>
+          <li><span class="bullet">Outcome</span> The lost item is located, documented, and either returned to the guest or stored securely for retrieval.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 3 minutes to log the report</li><li><span class="bullet">▸</span> Less than 5 minutes to notify</li><li><span class="bullet">▸</span> Less than 10 minutes to assign</li><li><span class="bullet">▸</span> Less than 30 minutes per room searched</li><li><span class="bullet">▸</span> Less than 5 minutes to update</li><li><span class="bullet">▸</span> Less than 5 minutes per retrieval</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines how a Marriott full-service hotel manages lost and found items. It ensures that lost items are tracked, reported, and returned to guests efficiently.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Multiple reports overwhelming staff</li><li><span class="bullet risk">▸</span> Inefficient search coordination</li><li><span class="bullet risk">▸</span> Handling sensitive information improperly</li><li><span class="bullet risk">▸</span> Coordinating with guest schedules difficulties</li><li><span class="bullet risk">▸</span> Maintaining accurate logs</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../housekeeping/guest-room-cleaning/hk-gc-06/"><span>◀</span><div><span class="prev-lbl">Previous</span>Minibar Restocking &amp; Billing</div></a>
+  <a href="../../../housekeeping/guest-room-cleaning/hk-gc-08/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Out-of-Order Room Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; HK-GC-07 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

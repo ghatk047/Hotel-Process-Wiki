@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM-YM-05 — Group Displacement Analysis | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">📈 Revenue Management & Distribution</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Revenue Management & Distribution</a><span class="sep">›</span><a href="../">Yield & Rate Management</a><span class="sep">›</span>Group Displacement Analysis</div>
+
+<div class="page-header">
+  <div class="pid-badge">RM-YM-05</div>
+  <h1>Group Displacement Analysis</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Yield & Rate Management</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Marriott Bonvoy CRM</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/rm-ym-05.png" alt="RM-YM-05 — Group Displacement Analysis process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.4</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Front Desk Agent</td>
+          <td><span class="step-badge">2.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">3.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Group Cancellation/Change</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Group reservation data</td>
+          <td>Report of affected rooms and dates</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Delayed detection of group cancellations can lead to lost revenue opportunities.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Notify Affected Departments</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>Report of affected rooms and dates</td>
+          <td>Notifications to Housekeeping, Food &amp; Beverage, and Procurement</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Failure to notify departments in a timely manner can result in operational inefficiencies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Analyze Impact on Revenue</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS, Oracle OPERA Cloud</td>
+          <td>Current and historical revenue data</td>
+          <td>Impact analysis report</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inaccurate impact analysis can lead to suboptimal decision-making.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Adjust Yield Management Strategy</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS, Oracle OPERA Cloud</td>
+          <td>Impact analysis report</td>
+          <td>Updated rate and availability settings</td>
+          <td>Less than 20 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Improper adjustment of rates can affect guest satisfaction and occupancy.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Communicate with Affected Guests</td>
+          <td>Front Desk Agent, Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Updated rate and availability settings</td>
+          <td>Guest communication logs</td>
+          <td>Less than 30 minutes per guest</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Poor communication can lead to guest dissatisfaction and negative reviews.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Monitor Revenue Performance</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS, Oracle OPERA Cloud</td>
+          <td>Real-time revenue data</td>
+          <td>Performance dashboard</td>
+          <td>Continuous monitoring</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Lack of real-time monitoring can delay necessary adjustments.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review and Document Process</td>
+          <td>Revenue Manager, Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Process logs and performance data</td>
+          <td>Process review report</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inadequate documentation can hinder future process improvements.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Training Materials</td>
+          <td>Revenue Manager, Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Process review report</td>
+          <td>Updated training materials</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Outdated training materials can lead to inconsistent execution.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Out Process</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Final performance data and review report</td>
+          <td>Process closure documentation</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Failure to properly close out the process can lead to confusion.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> RM-YM-05</li>
+          <li><span class="bullet">Domain</span> Revenue Management &amp; Distribution</li>
+          <li><span class="bullet">Group</span> Yield &amp; Rate Management</li>
+          <li><span class="bullet">Process</span> Group Displacement Analysis</li>
+          <li><span class="bullet">Trigger</span> A significant group cancellation or change in reservation dates is detected through Oracle OPERA Cloud PMS.</li>
+          <li><span class="bullet">Outcome</span> The hotel successfully adjusts its yield management strategy, reallocates resources, and communicates effectively with affected guests to minimize financial impact and maintain guest satisfaction.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes for identifying group cancellations</li><li><span class="bullet">▸</span> Less than 10 minutes to notify affected departments</li><li><span class="bullet">▸</span> Less than 20 minutes to adjust yield management strategy</li><li><span class="bullet">▸</span> Continuous monitoring of revenue performance</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The Group Displacement Analysis process is a structured approach used by Marriott full-service hotels to evaluate and manage the impact of group cancellations or changes on revenue management strategies. This ensures that the hotel can quickly adapt its pricing and availability to maximize occupancy and profitability.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate impact analysis leading to suboptimal decision-making</li><li><span class="bullet risk">▸</span> Poor communication with guests affecting satisfaction and reviews</li><li><span class="bullet risk">▸</span> Lack of real-time monitoring delaying necessary adjustments</li><li><span class="bullet risk">▸</span> Outdated training materials hindering future process improvements</li><li><span class="bullet risk">▸</span> Failure to properly close out the process causing confusion</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../revenue-management/yield-rate/rm-ym-04/"><span>◀</span><div><span class="prev-lbl">Previous</span>Overbooking Level Setting</div></a>
+  <a href="../../../revenue-management/yield-rate/rm-ym-06/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Competitive Rate Intelligence</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; RM-YM-05 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HK-PC-07 — Pest Control Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🛏️ Housekeeping & Rooms Management</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Housekeeping & Rooms Management</a><span class="sep">›</span><a href="../">Public Area & Cleaning Operations</a><span class="sep">›</span>Pest Control Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">HK-PC-07</div>
+  <h1>Pest Control Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Public Area & Cleaning Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">Oracle MICROS Simphony</span> <span class="tag">Knowcross HotSOS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/hk-pc-07.png" alt="HK-PC-07 — Pest Control Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">3.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Procurement Manager</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#eab308"></span>Front Desk Agent</td>
+          <td><span class="step-badge">2.2</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Pest Control Technician</td>
+          <td><span class="step-badge">2.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#10b981"></span>Guest Services Manager</td>
+          <td><span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Pest Detection</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Inspection report</td>
+          <td>Pest detection log</td>
+          <td>&lt; 30 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>False positives in pest detection leading to unnecessary treatments.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Pest Identification</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Pest detection log</td>
+          <td>Pest identification report</td>
+          <td>&lt; 15 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Misidentification of pests leading to ineffective treatment.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Vendor Selection</td>
+          <td>Procurement Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Pest identification report</td>
+          <td>Selected vendor list</td>
+          <td>&lt; 48 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inconsistent quality of pest control services from different vendors.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Service Request Creation</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Selected vendor list</td>
+          <td>Service request ticket</td>
+          <td>&lt; 5 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed service requests affecting pest control timelines.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Vendor Dispatch</td>
+          <td>Procurement Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Service request ticket</td>
+          <td>Dispatch confirmation</td>
+          <td>&lt; 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Vendor delays in dispatching pest control services.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Pest Control Execution</td>
+          <td>Pest Control Technician</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Dispatch confirmation</td>
+          <td>Treatment log</td>
+          <td>&lt; 3 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incomplete or ineffective pest control treatments.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Post-Treatment Inspection</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Treatment log</td>
+          <td>Inspection report</td>
+          <td>&lt; 2 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Missed pests after treatment leading to re-treatment cycles.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Service Completion</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Inspection report</td>
+          <td>Service completion ticket</td>
+          <td>&lt; 10 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incomplete service documentation affecting future compliance.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Feedback Collection</td>
+          <td>Guest Services Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Service completion ticket</td>
+          <td>Guest feedback report</td>
+          <td>&lt; 24 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Low guest satisfaction due to pest control issues.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Continuous Improvement</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest feedback report</td>
+          <td>Improvement plan</td>
+          <td>&lt; 1 week</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Lack of continuous improvement leading to recurring pest issues.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> HK-PC-07</li>
+          <li><span class="bullet">Domain</span> Housekeeping &amp; Rooms Management</li>
+          <li><span class="bullet">Group</span> Public Area &amp; Cleaning Operations</li>
+          <li><span class="bullet">Process</span> Pest Control Management</li>
+          <li><span class="bullet">Trigger</span> Detection of pests through routine inspections or guest complaints</li>
+          <li><span class="bullet">Outcome</span> A pest-free environment with documented compliance and satisfaction of guests and staff.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> &lt; 30 min for pest detection</li><li><span class="bullet">▸</span> &lt; 48 hours for vendor selection</li><li><span class="bullet">▸</span> &lt; 1 hour for vendor dispatch</li><li><span class="bullet">▸</span> &lt; 24 hours for feedback collection</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The Pest Control Management process at a Marriott full-service hotel ensures the maintenance of a clean and hygienic environment by scheduling, executing, and monitoring pest control activities.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inconsistent quality of pest control services from different vendors</li><li><span class="bullet risk">▸</span> Vendor delays in dispatching pest control services</li><li><span class="bullet risk">▸</span> Missed pests after treatment leading to re-treatment cycles</li><li><span class="bullet risk">▸</span> Low guest satisfaction due to pest control issues</li><li><span class="bullet risk">▸</span> Lack of continuous improvement leading to recurring pest issues</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../housekeeping/public-area-cleaning/hk-pc-06/"><span>◀</span><div><span class="prev-lbl">Previous</span>Car Park &amp; External Area Cleaning</div></a>
+  <a href="../../../housekeeping/public-area-cleaning/hk-pc-08/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Deep Clean Scheduling &amp; Execution</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; HK-PC-07 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

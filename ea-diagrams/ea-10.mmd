@@ -1,0 +1,72 @@
+%%{init: {'theme':'base','themeVariables':{'fontSize':'12px','fontFamily':'Inter, Arial, sans-serif'}}}%%
+flowchart LR
+
+  subgraph CORPORATE["🏢 Corporate Sales"]
+    direction TB
+    SALESFORCE4["Salesforce CRM\nAccounts · Contacts · Opportunities · RFP"]
+    PROPOSAL["Proposal Tool\nRate calculator · Presentation builder"]
+    CONTRACT["Contract Management\nDocuSign · Rate agreements · SLAs"]
+    SALESFORCE4 -->|"opportunity"| PROPOSAL
+    PROPOSAL    -->|"signed contract"| CONTRACT
+  end
+
+  subgraph MICE["🎪 MICE & Events Pipeline"]
+    direction TB
+    CVENT3["Cvent\nRFP intake · Venue sourcing · Group RFP"]
+    DELPHI4["Amadeus Delphi.fdc\nBEO · Catering · Function diary · P&L"]
+    OPERA_GROUP["OPERA Group Module\nRoom block · Rooming list · Pickup"]
+    CVENT3  -->|"qualified lead"| DELPHI4
+    DELPHI4 -->|"room block"| OPERA_GROUP
+  end
+
+  subgraph TMC["✈️ Travel Management"]
+    direction TB
+    AMEX_GBT["Amex GBT\nCorporate travel programme"]
+    SAP_CONCUR["SAP Concur\nExpense · Travel policy"]
+    GDS3["GDS Connectivity\nSabre · Amadeus · preferred rates"]
+    AMEX_GBT   -->|"bookings"| GDS3
+    SAP_CONCUR -->|"policy compliance"| GDS3
+  end
+
+  subgraph FRANCHISE["🏨 Franchise & Brand Management"]
+    direction TB
+    BRAND_PORTAL["Marriott Brand Standards Portal\nAudit checklists · Compliance scoring"]
+    FEE_SYSTEM["Franchise Fee System\nRoyalty calc · Marketing fund · IT fee"]
+    OWNER_REPORT["Owner Reporting Portal\nGOP · RevPAR · Capital plans"]
+    BRAND_PORTAL -->|"audit results"| OWNER_REPORT
+    FEE_SYSTEM   -->|"fee statements"| OWNER_REPORT
+  end
+
+  subgraph PERFORMANCE["📊 Sales Performance"]
+    direction TB
+    POWERBI9["Power BI\nSales KPIs · Pipeline · Win rate · ADR"]
+    STR2["STR Report\nMICE market share · Compset"]
+    INCENTIVE["Incentive Tracker\nSales quota · Commission calc"]
+  end
+
+  CONTRACT    -->|"rate loaded"| SYNXIS4["SynXis CRS\nCorporate rate loading"]
+  GDS3        -->|"bookings"| SYNXIS4
+  SYNXIS4     -->|"reservations"| OPERA_GROUP
+  DELPHI4     -->|"charges"| OPERA_GROUP
+  OPERA_GROUP -->|"revenue"| SAP6["SAP S/4HANA\nRevenue · MICE P&L"]
+  FEE_SYSTEM  -->|"fee invoices"| SAP6
+  SAP6        -->|"financial data"| POWERBI9
+  SALESFORCE4 -->|"pipeline data"| POWERBI9
+  STR2        -->|"benchmarks"| POWERBI9
+  SALESFORCE4 -->|"quota tracking"| INCENTIVE
+
+  classDef corp fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
+  classDef mice fill:#fdf4ff,stroke:#9333ea,color:#581c87
+  classDef tmc  fill:#f0fdf4,stroke:#16a34a,color:#14532d
+  classDef fran fill:#fff7ed,stroke:#ea580c,color:#7c2d12
+  classDef perf fill:#f5f3ff,stroke:#7c3aed,color:#4c1d95
+  classDef hub  fill:#003366,color:#fff,stroke:#003366
+  classDef mid  fill:#e85d00,color:#fff,stroke:#e85d00
+
+  class SALESFORCE4 hub
+  class PROPOSAL,CONTRACT corp
+  class CVENT3,DELPHI4,OPERA_GROUP mice
+  class AMEX_GBT,SAP_CONCUR,GDS3 tmc
+  class BRAND_PORTAL,FEE_SYSTEM,OWNER_REPORT fran
+  class POWERBI9,STR2,INCENTIVE perf
+  class SYNXIS4,SAP6 mid

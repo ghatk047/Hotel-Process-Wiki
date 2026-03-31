@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB-RO-03 — Order Taking &amp; POS Operations | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🍽️ Food & Beverage Operations</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Food & Beverage Operations</a><span class="sep">›</span><a href="../">Restaurant & Bar Operations</a><span class="sep">›</span>Order Taking &amp; POS Operations</div>
+
+<div class="page-header">
+  <div class="pid-badge">FB-RO-03</div>
+  <h1>Order Taking &amp; POS Operations</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Restaurant & Bar Operations</span>
+    <span class="tag">Oracle MICROS Simphony</span> <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fb-ro-03.png" alt="FB-RO-03 — Order Taking &amp; POS Operations process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Waiter/Waitress</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">2.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ff5733"></span>Kitchen Staff</td>
+          <td><span class="step-badge">1.4</span> <span class="step-badge">2.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#4caf50"></span>Front Desk Agent</td>
+          <td><span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Order</td>
+          <td>Waiter/Waitress</td>
+          <td>Oracle MICROS Simphony</td>
+          <td>Customer's order</td>
+          <td>Order entered into the system</td>
+          <td>Less than 2 minutes per order</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling large groups or rush orders</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Order</td>
+          <td>Waiter/Waitress</td>
+          <td>Oracle MICROS Simphony</td>
+          <td>Entered order</td>
+          <td>Verified order</td>
+          <td>Less than 30 seconds per verification</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Incorrect item selection or pricing</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Process Payment</td>
+          <td>Waiter/Waitress</td>
+          <td>Oracle MICROS Simphony</td>
+          <td>Payment details</td>
+          <td>Processed payment and receipt</td>
+          <td>Less than 2 minutes per payment</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling cash transactions or card declines</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>Update Inventory</td>
+          <td>Kitchen Staff</td>
+          <td>Oracle MICROS Simphony</td>
+          <td>Processed order</td>
+          <td>Updated inventory levels</td>
+          <td>Real-time update within 5 seconds</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Stockouts or overstocking</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Prepare Food/Drink</td>
+          <td>Kitchen Staff</td>
+          <td>Oracle MICROS Simphony</td>
+          <td>Verified order</td>
+          <td>Prepared food/drink</td>
+          <td>Less than 5 minutes per item</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Cooking delays or ingredient shortages</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Serve Food/Drink</td>
+          <td>Waiter/Waitress</td>
+          <td>Oracle MICROS Simphony</td>
+          <td>Prepared food/drink</td>
+          <td>Served food/drink to customer</td>
+          <td>Less than 2 minutes per service</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling large parties or rush services</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Order Status</td>
+          <td>Waiter/Waitress</td>
+          <td>Oracle MICROS Simphony</td>
+          <td>Ongoing orders</td>
+          <td>Updated order status</td>
+          <td>Real-time update within 5 seconds</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Order tracking or miscommunication</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Handle Special Requests</td>
+          <td>Waiter/Waitress</td>
+          <td>Oracle MICROS Simphony</td>
+          <td>Customer requests</td>
+          <td>Processed special requests</td>
+          <td>Less than 1 minute per request</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Complex or conflicting requests</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Closeout Order</td>
+          <td>Waiter/Waitress</td>
+          <td>Oracle MICROS Simphony</td>
+          <td>Completed order</td>
+          <td>Closed out order in the system</td>
+          <td>Less than 1 minute per closeout</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Order discrepancies or errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Update CRM</td>
+          <td>Front Desk Agent</td>
+          <td>Marriott Bonvoy CRM</td>
+          <td>Customer feedback</td>
+          <td>Updated customer profile in CRM</td>
+          <td>Less than 2 minutes per update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data entry errors or incomplete information</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FB-RO-03</li>
+          <li><span class="bullet">Domain</span> Food &amp; Beverage Operations</li>
+          <li><span class="bullet">Group</span> Restaurant &amp; Bar Operations</li>
+          <li><span class="bullet">Process</span> Order Taking &amp; POS Operations</li>
+          <li><span class="bullet">Trigger</span> Customer places an order at the restaurant or bar counter.</li>
+          <li><span class="bullet">Outcome</span> Successful completion produces accurate order entry, payment processing, and receipt generation.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 2 minutes per order entry</li><li><span class="bullet">▸</span> Real-time inventory update within 5 seconds</li><li><span class="bullet">▸</span> Less than 5 minutes per food/drink preparation</li><li><span class="bullet">▸</span> Less than 1 minute per special request handling</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">Order Taking &amp; POS Operations in a Marriott full-service hotel involves capturing customer orders and processing payments efficiently.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> System downtime affecting order processing</li><li><span class="bullet risk">▸</span> Stockouts leading to customer dissatisfaction</li><li><span class="bullet risk">▸</span> Payment processing errors causing delays</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../food-beverage/restaurant-bar/fb-ro-02/"><span>◀</span><div><span class="prev-lbl">Previous</span>Restaurant Opening &amp; Mise en Place</div></a>
+  <a href="../../../food-beverage/restaurant-bar/fb-ro-04/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Food &amp; Beverage Service Standards</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FB-RO-03 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FN-PR-01 — Purchase Requisition &amp; Approval | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">💰 Finance & Procurement</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Finance & Procurement</a><span class="sep">›</span><a href="../">Procurement & Supply Chain</a><span class="sep">›</span>Purchase Requisition &amp; Approval</div>
+
+<div class="page-header">
+  <div class="pid-badge">FN-PR-01</div>
+  <h1>Purchase Requisition &amp; Approval</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Procurement & Supply Chain</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">SAP S/4HANA</span> <span class="tag">IDeaS G3 RMS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fn-pr-01.png" alt="FN-PR-01 — Purchase Requisition &amp; Approval process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Department Head</td>
+          <td><span class="step-badge">1.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Procurement Officer</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#81e6d9"></span>Finance Manager</td>
+          <td><span class="step-badge">1.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Purchase Requisition</td>
+          <td>Department Head</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Purchase requisition form</td>
+          <td>Submitted purchase requisition</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect item codes or quantities leading to delays.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Review Purchase Requisition</td>
+          <td>Procurement Officer</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>Submitted purchase requisition</td>
+          <td>Reviewed purchase requisition</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Overlooking budget constraints during review.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Approve Purchase Requisition</td>
+          <td>Finance Manager</td>
+          <td>Oracle OPERA Cloud, SAP S/4HANA</td>
+          <td>Reviewed purchase requisition</td>
+          <td>Approved purchase requisition</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delays in approving due to budgetary concerns.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Generate Purchase Order</td>
+          <td>Procurement Officer</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>Approved purchase requisition</td>
+          <td>Generated purchase order</td>
+          <td>Less than 20 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect supplier details leading to delivery delays.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Send Purchase Order to Supplier</td>
+          <td>Procurement Officer</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>Generated purchase order</td>
+          <td>Sent purchase order</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Supplier communication issues causing delays.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Monitor Supplier Response</td>
+          <td>Procurement Officer</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>Sent purchase order</td>
+          <td>Supplier response</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Lack of timely supplier responses.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Receive Goods/Services</td>
+          <td>Receiving Officer</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Supplier response</td>
+          <td>Received goods/services</td>
+          <td>Less than 24 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect or damaged items received.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Inventory</td>
+          <td>Receiving Officer</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Received goods/services</td>
+          <td>Updated inventory records</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inventory discrepancies due to manual entry errors.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Purchase Requisition</td>
+          <td>Procurement Officer</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>Updated inventory records</td>
+          <td>Closed purchase requisition</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>No pain point identified.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FN-PR-01</li>
+          <li><span class="bullet">Domain</span> Finance &amp; Procurement</li>
+          <li><span class="bullet">Group</span> Procurement &amp; Supply Chain</li>
+          <li><span class="bullet">Process</span> Purchase Requisition &amp; Approval</li>
+          <li><span class="bullet">Trigger</span> A department head or manager identifies the need for new supplies, equipment, or services.</li>
+          <li><span class="bullet">Outcome</span> A successfully approved purchase requisition that leads to the procurement of required items or services.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Purchase requisition initiation within 5 minutes</li><li><span class="bullet">▸</span> Review and approval of purchase requisition within 15 minutes</li><li><span class="bullet">▸</span> Generation and sending of purchase order within 20 minutes</li><li><span class="bullet">▸</span> Receiving goods/services within 24 hours</li><li><span class="bullet">▸</span> Inventory update within 30 minutes</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The FN-PR-01 process ensures that purchase requisitions are properly initiated, reviewed, and approved within a Marriott full-service hotel. This process is crucial for managing procurement activities efficiently and adhering to financial controls.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Incorrect item codes or quantities leading to delays in procurement.</li><li><span class="bullet risk">▸</span> Overlooking budget constraints during the review process.</li><li><span class="bullet risk">▸</span> Delays in approving purchase requisitions due to financial concerns.</li><li><span class="bullet risk">▸</span> Supplier communication issues causing delays in delivery.</li><li><span class="bullet risk">▸</span> Inventory discrepancies due to manual entry errors.</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../finance/accounting-finance/fn-ac-08/"><span>◀</span><div><span class="prev-lbl">Previous</span>Internal Audit &amp; Controls</div></a>
+  <a href="../../../finance/procurement-supply/fn-pr-02/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Supplier Onboarding &amp; Qualification</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FN-PR-01 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

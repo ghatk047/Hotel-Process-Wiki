@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HK-LP-03 — Linen Inventory Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🛏️ Housekeeping & Rooms Management</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Housekeeping & Rooms Management</a><span class="sep">›</span><a href="../">Laundry & Linen Operations</a><span class="sep">›</span>Linen Inventory Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">HK-LP-03</div>
+  <h1>Linen Inventory Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Laundry & Linen Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/hk-lp-03.png" alt="HK-LP-03 — Linen Inventory Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Housekeeping Staff</td>
+          <td><span class="step-badge">2.3</span> <span class="step-badge">2.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Daily Inventory Check</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Inventory report from Oracle OPERA Cloud</td>
+          <td>Daily inventory check list</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate inventory data due to manual input errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Review Low Stock Alerts</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Low stock alerts from Oracle OPERA Cloud</td>
+          <td>List of items requiring replenishment</td>
+          <td>Less than 3 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delays in receiving low stock notifications</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Prepare Replenishment Order</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>List of items requiring replenishment</td>
+          <td>Replenishment order form</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect item quantities in orders</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Place Replenishment Order with Supplier</td>
+          <td>Executive Housekeeper</td>
+          <td>Birchstreet Procurement</td>
+          <td>Replenishment order form</td>
+          <td>Confirmation of order placement</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Supplier delays in order processing</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Monitor Order Status</td>
+          <td>Executive Housekeeper</td>
+          <td>Birchstreet Procurement</td>
+          <td>Replenishment order form</td>
+          <td>Order status update</td>
+          <td>Daily check</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lost or delayed orders</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Receive and Inspect Linens</td>
+          <td>Housekeeping Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Delivered linens</td>
+          <td>Inspection report</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Damaged or incorrect items received</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Update Inventory in Oracle OPERA Cloud</td>
+          <td>Housekeeping Staff</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Inspection report</td>
+          <td>Updated inventory record</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Manual data entry errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review Linen Usage Report</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Linen usage report</td>
+          <td>Usage analysis report</td>
+          <td>Less than 20 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate reporting due to system issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Adjust Inventory Levels Based on Usage</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Usage analysis report</td>
+          <td>Adjusted inventory levels</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Over or underestimation of linen usage</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Final Inventory Check and Documentation</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Adjusted inventory levels</td>
+          <td>Final inventory check report</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Omissions in final documentation</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> HK-LP-03</li>
+          <li><span class="bullet">Domain</span> Housekeeping &amp; Rooms Management</li>
+          <li><span class="bullet">Group</span> Laundry &amp; Linen Operations</li>
+          <li><span class="bullet">Process</span> Linen Inventory Management</li>
+          <li><span class="bullet">Trigger</span> Daily inventory check or low stock alert from Oracle OPERA Cloud</li>
+          <li><span class="bullet">Outcome</span> Accurate linen inventory levels maintained, timely replenishment of low stocks, and efficient tracking of linen usage and cleaning cycles.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Daily inventory check completion time: less than 5 minutes</li><li><span class="bullet">▸</span> Order placement confirmation time: less than 15 minutes</li><li><span class="bullet">▸</span> Linen inspection and update time: less than 1 hour</li><li><span class="bullet">▸</span> Usage analysis report generation time: less than 20 minutes</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process manages the inventory of linens in a full-service Marriott hotel using Oracle OPERA Cloud PMS and other relevant systems. It ensures that linens are adequately stocked, tracked, and managed to maintain guest satisfaction and operational efficiency.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Supplier delays in order processing</li><li><span class="bullet risk">▸</span> Lost or delayed orders</li><li><span class="bullet risk">▸</span> Manual data entry errors leading to inaccurate inventory records</li><li><span class="bullet risk">▸</span> Inaccurate reporting due to system issues</li><li><span class="bullet risk">▸</span> Over or underestimation of linen usage</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../housekeeping/laundry-linen/hk-lp-02/"><span>◀</span><div><span class="prev-lbl">Previous</span>Commercial Laundry Processing</div></a>
+  <a href="../../../housekeeping/laundry-linen/hk-lp-04/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Uniform Laundering &amp; Issue</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; HK-LP-03 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

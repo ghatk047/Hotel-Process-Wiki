@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FM-EM-01 — Energy Consumption Monitoring | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🔧 Facilities & Engineering</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Facilities & Engineering</a><span class="sep">›</span><a href="../">Energy & Environment Management</a><span class="sep">›</span>Energy Consumption Monitoring</div>
+
+<div class="page-header">
+  <div class="pid-badge">FM-EM-01</div>
+  <h1>Energy Consumption Monitoring</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Energy & Environment Management</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Schneider EcoStruxure</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fm-em-01.png" alt="FM-EM-01 — Energy Consumption Monitoring process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Facilities Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Facilities Engineer</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Energy Audit</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Energy bill data from previous month</td>
+          <td>Audit report with key findings</td>
+          <td>&lt; 30 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inconsistent energy data reporting across different systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Review Audit Report</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Audit report with key findings</td>
+          <td>Action plan for energy efficiency improvements</td>
+          <td>&lt; 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Lack of actionable insights from audit data</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Implement Energy Efficiency Measures</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud, Schneider EcoStruxure</td>
+          <td>Action plan for energy efficiency improvements</td>
+          <td>Updated facility maintenance schedule</td>
+          <td>&lt; 2 days</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Coordination between different departments for implementation</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Monitor Energy Usage</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud, Schneider EcoStruxure</td>
+          <td>Updated facility maintenance schedule</td>
+          <td>Real-time energy consumption data</td>
+          <td>&lt; 15 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate or delayed energy readings</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Analyze Energy Data</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Real-time energy consumption data</td>
+          <td>Energy usage trends report</td>
+          <td>&lt; 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Difficulty in analyzing large volumes of energy data</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review Energy Usage Trends</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Energy usage trends report</td>
+          <td>Optimization plan for further energy savings</td>
+          <td>&lt; 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Lack of clear optimization strategies based on data analysis</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Implement Optimization Plan</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud, Schneider EcoStruxure</td>
+          <td>Optimization plan for further energy savings</td>
+          <td>Updated facility maintenance schedule</td>
+          <td>&lt; 3 days</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Resistance to change from staff or technical challenges</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Verify Energy Savings</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud, Schneider EcoStruxure</td>
+          <td>Updated facility maintenance schedule</td>
+          <td>Energy savings report</td>
+          <td>&lt; 15 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inability to measure the impact of optimization efforts</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Report Energy Consumption Metrics</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Energy savings report</td>
+          <td>Monthly energy consumption metrics report to senior management</td>
+          <td>&lt; 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Lack of visibility into energy consumption for decision-making</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FM-EM-01</li>
+          <li><span class="bullet">Domain</span> Facilities &amp; Engineering</li>
+          <li><span class="bullet">Group</span> Energy &amp; Environment Management</li>
+          <li><span class="bullet">Process</span> Energy Consumption Monitoring</li>
+          <li><span class="bullet">Trigger</span> Monthly review of energy bills and quarterly energy audits</li>
+          <li><span class="bullet">Outcome</span> Optimized energy usage, reduced costs, and improved sustainability metrics.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> &lt; 30 min for initiating energy audit</li><li><span class="bullet">▸</span> &lt; 1 hour for reviewing audit report and action plan creation</li><li><span class="bullet">▸</span> &lt; 2 days for implementing energy efficiency measures</li><li><span class="bullet">▸</span> &lt; 15 min for monitoring real-time energy usage data</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">A process to monitor and manage energy consumption in a full-service Marriott hotel using Oracle OPERA Cloud PMS and other integrated systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inconsistent energy data reporting across different systems</li><li><span class="bullet risk">▸</span> Coordination issues between departments for implementation of energy efficiency measures</li><li><span class="bullet risk">▸</span> Resistance to change from staff or technical challenges in optimization efforts</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../facilities/preventive-maintenance/fm-pm-08/"><span>◀</span><div><span class="prev-lbl">Previous</span>Emergency Generator Testing</div></a>
+  <a href="../../../facilities/energy-environment/fm-em-02/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>GRMS &amp; BMS Optimisation</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FM-EM-01 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

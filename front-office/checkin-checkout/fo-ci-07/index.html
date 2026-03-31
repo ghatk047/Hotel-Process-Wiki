@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-CI-07 — No-Show &amp; Cancellation Processing | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Check-In & Check-Out Operations</a><span class="sep">›</span>No-Show &amp; Cancellation Processing</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-CI-07</div>
+  <h1>No-Show &amp; Cancellation Processing</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Check-In & Check-Out Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Marriott Bonvoy CRM</span> <span class="tag">Knowcross HotSOS</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-ci-07.png" alt="FO-CI-07 — No-Show &amp; Cancellation Processing process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.3</span> <span class="step-badge">2.1</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Housekeeping Supervisor</td>
+          <td><span class="step-badge">2.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify No-Show/Cancellation</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Reservation details</td>
+          <td>No-show/cancellation flagged in PMS</td>
+          <td>Less than 3 minutes to identify</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Manual entry errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Update Reservation Status</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>No-show/cancellation flag</td>
+          <td>Updated reservation status in PMS</td>
+          <td>Less than 5 minutes to update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System downtime</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Notify Revenue Management</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Updated reservation status</td>
+          <td>Notification to Revenue Management team</td>
+          <td>Less than 10 minutes to notify</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Communication delays</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Adjust Room Availability</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Reservation status update</td>
+          <td>Room availability adjusted in PMS and RMS</td>
+          <td>Less than 15 minutes to adjust</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Overbooking issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Notify Housekeeping</td>
+          <td>Housekeeping Supervisor</td>
+          <td>Oracle OPERA Cloud, Knowcross HotSOS</td>
+          <td>Room availability update</td>
+          <td>Notification to housekeeping team</td>
+          <td>Less than 5 minutes to notify</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate room status updates</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Update CRM System</td>
+          <td>Customer Relationship Manager</td>
+          <td>Marriott Bonvoy CRM</td>
+          <td>Guest information</td>
+          <td>Updated guest record in CRM</td>
+          <td>Less than 10 minutes to update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data synchronization issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Generate No-Show/Cancellation Report</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>No-show/cancellation data</td>
+          <td>Daily no-show/cancellation report</td>
+          <td>Less than 20 minutes to generate</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Complex reporting tools</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Review and Analyze Report</td>
+          <td>Revenue Manager</td>
+          <td>Microsoft Power BI</td>
+          <td>No-show/cancellation report</td>
+          <td>Actionable insights from report</td>
+          <td>Less than 30 minutes to review</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Insufficient data analysis skills</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Implement Adjustments Based on Insights</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Actionable insights</td>
+          <td>Adjusted pricing and promotions</td>
+          <td>Less than 1 hour to implement</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Resistance to change</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Close Case in PMS</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Final case details</td>
+          <td>Closed no-show/cancellation case in PMS</td>
+          <td>Less than 5 minutes to close</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lack of documentation</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-CI-07</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Check-In &amp; Check-Out Operations</li>
+          <li><span class="bullet">Process</span> No-Show &amp; Cancellation Processing</li>
+          <li><span class="bullet">Trigger</span> A reservation is marked as a no-show or cancelled by the guest or system.</li>
+          <li><span class="bullet">Outcome</span> The hotel successfully processes the no-show or cancellation, updating systems, notifying relevant parties, and adjusting resources accordingly.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 3 minutes to identify no-show/cancellation</li><li><span class="bullet">▸</span> Less than 5 minutes to update reservation status</li><li><span class="bullet">▸</span> Less than 10 minutes to notify Revenue Management</li><li><span class="bullet">▸</span> Less than 20 minutes to generate report</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines how a Marriott full-service hotel handles no-shows and cancellations, ensuring guest satisfaction and efficient resource management.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Manual entry errors leading to incorrect updates</li><li><span class="bullet risk">▸</span> System downtime affecting real-time data processing</li><li><span class="bullet risk">▸</span> Overbooking due to inaccurate room availability adjustments</li><li><span class="bullet risk">▸</span> Data synchronization issues between PMS and CRM</li><li><span class="bullet risk">▸</span> Resistance to change in implementing new pricing strategies</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/checkin-checkout/fo-ci-06/"><span>◀</span><div><span class="prev-lbl">Previous</span>Group Check-In Coordination</div></a>
+  <a href="../../../front-office/checkin-checkout/fo-ci-08/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Overbooking &amp; Walk Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-CI-07 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

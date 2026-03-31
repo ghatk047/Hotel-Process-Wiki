@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM-CH-01 — OTA Channel Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">📈 Revenue Management & Distribution</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Revenue Management & Distribution</a><span class="sep">›</span><a href="../">Channel & Distribution Management</a><span class="sep">›</span>OTA Channel Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">RM-CH-01</div>
+  <h1>OTA Channel Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Channel & Distribution Management</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/rm-ch-01.png" alt="RM-CH-01 — OTA Channel Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Review OTA Performance Metrics</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Daily performance reports from Oracle OPERA Cloud</td>
+          <td>OTA performance analysis report</td>
+          <td>Completion within 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurate data synchronization between Oracle OPERA Cloud and OTA systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Identify Overbooking Risks</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS</td>
+          <td>OTA performance analysis report</td>
+          <td>Overbooking risk assessment</td>
+          <td>Completion within 15 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Real-time data processing and analysis</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Update Room Rates</td>
+          <td>Revenue Manager</td>
+          <td>SynXis CRS</td>
+          <td>Overbooking risk assessment</td>
+          <td>Updated room rates in SynXis CRS</td>
+          <td>Completion within 45 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Manual rate updates across multiple OTA systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Adjust Availability Settings</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated room rates in SynXis CRS</td>
+          <td>Adjusted availability settings in Oracle OPERA Cloud</td>
+          <td>Completion within 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Synchronization issues between Oracle OPERA Cloud and OTA systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Monitor Room Block Reservations</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Adjusted availability settings in Oracle OPERA Cloud</td>
+          <td>Room block reservation report</td>
+          <td>Completion within 20 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Real-time monitoring of room block reservations</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review OTA Channel Performance</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room block reservation report</td>
+          <td>OTA channel performance review</td>
+          <td>Completion within 25 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurate data synchronization between Oracle OPERA Cloud and OTA systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update OTA Policies</td>
+          <td>Revenue Manager</td>
+          <td>SynXis CRS</td>
+          <td>OTA channel performance review</td>
+          <td>Updated OTA policies in SynXis CRS</td>
+          <td>Completion within 40 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Manual policy updates across multiple OTA systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Communicate with OTA Partners</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated OTA policies in SynXis CRS</td>
+          <td>OTA partner communication log</td>
+          <td>Completion within 35 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Effective communication with OTA partners</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Final Review and Approval</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>OTA partner communication log</td>
+          <td>Approved OTA channel management plan</td>
+          <td>Completion within 20 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Coordination between different departments for final approval</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> RM-CH-01</li>
+          <li><span class="bullet">Domain</span> Revenue Management &amp; Distribution</li>
+          <li><span class="bullet">Group</span> Channel &amp; Distribution Management</li>
+          <li><span class="bullet">Process</span> OTA Channel Management</li>
+          <li><span class="bullet">Trigger</span> Daily review of OTA channel performance by the Revenue Management team</li>
+          <li><span class="bullet">Outcome</span> Successful completion ensures that OTA channels are up-to-date with accurate room rates, availability, and promotions, leading to increased revenue and guest satisfaction.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Completion of OTA performance review within 30 minutes</li><li><span class="bullet">▸</span> Accuracy of data synchronization between Oracle OPERA Cloud and OTA systems above 95%</li><li><span class="bullet">▸</span> Effective communication with OTA partners measured by response time less than 2 hours</li><li><span class="bullet">▸</span> Final approval process completed within 20 minutes</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the management of OTA channels at a Marriott full-service hotel to ensure optimal room rates and availability are maintained across all online travel agencies.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Data discrepancies between Oracle OPERA Cloud and OTA systems leading to overbooking risks</li><li><span class="bullet risk">▸</span> Manual rate updates across multiple OTA systems causing inconsistencies</li><li><span class="bullet risk">▸</span> Real-time monitoring of room block reservations failing due to system issues</li><li><span class="bullet risk">▸</span> Effective communication with OTA partners being hindered by technical difficulties</li><li><span class="bullet risk">▸</span> Coordination between different departments for final approval process being delayed</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../revenue-management/yield-rate/rm-ym-08/"><span>◀</span><div><span class="prev-lbl">Previous</span>Budget vs Actual Revenue Variance</div></a>
+  <a href="../../../revenue-management/channel-distribution/rm-ch-02/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>GDS Distribution Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; RM-CH-01 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB-KT-03 — Cold Chain &amp; Storage Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🍽️ Food & Beverage Operations</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Food & Beverage Operations</a><span class="sep">›</span><a href="../">Kitchen & Culinary Operations</a><span class="sep">›</span>Cold Chain &amp; Storage Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">FB-KT-03</div>
+  <h1>Cold Chain &amp; Storage Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Kitchen & Culinary Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">Oracle MICROS Simphony</span> <span class="tag">Honeywell INNCOM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fb-kt-03.png" alt="FB-KT-03 — Cold Chain &amp; Storage Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Procurement Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">2.4</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Kitchen Manager</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#81e6d9"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">2.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Order Creation</td>
+          <td>Procurement Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Inventory list with perishable items</td>
+          <td>Purchase order</td>
+          <td>&lt; 24 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect inventory levels leading to over-ordering or stockouts.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Vendor Selection</td>
+          <td>Procurement Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Purchase order</td>
+          <td>Selected vendor list</td>
+          <td>&lt; 48 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Vendor reliability and delivery times.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Order Confirmation</td>
+          <td>Procurement Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Selected vendor list</td>
+          <td>Confirmed order details</td>
+          <td>&lt; 24 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Vendor communication delays.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Receiving Inspection</td>
+          <td>Kitchen Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Delivered items</td>
+          <td>Inspection report</td>
+          <td>&lt; 30 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Damaged or spoiled products.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Storage Allocation</td>
+          <td>Kitchen Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Inspection report</td>
+          <td>Storage plan</td>
+          <td>&lt; 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inadequate storage space.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Temperature Monitoring</td>
+          <td>Executive Housekeeper</td>
+          <td>Honeywell INNCOM</td>
+          <td>Storage plan</td>
+          <td>Temperature log</td>
+          <td>&lt; 15 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Equipment malfunction.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Inventory Update</td>
+          <td>Kitchen Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Temperature log</td>
+          <td>Updated inventory record</td>
+          <td>&lt; 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data entry errors.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Usage Tracking</td>
+          <td>Kitchen Staff</td>
+          <td>Oracle MICROS Simphony</td>
+          <td>Updated inventory record</td>
+          <td>Usage report</td>
+          <td>&lt; 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Overuse or waste of perishable items.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Reorder Notification</td>
+          <td>Procurement Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Usage report</td>
+          <td>Reorder request</td>
+          <td>&lt; 1 day</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Stock levels dropping below reorder point.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Cycle Count</td>
+          <td>Kitchen Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Reorder request</td>
+          <td>Cycle count report</td>
+          <td>&lt; 2 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inventory discrepancies.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FB-KT-03</li>
+          <li><span class="bullet">Domain</span> Food &amp; Beverage Operations</li>
+          <li><span class="bullet">Group</span> Kitchen &amp; Culinary Operations</li>
+          <li><span class="bullet">Process</span> Cold Chain &amp; Storage Management</li>
+          <li><span class="bullet">Trigger</span> Initiation of a new inventory order for perishable items</li>
+          <li><span class="bullet">Outcome</span> Successful monitoring, storage, and tracking of all cold chain products throughout their lifecycle within the hotel.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> &lt; 24 hours for order creation and confirmation</li><li><span class="bullet">▸</span> &lt; 30 minutes for receiving inspection and temperature monitoring</li><li><span class="bullet">▸</span> &lt; 1 hour for storage allocation, inventory update, and usage tracking</li><li><span class="bullet">▸</span> &lt; 1 day for reorder notification after usage tracking</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the management of cold chain and storage in a full-service Marriott hotel's kitchen operations to ensure food safety and quality.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Vendor unreliability or delayed deliveries</li><li><span class="bullet risk">▸</span> Inadequate storage space leading to product spoilage</li><li><span class="bullet risk">▸</span> Equipment malfunction affecting temperature monitoring</li><li><span class="bullet risk">▸</span> Data entry errors in inventory systems</li><li><span class="bullet risk">▸</span> Overuse or waste of perishable items due to improper management</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../food-beverage/kitchen-culinary/fb-kt-02/"><span>◀</span><div><span class="prev-lbl">Previous</span>Food Purchasing &amp; Receiving</div></a>
+  <a href="../../../food-beverage/kitchen-culinary/fb-kt-04/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>HACCP &amp; Food Safety Compliance</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FB-KT-03 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

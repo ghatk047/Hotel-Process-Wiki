@@ -1,0 +1,83 @@
+%%{init: {'theme':'base','themeVariables':{'fontSize':'12px','fontFamily':'Inter, Arial, sans-serif'}}}%%
+flowchart TB
+
+  subgraph GUEST_ORDER["👤 Guest Order Initiation"]
+    direction LR
+    TABLE_RES["OpenTable · OPERA\nTable reservation"]
+    WAITER["MICROS Handheld\nWaiter order device"]
+    KIOSK_FB["Self-Order Kiosk\nQR · Tablet ordering"]
+    BONVOY_ORDER["Bonvoy App\nIn-room dining order"]
+  end
+
+  subgraph POS["🖥️ POS & Order Management"]
+    direction LR
+    MICROS3["Oracle MICROS Simphony\nOrder management · Menu · Covers · Modifiers"]
+    KDS["Kitchen Display System\nOrder routing · Prep timing · Expediting"]
+    COURSING["Course Management\nOrder sequencing · Fire timing"]
+    MICROS3 -->|"order tickets"| KDS
+    MICROS3 -->|"course timing"| COURSING
+  end
+
+  subgraph EVENTS["🎪 Events & Banqueting"]
+    direction LR
+    DELPHI2["Amadeus Delphi.fdc\nBEO · Catering · Event P&L"]
+    CVENT2["Cvent\nRFP · Room block · Attendee mgmt"]
+    CVENT2  -->|"confirmed events"| DELPHI2
+  end
+
+  subgraph INVENTORY["📦 Inventory & Costing"]
+    direction LR
+    CRUNCHTIME2["Crunchtime\nRecipe costing · Theoretical vs actual"]
+    AVERO2["Avero\nSales analytics · Labour productivity"]
+    HACCP["HACCP Monitor\nTemp logging · Compliance alerts"]
+    CRUNCHTIME2 -->|"usage variance"| AVERO2
+  end
+
+  subgraph PROCUREMENT["🛒 Procurement"]
+    direction LR
+    BIRCH2["Birchstreet\neProcurement · PO · Receiving"]
+    SUPPLIER["Supplier Portal\nElectronic invoicing · ASN"]
+    BIRCH2 -->|"PO to supplier"| SUPPLIER
+  end
+
+  subgraph FINANCE["💰 Finance"]
+    direction LR
+    OPERA_FOLIO["OPERA Folio\nGuest F&B charges"]
+    SAP3["SAP S/4HANA\nCOGS · Revenue · Period close"]
+    POWERBI4["Power BI\nF&B P&L · Cost % · RevPASH"]
+  end
+
+  TABLE_RES    -->|"cover count"| MICROS3
+  WAITER       -->|"order entry"| MICROS3
+  KIOSK_FB     -->|"order"| MICROS3
+  BONVOY_ORDER -->|"room dining order"| MICROS3
+
+  MICROS3  -->|"F&B charges"| OPERA_FOLIO
+  DELPHI2  -->|"event charges"| OPERA_FOLIO
+  MICROS3  -->|"sales data"| CRUNCHTIME2
+  MICROS3  -->|"covers · revenue"| AVERO2
+  DELPHI2  -->|"catering consumption"| CRUNCHTIME2
+
+  CRUNCHTIME2 -->|"purchase requirements"| BIRCH2
+  SUPPLIER    -->|"invoice · delivery"| BIRCH2
+  BIRCH2      -->|"invoices · GR"| SAP3
+  OPERA_FOLIO -->|"F&B revenue"| SAP3
+  SAP3        -->|"P&L data"| POWERBI4
+  AVERO2      -->|"labour · productivity"| POWERBI4
+  HACCP       -->|"compliance log"| SAP3
+
+  classDef ord  fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
+  classDef pos  fill:#003366,color:#fff,stroke:#003366
+  classDef evt  fill:#fdf4ff,stroke:#9333ea,color:#581c87
+  classDef inv  fill:#f0fdf4,stroke:#16a34a,color:#14532d
+  classDef proc fill:#fff7ed,stroke:#ea580c,color:#7c2d12
+  classDef fin  fill:#f5f3ff,stroke:#7c3aed,color:#4c1d95
+  classDef hub  fill:#e85d00,color:#fff,stroke:#e85d00
+
+  class TABLE_RES,WAITER,KIOSK_FB,BONVOY_ORDER ord
+  class MICROS3 hub
+  class KDS,COURSING pos
+  class DELPHI2,CVENT2 evt
+  class CRUNCHTIME2,AVERO2,HACCP inv
+  class BIRCH2,SUPPLIER proc
+  class OPERA_FOLIO,SAP3,POWERBI4 fin

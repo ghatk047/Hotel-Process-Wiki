@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB-RO-04 — Food &amp; Beverage Service Standards | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🍽️ Food & Beverage Operations</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Food & Beverage Operations</a><span class="sep">›</span><a href="../">Restaurant & Bar Operations</a><span class="sep">›</span>Food &amp; Beverage Service Standards</div>
+
+<div class="page-header">
+  <div class="pid-badge">FB-RO-04</div>
+  <h1>Food &amp; Beverage Service Standards</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Restaurant & Bar Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Oracle MICROS Simphony</span> <span class="tag">Birchstreet Procurement</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fb-ro-04.png" alt="FB-RO-04 — Food &amp; Beverage Service Standards process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">3.1</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ff5733"></span>Waiter/Waitress</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#4caf50"></span>Bartender</td>
+          <td><span class="step-badge">2.2</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#f44336"></span>Kitchen Staff</td>
+          <td><span class="step-badge">1.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Reservation Entry</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest reservation details</td>
+          <td>Updated reservation in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes per reservation entry</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling last-minute changes or cancellations</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Menu Selection</td>
+          <td>Waiter/Waitress</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Guest preferences</td>
+          <td>Selected menu items</td>
+          <td>Less than 5 minutes per table for menu selection</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Managing dietary restrictions and allergies</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Order Preparation</td>
+          <td>Kitchen Staff</td>
+          <td>Oracle MICROS Simphony</td>
+          <td>Menu items from waiters/waitresses</td>
+          <td>Prepared food items</td>
+          <td>Less than 20 minutes per order</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling rush orders and kitchen delays</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>Table Setup</td>
+          <td>Bartender/Waiter/Waitress</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Reservation details</td>
+          <td>Set up table with appropriate decor and amenities</td>
+          <td>Less than 3 minutes per table setup</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Managing large groups or special requests</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Service Delivery</td>
+          <td>Waiter/Waitress</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Prepared food items from kitchen staff</td>
+          <td>Delivered food to guests</td>
+          <td>Less than 5 minutes per table for service delivery</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling guest complaints or special requests</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Beverage Service</td>
+          <td>Bartender</td>
+          <td>Oracle MICROS Simphony, Oracle OPERA Cloud</td>
+          <td>Guest beverage orders</td>
+          <td>Served beverages to guests</td>
+          <td>Less than 3 minutes per drink order</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Managing high-volume bar service</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Bill Presentation</td>
+          <td>Waiter/Waitress</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Completed meal and beverage orders</td>
+          <td>Presented bill to guests</td>
+          <td>Less than 2 minutes per table for bill presentation</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling disputes or special billing requests</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Payment Processing</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Guest payment</td>
+          <td>Processed payment and updated reservation status</td>
+          <td>Less than 2 minutes per payment transaction</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling cash transactions or credit card issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Inventory Management</td>
+          <td>Bartender/Kitchen Staff</td>
+          <td>Oracle MICROS Simphony, Birchstreet Procurement</td>
+          <td>Consumed inventory items</td>
+          <td>Updated inventory levels and procurement orders</td>
+          <td>Less than 10 minutes per day for inventory review</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Managing perishable goods or supply chain disruptions</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Feedback Collection</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Guest feedback</td>
+          <td>Collected and stored guest feedback in CRM</td>
+          <td>Less than 1 minute per feedback entry</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Encouraging guests to provide detailed feedback</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FB-RO-04</li>
+          <li><span class="bullet">Domain</span> Food &amp; Beverage Operations</li>
+          <li><span class="bullet">Group</span> Restaurant &amp; Bar Operations</li>
+          <li><span class="bullet">Process</span> Food &amp; Beverage Service Standards</li>
+          <li><span class="bullet">Trigger</span> A guest reservation is made or a walk-in customer arrives for dining or beverages.</li>
+          <li><span class="bullet">Outcome</span> Successful completion results in a high-quality dining experience for guests, accurate billing, and effective inventory management.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 2 minutes per reservation entry</li><li><span class="bullet">▸</span> Less than 5 minutes per table for menu selection</li><li><span class="bullet">▸</span> Less than 20 minutes per order</li><li><span class="bullet">▸</span> Less than 10 minutes per day for inventory review</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the Food &amp; Beverage Service Standards at a full-service Marriott hotel, focusing on restaurant and bar operations. It ensures consistent quality of service and efficient management of food and beverage offerings.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> High volume of reservations leading to operational delays</li><li><span class="bullet risk">▸</span> Supply chain disruptions affecting food and beverage availability</li><li><span class="bullet risk">▸</span> Guest complaints or dissatisfaction with service quality</li><li><span class="bullet risk">▸</span> Technical issues with Oracle OPERA Cloud or other systems</li><li><span class="bullet risk">▸</span> Inaccurate inventory management leading to stockouts</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../food-beverage/restaurant-bar/fb-ro-03/"><span>◀</span><div><span class="prev-lbl">Previous</span>Order Taking &amp; POS Operations</div></a>
+  <a href="../../../food-beverage/restaurant-bar/fb-ro-05/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Bar Operations &amp; Cocktail Service</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FB-RO-04 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

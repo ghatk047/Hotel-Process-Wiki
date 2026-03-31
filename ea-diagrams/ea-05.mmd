@@ -1,0 +1,86 @@
+%%{init: {'theme':'base','themeVariables':{'fontSize':'12px','fontFamily':'Inter, Arial, sans-serif'}}}%%
+flowchart TB
+
+  subgraph OPERA_OPS["🏨 OPERA PMS — Operations Interface"]
+    direction LR
+    OPERA_HK["OPERA Housekeeping\nRoom status · OOO · OOS"]
+    OPERA_MAINT["OPERA Maintenance\nDefect logging · Room blocks"]
+  end
+
+  subgraph HOUSEKEEPING["🛏️ Housekeeping Operations"]
+    direction LR
+    KNOWCROSS3["Knowcross HotSOS\nTask dispatch · Inspections · Lost & Found"]
+    ALICE3["Alice\nGuest requests · Service delivery"]
+    LINEN["Linen Management\nPar levels · Laundry tracking"]
+    KNOWCROSS3 -->|"task updates"| OPERA_HK
+    ALICE3     -->|"request resolution"| KNOWCROSS3
+  end
+
+  subgraph MAINTENANCE["🔧 Engineering & Maintenance"]
+    direction LR
+    MAXIMO2["IBM Maximo\nPPM schedules · Work orders · Asset register"]
+    MOBILE_WO["Maximo Mobile\nField technician · Work order completion"]
+    CONTRACTOR["Contractor Portal\nExternal vendor work orders"]
+    MAXIMO2   -->|"field orders"| MOBILE_WO
+    MAXIMO2   -->|"vendor jobs"| CONTRACTOR
+  end
+
+  subgraph ENERGY["⚡ Energy & Building Management"]
+    direction LR
+    SCHNEIDER2["Schneider EcoStruxure\nBMS · HVAC · Chiller · Lighting"]
+    INNCOM3["Honeywell INNCOM\nGRMS · Room thermostat · Occupancy"]
+    SOLAR["Renewables Monitor\nSolar · Battery · Grid import"]
+    WATER["Water Sub-metering\nConsumption · Leak detection"]
+    SCHNEIDER2 -->|"HVAC setpoints"| INNCOM3
+  end
+
+  subgraph SECURITY["🔒 Security & Access Control"]
+    direction LR
+    GENETEC2["Genetec Security Center\nCCTV · Access control · ALPR"]
+    VINGCARD3["VingCard VISIONLINE\nElectronic lock · Key audit trail"]
+    INCIDENT["Incident Management\nSecurity log · Investigation"]
+    GENETEC2 -->|"access events"| INCIDENT
+    VINGCARD3-->|"key audit"| INCIDENT
+  end
+
+  subgraph FINANCE_OPS["💰 Finance & Reporting"]
+    direction LR
+    SAP4["SAP S/4HANA\nMaintenance costs · Asset depreciation · COGS"]
+    POWERBI5["Power BI\nEnergy KPIs · OEE · Maintenance cost/room"]
+    LEED["Sustainability Report\nLEED · Green Key · Carbon"]
+  end
+
+  OPERA_MAINT  -->|"defect report"| MAXIMO2
+  OPERA_HK     -->|"room dirty · OOO"| KNOWCROSS3
+  KNOWCROSS3   -->|"maintenance request"| MAXIMO2
+
+  SCHNEIDER2 -->|"energy alerts · faults"| MAXIMO2
+  INNCOM3    -->|"room vacancy"| SCHNEIDER2
+  SOLAR      -->|"generation data"| SCHNEIDER2
+  WATER      -->|"usage data"| SCHNEIDER2
+
+  GENETEC2   -->|"security incidents"| MAXIMO2
+  INCIDENT   -->|"incident records"| SAP4
+
+  MAXIMO2    -->|"work order costs"| SAP4
+  MAXIMO2    -->|"asset data"| SAP4
+  SCHNEIDER2 -->|"energy consumption"| POWERBI5
+  SAP4       -->|"cost data"| POWERBI5
+  SCHNEIDER2 -->|"carbon data"| LEED
+  WATER      -->|"water consumption"| LEED
+
+  classDef opera fill:#003366,color:#fff,stroke:#003366
+  classDef hk    fill:#f0fdf4,stroke:#16a34a,color:#14532d
+  classDef maint fill:#fff7ed,stroke:#ea580c,color:#7c2d12
+  classDef energy fill:#fdf4ff,stroke:#9333ea,color:#581c87
+  classDef sec   fill:#fff1f2,stroke:#e11d48,color:#881337
+  classDef fin   fill:#f5f3ff,stroke:#7c3aed,color:#4c1d95
+  classDef hub   fill:#e85d00,color:#fff,stroke:#e85d00
+
+  class OPERA_HK,OPERA_MAINT opera
+  class KNOWCROSS3,ALICE3,LINEN hk
+  class MAXIMO2 hub
+  class MOBILE_WO,CONTRACTOR maint
+  class SCHNEIDER2,INNCOM3,SOLAR,WATER energy
+  class GENETEC2,VINGCARD3,INCIDENT sec
+  class SAP4,POWERBI5,LEED fin

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-CS-03 — Restaurant Reservation &amp; Ticketing | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Concierge & Guest Services</a><span class="sep">›</span>Restaurant Reservation &amp; Ticketing</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-CS-03</div>
+  <h1>Restaurant Reservation &amp; Ticketing</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Concierge & Guest Services</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Oracle MICROS Simphony</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-cs-03.png" alt="FO-CS-03 — Restaurant Reservation &amp; Ticketing process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>Concierge</td>
+          <td><span class="step-badge">2.3</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Reservation Request</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest reservation request (phone call, email, online booking)</td>
+          <td>Reservation record in Oracle OPERA Cloud</td>
+          <td>&lt; 3 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling conflicting requests or limited availability</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Availability</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Reservation record in Oracle OPERA Cloud</td>
+          <td>Availability confirmation</td>
+          <td>&lt; 1 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Real-time availability checks</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Process Reservation</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Availability confirmation</td>
+          <td>Confirmed reservation record in Oracle OPERA Cloud</td>
+          <td>&lt; 2 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling special requests or dietary restrictions</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Generate Ticket</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle MICROS Simphony, Book4Time</td>
+          <td>Confirmed reservation record in Oracle OPERA Cloud</td>
+          <td>Digital ticket for the restaurant reservation</td>
+          <td>&lt; 1 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring ticket compatibility with guest devices</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Send Confirmation</td>
+          <td>Front Desk Agent, Concierge</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Digital ticket for the restaurant reservation</td>
+          <td>Confirmation notification to guest (email, SMS, app)</td>
+          <td>&lt; 1 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling undelivered notifications</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Reservation Status</td>
+          <td>Revenue Manager, Concierge</td>
+          <td>Oracle OPERA Cloud, Knowcross HotSOS</td>
+          <td>Confirmed reservation record in Oracle OPERA Cloud</td>
+          <td>Reservation status update</td>
+          <td>&lt; 5 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Real-time monitoring of reservations</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Handle Cancellations or Changes</td>
+          <td>Front Desk Agent, Concierge</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Guest cancellation or change request</td>
+          <td>Updated reservation record in Oracle OPERA Cloud</td>
+          <td>&lt; 2 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Managing last-minute changes</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Finalize Reservation</td>
+          <td>Front Desk Agent, Concierge</td>
+          <td>Oracle OPERA Cloud, Oracle MICROS Simphony</td>
+          <td>Updated reservation record in Oracle OPERA Cloud</td>
+          <td>Finalized reservation and ticketing process</td>
+          <td>&lt; 1 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring all details are correct before finalizing</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Post-Reservation Review</td>
+          <td>Revenue Manager, Concierge</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Finalized reservation record in Oracle OPERA Cloud</td>
+          <td>Performance report for revenue management</td>
+          <td>&lt; 10 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Analyzing trends and making data-driven decisions</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-CS-03</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Concierge &amp; Guest Services</li>
+          <li><span class="bullet">Process</span> Restaurant Reservation &amp; Ticketing</li>
+          <li><span class="bullet">Trigger</span> Guest requests a reservation for a restaurant dining experience</li>
+          <li><span class="bullet">Outcome</span> Successful creation and confirmation of the restaurant reservation and ticketing process, with guest notified via preferred communication channel.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> &lt; 3 min for receiving and processing reservation requests</li><li><span class="bullet">▸</span> &lt; 1 min for verifying availability and generating tickets</li><li><span class="bullet">▸</span> &lt; 2 min for sending confirmation notifications</li><li><span class="bullet">▸</span> &lt; 5 min for monitoring reservation status</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">Process for handling restaurant reservations and ticketing at a Marriott full-service hotel using Oracle OPERA Cloud PMS and other integrated systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Conflicting reservation requests leading to overbooking</li><li><span class="bullet risk">▸</span> Real-time availability checks failing due to system issues</li><li><span class="bullet risk">▸</span> Undelivered or misdirected confirmation notifications</li><li><span class="bullet risk">▸</span> Last-minute changes causing operational disruptions</li><li><span class="bullet risk">▸</span> Incorrect finalization of reservations leading to guest dissatisfaction</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/concierge-services/fo-cs-02/"><span>◀</span><div><span class="prev-lbl">Previous</span>Transportation &amp; Transfer Arrangement</div></a>
+  <a href="../../../front-office/concierge-services/fo-cs-04/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Luggage Handling &amp; Storage</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-CS-03 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

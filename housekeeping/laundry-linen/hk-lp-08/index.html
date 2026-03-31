@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HK-LP-08 — External Laundry Vendor Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🛏️ Housekeeping & Rooms Management</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Housekeeping & Rooms Management</a><span class="sep">›</span><a href="../">Laundry & Linen Operations</a><span class="sep">›</span>External Laundry Vendor Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">HK-LP-08</div>
+  <h1>External Laundry Vendor Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Laundry & Linen Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">Email/Phone</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/hk-lp-08.png" alt="HK-LP-08 — External Laundry Vendor Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#10b981"></span>Laundry Coordinator</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">2.4</span> <span class="step-badge">3.1</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Assess Laundry Needs</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room status reports, guest feedback</td>
+          <td>Laundry needs assessment report</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurate room status reporting</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Select Vendor</td>
+          <td>Executive Housekeeper</td>
+          <td>Birchstreet Procurement</td>
+          <td>Laundry needs assessment report, vendor database</td>
+          <td>Vendor selection and contract details</td>
+          <td>Within 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Vendor reliability and cost-effectiveness</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Prepare Laundry Order</td>
+          <td>Laundry Coordinator</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room status reports, guest feedback</td>
+          <td>Laundry order form</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurate room status reporting</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Send Laundry Order to Vendor</td>
+          <td>Laundry Coordinator</td>
+          <td>Birchstreet Procurement, Email/Phone</td>
+          <td>Laundry order form</td>
+          <td>Confirmation of receipt</td>
+          <td>Within 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Vendor communication delays</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Monitor Laundry Status</td>
+          <td>Laundry Coordinator</td>
+          <td>Birchstreet Procurement, Email/Phone</td>
+          <td>Confirmation of receipt</td>
+          <td>Status updates</td>
+          <td>Daily check-ins</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Vendor status reporting</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Receive Laundry Items</td>
+          <td>Laundry Coordinator</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Delivered laundry items</td>
+          <td>Inventory update</td>
+          <td>Within 1 day of delivery</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurate inventory tracking</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Inspect Laundry Quality</td>
+          <td>Laundry Coordinator</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Delivered laundry items</td>
+          <td>Quality inspection report</td>
+          <td>Less than 2 hours per batch</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Consistent quality standards</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Handle Quality Issues</td>
+          <td>Laundry Coordinator, Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud, Email/Phone</td>
+          <td>Quality inspection report</td>
+          <td>Resolution plan</td>
+          <td>Within 1 day of identification</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Vendor response time</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Vendor Performance</td>
+          <td>Laundry Coordinator, Executive Housekeeper</td>
+          <td>Birchstreet Procurement</td>
+          <td>Resolution plan</td>
+          <td>Updated vendor performance record</td>
+          <td>Within 1 day of resolution</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Vendor performance tracking</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Final Inventory Review</td>
+          <td>Laundry Coordinator, Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated vendor performance record</td>
+          <td>Final inventory review report</td>
+          <td>Within 1 day of completion</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurate final inventory counts</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> HK-LP-08</li>
+          <li><span class="bullet">Domain</span> Housekeeping &amp; Rooms Management</li>
+          <li><span class="bullet">Group</span> Laundry &amp; Linen Operations</li>
+          <li><span class="bullet">Process</span> External Laundry Vendor Management</li>
+          <li><span class="bullet">Trigger</span> Initiated by the Executive Housekeeper upon identification of linen needs that exceed internal capacity or quality standards.</li>
+          <li><span class="bullet">Outcome</span> Successful completion results in timely, high-quality laundry services with accurate inventory tracking and cost management.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Laundry order preparation time: Less than 30 minutes</li><li><span class="bullet">▸</span> Vendor response time: Within 1 hour</li><li><span class="bullet">▸</span> Daily laundry status checks: Daily check-ins</li><li><span class="bullet">▸</span> Inventory update accuracy: Within 1 day of delivery</li><li><span class="bullet">▸</span> Quality inspection time per batch: Less than 2 hours</li><li><span class="bullet">▸</span> Final inventory review completion: Within 1 day</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the management of external laundry vendors at a full-service Marriott hotel using Oracle OPERA Cloud PMS. It ensures efficient linen handling and maintenance to meet guest expectations.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate room status reporting leading to over/underestimation of laundry needs</li><li><span class="bullet risk">▸</span> Vendor communication delays affecting order processing and delivery timelines</li><li><span class="bullet risk">▸</span> Consistency issues in laundry quality impacting guest satisfaction</li><li><span class="bullet risk">▸</span> Vendor performance tracking errors leading to suboptimal vendor selection</li><li><span class="bullet risk">▸</span> Final inventory counts inaccuracies resulting in stockouts or excess inventory</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../housekeeping/laundry-linen/hk-lp-07/"><span>◀</span><div><span class="prev-lbl">Previous</span>Linen Par Level Management</div></a>
+  <a href="../../../housekeeping/public-area-cleaning/hk-pc-01/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Lobby &amp; Entrance Cleaning</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; HK-LP-08 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

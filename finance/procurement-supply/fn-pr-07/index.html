@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FN-PR-07 — Goods Receipt &amp; Invoice Matching | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">💰 Finance & Procurement</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Finance & Procurement</a><span class="sep">›</span><a href="../">Procurement & Supply Chain</a><span class="sep">›</span>Goods Receipt &amp; Invoice Matching</div>
+
+<div class="page-header">
+  <div class="pid-badge">FN-PR-07</div>
+  <h1>Goods Receipt &amp; Invoice Matching</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Procurement & Supply Chain</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">SAP S/4HANA</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">Microsoft Teams</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fn-pr-07.png" alt="FN-PR-07 — Goods Receipt &amp; Invoice Matching process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Procurement Officer</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#f59e0b"></span>Accounts Payable Clerk</td>
+          <td><span class="step-badge">1.3</span> <span class="step-badge">1.4</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Accounts Payable Supervisor</td>
+          <td><span class="step-badge">1.4</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Goods Receipt Notification</td>
+          <td>Procurement Officer</td>
+          <td>Birchstreet Procurement</td>
+          <td>Purchase Order (PO) confirmation from supplier</td>
+          <td>Goods receipt notification in Birchstreet Procurement</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Late delivery notifications affecting inventory management</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Goods Receipt Acknowledgment</td>
+          <td>Procurement Officer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Goods receipt notification</td>
+          <td>Acknowledged goods receipt in Oracle OPERA Cloud</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect inventory updates leading to stock discrepancies</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Invoice Receipt</td>
+          <td>Accounts Payable Clerk</td>
+          <td>SAP S/4HANA</td>
+          <td>Invoice from supplier</td>
+          <td>Recorded invoice in SAP S/4HANA</td>
+          <td>Less than 2 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed invoice processing affecting cash flow</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>Invoice Matching Initiation</td>
+          <td>Accounts Payable Clerk</td>
+          <td>SAP S/4HANA</td>
+          <td>Acknowledged goods receipt, recorded invoice</td>
+          <td>Initiated matching process in SAP S/4HANA</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Manual errors during matching causing payment delays</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Invoice Matching Review</td>
+          <td>Accounts Payable Supervisor</td>
+          <td>SAP S/4HANA</td>
+          <td>Initiated matching process</td>
+          <td>Approved or rejected invoice match in SAP S/4HANA</td>
+          <td>Less than 2 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>No clear audit trail for manual adjustments</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Payment Authorization</td>
+          <td>Accounts Payable Supervisor</td>
+          <td>SAP S/4HANA</td>
+          <td>Approved invoice match</td>
+          <td>Authorized payment in SAP S/4HANA</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Overdue payments affecting supplier relationships</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Payment Execution</td>
+          <td>Accounts Payable Clerk</td>
+          <td>SAP S/4HANA</td>
+          <td>Authorized payment</td>
+          <td>Executed payment to supplier</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Payment errors leading to financial disputes</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Invoice Matching Report</td>
+          <td>Accounts Payable Clerk</td>
+          <td>SAP S/4HANA</td>
+          <td>Completed payment execution</td>
+          <td>Generated invoice matching report in SAP S/4HANA</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lack of visibility into the entire process</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Invoice Matching Review Meeting</td>
+          <td>Accounts Payable Supervisor, Procurement Officer</td>
+          <td>Microsoft Teams</td>
+          <td>Invoice matching report</td>
+          <td>Reviewed and discussed invoice matching issues in Microsoft Teams</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>No regular review meetings leading to unresolved discrepancies</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Process Closure</td>
+          <td>Accounts Payable Clerk</td>
+          <td>SAP S/4HANA</td>
+          <td>Reviewed invoice matching issues</td>
+          <td>Closed the goods receipt and invoice matching process in SAP S/4HANA</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incomplete closure affecting future processes</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FN-PR-07</li>
+          <li><span class="bullet">Domain</span> Finance &amp; Procurement</li>
+          <li><span class="bullet">Group</span> Procurement &amp; Supply Chain</li>
+          <li><span class="bullet">Process</span> Goods Receipt &amp; Invoice Matching</li>
+          <li><span class="bullet">Trigger</span> Receiving of goods from suppliers</li>
+          <li><span class="bullet">Outcome</span> Successful matching and payment of invoices with corresponding goods received, ensuring compliance and cost efficiency.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 1 hour for goods receipt acknowledgment in Oracle OPERA Cloud</li><li><span class="bullet">▸</span> Less than 2 hours for invoice matching review by Accounts Payable Supervisor</li><li><span class="bullet">▸</span> Less than 1 hour for payment execution by Accounts Payable Clerk</li><li><span class="bullet">▸</span> Less than 30 minutes for process closure in SAP S/4HANA</li><li><span class="bullet">▸</span> Less than 1 hour for invoice matching report generation</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process ensures accurate goods receipt and invoice matching at a Marriott full-service hotel to maintain financial integrity and optimize procurement.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Late delivery notifications affecting inventory management</li><li><span class="bullet risk">▸</span> Incorrect inventory updates leading to stock discrepancies</li><li><span class="bullet risk">▸</span> Delayed invoice processing affecting cash flow</li><li><span class="bullet risk">▸</span> Manual errors during matching causing payment delays</li><li><span class="bullet risk">▸</span> No regular review meetings leading to unresolved discrepancies</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../finance/procurement-supply/fn-pr-06/"><span>◀</span><div><span class="prev-lbl">Previous</span>Inventory Replenishment &amp; PAR Management</div></a>
+  <a href="../../../finance/procurement-supply/fn-pr-08/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Supplier Performance Review</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FN-PR-07 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
