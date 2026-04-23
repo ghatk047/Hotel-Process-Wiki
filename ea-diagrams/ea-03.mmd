@@ -1,0 +1,84 @@
+%%{init: {'theme':'base','themeVariables':{'fontSize':'12px','fontFamily':'Inter, Arial, sans-serif'}}}%%
+flowchart TB
+
+  subgraph SIGNALS["📊 Demand Signal Inputs"]
+    direction LR
+    OPERA_PICKUP["OPERA PMS\nPickup · Pace · OTB data"]
+    RATEGAIN2["RateGain\nCompetitor rates · OTA pricing"]
+    BONVOY_DEMAND["Bonvoy CRM\nLoyalty demand · segment data"]
+    EVENTS["Events Calendar\nConventions · Citywide events"]
+    WEATHER["Weather · Seasonality\nExternal demand drivers"]
+  end
+
+  subgraph RMS["🧠 Revenue Management Engine"]
+    direction LR
+    IDEAS2["IDeaS G3 RMS\nDemand forecast · Price optimisation · LOS restrictions"]
+    DUETTO["Duetto\nOpen Pricing · Group evaluation · Displacement"]
+    REVMGR["Revenue Manager\nHuman override · Strategy approval"]
+    IDEAS2  -->|"rate recommendations"| REVMGR
+    DUETTO  -->|"group strategy"| REVMGR
+  end
+
+  subgraph CRS2["🔵 Central Distribution Hub"]
+    direction LR
+    SYNXIS3["SynXis CRS\nRate loading · Availability control · Restrictions"]
+    MARSHA2["MARSHA\nMarriott brand reservations"]
+    SYNXIS3 -->|"confirmed bookings"| MARSHA2
+  end
+
+  subgraph CHANNELS["📡 Distribution Channels"]
+    direction LR
+    OTA2["OTA Channel Manager\nSiteMinder · Booking.com · Expedia"]
+    GDS2["GDS Connectivity\nAmadeus · Sabre · Travelport"]
+    DIRECT2["Marriott.com\nBest Rate Guarantee · Member rates"]
+    WHOLESALE["Wholesale\nTour operators · Bedbanks"]
+    CORPORATE["Corporate Rates\nNegotiated · LNR · GNE"]
+  end
+
+  subgraph MONITOR["📈 Rate Parity & Performance"]
+    direction LR
+    PARITY["Rate Parity Monitor\nRateGain · OTA Insight"]
+    POWERBI3["Power BI\nRevPAR · ADR · Occ · GOPPAR"]
+    STR["STR Report\nCompset benchmarking"]
+  end
+
+  OPERA_PICKUP  -->|"demand data"| IDEAS2
+  RATEGAIN2     -->|"competitor intel"| IDEAS2
+  BONVOY_DEMAND -->|"segment demand"| IDEAS2
+  EVENTS        -->|"event demand"| IDEAS2
+  WEATHER       -->|"seasonality"| DUETTO
+  OPERA_PICKUP  -->|"group queries"| DUETTO
+
+  REVMGR -->|"approved rates"| SYNXIS3
+
+  SYNXIS3 -->|"rate push"| OTA2
+  SYNXIS3 -->|"rate · availability"| GDS2
+  SYNXIS3 -->|"BAR · packages"| DIRECT2
+  SYNXIS3 -->|"allotment rates"| WHOLESALE
+  SYNXIS3 -->|"negotiated rates"| CORPORATE
+
+  OTA2     -->|"bookings"| MARSHA2
+  GDS2     -->|"bookings"| MARSHA2
+  DIRECT2  -->|"bookings"| MARSHA2
+  MARSHA2  -->|"reservations"| OPERA_PICKUP
+
+  OTA2    -->|"rate parity check"| PARITY
+  DIRECT2 -->|"live rates"| PARITY
+  PARITY  -->|"parity alerts"| REVMGR
+  MARSHA2 -->|"revenue data"| POWERBI3
+  STR     -->|"compset index"| POWERBI3
+  POWERBI3-->|"performance KPIs"| REVMGR
+
+  classDef sig  fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
+  classDef rms  fill:#003366,color:#fff,stroke:#003366
+  classDef crs  fill:#fff7ed,stroke:#ea580c,color:#7c2d12
+  classDef ch   fill:#f0fdf4,stroke:#16a34a,color:#14532d
+  classDef mon  fill:#f5f3ff,stroke:#7c3aed,color:#4c1d95
+  classDef human fill:#e85d00,color:#fff,stroke:#e85d00
+
+  class OPERA_PICKUP,RATEGAIN2,BONVOY_DEMAND,EVENTS,WEATHER sig
+  class IDEAS2,DUETTO rms
+  class REVMGR human
+  class SYNXIS3,MARSHA2 crs
+  class OTA2,GDS2,DIRECT2,WHOLESALE,CORPORATE ch
+  class PARITY,POWERBI3,STR mon

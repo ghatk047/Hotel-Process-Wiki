@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HK-GC-02 — Evening Turndown Service | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🛏️ Housekeeping & Rooms Management</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Housekeeping & Rooms Management</a><span class="sep">›</span><a href="../">Guest Room Cleaning & Turndown</a><span class="sep">›</span>Evening Turndown Service</div>
+
+<div class="page-header">
+  <div class="pid-badge">HK-GC-02</div>
+  <h1>Evening Turndown Service</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Guest Room Cleaning & Turndown</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/hk-gc-02.png" alt="HK-GC-02 — Evening Turndown Service process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Housekeeping Supervisor</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Housekeeper</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">2.4</span> <span class="step-badge">3.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#81e6d9"></span>Housekeeping Manager</td>
+          <td><span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Check-out Notifications</td>
+          <td>Housekeeping Supervisor</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Check-out list from Front Desk</td>
+          <td>Turndown schedule for the evening</td>
+          <td>Less than 5 minutes per check-out notification</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delays in receiving check-out notifications can lead to last-minute rush.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Turndown Tasks</td>
+          <td>Housekeeping Supervisor</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Turndown schedule</td>
+          <td>Task assignments to housekeepers</td>
+          <td>Less than 10 minutes per task assignment</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Overlooking specific room needs can lead to guest dissatisfaction.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Prepare Room for Turndown</td>
+          <td>Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Task assignment</td>
+          <td>Room ready for turndown</td>
+          <td>Less than 30 minutes per room</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inadequate cleaning supplies can delay the process.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Make Bed</td>
+          <td>Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room ready for turndown</td>
+          <td>Made bed with fresh linens</td>
+          <td>Less than 5 minutes per bed</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect folding techniques can lead to complaints.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Restock Amenities</td>
+          <td>Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Made bed with fresh linens</td>
+          <td>Room amenities restocked</td>
+          <td>Less than 10 minutes per room</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Running out of supplies can cause delays.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Inspect Room for Damage</td>
+          <td>Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room amenities restocked</td>
+          <td>Damage report if any</td>
+          <td>Less than 5 minutes per room</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Neglecting damage inspection can lead to higher costs.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Report Completion</td>
+          <td>Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Damage report if any</td>
+          <td>Completion report</td>
+          <td>Less than 2 minutes per room</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Late reporting can cause delays in check-in.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Room Status</td>
+          <td>Housekeeping Supervisor</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Completion report</td>
+          <td>Updated room status in PMS</td>
+          <td>Less than 5 minutes per room</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect room status updates can cause confusion.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Review Turndown Process</td>
+          <td>Housekeeping Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Daily turndown reports</td>
+          <td>Process improvement suggestions</td>
+          <td>Less than 15 minutes per day</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Lack of review can lead to inefficiencies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Communicate with Maintenance</td>
+          <td>Housekeeping Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Damage report if any</td>
+          <td>Maintenance request if necessary</td>
+          <td>Less than 10 minutes per damage report</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Ignoring maintenance requests can lead to guest complaints.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> HK-GC-02</li>
+          <li><span class="bullet">Domain</span> Housekeeping &amp; Rooms Management</li>
+          <li><span class="bullet">Group</span> Guest Room Cleaning &amp; Turndown</li>
+          <li><span class="bullet">Process</span> Evening Turndown Service</li>
+          <li><span class="bullet">Trigger</span> Check-out of previous day's guests</li>
+          <li><span class="bullet">Outcome</span> Guest rooms are prepared for the next day's arrivals with fresh linens, cleaned surfaces, and all amenities restocked.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes per check-out notification</li><li><span class="bullet">▸</span> Less than 10 minutes per task assignment</li><li><span class="bullet">▸</span> Less than 30 minutes per room</li><li><span class="bullet">▸</span> Less than 15 minutes per day for process review</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The Evening Turndown Service at a Marriott full-service hotel involves preparing guest rooms for overnight guests by making beds, replenishing amenities, and ensuring the room is clean and ready for check-in.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Delays in receiving check-out notifications</li><li><span class="bullet risk">▸</span> Overlooking specific room needs</li><li><span class="bullet risk">▸</span> Inadequate cleaning supplies</li><li><span class="bullet risk">▸</span> Incorrect folding techniques</li><li><span class="bullet risk">▸</span> Neglecting damage inspection</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../housekeeping/guest-room-cleaning/hk-gc-01/"><span>◀</span><div><span class="prev-lbl">Previous</span>Daily Room Cleaning Procedure</div></a>
+  <a href="../../../housekeeping/guest-room-cleaning/hk-gc-03/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Departure Room Deep Clean</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; HK-GC-02 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

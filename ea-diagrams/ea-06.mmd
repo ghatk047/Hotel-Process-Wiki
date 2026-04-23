@@ -1,0 +1,81 @@
+%%{init: {'theme':'base','themeVariables':{'fontSize':'12px','fontFamily':'Inter, Arial, sans-serif'}}}%%
+flowchart LR
+
+  subgraph MEMBER["👤 Member Touchpoints"]
+    direction TB
+    BONVOY_APP2["Bonvoy App\nBooking · Key · Chat · Points"]
+    MARRIOTT_WEB["Marriott.com\nMember rates · Account portal"]
+    CALL_CTR["Contact Centre\nMember services · Complaints"]
+    KIOSK2["Property Kiosk\nCheck-in · Key encoding"]
+  end
+
+  subgraph BONVOY_PLATFORM["⭐ Bonvoy Loyalty Platform"]
+    direction TB
+    LOYALTY_ENGINE["Loyalty Engine\nPoints accrual rules · Elite tier calc"]
+    POINTS_DB["Points Ledger\nReal-time balance · Transaction history"]
+    ELITE["Elite Status Engine\nSilver · Gold · Platinum · Titanium · Ambassador"]
+    AWARDS["Award Inventory\nFree nights · Upgrades · Experiences"]
+    LOYALTY_ENGINE -->|"points posted"| POINTS_DB
+    LOYALTY_ENGINE -->|"nights credited"| ELITE
+    ELITE          -->|"upgrade eligibility"| AWARDS
+  end
+
+  subgraph CRM["💼 CRM & Sales Platform"]
+    direction TB
+    SALESFORCE3["Salesforce CRM\nCorporate accounts · Pipeline · RFP"]
+    MARKETING_CLOUD["Salesforce Marketing Cloud\nEmail · SMS · Personalisation"]
+    NPS["Qualtrics\nPost-stay survey · NPS · CSAT"]
+    SALESFORCE3 -->|"campaign trigger"| MARKETING_CLOUD
+    NPS         -->|"NPS scores"| SALESFORCE3
+  end
+
+  subgraph PROPERTY["🏨 Property Systems"]
+    direction TB
+    OPERA4["OPERA Cloud PMS\nStay data · Folio · Preferences"]
+    KNOWCROSS4["Knowcross\nSpecial requests · Amenities"]
+    INNCOM4["INNCOM GRMS\nPersonalised room settings"]
+    OPERA4 -->|"preferences"| KNOWCROSS4
+    OPERA4 -->|"room assignment"| INNCOM4
+  end
+
+  subgraph ANALYTICS["📊 Analytics & Personalisation"]
+    direction TB
+    CDP["Customer Data Platform\nUnified guest profile · Segmentation"]
+    POWERBI6["Power BI\nLoyalty KPIs · LTV · Churn risk"]
+    AI_RECO["AI Recommendation\nOffer personalisation · Next best action"]
+    CDP -->|"segments"| AI_RECO
+    CDP -->|"LTV metrics"| POWERBI6
+  end
+
+  BONVOY_APP2  -->|"booking"| LOYALTY_ENGINE
+  MARRIOTT_WEB -->|"booking"| LOYALTY_ENGINE
+  OPERA4       -->|"stay charges · nights"| LOYALTY_ENGINE
+  MICROS4["MICROS POS\nF&B spend"] -->|"eligible spend"| LOYALTY_ENGINE
+  CALL_CTR     -->|"manual adjustments"| POINTS_DB
+
+  ELITE         -->|"status recognition"| OPERA4
+  AWARDS        -->|"redemption"| OPERA4
+  POINTS_DB     -->|"balance"| BONVOY_APP2
+  ELITE         -->|"elite benefits"| KNOWCROSS4
+
+  OPERA4        -->|"guest profile"| CDP
+  LOYALTY_ENGINE-->|"engagement data"| CDP
+  NPS           -->|"sentiment data"| CDP
+  AI_RECO       -->|"personalised offers"| MARKETING_CLOUD
+  MARKETING_CLOUD-->|"email · push"| BONVOY_APP2
+
+  classDef member fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
+  classDef bonvoy fill:#003366,color:#fff,stroke:#003366
+  classDef crm    fill:#fff7ed,stroke:#ea580c,color:#7c2d12
+  classDef prop   fill:#f0fdf4,stroke:#16a34a,color:#14532d
+  classDef analytics fill:#f5f3ff,stroke:#7c3aed,color:#4c1d95
+  classDef hub    fill:#e85d00,color:#fff,stroke:#e85d00
+  classDef ext    fill:#fdf4ff,stroke:#9333ea,color:#581c87
+
+  class BONVOY_APP2,MARRIOTT_WEB,CALL_CTR,KIOSK2 member
+  class LOYALTY_ENGINE hub
+  class POINTS_DB,ELITE,AWARDS bonvoy
+  class SALESFORCE3,MARKETING_CLOUD,NPS crm
+  class OPERA4,KNOWCROSS4,INNCOM4 prop
+  class CDP,POWERBI6,AI_RECO analytics
+  class MICROS4 ext

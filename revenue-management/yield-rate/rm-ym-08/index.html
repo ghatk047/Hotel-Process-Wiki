@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM-YM-08 — Budget vs Actual Revenue Variance | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">📈 Revenue Management & Distribution</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Revenue Management & Distribution</a><span class="sep">›</span><a href="../">Yield & Rate Management</a><span class="sep">›</span>Budget vs Actual Revenue Variance</div>
+
+<div class="page-header">
+  <div class="pid-badge">RM-YM-08</div>
+  <h1>Budget vs Actual Revenue Variance</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Yield & Rate Management</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Microsoft Excel</span> <span class="tag">SynXis CRS</span> <span class="tag">Microsoft Word</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/rm-ym-08.png" alt="RM-YM-08 — Budget vs Actual Revenue Variance process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">1.4</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Yield Management Analyst</td>
+          <td><span class="step-badge">1.4</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>Front Desk Agent</td>
+          <td><span class="step-badge">2.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Budget vs Actual Revenue Report</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Monthly/Quarterly budget data, actual revenue data from Oracle OPERA Cloud</td>
+          <td>Report initiation log</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data availability issues from Oracle OPERA Cloud</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Extract Actual Revenue Data</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>None</td>
+          <td>Actual revenue data file</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data extraction errors from Oracle OPERA Cloud</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Compare Budget vs Actual Revenue</td>
+          <td>Revenue Manager</td>
+          <td>Microsoft Excel</td>
+          <td>Budget data, actual revenue data file</td>
+          <td>Initial variance report</td>
+          <td>Less than 2 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Manual comparison errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>Analyze Variance Data</td>
+          <td>Revenue Manager</td>
+          <td>Microsoft Excel, IDeaS G3 RMS</td>
+          <td>Initial variance report</td>
+          <td>Detailed variance analysis report</td>
+          <td>Less than 4 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Complex data interpretation</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Identify Root Causes of Variance</td>
+          <td>Revenue Manager, Yield Management Analyst</td>
+          <td>IDeaS G3 RMS</td>
+          <td>Detailed variance analysis report</td>
+          <td>Root cause identification document</td>
+          <td>Less than 5 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lack of historical data for comparison</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Develop Action Plan</td>
+          <td>Revenue Manager, Yield Management Analyst</td>
+          <td>Microsoft Excel</td>
+          <td>Root cause identification document</td>
+          <td>Action plan document</td>
+          <td>Less than 3 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Resource allocation for action items</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Implement Action Plan</td>
+          <td>Revenue Manager, Yield Management Analyst, Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Action plan document</td>
+          <td>Implementation log</td>
+          <td>Less than 2 days</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Resistance to change among staff</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Implementation Impact</td>
+          <td>Revenue Manager, Yield Management Analyst</td>
+          <td>Oracle OPERA Cloud, Microsoft Excel</td>
+          <td>Action plan document, implementation log</td>
+          <td>Impact monitoring report</td>
+          <td>Less than 1 hour per week</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate data entry in Oracle OPERA Cloud</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Prepare Final Report</td>
+          <td>Revenue Manager, Yield Management Analyst</td>
+          <td>Microsoft Excel, Microsoft Word</td>
+          <td>Impact monitoring report</td>
+          <td>Final budget vs actual revenue variance report</td>
+          <td>Less than 4 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Formatting issues in final report</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Review and Approve Final Report</td>
+          <td>General Manager, Revenue Manager</td>
+          <td>Microsoft Word</td>
+          <td>Final budget vs actual revenue variance report</td>
+          <td>Approved final report</td>
+          <td>Less than 2 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Approval delays due to conflicting priorities</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> RM-YM-08</li>
+          <li><span class="bullet">Domain</span> Revenue Management &amp; Distribution</li>
+          <li><span class="bullet">Group</span> Yield &amp; Rate Management</li>
+          <li><span class="bullet">Process</span> Budget vs Actual Revenue Variance</li>
+          <li><span class="bullet">Trigger</span> Monthly end of period (EOY) or quarterly review cycle</li>
+          <li><span class="bullet">Outcome</span> A detailed report highlighting variances, root causes, and recommendations for improving revenue management strategies.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Data extraction from Oracle OPERA Cloud within 30 minutes</li><li><span class="bullet">▸</span> Variance report generation in less than 2 hours</li><li><span class="bullet">▸</span> Action plan implementation completed within 2 days</li><li><span class="bullet">▸</span> Impact monitoring report prepared weekly within 1 hour</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process involves analyzing and reporting on the variance between budgeted and actual revenue at a Marriott full-service hotel. It helps in identifying discrepancies and taking corrective actions to improve financial performance.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate data entry leading to incorrect variance analysis</li><li><span class="bullet risk">▸</span> Resistance from staff during action plan implementation</li><li><span class="bullet risk">▸</span> Delays in final report approval due to conflicting priorities</li><li><span class="bullet risk">▸</span> System downtime affecting data extraction and reporting processes</li><li><span class="bullet risk">▸</span> Insufficient historical data for accurate root cause identification</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../revenue-management/yield-rate/rm-ym-07/"><span>◀</span><div><span class="prev-lbl">Previous</span>RevPAR &amp; KPI Performance Review</div></a>
+  <a href="../../../revenue-management/channel-distribution/rm-ch-01/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>OTA Channel Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; RM-YM-08 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

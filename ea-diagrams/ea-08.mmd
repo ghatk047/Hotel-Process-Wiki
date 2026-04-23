@@ -1,0 +1,74 @@
+%%{init: {'theme':'base','themeVariables':{'fontSize':'12px','fontFamily':'Inter, Arial, sans-serif'}}}%%
+flowchart TB
+
+  subgraph P2P["🛒 Procure to Pay"]
+    direction LR
+    BIRCH3["Birchstreet eProcurement\nPR · PO · Receiving · Invoice matching"]
+    COUPA2["Coupa\nSpend analytics · Contract mgmt"]
+    SUPPLIER2["Supplier Portal\nE-invoicing · ASN · Self-service"]
+    BIRCH3  -->|"approved PO"| SUPPLIER2
+    SUPPLIER2-->|"invoice"| BIRCH3
+    COUPA2  -->|"spend data"| BIRCH3
+  end
+
+  subgraph REVENUE_FLOW["💵 Revenue Capture"]
+    direction LR
+    OPERA5["OPERA Night Audit\nDaily revenue balancing"]
+    MICROS5["MICROS POS\nF&B revenue"]
+    DELPHI3["Delphi.fdc\nEvents revenue"]
+    DIR["Daily Income Report\nRevenue by outlet · Dept"]
+    OPERA5  -->|"rooms revenue"| DIR
+    MICROS5 -->|"F&B revenue"| DIR
+    DELPHI3 -->|"events revenue"| DIR
+  end
+
+  subgraph SAP_CORE["🔵 SAP S/4HANA — Financial Core"]
+    direction LR
+    SAP_GL["General Ledger\nChart of accounts · JEs · Period close"]
+    SAP_AP["Accounts Payable\nVendor invoices · Payment runs · Ageing"]
+    SAP_AR["Accounts Receivable\nCity ledger · Direct billing · Ageing"]
+    SAP_FA["Fixed Assets\nCapex · Depreciation · Disposal"]
+    SAP_CO["Controlling\nCost centres · Profit centres · Variance"]
+    SAP_GL -->|"allocations"| SAP_CO
+  end
+
+  subgraph TREASURY["🏦 Treasury & Tax"]
+    direction LR
+    CASH["Cash Management\nBank reconciliation · Float · Petty cash"]
+    TAX["Tax Compliance\nVAT · GST · Occupancy tax · Reporting"]
+    INTERCO["Intercompany\nMgmt fee · Brand fee · Recharges"]
+  end
+
+  subgraph REPORTING["📊 Reporting & Analytics"]
+    direction LR
+    POWERBI8["Power BI\nGM dashboard · RevPAR · GOPPAR · NOP"]
+    HOTEL_BI["Hotel BI Platform\nPace · Pickup · Forecast vs actual"]
+    CORP_REPORT["Marriott Corporate\nConsolidated financials · Owner reports"]
+  end
+
+  BIRCH3 -->|"invoice posting"| SAP_AP
+  DIR    -->|"revenue journal"| SAP_GL
+  SAP_AP -->|"payment"| CASH
+  SAP_AR -->|"receipts"| CASH
+  CASH   -->|"bank entries"| SAP_GL
+  TAX    -->|"tax entries"| SAP_GL
+  INTERCO-->|"mgmt fee JE"| SAP_GL
+  SAP_GL -->|"trial balance"| SAP_CO
+  SAP_FA -->|"depreciation"| SAP_GL
+  SAP_CO -->|"P&L by dept"| POWERBI8
+  SAP_GL -->|"financials"| CORP_REPORT
+  HOTEL_BI-->|"operational data"| POWERBI8
+
+  classDef p2p  fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
+  classDef rev  fill:#f0fdf4,stroke:#16a34a,color:#14532d
+  classDef sap  fill:#003366,color:#fff,stroke:#003366
+  classDef tres fill:#fff7ed,stroke:#ea580c,color:#7c2d12
+  classDef rep  fill:#f5f3ff,stroke:#7c3aed,color:#4c1d95
+  classDef hub  fill:#e85d00,color:#fff,stroke:#e85d00
+
+  class BIRCH3,COUPA2,SUPPLIER2 p2p
+  class OPERA5,MICROS5,DELPHI3,DIR rev
+  class SAP_GL hub
+  class SAP_AP,SAP_AR,SAP_FA,SAP_CO sap
+  class CASH,TAX,INTERCO tres
+  class POWERBI8,HOTEL_BI,CORP_REPORT rep

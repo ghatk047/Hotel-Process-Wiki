@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-SP-06 — Spa Membership &amp; Package Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Spa & Wellness Operations</a><span class="sep">›</span>Spa Membership &amp; Package Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-SP-06</div>
+  <h1>Spa Membership &amp; Package Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Spa & Wellness Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">SynXis CRS</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Book4Time</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-sp-06.png" alt="FO-SP-06 — Spa Membership &amp; Package Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.3</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Spa Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Guest Inquiry</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest inquiry about spa memberships or packages</td>
+          <td>Recorded guest inquiry in Oracle OPERA Cloud</td>
+          <td>Less than 1 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling multiple inquiries simultaneously</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Consult Spa Menu</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest inquiry</td>
+          <td>Recommended spa membership or package options</td>
+          <td>Less than 5 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Keeping up with changing spa menu offerings</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Confirm Selection</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Recommended options</td>
+          <td>Guest confirmation of selection</td>
+          <td>Less than 2 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling guest preferences and objections</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Process Payment</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Guest confirmation</td>
+          <td>Processed payment receipt</td>
+          <td>Less than 3 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Dealing with payment issues or cancellations</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update Membership/Package in PMS</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Processed payment receipt</td>
+          <td>Updated guest profile with membership/package details</td>
+          <td>Less than 2 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring accurate data entry</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Send Confirmation Email</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Updated guest profile</td>
+          <td>Sent confirmation email to guest</td>
+          <td>Less than 1 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring email delivery and content accuracy</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Membership/Package Usage</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Guest profile with membership/package details</td>
+          <td>Usage report for spa memberships/packages</td>
+          <td>Daily</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Tracking usage across multiple systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Renew Membership/Package</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Usage report for spa memberships/packages</td>
+          <td>Processed renewal payment receipt</td>
+          <td>Less than 3 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling renewals and expirations</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Membership/Package in PMS</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Processed renewal payment receipt</td>
+          <td>Updated guest profile with renewed membership/package details</td>
+          <td>Less than 2 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring accurate data entry</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Send Renewal Confirmation Email</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Updated guest profile</td>
+          <td>Sent renewal confirmation email to guest</td>
+          <td>Less than 1 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring email delivery and content accuracy</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-SP-06</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Spa &amp; Wellness Operations</li>
+          <li><span class="bullet">Process</span> Spa Membership &amp; Package Management</li>
+          <li><span class="bullet">Trigger</span> A guest inquires about spa membership options or requests a package deal.</li>
+          <li><span class="bullet">Outcome</span> Successful management of spa memberships and packages, ensuring seamless transactions and guest satisfaction.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 1 min for identifying guest inquiry and confirming selection</li><li><span class="bullet">▸</span> Less than 3 min for processing payment and updating membership/package in PMS</li><li><span class="bullet">▸</span> Less than 5 min for consulting spa menu options</li><li><span class="bullet">▸</span> Daily monitoring of membership/package usage</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">A process to manage spa memberships and packages at a Marriott full-service hotel using Oracle OPERA Cloud PMS and other integrated systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Handling multiple inquiries simultaneously leading to operational delays</li><li><span class="bullet risk">▸</span> Payment issues or cancellations affecting guest satisfaction</li><li><span class="bullet risk">▸</span> Ensuring accurate data entry and tracking usage across multiple systems</li><li><span class="bullet risk">▸</span> Dealing with renewals and expirations, especially for long-term memberships</li><li><span class="bullet risk">▸</span> Ensuring email delivery and content accuracy for confirmation emails</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/spa-wellness/fo-sp-05/"><span>◀</span><div><span class="prev-lbl">Previous</span>Therapist Scheduling &amp; Utilisation</div></a>
+  <a href="../../../front-office/spa-wellness/fo-sp-07/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Spa Cleanliness &amp; Equipment Maintenance</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-SP-06 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+%%{init: {'theme':'base','themeVariables':{'fontSize':'12px','fontFamily':'Inter, Arial, sans-serif'}}}%%
+flowchart TB
+
+  subgraph EXT["🌐 External Channels & GDS"]
+    direction LR
+    OTA["OTAs\nBooking.com · Expedia · Airbnb"]
+    GDS["GDS Networks\nAmadeus · Sabre · Travelport"]
+    DIRECT["Direct Channels\nMarriott.com · Call Centre"]
+    TMC["Travel Management\nAmex GBT · SAP Concur · BCD"]
+    META["Metasearch\nGoogle Hotel Ads · Trivago · Kayak"]
+  end
+
+  subgraph CRS["🔵 Central Reservations Layer"]
+    direction LR
+    SYNXIS["SynXis CRS\nSabre · Rate Management · Inventory"]
+    MARSHA["MARSHA\nMarriott Central Reservations"]
+    IDEAS["IDeaS G3 RMS\nDemand Forecast · Rate Optimisation"]
+    RATEGAIN["RateGain\nCompetitive Rate Intelligence"]
+  end
+
+  subgraph PMS["🧠 Core PMS Hub — Oracle OPERA Cloud"]
+    direction LR
+    OPERA["Oracle OPERA Cloud PMS\nReservations · Rooms · Folios · Rates · Profiles"]
+    OPERA_RES["Reservations Module\nGroup Blocks · Waitlist · Packages"]
+    OPERA_RM["Rooms Management\nHousekeeping · Maintenance · OOO"]
+    OPERA_CC["Cashiering Module\nFolio · Billing · City Ledger · Foreign FX"]
+  end
+
+  subgraph GUESTFACING["👤 Guest-Facing Systems"]
+    direction LR
+    BONVOY_APP["Marriott Bonvoy App\nMobile Check-In · Digital Key · Chat"]
+    BONVOY_CRM["Bonvoy CRM Platform\nLoyalty · Points · Elite Status"]
+    SALESFORCE["Salesforce CRM\nSales Pipeline · Account Mgmt · RFP"]
+    KIOSK["Self-Service Kiosks\nCheck-In · Key Encoding"]
+    INNCOM["Honeywell INNCOM\nGRMS · Thermostat · DND · MUR"]
+    VINGCARD["Assa Abloy VingCard\nElectronic Locks · Key Management"]
+  end
+
+  subgraph FB["🍽️ Food & Beverage Systems"]
+    direction LR
+    MICROS["Oracle MICROS Simphony\nPOS · Table Mgmt · Kitchen Display"]
+    DELPHI["Amadeus Delphi.fdc\nCatering · BEO · Event Sales"]
+    CVENT["Cvent\nEvent RFP · MICE · Room Blocks"]
+    AVERO["Avero\nF&B Analytics · Labour · Menu Engineering"]
+    CRUNCHTIME["Crunchtime\nFood Inventory · Waste · Recipe Costing"]
+  end
+
+  subgraph ROOMS["🛏️ Rooms Operations Systems"]
+    direction LR
+    KNOWCROSS["Knowcross HotSOS\nHousekeeping · Task Dispatch · Inspections"]
+    BOOK4TIME["Book4Time\nSpa Booking · Therapist Scheduling"]
+    NOR1["Nor1 / UPGRADE\nUpsell Engine · Room Upgrade Offers"]
+    ALICE["Alice by Tripadvisor\nGuest Requests · Concierge · Work Orders"]
+  end
+
+  subgraph FACILITIES["🔧 Facilities & Engineering"]
+    direction LR
+    MAXIMO["IBM Maximo\nAsset Management · PPM · Work Orders"]
+    SCHNEIDER["Schneider EcoStruxure\nBMS · Energy · HVAC Monitoring"]
+    GENETEC["Genetec Security Center\nCCTV · Access Control · Incidents"]
+  end
+
+  subgraph BACKOFFICE["💼 Back Office & Enterprise"]
+    direction LR
+    SAP["SAP S/4HANA\nGL · AP · AR · Fixed Assets · Controlling"]
+    WORKDAY["Workday HCM\nHR · Payroll · Scheduling · L&D"]
+    BIRCH["Birchstreet\neProcurement · PO · Receiving · Invoicing"]
+    COUPA["Coupa\nSpend Management · Supplier Portal"]
+    POWERBI["Microsoft Power BI\nKPI Dashboards · Revenue Analytics · BI"]
+  end
+
+  OTA    -->|"reservations · rates"| SYNXIS
+  GDS    -->|"bookings · availability"| SYNXIS
+  DIRECT -->|"direct bookings"| MARSHA
+  TMC    -->|"corporate bookings"| GDS
+  META   -->|"CPC clicks · rate feed"| SYNXIS
+
+  IDEAS     -->|"optimised rates"| SYNXIS
+  RATEGAIN  -->|"competitor rates"| IDEAS
+  SYNXIS    -->|"confirmed reservations"| OPERA
+  MARSHA    -->|"reservations sync"| OPERA
+  OPERA_RES -->|"room blocking"| OPERA_RM
+  OPERA     -->|"check-in data"| BONVOY_APP
+  OPERA     -->|"folio data"| OPERA_CC
+
+  OPERA     -->|"guest profile · stay data"| BONVOY_CRM
+  BONVOY_CRM-->|"loyalty status · preferences"| OPERA
+  BONVOY_APP-->|"digital key request"| VINGCARD
+  BONVOY_APP-->|"room controls"| INNCOM
+  OPERA     -->|"room assignment"| KIOSK
+  NOR1      -->|"upgrade offers"| OPERA
+  SALESFORCE-->|"corporate account rates"| OPERA
+
+  OPERA  -->|"F&B charges"| MICROS
+  MICROS -->|"POS charges · covers"| OPERA
+  DELPHI -->|"event charges · BEO"| OPERA
+  CVENT  -->|"room blocks · RFPs"| OPERA
+  AVERO  -->|"F&B performance data"| POWERBI
+  CRUNCHTIME-->|"cost of goods"| SAP
+
+  OPERA    -->|"room status · assignments"| KNOWCROSS
+  KNOWCROSS-->|"room clean status"| OPERA
+  OPERA    -->|"spa reservations"| BOOK4TIME
+  BOOK4TIME-->|"spa charges"| OPERA
+  ALICE    -->|"resolved requests"| OPERA
+  OPERA_RM -->|"maintenance requests"| MAXIMO
+
+  MAXIMO    -->|"work orders · asset costs"| SAP
+  SCHNEIDER -->|"energy consumption data"| POWERBI
+  GENETEC   -->|"security incidents"| MAXIMO
+  OPERA     -->|"revenue data"| SAP
+  SAP       -->|"financials"| POWERBI
+  WORKDAY   -->|"labour costs · headcount"| SAP
+  BIRCH     -->|"invoices · POs"| SAP
+  OPERA     -->|"occupancy · RevPAR"| POWERBI
+
+  classDef ext   fill:#f0f9ff,stroke:#0369a1,color:#0c4a6e
+  classDef crs   fill:#fff7ed,stroke:#ea580c,color:#7c2d12
+  classDef pms   fill:#003366,color:#ffffff,stroke:#003366
+  classDef guest fill:#f0fdf4,stroke:#16a34a,color:#14532d
+  classDef fb    fill:#fdf4ff,stroke:#9333ea,color:#581c87
+  classDef rooms fill:#fff1f2,stroke:#e11d48,color:#881337
+  classDef fac   fill:#fffbeb,stroke:#d97706,color:#78350f
+  classDef ent   fill:#f5f3ff,stroke:#7c3aed,color:#4c1d95
+  classDef hub   fill:#e85d00,color:#ffffff,stroke:#e85d00
+
+  class OTA,GDS,DIRECT,TMC,META ext
+  class SYNXIS,MARSHA,IDEAS,RATEGAIN crs
+  class OPERA hub
+  class OPERA_RES,OPERA_RM,OPERA_CC pms
+  class BONVOY_APP,BONVOY_CRM,SALESFORCE,KIOSK,INNCOM,VINGCARD guest
+  class MICROS,DELPHI,CVENT,AVERO,CRUNCHTIME fb
+  class KNOWCROSS,BOOK4TIME,NOR1,ALICE rooms
+  class MAXIMO,SCHNEIDER,GENETEC fac
+  class SAP,WORKDAY,BIRCH,COUPA,POWERBI ent

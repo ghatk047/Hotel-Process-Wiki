@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-SP-02 — Spa Treatment Delivery &amp; Standards | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Spa & Wellness Operations</a><span class="sep">›</span>Spa Treatment Delivery &amp; Standards</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-SP-02</div>
+  <h1>Spa Treatment Delivery &amp; Standards</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Spa & Wellness Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Book4Time</span> <span class="tag">Birchstreet Procurement</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-sp-02.png" alt="FO-SP-02 — Spa Treatment Delivery &amp; Standards process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#10b981"></span>Spa Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#eab308"></span>Spa Attendant</td>
+          <td><span class="step-badge">1.3</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Spa Therapist</td>
+          <td><span class="step-badge">2.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Spa Reservation</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Guest reservation details</td>
+          <td>Confirmed spa reservation in PMS</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling last-minute changes or cancellations</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Spa Treatment Room</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Confirmed reservation details</td>
+          <td>Assigned treatment room and confirmation to guest</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Room availability conflicts</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Prepare Spa Treatment Area</td>
+          <td>Spa Attendant</td>
+          <td>Oracle OPERA Cloud, Knowcross HotSOS</td>
+          <td>Assigned treatment room details</td>
+          <td>Cleaned and prepared treatment area</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Maintaining hygiene standards</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Greet Guest and Verify Reservation</td>
+          <td>Spa Attendant</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Guest arrival</td>
+          <td>Verified reservation details</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling no-shows or late arrivals</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Provide Spa Amenities and Products</td>
+          <td>Spa Attendant</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>Guest preferences</td>
+          <td>Delivered spa amenities and products</td>
+          <td>Less than 3 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Stock management for spa products</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Conduct Spa Treatment</td>
+          <td>Spa Therapist</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Guest and treatment details</td>
+          <td>Completed spa treatment</td>
+          <td>Treatment duration as per reservation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Managing guest expectations for treatment quality</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Post-Treatment Review and Feedback</td>
+          <td>Spa Attendant</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Guest feedback form</td>
+          <td>Collected guest feedback</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Encouraging guest feedback</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Spa Treatment Records</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Treatment details and feedback</td>
+          <td>Updated spa treatment records in PMS</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data entry accuracy</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Process Spa Payment</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Guest payment details</td>
+          <td>Processed spa payment</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling different payment methods</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Thank Guest and Provide Follow-Up Information</td>
+          <td>Spa Attendant</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Guest contact information</td>
+          <td>Provided follow-up information</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Maintaining guest loyalty</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-SP-02</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Spa &amp; Wellness Operations</li>
+          <li><span class="bullet">Process</span> Spa Treatment Delivery &amp; Standards</li>
+          <li><span class="bullet">Trigger</span> A guest books a spa treatment through the reservation system or directly at the front desk.</li>
+          <li><span class="bullet">Outcome</span> Successful completion of the spa treatment with high guest satisfaction and accurate record-keeping in the PMS.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 2 minutes for receiving spa reservation</li><li><span class="bullet">▸</span> Less than 5 minutes for assigning spa treatment room</li><li><span class="bullet">▸</span> Treatment duration as per reservation</li><li><span class="bullet">▸</span> Less than 5 minutes for updating spa treatment records</li><li><span class="bullet">▸</span> Less than 2 minutes for processing spa payment</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the delivery and standards for spa treatments at a full-service Marriott hotel, ensuring guest satisfaction and operational efficiency.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Room availability conflicts during peak times</li><li><span class="bullet risk">▸</span> Stock management issues for spa products</li><li><span class="bullet risk">▸</span> Handling no-shows or late arrivals</li><li><span class="bullet risk">▸</span> Data entry errors in PMS</li><li><span class="bullet risk">▸</span> Maintaining guest loyalty and feedback collection</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/spa-wellness/fo-sp-01/"><span>◀</span><div><span class="prev-lbl">Previous</span>Spa Booking &amp; Appointment Management</div></a>
+  <a href="../../../front-office/spa-wellness/fo-sp-03/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Spa Reception &amp; Guest Journey</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-SP-02 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

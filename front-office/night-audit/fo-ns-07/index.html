@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-NS-07 — Inter-department Charge Routing | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Night Audit & Front Desk Operations</a><span class="sep">›</span>Inter-department Charge Routing</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-NS-07</div>
+  <h1>Inter-department Charge Routing</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Night Audit & Front Desk Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-ns-07.png" alt="FO-NS-07 — Inter-department Charge Routing process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Department Manager (e.g., Spa Manager, Food &amp; Beverage Manager)</td>
+          <td><span class="step-badge">2.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#84cc16"></span>Accounting Manager</td>
+          <td><span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Chargeable Event</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest service request or transaction</td>
+          <td>Chargeable event logged in Oracle OPERA Cloud</td>
+          <td>&lt; 3 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect identification of chargeable events leading to billing errors.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Determine Appropriate Department</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Chargeable event details</td>
+          <td>Department code assigned to the charge</td>
+          <td>&lt; 2 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Misrouting charges to incorrect departments affecting financial accuracy.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Create Charge in Oracle OPERA Cloud</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Department code and chargeable event details</td>
+          <td>Charge created in Oracle OPERA Cloud</td>
+          <td>&lt; 1 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Manual errors during charge creation leading to discrepancies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Route Charge to Department</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Charge details and department code</td>
+          <td>Charge routed to the appropriate department</td>
+          <td>&lt; 1 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed routing of charges affecting departmental billing timelines.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Review and Approve Charge in Department System</td>
+          <td>Department Manager (e.g., Spa Manager, Food &amp; Beverage Manager)</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Routed charge details</td>
+          <td>Charge approved or rejected</td>
+          <td>&lt; 2 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Unapproved charges leading to financial discrepancies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Update Guest Account in Oracle OPERA Cloud</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Approved charge details</td>
+          <td>Guest account updated with the new charge</td>
+          <td>&lt; 1 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect updates to guest accounts causing billing confusion.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Generate Departmental Invoice</td>
+          <td>Accounting Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Approved charges for the department</td>
+          <td>Departmental invoice generated</td>
+          <td>&lt; 5 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Late or inaccurate invoices affecting financial reporting.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Send Invoice to Department</td>
+          <td>Accounting Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Generated departmental invoice</td>
+          <td>Invoice sent to the department</td>
+          <td>&lt; 1 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lost or delayed invoices impacting departmental budgeting.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Confirm Receipt of Invoice</td>
+          <td>Department Manager (e.g., Spa Manager, Food &amp; Beverage Manager)</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Received invoice</td>
+          <td>Invoice receipt confirmation</td>
+          <td>&lt; 1 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Unconfirmed invoices leading to billing disputes.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Update Financial Records</td>
+          <td>Accounting Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Invoice receipt confirmation</td>
+          <td>Financial records updated</td>
+          <td>&lt; 2 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Outdated financial records affecting budgeting and forecasting.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-NS-07</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Night Audit &amp; Front Desk Operations</li>
+          <li><span class="bullet">Process</span> Inter-department Charge Routing</li>
+          <li><span class="bullet">Trigger</span> A guest service event occurs requiring a charge, such as room service or spa usage.</li>
+          <li><span class="bullet">Outcome</span> Charges are correctly recorded, routed, and processed by the relevant department within the hotel.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> &lt; 3 min for identifying chargeable events</li><li><span class="bullet">▸</span> &lt; 2 min for determining appropriate department</li><li><span class="bullet">▸</span> &lt; 1 min for creating charges in Oracle OPERA Cloud</li><li><span class="bullet">▸</span> &lt; 5 min for generating departmental invoices</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The Inter-department Charge Routing process at a Marriott full-service hotel ensures that charges are accurately allocated and routed to the appropriate departments based on guest services provided.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Incorrect identification of chargeable events leading to billing errors.</li><li><span class="bullet risk">▸</span> Misrouting charges to incorrect departments affecting financial accuracy.</li><li><span class="bullet risk">▸</span> Unapproved charges leading to financial discrepancies.</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/night-audit/fo-ns-06/"><span>◀</span><div><span class="prev-lbl">Previous</span>Foreign Currency Exchange</div></a>
+  <a href="../../../front-office/night-audit/fo-ns-08/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>End-of-Day Reporting</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-NS-07 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

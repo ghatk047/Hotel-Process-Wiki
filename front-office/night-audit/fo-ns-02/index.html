@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-NS-02 — Daily Revenue Balancing | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Night Audit & Front Desk Operations</a><span class="sep">›</span>Daily Revenue Balancing</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-NS-02</div>
+  <h1>Daily Revenue Balancing</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Night Audit & Front Desk Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-ns-02.png" alt="FO-NS-02 — Daily Revenue Balancing process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Log into Oracle OPERA Cloud PMS</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>None</td>
+          <td>Logged-in session in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Slow login times due to system overload</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Run Night Audit Report</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Logged-in session in Oracle OPERA Cloud</td>
+          <td>Night Audit report</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect or missing data in the report</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Review Night Audit Report</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Night Audit report</td>
+          <td>Analyzed discrepancies</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Complex or numerous discrepancies</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Adjust Discrepancies in Oracle OPERA Cloud</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Analyzed discrepancies</td>
+          <td>Updated guest accounts and ledger</td>
+          <td>Less than 15 minutes per discrepancy</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Errors in adjusting transactions</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Generate Revenue Report</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated guest accounts and ledger</td>
+          <td>Daily revenue report</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Report generation errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Review Revenue Report</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Daily revenue report</td>
+          <td>Finalized revenue report</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Incorrect or incomplete data in the final report</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Upload Finalized Revenue Report to IDeaS G3 RMS</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS</td>
+          <td>Finalized revenue report</td>
+          <td>Uploaded report in IDeaS G3 RMS</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System connectivity issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Notify Management of Any Significant Discrepancies</td>
+          <td>Revenue Manager</td>
+          <td>Email/Communication System</td>
+          <td>Finalized revenue report</td>
+          <td>Notification email to management</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Effective communication of discrepancies</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Document Any Adjustments Made During the Process</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Finalized revenue report</td>
+          <td>Audit trail of adjustments</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incomplete or inaccurate documentation</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Close Night Audit Session in Oracle OPERA Cloud</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Finalized revenue report and audit trail</td>
+          <td>Closed night audit session</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Errors in closing the session</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-NS-02</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Night Audit &amp; Front Desk Operations</li>
+          <li><span class="bullet">Process</span> Daily Revenue Balancing</li>
+          <li><span class="bullet">Trigger</span> The process is initiated by the end of each business day when all transactions are finalized.</li>
+          <li><span class="bullet">Outcome</span> Successful completion results in an accurate nightly revenue report, updated guest accounts, and a balanced ledger for financial reporting purposes.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 2 minutes for Oracle OPERA Cloud login</li><li><span class="bullet">▸</span> Less than 5 minutes for Night Audit report generation</li><li><span class="bullet">▸</span> Less than 10 minutes for discrepancy review</li><li><span class="bullet">▸</span> Less than 15 minutes per discrepancy adjustment</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">Daily Revenue Balancing is a critical process at Marriott full-service hotels to ensure accurate financial reconciliation and reporting. This process involves verifying room revenue, adjusting discrepancies, and preparing reports for management.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> System connectivity issues with IDeaS G3 RMS</li><li><span class="bullet risk">▸</span> Errors in adjusting transactions in Oracle OPERA Cloud</li><li><span class="bullet risk">▸</span> Incomplete or inaccurate documentation of adjustments</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/night-audit/fo-ns-01/"><span>◀</span><div><span class="prev-lbl">Previous</span>Night Audit Reconciliation</div></a>
+  <a href="../../../front-office/night-audit/fo-ns-03/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Guest Folio Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-NS-02 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT-OP-06 — Data Backup &amp; Business Continuity | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">💻 Technology & Systems</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Technology & Systems</a><span class="sep">›</span><a href="../">IT Operations & Infrastructure</a><span class="sep">›</span>Data Backup &amp; Business Continuity</div>
+
+<div class="page-header">
+  <div class="pid-badge">IT-OP-06</div>
+  <h1>Data Backup &amp; Business Continuity</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">IT Operations & Infrastructure</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Microsoft Power BI</span> <span class="tag">Salesforce</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/it-op-06.png" alt="IT-OP-06 — Data Backup &amp; Business Continuity process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>IT Operations Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span> <span class="step-badge">3.5</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Backup Process</td>
+          <td>IT Operations Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Backup schedule and configuration files</td>
+          <td>Started backup process logs</td>
+          <td>Less than 5 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Network connectivity issues can delay backups.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Backup Completion</td>
+          <td>IT Operations Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Backup logs and system status reports</td>
+          <td>Backup completion confirmation report</td>
+          <td>Less than 10 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Manual verification can be time-consuming.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Update Business Continuity Plan (BCP)</td>
+          <td>IT Operations Manager</td>
+          <td>Microsoft Power BI, Salesforce</td>
+          <td>Current BCP document and recent backup logs</td>
+          <td>Updated BCP document</td>
+          <td>Less than 15 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Complexity in maintaining up-to-date BCPs.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Test Backup Restorability</td>
+          <td>IT Operations Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Latest backup files and test environment setup</td>
+          <td>Restoration success report</td>
+          <td>Less than 20 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Testing can disrupt normal operations.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review and Document Findings</td>
+          <td>IT Operations Manager</td>
+          <td>Microsoft Power BI, Salesforce</td>
+          <td>Backup logs, restoration reports, and BCP updates</td>
+          <td>Audit report with findings and recommendations</td>
+          <td>Less than 30 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Detailed documentation can be cumbersome.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Report to Management</td>
+          <td>IT Operations Manager</td>
+          <td>Microsoft Power BI, Salesforce</td>
+          <td>Audit report and BCP document</td>
+          <td>Management presentation slides</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Effective communication of complex technical information.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Plan for Improvements</td>
+          <td>IT Operations Manager</td>
+          <td>Microsoft Power BI, Salesforce</td>
+          <td>Audit report and management feedback</td>
+          <td>Action plan with timelines and responsible parties</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Identifying actionable improvements from audit findings.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Implement Improvements</td>
+          <td>IT Operations Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Action plan and resources</td>
+          <td>Implementation status report</td>
+          <td>Less than 2 weeks</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Resource allocation and coordination for improvements.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Monitor and Adjust</td>
+          <td>IT Operations Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Implementation status report and system performance data</td>
+          <td>Adjusted action plan or new improvement initiatives</td>
+          <td>Ongoing monitoring</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Continuous monitoring and adjusting can be resource-intensive.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> IT-OP-06</li>
+          <li><span class="bullet">Domain</span> Technology &amp; Systems</li>
+          <li><span class="bullet">Group</span> IT Operations &amp; Infrastructure</li>
+          <li><span class="bullet">Process</span> Data Backup &amp; Business Continuity</li>
+          <li><span class="bullet">Trigger</span> Daily automated trigger by IT Operations team</li>
+          <li><span class="bullet">Outcome</span> Successful completion produces complete, secure backups of all key Marriott systems and updates the Business Continuity Plan (BCP).</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Backup completion within 10 min of initiation</li><li><span class="bullet">▸</span> BCP update accuracy rate &gt;95%</li><li><span class="bullet">▸</span> Restoration success rate &gt;98%</li><li><span class="bullet">▸</span> Audit report generation time &lt;30 min</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process ensures regular data backup and business continuity at a Marriott full-service hotel to protect critical systems and data.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Data corruption during backup process</li><li><span class="bullet risk">▸</span> Inadequate testing leading to failed restorations</li><li><span class="bullet risk">▸</span> Outdated BCPs causing operational disruptions in emergencies</li><li><span class="bullet risk">▸</span> Insufficient resources for implementing improvement actions</li><li><span class="bullet risk">▸</span> Continuous monitoring and adjustments becoming too resource-intensive</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../technology/it-operations/it-op-05/"><span>◀</span><div><span class="prev-lbl">Previous</span>Cybersecurity Monitoring &amp; Incident Response</div></a>
+  <a href="../../../technology/it-operations/it-op-07/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Software Licence &amp; Vendor Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; IT-OP-06 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

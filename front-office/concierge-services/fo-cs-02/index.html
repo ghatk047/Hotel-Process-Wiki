@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-CS-02 — Transportation &amp; Transfer Arrangement | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Concierge & Guest Services</a><span class="sep">›</span>Transportation &amp; Transfer Arrangement</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-CS-02</div>
+  <h1>Transportation &amp; Transfer Arrangement</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Concierge & Guest Services</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">SynXis CRS</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-cs-02.png" alt="FO-CS-02 — Transportation &amp; Transfer Arrangement process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.3</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>Concierge</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Revenue Manager</td>
+          <td><span class="step-badge">2.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Transportation Request</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest request form or verbal communication</td>
+          <td>Transportation request logged in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling last-minute requests with limited availability</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Identify Available Transportation Options</td>
+          <td>Concierge</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Transportation request details from Oracle OPERA Cloud</td>
+          <td>List of available transportation options</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurate real-time availability data across multiple systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Confirm Transportation Details with Guest</td>
+          <td>Front Desk Agent, Concierge</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>List of available transportation options</td>
+          <td>Confirmed transportation details</td>
+          <td>Less than 3 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling guest preferences and special requirements</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Book Transportation Services</td>
+          <td>Concierge, Revenue Manager</td>
+          <td>SynXis CRS, Oracle OPERA Cloud</td>
+          <td>Confirmed transportation details</td>
+          <td>Transportation booking confirmation</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Integrating multiple booking systems for seamless transactions</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update Oracle OPERA Cloud with Booking Details</td>
+          <td>Revenue Manager, Concierge</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Transportation booking confirmation</td>
+          <td>Updated guest profile in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring data consistency across systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Notify Guest of Transportation Arrangements</td>
+          <td>Front Desk Agent, Concierge</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Updated guest profile in Oracle OPERA Cloud</td>
+          <td>Guest notification via email or phone</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Effective communication with guests regarding their transportation arrangements</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Transportation Services</td>
+          <td>Concierge, Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Guest check-in/check-out status</td>
+          <td>Transportation service status update</td>
+          <td>Less than 5 minutes every hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Real-time monitoring of transportation services</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Resolve Any Transportation Issues</td>
+          <td>Concierge, Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Transportation service status update</td>
+          <td>Issue resolution and updated guest notification</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling unexpected delays or cancellations</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Oracle OPERA Cloud with Final Transportation Status</td>
+          <td>Revenue Manager, Concierge</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Final transportation status and resolution details</td>
+          <td>Updated guest profile in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Maintaining accurate records of all transportation transactions</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Closeout Transportation Arrangements</td>
+          <td>Revenue Manager, Concierge</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Final transportation status and resolution details</td>
+          <td>Closed-out transportation arrangements in Oracle OPERA Cloud</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring all related records are properly archived</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-CS-02</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Concierge &amp; Guest Services</li>
+          <li><span class="bullet">Process</span> Transportation &amp; Transfer Arrangement</li>
+          <li><span class="bullet">Trigger</span> A guest requests transportation services, such as airport transfers or car rentals, either through the front desk, concierge, or online via Marriott Bonvoy CRM.</li>
+          <li><span class="bullet">Outcome</span> Successful completion of this process results in timely and accurate transportation arrangements that meet the guest's needs, with all relevant parties notified and systems updated accordingly.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 2 minutes for receiving and logging transportation requests</li><li><span class="bullet">▸</span> Less than 5 minutes for identifying available transportation options</li><li><span class="bullet">▸</span> Less than 10 minutes for booking transportation services</li><li><span class="bullet">▸</span> Less than 2 minutes for updating Oracle OPERA Cloud with booking details</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines how a Marriott full-service hotel handles transportation and transfer arrangements for guests. It ensures smooth coordination between various departments and systems to provide efficient and personalized service.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate real-time availability data across multiple systems</li><li><span class="bullet risk">▸</span> Handling last-minute requests with limited availability</li><li><span class="bullet risk">▸</span> Integrating multiple booking systems for seamless transactions</li><li><span class="bullet risk">▸</span> Ensuring data consistency across systems</li><li><span class="bullet risk">▸</span> Handling unexpected delays or cancellations</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/concierge-services/fo-cs-01/"><span>◀</span><div><span class="prev-lbl">Previous</span>Concierge Request Fulfilment</div></a>
+  <a href="../../../front-office/concierge-services/fo-cs-03/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Restaurant Reservation &amp; Ticketing</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-CS-02 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

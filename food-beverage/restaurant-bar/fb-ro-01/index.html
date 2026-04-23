@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB-RO-01 — Table Reservation Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🍽️ Food & Beverage Operations</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Food & Beverage Operations</a><span class="sep">›</span><a href="../">Restaurant & Bar Operations</a><span class="sep">›</span>Table Reservation Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">FB-RO-01</div>
+  <h1>Table Reservation Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Restaurant & Bar Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Book4Time</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fb-ro-01.png" alt="FB-RO-01 — Table Reservation Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.3</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Restaurant Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Restaurant Staff</td>
+          <td><span class="step-badge">2.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Reservation Request</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Customer details (name, contact info, reservation date/time)</td>
+          <td>Reservation request logged in Oracle OPERA Cloud</td>
+          <td>&lt; 3 min response time</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling last-minute requests and ensuring availability</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Availability</td>
+          <td>Restaurant Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Reservation request details</td>
+          <td>Availability check report</td>
+          <td>&lt; 5 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Managing overlapping reservations and ensuring no double bookings</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Confirm Reservation</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Availability check report</td>
+          <td>Reservation confirmation email/sms to customer</td>
+          <td>&lt; 2 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring correct information is sent to the customer</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Update Restaurant Schedule</td>
+          <td>Restaurant Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Reservation confirmation</td>
+          <td>Updated restaurant schedule</td>
+          <td>&lt; 5 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Keeping the schedule up-to-date with frequent changes</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Notify Waitstaff</td>
+          <td>Restaurant Manager</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Updated restaurant schedule</td>
+          <td>Notification to waitstaff</td>
+          <td>&lt; 3 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring all staff are informed of changes</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Prepare for Arrival</td>
+          <td>Restaurant Staff</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Customer arrival notification</td>
+          <td>Table prepared and ready for guests</td>
+          <td>&lt; 10 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling rush hour arrivals and ensuring smooth service</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Gather Feedback</td>
+          <td>Restaurant Manager</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Customer feedback post-dining</td>
+          <td>Feedback recorded in Oracle OPERA Cloud</td>
+          <td>&lt; 5 min after dining</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Collecting and analyzing customer feedback</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Reservation System</td>
+          <td>Restaurant Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Feedback and dining details</td>
+          <td>Updated reservation record in Oracle OPERA Cloud</td>
+          <td>&lt; 5 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Updating records accurately to maintain guest history</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Reservation</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Final dining details and feedback</td>
+          <td>Reservation closed in Oracle OPERA Cloud</td>
+          <td>&lt; 2 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Closing reservations promptly to free up resources</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FB-RO-01</li>
+          <li><span class="bullet">Domain</span> Food &amp; Beverage Operations</li>
+          <li><span class="bullet">Group</span> Restaurant &amp; Bar Operations</li>
+          <li><span class="bullet">Process</span> Table Reservation Management</li>
+          <li><span class="bullet">Trigger</span> Customer request for a table reservation through various channels such as phone, online booking platforms, or directly at the hotel.</li>
+          <li><span class="bullet">Outcome</span> Successful completion of the reservation process with accurate details recorded in the PMS system, confirmation sent to the customer, and the reservation reflected in the restaurant's schedule.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> &lt; 3 min response time for reservation requests</li><li><span class="bullet">▸</span> &lt; 5 min availability check and schedule update</li><li><span class="bullet">▸</span> &lt; 2 min confirmation and notification processes</li><li><span class="bullet">▸</span> &lt; 10 min table preparation time</li><li><span class="bullet">▸</span> &lt; 5 min feedback collection and record updating</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process manages table reservations at a full-service Marriott hotel using Oracle OPERA Cloud and other Marriott systems to ensure efficient and seamless operations.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> System downtime affecting reservation processing</li><li><span class="bullet risk">▸</span> Incorrect information leading to double bookings or missed reservations</li><li><span class="bullet risk">▸</span> Customer dissatisfaction due to poor communication or service delays</li><li><span class="bullet risk">▸</span> Inaccurate feedback recording impacting future guest experiences</li><li><span class="bullet risk">▸</span> Resource allocation issues during peak dining hours</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/upselling-revenue/fo-up-08/"><span>◀</span><div><span class="prev-lbl">Previous</span>Nor1 / Upgrade System Administration</div></a>
+  <a href="../../../food-beverage/restaurant-bar/fb-ro-02/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Restaurant Opening &amp; Mise en Place</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FB-RO-01 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

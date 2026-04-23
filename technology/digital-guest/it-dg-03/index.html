@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT-DG-03 — In-Room Entertainment System Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">💻 Technology & Systems</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Technology & Systems</a><span class="sep">›</span><a href="../">Digital Guest Experience</a><span class="sep">›</span>In-Room Entertainment System Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">IT-DG-03</div>
+  <h1>In-Room Entertainment System Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Digital Guest Experience</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Honeywell INNCOM</span> <span class="tag">Knowcross HotSOS</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/it-dg-03.png" alt="IT-DG-03 — In-Room Entertainment System Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Housekeeping Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>IT Support Technician</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Room Status</td>
+          <td>Housekeeping Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room status from Oracle OPERA Cloud</td>
+          <td>Updated room status in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect room status updates leading to system malfunctions</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Check System Connectivity</td>
+          <td>IT Support Technician</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Room connectivity data from Oracle OPERA Cloud</td>
+          <td>Connectivity status report</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Network issues causing system downtime</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Test Entertainment Systems</td>
+          <td>IT Support Technician</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Connectivity status report</td>
+          <td>System test results</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Hardware failures affecting system performance</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Update System Software</td>
+          <td>IT Support Technician</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>System test results</td>
+          <td>Updated software version</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Software compatibility issues with hardware</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Configure System Settings</td>
+          <td>IT Support Technician</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Updated software version</td>
+          <td>Configured system settings</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Incorrect configuration leading to operational errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Verify System Functionality</td>
+          <td>IT Support Technician</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Configured system settings</td>
+          <td>Functionality verification report</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>System malfunctions affecting guest experience</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Update Room Status in Oracle OPERA Cloud</td>
+          <td>Housekeeping Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Functionality verification report</td>
+          <td>Updated room status in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect room status updates leading to system malfunctions</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Notify Front Desk of System Status</td>
+          <td>Housekeeping Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated room status in Oracle OPERA Cloud</td>
+          <td>Notification to Front Desk</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed notifications affecting guest check-in</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Document System Maintenance</td>
+          <td>IT Support Technician</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Functionality verification report</td>
+          <td>Maintenance log entry</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incomplete maintenance logs leading to operational oversight</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Review and Report Issues</td>
+          <td>IT Support Technician</td>
+          <td>Oracle OPERA Cloud, Honeywell INNCOM</td>
+          <td>Maintenance log entry</td>
+          <td>Issue report to IT Manager</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Undetected issues causing guest dissatisfaction</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> IT-DG-03</li>
+          <li><span class="bullet">Domain</span> Technology &amp; Systems</li>
+          <li><span class="bullet">Group</span> Digital Guest Experience</li>
+          <li><span class="bullet">Process</span> In-Room Entertainment System Management</li>
+          <li><span class="bullet">Trigger</span> Initiation by the Housekeeping Department upon room cleaning or check-in</li>
+          <li><span class="bullet">Outcome</span> Successful completion ensures that all in-room entertainment systems are functioning correctly, enhancing guest satisfaction and operational efficiency.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 2 minutes for room status updates</li><li><span class="bullet">▸</span> Less than 5 minutes for connectivity checks</li><li><span class="bullet">▸</span> Less than 10 minutes for system testing and configuration</li><li><span class="bullet">▸</span> Less than 30 minutes for software updates</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the management of in-room entertainment systems at a full-service Marriott hotel, ensuring seamless guest experience and efficient operations.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Network issues causing system downtime</li><li><span class="bullet risk">▸</span> Hardware failures affecting system performance</li><li><span class="bullet risk">▸</span> Software compatibility issues with hardware</li><li><span class="bullet risk">▸</span> Incorrect configuration leading to operational errors</li><li><span class="bullet risk">▸</span> Undetected issues causing guest dissatisfaction</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../technology/digital-guest/it-dg-02/"><span>◀</span><div><span class="prev-lbl">Previous</span>Digital Key &amp; Mobile Check-In</div></a>
+  <a href="../../../technology/digital-guest/it-dg-04/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>High-Speed Internet Service Management</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; IT-DG-03 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

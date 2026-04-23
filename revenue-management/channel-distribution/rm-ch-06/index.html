@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM-CH-06 — Corporate Rate Loading &amp; Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">📈 Revenue Management & Distribution</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Revenue Management & Distribution</a><span class="sep">›</span><a href="../">Channel & Distribution Management</a><span class="sep">›</span>Corporate Rate Loading &amp; Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">RM-CH-06</div>
+  <h1>Corporate Rate Loading &amp; Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Channel & Distribution Management</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/rm-ch-06.png" alt="RM-CH-06 — Corporate Rate Loading &amp; Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">2.4</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ff5733"></span>Front Desk Agent</td>
+          <td><span class="step-badge">3.1</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Review Corporate Contract Details</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Corporate contract document</td>
+          <td>Contract review notes</td>
+          <td>Completion within 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Complex contracts with multiple rate tiers and restrictions</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Identify Applicable Rate Codes</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Contract review notes</td>
+          <td>List of applicable rate codes</td>
+          <td>Completion within 15 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect or missing rate codes in the system</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Load Corporate Rates into OPERA Cloud</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>List of applicable rate codes</td>
+          <td>Corporate rates loaded in OPERA Cloud</td>
+          <td>Completion within 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System errors or data entry mistakes</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Verify Rate Loading in OPERA Cloud</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Corporate rates loaded in OPERA Cloud</td>
+          <td>Rate verification report</td>
+          <td>Completion within 30 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Incorrect rate loading affecting availability or pricing</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Update IDeaS G3 RMS with Corporate Rates</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS</td>
+          <td>Rate verification report</td>
+          <td>Corporate rates updated in IDeaS G3 RMS</td>
+          <td>Completion within 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System integration issues between OPERA Cloud and IDeaS G3 RMS</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Configure SynXis CRS for Corporate Rates</td>
+          <td>Revenue Manager</td>
+          <td>SynXis CRS</td>
+          <td>Corporate rates updated in IDeaS G3 RMS</td>
+          <td>Corporate rates configured in SynXis CRS</td>
+          <td>Completion within 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect configuration affecting online availability</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Communicate Rate Changes to Front Desk</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Corporate rates configured in SynXis CRS</td>
+          <td>Communication notes for front desk</td>
+          <td>Completion within 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Front desk not aware of rate changes affecting reservations</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Monitor Corporate Rate Performance</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Communication notes for front desk</td>
+          <td>Rate performance report</td>
+          <td>Daily monitoring</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Underutilization of corporate rates affecting revenue</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Adjust Corporate Rates as Needed</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Rate performance report</td>
+          <td>Adjusted corporate rates</td>
+          <td>Completion within 24 hours of review</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inability to adjust rates quickly enough to respond to market changes</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Update Corporate Clients on Rate Adjustments</td>
+          <td>Revenue Manager</td>
+          <td>Marriott Bonvoy CRM</td>
+          <td>Adjusted corporate rates</td>
+          <td>Client communication log</td>
+          <td>Completion within 1 hour of rate adjustment</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Poor client communication affecting trust and future bookings</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> RM-CH-06</li>
+          <li><span class="bullet">Domain</span> Revenue Management &amp; Distribution</li>
+          <li><span class="bullet">Group</span> Channel &amp; Distribution Management</li>
+          <li><span class="bullet">Process</span> Corporate Rate Loading &amp; Management</li>
+          <li><span class="bullet">Trigger</span> Initiation of a new contract with a corporate client or update to existing corporate rate agreements</li>
+          <li><span class="bullet">Outcome</span> Successful loading and management of corporate rates, ensuring accurate pricing and availability for contracted clients</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Rate loading completion within 1 hour</li><li><span class="bullet">▸</span> Rate verification accuracy rate above 95%</li><li><span class="bullet">▸</span> System integration success rate above 98%</li><li><span class="bullet">▸</span> Front desk communication notes updated daily</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the steps for loading and managing corporate rates at a full-service Marriott hotel using Oracle OPERA Cloud PMS and other key Marriott systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Incorrect contract interpretation leading to rate misloading</li><li><span class="bullet risk">▸</span> System errors causing data loss or corruption during rate updates</li><li><span class="bullet risk">▸</span> Communication breakdown between revenue management and front desk affecting reservations</li><li><span class="bullet risk">▸</span> Market changes not being responded to quickly enough, leading to lost revenue</li><li><span class="bullet risk">▸</span> Client dissatisfaction due to poor communication about rate adjustments</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../revenue-management/channel-distribution/rm-ch-05/"><span>◀</span><div><span class="prev-lbl">Previous</span>Wholesale &amp; Tour Operator Contracting</div></a>
+  <a href="../../../revenue-management/channel-distribution/rm-ch-07/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Channel Performance Analysis</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; RM-CH-06 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

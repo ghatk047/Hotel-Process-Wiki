@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM-RV-06 — CRS-PMS Synchronisation | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">📈 Revenue Management & Distribution</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Revenue Management & Distribution</a><span class="sep">›</span><a href="../">Reservations Operations</a><span class="sep">›</span>CRS-PMS Synchronisation</div>
+
+<div class="page-header">
+  <div class="pid-badge">RM-RV-06</div>
+  <h1>CRS-PMS Synchronisation</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Reservations Operations</span>
+    <span class="tag">SynXis CRS</span> <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/rm-rv-06.png" alt="RM-RV-06 — CRS-PMS Synchronisation process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">2.4</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Front Desk Agent</td>
+          <td><span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Reservation</td>
+          <td>Revenue Manager</td>
+          <td>SynXis CRS</td>
+          <td>New reservation details</td>
+          <td>Reservation record in SynXis CRS</td>
+          <td>Less than 2 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling last-minute changes or cancellations</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Validate Reservation</td>
+          <td>Revenue Manager</td>
+          <td>SynXis CRS</td>
+          <td>Reservation record in SynXis CRS</td>
+          <td>Validation report</td>
+          <td>Less than 1 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Ensuring accurate guest information</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Initiate Synchronization</td>
+          <td>Revenue Manager</td>
+          <td>SynXis CRS</td>
+          <td>Validation report</td>
+          <td>Synchronization request sent to Oracle OPERA Cloud</td>
+          <td>Less than 30 sec</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Network connectivity issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Process Synchronization Request</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Synchronization request</td>
+          <td>Updated reservation record in Oracle OPERA Cloud</td>
+          <td>Less than 1 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling conflicting data</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Confirm Synchronization</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated reservation record in Oracle OPERA Cloud</td>
+          <td>Confirmation message to SynXis CRS</td>
+          <td>Less than 30 sec</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring real-time updates</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Update CRM System</td>
+          <td>Revenue Manager</td>
+          <td>Marriott Bonvoy CRM</td>
+          <td>Updated reservation record in Oracle OPERA Cloud</td>
+          <td>CRM system updated with guest information</td>
+          <td>Less than 1 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Data consistency across systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Generate Report</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated reservation record in Oracle OPERA Cloud</td>
+          <td>Synchronization report</td>
+          <td>Less than 2 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Complex reporting requirements</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Review Report</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Synchronization report</td>
+          <td>Report review and action plan</td>
+          <td>Less than 1 min</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Identifying discrepancies</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Front Desk</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Report review and action plan</td>
+          <td>Updated guest check-in/check-out procedures</td>
+          <td>Less than 1 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling unexpected issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Complete Synchronization Cycle</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated guest check-in/check-out procedures</td>
+          <td>Synchronization cycle completed</td>
+          <td>Less than 1 min</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring all systems are in sync</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> RM-RV-06</li>
+          <li><span class="bullet">Domain</span> Revenue Management &amp; Distribution</li>
+          <li><span class="bullet">Group</span> Reservations Operations</li>
+          <li><span class="bullet">Process</span> CRS-PMS Synchronisation</li>
+          <li><span class="bullet">Trigger</span> A new reservation is made through SynXis CRS or an existing reservation is updated.</li>
+          <li><span class="bullet">Outcome</span> Successful synchronization of reservation data between SynXis CRS and Oracle OPERA Cloud, ensuring accurate room availability, rates, and guest information across all systems.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Synchronization time less than 5 min</li><li><span class="bullet">▸</span> Error rate in synchronization process less than 1%</li><li><span class="bullet">▸</span> Data consistency across systems greater than 98%</li><li><span class="bullet">▸</span> Front desk update time less than 2 min</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process ensures seamless synchronization between the CRS (Central Reservation System) and PMS (Property Management System) at a Marriott full-service hotel, optimizing reservations management and revenue generation.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Network connectivity issues affecting real-time updates</li><li><span class="bullet risk">▸</span> Conflicting data leading to discrepancies in reservation records</li><li><span class="bullet risk">▸</span> Complex reporting requirements causing delays</li><li><span class="bullet risk">▸</span> Unexpected issues during front desk operations</li><li><span class="bullet risk">▸</span> Data consistency problems across multiple systems</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../revenue-management/reservations/rm-rv-05/"><span>◀</span><div><span class="prev-lbl">Previous</span>Deposit &amp; Prepayment Processing</div></a>
+  <a href="../../../revenue-management/reservations/rm-rv-07/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Reservation Quality Auditing</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; RM-RV-06 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

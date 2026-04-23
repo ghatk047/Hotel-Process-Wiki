@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-UP-06 — Late Check-Out &amp; Early Check-In Revenue Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Upselling & Revenue Optimisation</a><span class="sep">›</span>Late Check-Out &amp; Early Check-In Revenue Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-UP-06</div>
+  <h1>Late Check-Out &amp; Early Check-In Revenue Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Upselling & Revenue Optimisation</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-up-06.png" alt="FO-UP-06 — Late Check-Out &amp; Early Check-In Revenue Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.4</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Guest Request</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest request for late check-out or early check-in</td>
+          <td>Request logged in Oracle OPERA Cloud</td>
+          <td>Less than 3 minutes per request</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling multiple requests simultaneously without compromising accuracy</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Review Room Availability</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS</td>
+          <td>Room availability data from Oracle OPERA Cloud</td>
+          <td>Availability report</td>
+          <td>Less than 5 minutes per review</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Real-time updates on room status across multiple properties</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Determine Upselling Opportunities</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS, SynXis CRS</td>
+          <td>Availability report and guest profile from Marriott Bonvoy CRM</td>
+          <td>Upselling strategy</td>
+          <td>Less than 7 minutes per determination</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Balancing upselling with guest satisfaction</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>Communicate with Guest</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Upselling strategy and guest contact information</td>
+          <td>Guest confirmation or denial of additional services</td>
+          <td>Less than 10 minutes per communication</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling different communication preferences (phone, email, in-person)</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Update Room Status</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest confirmation and upselling details</td>
+          <td>Updated room status in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes per update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring accurate updates without disrupting other reservations</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Process Additional Services</td>
+          <td>Front Desk Agent, Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Oracle MICROS Simphony</td>
+          <td>Guest confirmation and upselling details</td>
+          <td>Processed additional services charges</td>
+          <td>Less than 5 minutes per service</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling different payment methods and ensuring secure transactions</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Monitor Room Utilization</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS, SynXis CRS</td>
+          <td>Room status updates from Oracle OPERA Cloud</td>
+          <td>Utilization report</td>
+          <td>Less than 10 minutes per monitoring session</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Adjusting strategies based on real-time data</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review Revenue Impact</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS, SynXis CRS</td>
+          <td>Utilization report and financial data from Oracle OPERA Cloud</td>
+          <td>Revenue analysis report</td>
+          <td>Less than 15 minutes per review</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Analyzing complex revenue streams</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Adjust Future Strategies</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS, SynXis CRS</td>
+          <td>Revenue analysis report and market trends</td>
+          <td>Updated revenue management strategy</td>
+          <td>Less than 20 minutes per adjustment</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Balancing short-term gains with long-term planning</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Case in CRM</td>
+          <td>Revenue Manager</td>
+          <td>Marriott Bonvoy CRM</td>
+          <td>Final revenue impact and strategy adjustments</td>
+          <td>Closed case in Marriott Bonvoy CRM</td>
+          <td>Less than 5 minutes per closure</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring all relevant data is captured for future reference</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-UP-06</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Upselling &amp; Revenue Optimisation</li>
+          <li><span class="bullet">Process</span> Late Check-Out &amp; Early Check-In Revenue Management</li>
+          <li><span class="bullet">Trigger</span> Guest requests for late check-out or early check-in</li>
+          <li><span class="bullet">Outcome</span> Increased revenue through upselling additional services, optimizing room utilization, and enhancing guest satisfaction.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 3 minutes per request identification</li><li><span class="bullet">▸</span> Less than 5 minutes per room availability review</li><li><span class="bullet">▸</span> Less than 7 minutes per upselling determination</li><li><span class="bullet">▸</span> Less than 10 minutes per guest communication</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The process aims to optimize late check-out and early check-in revenue management at a Marriott full-service hotel by leveraging Oracle OPERA Cloud PMS and other key systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate room status updates leading to overbooking</li><li><span class="bullet risk">▸</span> Handling different payment methods securely and efficiently</li><li><span class="bullet risk">▸</span> Balancing short-term revenue gains with long-term planning</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/upselling-revenue/fo-up-05/"><span>◀</span><div><span class="prev-lbl">Previous</span>Upsell Performance Tracking &amp; Incentives</div></a>
+  <a href="../../../front-office/upselling-revenue/fo-up-07/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Ancillary Revenue Reporting</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-UP-06 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

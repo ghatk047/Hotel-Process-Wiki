@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FM-PM-03 — HVAC &amp; MEP Systems Maintenance | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🔧 Facilities & Engineering</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Facilities & Engineering</a><span class="sep">›</span><a href="../">Preventive Maintenance</a><span class="sep">›</span>HVAC &amp; MEP Systems Maintenance</div>
+
+<div class="page-header">
+  <div class="pid-badge">FM-PM-03</div>
+  <h1>HVAC &amp; MEP Systems Maintenance</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Preventive Maintenance</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Schneider EcoStruxure</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fm-pm-03.png" alt="FM-PM-03 — HVAC &amp; MEP Systems Maintenance process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Facilities Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ff5733"></span>HVAC Technician</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#4caf50"></span>MEP Technician</td>
+          <td><span class="step-badge">2.2</span> <span class="step-badge">2.4</span> <span class="step-badge">3.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Maintenance Request</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Maintenance checklist</td>
+          <td>Work order created in Oracle OPERA Cloud</td>
+          <td>Less than 5 minutes per work order creation</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delays in creating work orders can lead to missed maintenance windows.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Work Order</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Work order created</td>
+          <td>Assigned technician details in Oracle OPERA Cloud</td>
+          <td>Less than 3 minutes per work order assignment</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect assignments can lead to inefficiencies and missed deadlines.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Inspect HVAC Systems</td>
+          <td>HVAC Technician</td>
+          <td>Schneider EcoStruxure</td>
+          <td>Assigned work order</td>
+          <td>Inspection report</td>
+          <td>Less than 30 minutes per system inspection</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Complex systems can lead to longer inspection times.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Inspect MEP Systems</td>
+          <td>MEP Technician</td>
+          <td>Schneider EcoStruxure</td>
+          <td>Assigned work order</td>
+          <td>Inspection report</td>
+          <td>Less than 30 minutes per system inspection</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Complex systems can lead to longer inspection times.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Perform Maintenance on HVAC Systems</td>
+          <td>HVAC Technician</td>
+          <td>Schneider EcoStruxure</td>
+          <td>Inspection report</td>
+          <td>Maintenance log</td>
+          <td>Less than 1 hour per system maintenance</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Unexpected issues can extend maintenance time.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Perform Maintenance on MEP Systems</td>
+          <td>MEP Technician</td>
+          <td>Schneider EcoStruxure</td>
+          <td>Inspection report</td>
+          <td>Maintenance log</td>
+          <td>Less than 1 hour per system maintenance</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Unexpected issues can extend maintenance time.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Test HVAC Systems</td>
+          <td>HVAC Technician</td>
+          <td>Schneider EcoStruxure</td>
+          <td>Maintenance log</td>
+          <td>Test report</td>
+          <td>Less than 15 minutes per system test</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>System malfunctions can delay testing.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Test MEP Systems</td>
+          <td>MEP Technician</td>
+          <td>Schneider EcoStruxure</td>
+          <td>Maintenance log</td>
+          <td>Test report</td>
+          <td>Less than 15 minutes per system test</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>System malfunctions can delay testing.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Work Order Status</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Test report</td>
+          <td>Updated work order status in Oracle OPERA Cloud</td>
+          <td>Less than 5 minutes per update</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect updates can lead to confusion and delays.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Close Maintenance Request</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated work order status</td>
+          <td>Closed work order in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes per closure</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Missed deadlines for closing work orders can impact future planning.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FM-PM-03</li>
+          <li><span class="bullet">Domain</span> Facilities &amp; Engineering</li>
+          <li><span class="bullet">Group</span> Preventive Maintenance</li>
+          <li><span class="bullet">Process</span> HVAC &amp; MEP Systems Maintenance</li>
+          <li><span class="bullet">Trigger</span> Scheduled preventative maintenance checklist or system failure alert</li>
+          <li><span class="bullet">Outcome</span> All HVAC and MEP systems are inspected, maintained, and tested to meet performance standards, ensuring guest satisfaction and energy efficiency.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes per work order creation</li><li><span class="bullet">▸</span> Less than 3 minutes per work order assignment</li><li><span class="bullet">▸</span> Less than 30 minutes per system inspection</li><li><span class="bullet">▸</span> Less than 1 hour per system maintenance</li><li><span class="bullet">▸</span> Less than 15 minutes per system test</li><li><span class="bullet">▸</span> Less than 2 minutes per closure</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the maintenance of HVAC and MEP systems in a full-service Marriott hotel to ensure guest comfort and operational efficiency.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Delays in creating or assigning work orders can lead to missed maintenance windows.</li><li><span class="bullet risk">▸</span> Incorrect assignments can lead to inefficiencies and missed deadlines.</li><li><span class="bullet risk">▸</span> Unexpected issues during maintenance can extend the time required for repairs.</li><li><span class="bullet risk">▸</span> System malfunctions during testing can delay completion of the process.</li><li><span class="bullet risk">▸</span> Missed deadlines for closing work orders can impact future planning.</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../facilities/preventive-maintenance/fm-pm-02/"><span>◀</span><div><span class="prev-lbl">Previous</span>Guest Room Preventive Maintenance</div></a>
+  <a href="../../../facilities/preventive-maintenance/fm-pm-04/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Pool &amp; Spa Equipment Maintenance</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FM-PM-03 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

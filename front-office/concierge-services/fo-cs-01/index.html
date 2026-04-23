@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-CS-01 — Concierge Request Fulfilment | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Concierge & Guest Services</a><span class="sep">›</span>Concierge Request Fulfilment</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-CS-01</div>
+  <h1>Concierge Request Fulfilment</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Concierge & Guest Services</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-cs-01.png" alt="FO-CS-01 — Concierge Request Fulfilment process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Concierge Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#eab308"></span>Concierge Team Member</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Concierge Request</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest's request via phone, email, or in-room device</td>
+          <td>Concierge request logged in Oracle OPERA Cloud</td>
+          <td>Response time within 30 seconds</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling urgent requests while managing multiple guests.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Concierge Task</td>
+          <td>Concierge Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Logged concierge request</td>
+          <td>Task assigned to a concierge team member</td>
+          <td>Assignment within 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Balancing workload among concierge staff.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Confirm Task Details</td>
+          <td>Concierge Team Member</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Assigned task details</td>
+          <td>Confirmed task with guest via phone or email</td>
+          <td>Confirmation within 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring clear communication of task requirements.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Execute Concierge Task</td>
+          <td>Concierge Team Member</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Confirmed task details</td>
+          <td>Task executed and documented in Oracle OPERA Cloud</td>
+          <td>Completion within 1 hour for standard tasks</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Managing unexpected delays or complications during task execution.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Monitor Task Progress</td>
+          <td>Concierge Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Task status updates</td>
+          <td>Progress monitored and adjustments made if necessary</td>
+          <td>Daily review of task progress</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Ensuring continuous oversight of ongoing tasks.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Notify Guest of Completion</td>
+          <td>Concierge Team Member</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Completed task details</td>
+          <td>Notification sent to guest via phone or email</td>
+          <td>Notification within 10 minutes of completion</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring timely feedback to guests.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Task Status</td>
+          <td>Concierge Team Member</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Guest's confirmation of task completion</td>
+          <td>Task status updated in Oracle OPERA Cloud</td>
+          <td>Status update within 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurate documentation of task outcomes.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Review and Improve Process</td>
+          <td>Concierge Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Task completion data</td>
+          <td>Process improvements documented and implemented</td>
+          <td>Monthly review cycle</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Continuous process optimization for efficiency.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-CS-01</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Concierge &amp; Guest Services</li>
+          <li><span class="bullet">Process</span> Concierge Request Fulfilment</li>
+          <li><span class="bullet">Trigger</span> Guest submits a concierge request through various channels (e.g., phone, email, in-room device).</li>
+          <li><span class="bullet">Outcome</span> Successful completion of the guest's concierge request with timely communication and satisfaction.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Response time within 30 seconds</li><li><span class="bullet">▸</span> Assignment within 1 minute</li><li><span class="bullet">▸</span> Confirmation within 5 minutes</li><li><span class="bullet">▸</span> Completion within 1 hour for standard tasks</li><li><span class="bullet">▸</span> Notification within 10 minutes of completion</li><li><span class="bullet">▸</span> Status update within 5 minutes</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines how a Marriott full-service hotel fulfills concierge requests using Oracle OPERA Cloud PMS and other integrated systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Urgent requests overwhelming the concierge team.</li><li><span class="bullet risk">▸</span> Miscommunication or misunderstanding of task requirements.</li><li><span class="bullet risk">▸</span> Unexpected delays or complications during task execution.</li><li><span class="bullet risk">▸</span> Inaccurate documentation leading to process inefficiencies.</li><li><span class="bullet risk">▸</span> Guest dissatisfaction due to delayed or incorrect notifications.</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/checkin-checkout/fo-ci-08/"><span>◀</span><div><span class="prev-lbl">Previous</span>Overbooking &amp; Walk Management</div></a>
+  <a href="../../../front-office/concierge-services/fo-cs-02/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Transportation &amp; Transfer Arrangement</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-CS-01 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

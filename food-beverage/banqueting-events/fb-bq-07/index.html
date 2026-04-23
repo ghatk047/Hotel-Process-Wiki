@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB-BQ-07 — External Catering &amp; Offsite Events | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🍽️ Food & Beverage Operations</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Food & Beverage Operations</a><span class="sep">›</span><a href="../">Banqueting & Events Catering</a><span class="sep">›</span>External Catering &amp; Offsite Events</div>
+
+<div class="page-header">
+  <div class="pid-badge">FB-BQ-07</div>
+  <h1>External Catering &amp; Offsite Events</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Banqueting & Events Catering</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">Oracle MICROS Simphony</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fb-bq-07.png" alt="FB-BQ-07 — External Catering &amp; Offsite Events process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#93c5fd"></span>Event Coordinator</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span> <span class="step-badge">3.5</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#e0f7fa"></span>Banquet Manager</td>
+          <td><span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Event Request</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Event request form</td>
+          <td>Event record in Oracle OPERA Cloud</td>
+          <td>Response time within 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling last-minute requests</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Event Coordinator</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Event record</td>
+          <td>Assigned event coordinator in Oracle OPERA Cloud</td>
+          <td>Assignment within 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Resource allocation during peak seasons</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Confirm Event Details</td>
+          <td>Event Coordinator</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Event record</td>
+          <td>Confirmed event details in Oracle OPERA Cloud</td>
+          <td>Confirmation within 24 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling conflicting dates</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Quote Preparation</td>
+          <td>Event Coordinator</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Confirmed event details</td>
+          <td>Event quote</td>
+          <td>Quote preparation within 48 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurate cost estimation</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Client Approval</td>
+          <td>Event Coordinator</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Event quote</td>
+          <td>Approved event details in Oracle OPERA Cloud</td>
+          <td>Approval within 72 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Client negotiation</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Vendor Coordination</td>
+          <td>Event Coordinator</td>
+          <td>Birchstreet Procurement, Oracle OPERA Cloud</td>
+          <td>Approved event details</td>
+          <td>Vendor contracts and schedules</td>
+          <td>Coordination within 5 days</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Supplier reliability</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Event Execution</td>
+          <td>Event Coordinator, Banquet Manager</td>
+          <td>Oracle OPERA Cloud, Oracle MICROS Simphony</td>
+          <td>Vendor contracts and schedules</td>
+          <td>Successful event execution</td>
+          <td>Execution within budget</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Logistical coordination</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Post-Event Evaluation</td>
+          <td>Event Coordinator, Banquet Manager</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Event execution details</td>
+          <td>Event evaluation report</td>
+          <td>Evaluation within 7 days</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Detailed feedback collection</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Client Feedback</td>
+          <td>Event Coordinator, Banquet Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Event evaluation report</td>
+          <td>Client feedback in Oracle OPERA Cloud</td>
+          <td>Feedback collection within 10 days</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Client satisfaction measurement</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Closeout and Documentation</td>
+          <td>Event Coordinator, Banquet Manager</td>
+          <td>Oracle OPERA Cloud, SAP S/4HANA</td>
+          <td>Client feedback</td>
+          <td>Closed event record in Oracle OPERA Cloud</td>
+          <td>Closeout within 15 days</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Final billing and documentation</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FB-BQ-07</li>
+          <li><span class="bullet">Domain</span> Food &amp; Beverage Operations</li>
+          <li><span class="bullet">Group</span> Banqueting &amp; Events Catering</li>
+          <li><span class="bullet">Process</span> External Catering &amp; Offsite Events</li>
+          <li><span class="bullet">Trigger</span> Receiving a request for an external catering or offsite event from a client</li>
+          <li><span class="bullet">Outcome</span> Successful planning, execution, and closure of the event with satisfied clients and efficient use of resources.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Response time within 5 minutes</li><li><span class="bullet">▸</span> Assignment within 10 minutes</li><li><span class="bullet">▸</span> Confirmation within 24 hours</li><li><span class="bullet">▸</span> Quote preparation within 48 hours</li><li><span class="bullet">▸</span> Approval within 72 hours</li><li><span class="bullet">▸</span> Execution within budget</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The process for managing external catering and offsite events at a Marriott full-service hotel involves coordination between various departments to ensure smooth execution of banquets and events.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Resource allocation during peak seasons</li><li><span class="bullet risk">▸</span> Handling conflicting dates</li><li><span class="bullet risk">▸</span> Accurate cost estimation</li><li><span class="bullet risk">▸</span> Supplier reliability</li><li><span class="bullet risk">▸</span> Logistical coordination</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../food-beverage/banqueting-events/fb-bq-06/"><span>◀</span><div><span class="prev-lbl">Previous</span>Post-Event Breakdown &amp; Reporting</div></a>
+  <a href="../../../food-beverage/banqueting-events/fb-bq-08/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Group Dining &amp; Special Menus</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FB-BQ-07 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

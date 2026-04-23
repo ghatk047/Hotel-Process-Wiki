@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM-RV-03 — Waitlist &amp; Tentative Booking Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">📈 Revenue Management & Distribution</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Revenue Management & Distribution</a><span class="sep">›</span><a href="../">Reservations Operations</a><span class="sep">›</span>Waitlist &amp; Tentative Booking Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">RM-RV-03</div>
+  <h1>Waitlist &amp; Tentative Booking Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Reservations Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/rm-rv-03.png" alt="RM-RV-03 — Waitlist &amp; Tentative Booking Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.2</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.3</span> <span class="step-badge">3.1</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Room Availability</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Customer reservation request</td>
+          <td>Room availability report</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Accurate real-time room availability data is critical.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Create Waitlist Entry</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room availability report</td>
+          <td>Waitlist entry in Oracle OPERA Cloud</td>
+          <td>Less than 3 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling exceptions for urgent waitlist requests.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Notify Customer of Waitlist Status</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Waitlist entry in Oracle OPERA Cloud</td>
+          <td>Customer notification via email or phone</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring timely and accurate customer communication.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Monitor Waitlist Requests</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Waitlist entries in Oracle OPERA Cloud</td>
+          <td>Updated waitlist report</td>
+          <td>Daily review within 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Balancing waitlist management with other revenue tasks.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Evaluate Tentative Bookings</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Tentative bookings in Oracle OPERA Cloud</td>
+          <td>Evaluation report</td>
+          <td>Less than 10 minutes per booking</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Assessing the impact of tentative bookings on overall occupancy.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Confirm Tentative Bookings</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Evaluation report</td>
+          <td>Confirmed booking in Oracle OPERA Cloud</td>
+          <td>Less than 5 minutes per booking</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling exceptions for tentative bookings.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Update Customer on Booking Confirmation</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Confirmed booking in Oracle OPERA Cloud</td>
+          <td>Customer confirmation notification via email or phone</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring timely and accurate customer communication.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Remove Waitlist Entry</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Confirmed booking in Oracle OPERA Cloud</td>
+          <td>Updated waitlist in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling exceptions for removing waitlist entries.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Generate Waitlist Report</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Final waitlist status</td>
+          <td>Waitlist report for analysis</td>
+          <td>Daily within 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Analyzing waitlist data for future planning.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Review and Adjust Policies</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Waitlist report for analysis</td>
+          <td>Updated waitlist policies</td>
+          <td>Weekly review within 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Balancing customer satisfaction with hotel occupancy.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> RM-RV-03</li>
+          <li><span class="bullet">Domain</span> Revenue Management &amp; Distribution</li>
+          <li><span class="bullet">Group</span> Reservations Operations</li>
+          <li><span class="bullet">Process</span> Waitlist &amp; Tentative Booking Management</li>
+          <li><span class="bullet">Trigger</span> Customer requests a reservation that is not immediately available due to room availability constraints.</li>
+          <li><span class="bullet">Outcome</span> Successful management of waitlist and tentative bookings, ensuring customer satisfaction and optimizing revenue.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 2 minutes for identifying room availability</li><li><span class="bullet">▸</span> Less than 3 minutes for creating waitlist entries</li><li><span class="bullet">▸</span> Daily review of waitlist requests within 1 hour</li><li><span class="bullet">▸</span> Less than 5 minutes per booking for confirming tentative bookings</li><li><span class="bullet">▸</span> Less than 5 minutes for updating customer on booking confirmation</li><li><span class="bullet">▸</span> Weekly review of waitlist policies within 1 hour</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">Process for managing waitlists and tentative bookings at a Marriott full-service hotel using Oracle OPERA Cloud PMS.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate real-time room availability data leading to missed reservations</li><li><span class="bullet risk">▸</span> Delays in notifying customers about their waitlist status affecting reputation</li><li><span class="bullet risk">▸</span> Handling exceptions for urgent waitlist requests without impacting other tasks</li><li><span class="bullet risk">▸</span> Assessing the impact of tentative bookings on overall occupancy without overbooking</li><li><span class="bullet risk">▸</span> Ensuring timely and accurate customer communication for both waitlist updates and confirmations</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../revenue-management/reservations/rm-rv-02/"><span>◀</span><div><span class="prev-lbl">Previous</span>Group Reservation &amp; Block Management</div></a>
+  <a href="../../../revenue-management/reservations/rm-rv-04/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Reservation Amendment &amp; Cancellation</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; RM-RV-03 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

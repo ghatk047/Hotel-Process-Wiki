@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FM-RM-05 — Repair Completion &amp; Room Return to Service | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🔧 Facilities & Engineering</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Facilities & Engineering</a><span class="sep">›</span><a href="../">Reactive Maintenance & Work Orders</a><span class="sep">›</span>Repair Completion &amp; Room Return to Service</div>
+
+<div class="page-header">
+  <div class="pid-badge">FM-RM-05</div>
+  <h1>Repair Completion &amp; Room Return to Service</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Reactive Maintenance & Work Orders</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fm-rm-05.png" alt="FM-RM-05 — Repair Completion &amp; Room Return to Service process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Facilities Engineer</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#4ade80"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>Revenue Manager</td>
+          <td><span class="step-badge">3.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Front Desk Agent</td>
+          <td><span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Verify Repair Completion</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Work Order Completion Report</td>
+          <td>Verified Repair Checklist</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inconsistent documentation of repair steps</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Update Room Status</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Verified Repair Checklist</td>
+          <td>Updated Room Status in PMS</td>
+          <td>Less than 3 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Room status not updating automatically</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Notify Housekeeping</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated Room Status in PMS</td>
+          <td>Notification to Housekeeping Team</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed communication between departments</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Inspect Room for Final Check</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Notification to Housekeeping Team</td>
+          <td>Final Inspection Report</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inadequate room inspection protocols</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update Room Status Again</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Final Inspection Report</td>
+          <td>Updated Room Status in PMS</td>
+          <td>Less than 3 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Room status not updating automatically</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Notify Front Desk</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated Room Status in PMS</td>
+          <td>Notification to Front Desk Team</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed communication between departments</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Update Revenue Management System</td>
+          <td>Revenue Manager</td>
+          <td>IDeaS G3 RMS</td>
+          <td>Notification to Front Desk Team</td>
+          <td>Updated Room Availability in RMS</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate room availability updates</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update CRS System</td>
+          <td>Revenue Manager</td>
+          <td>SynXis CRS</td>
+          <td>Updated Room Availability in RMS</td>
+          <td>Updated Room Availability in CRS</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Synchronization issues between CRS and RMS</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Final Confirmation</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated Room Availability in CRS</td>
+          <td>Confirmation of Room Return to Service</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Room status not reflecting in CRS</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Close Work Order</td>
+          <td>Facilities Engineer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Confirmation of Room Return to Service</td>
+          <td>Closed Work Order</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Work orders not closing automatically</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FM-RM-05</li>
+          <li><span class="bullet">Domain</span> Facilities &amp; Engineering</li>
+          <li><span class="bullet">Group</span> Reactive Maintenance &amp; Work Orders</li>
+          <li><span class="bullet">Process</span> Repair Completion &amp; Room Return to Service</li>
+          <li><span class="bullet">Trigger</span> Completion of a reactive maintenance work order</li>
+          <li><span class="bullet">Outcome</span> The room is returned to service with all repairs completed and documented.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes for verifying repair completion</li><li><span class="bullet">▸</span> Less than 3 minutes for updating room status in PMS</li><li><span class="bullet">▸</span> Less than 2 minutes for notifying departments</li><li><span class="bullet">▸</span> Less than 10 minutes for final room inspection</li><li><span class="bullet">▸</span> Less than 5 minutes for updating revenue management systems</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the steps involved in completing a repair and returning a room to service at a full-service Marriott hotel using Oracle OPERA Cloud PMS.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inconsistent documentation of repair steps leading to incomplete repairs</li><li><span class="bullet risk">▸</span> Room status not updating automatically causing delays in service</li><li><span class="bullet risk">▸</span> Delayed communication between departments affecting room availability</li><li><span class="bullet risk">▸</span> Inaccurate room availability updates impacting reservations</li><li><span class="bullet risk">▸</span> Synchronization issues between CRS and RMS causing booking conflicts</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../facilities/reactive-maintenance/fm-rm-04/"><span>◀</span><div><span class="prev-lbl">Previous</span>Contractor &amp; Vendor Call-Out Management</div></a>
+  <a href="../../../facilities/reactive-maintenance/fm-rm-06/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Maintenance Cost Tracking &amp; Reporting</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FM-RM-05 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

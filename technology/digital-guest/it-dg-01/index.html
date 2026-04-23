@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT-DG-01 — Guest App Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">💻 Technology & Systems</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Technology & Systems</a><span class="sep">›</span><a href="../">Digital Guest Experience</a><span class="sep">›</span>Guest App Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">IT-DG-01</div>
+  <h1>Guest App Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Digital Guest Experience</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/it-dg-01.png" alt="IT-DG-01 — Guest App Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Digital Experience Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>IT Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#eab308"></span>Software Developer</td>
+          <td><span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.5</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>QA Engineer</td>
+          <td><span class="step-badge">2.4</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Feature Request Analysis</td>
+          <td>Digital Experience Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Feature request document</td>
+          <td>Feature analysis report</td>
+          <td>Less than 24 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Complexity in aligning with existing hotel systems and processes.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>System Impact Assessment</td>
+          <td>IT Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Feature analysis report</td>
+          <td>System impact assessment report</td>
+          <td>Less than 48 hours</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Ensuring compatibility with multiple systems and minimizing downtime.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Development Planning</td>
+          <td>Software Developer</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>System impact assessment report</td>
+          <td>Development plan and timeline</td>
+          <td>Less than 7 days</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Resource allocation and prioritization of development tasks.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Feature Development</td>
+          <td>Software Developer</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Development plan and timeline</td>
+          <td>Developed feature code</td>
+          <td>Less than 3 weeks</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Debugging and testing to ensure functionality across different devices and platforms.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Testing and Quality Assurance</td>
+          <td>QA Engineer</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Developed feature code</td>
+          <td>Test results and bug reports</td>
+          <td>Less than 1 week</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Identifying and resolving bugs without disrupting existing guest app functionalities.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Deployment Planning</td>
+          <td>IT Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Test results and bug reports</td>
+          <td>Deployment plan and schedule</td>
+          <td>Less than 2 days</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Coordinating deployment with minimal impact on guest app availability.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Feature Deployment</td>
+          <td>IT Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Deployment plan and schedule</td>
+          <td>Deployed feature in guest app</td>
+          <td>Less than 6 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Rolling back changes if issues arise during deployment.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Post-Deployment Monitoring</td>
+          <td>IT Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Deployed feature in guest app</td>
+          <td>Monitoring report and issue logs</td>
+          <td>Continuous monitoring for 24 hours post-deployment</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Detecting and addressing any issues that arise immediately after deployment.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Feedback Collection</td>
+          <td>Digital Experience Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Monitoring report and issue logs</td>
+          <td>Guest feedback and analysis</td>
+          <td>Less than 1 week</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Gathering meaningful feedback to improve future updates.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Feature Optimization</td>
+          <td>Software Developer</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Guest feedback and analysis</td>
+          <td>Optimized feature code</td>
+          <td>Less than 2 weeks</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Balancing guest satisfaction with system performance improvements.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> IT-DG-01</li>
+          <li><span class="bullet">Domain</span> Technology &amp; Systems</li>
+          <li><span class="bullet">Group</span> Digital Guest Experience</li>
+          <li><span class="bullet">Process</span> Guest App Management</li>
+          <li><span class="bullet">Trigger</span> A new guest app feature is requested by the Digital Experience team or an update is needed based on feedback from guests or system maintenance.</li>
+          <li><span class="bullet">Outcome</span> Successful implementation of the guest app feature or update, ensuring seamless operation across all relevant systems and a positive guest experience.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Feature analysis report within 24 hours</li><li><span class="bullet">▸</span> System impact assessment report within 48 hours</li><li><span class="bullet">▸</span> Feature development completed within 3 weeks</li><li><span class="bullet">▸</span> Post-deployment monitoring for 24 hours</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">Manage guest app functionalities and updates at a Marriott full-service hotel to enhance digital guest experience.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Incompatibility issues with existing systems</li><li><span class="bullet risk">▸</span> Deployment disruptions affecting guest app availability</li><li><span class="bullet risk">▸</span> High volume of bugs during testing and quality assurance</li><li><span class="bullet risk">▸</span> Resource constraints impacting timely feature development</li><li><span class="bullet risk">▸</span> Negative guest feedback leading to further optimization needs</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../technology/it-operations/it-op-08/"><span>◀</span><div><span class="prev-lbl">Previous</span>IT Helpdesk &amp; Service Desk Operations</div></a>
+  <a href="../../../technology/digital-guest/it-dg-02/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Digital Key &amp; Mobile Check-In</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; IT-DG-01 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

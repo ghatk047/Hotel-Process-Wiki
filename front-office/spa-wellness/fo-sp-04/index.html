@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-SP-04 — Spa Retail &amp; Product Sales | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Spa & Wellness Operations</a><span class="sep">›</span>Spa Retail &amp; Product Sales</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-SP-04</div>
+  <h1>Spa Retail &amp; Product Sales</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Spa & Wellness Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Marriott Bonvoy CRM</span> <span class="tag">Microsoft Power BI</span> <span class="tag">Birchstreet Procurement</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-sp-04.png" alt="FO-SP-04 — Spa Retail &amp; Product Sales process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Spa Retail Associate</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Revenue Manager</td>
+          <td><span class="step-badge">2.3</span> <span class="step-badge">3.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Spa Manager</td>
+          <td><span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Spa Products</td>
+          <td>Spa Retail Associate</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest profile and treatment details</td>
+          <td>List of recommended spa products</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inconsistent product recommendations based on guest profiles</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Present Product Options</td>
+          <td>Spa Retail Associate</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>List of recommended spa products</td>
+          <td>Guest's product selection</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling guest objections or requests for alternative products</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Process Payment</td>
+          <td>Spa Retail Associate</td>
+          <td>Oracle OPERA Cloud, Oracle MICROS Simphony</td>
+          <td>Guest's product selection and payment method</td>
+          <td>Payment confirmation</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling payment errors or declined transactions</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Update PMS with Sales</td>
+          <td>Spa Retail Associate</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest's product selection and payment confirmation</td>
+          <td>Updated guest account in PMS</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Recording errors or missing transactions</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update CRM with Sales Data</td>
+          <td>Spa Retail Associate</td>
+          <td>Marriott Bonvoy CRM</td>
+          <td>Guest's product selection and payment confirmation</td>
+          <td>Updated guest profile in CRM</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data synchronization issues between PMS and CRM</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Generate Sales Report</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Daily sales data from PMS</td>
+          <td>Sales report</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Generating accurate and timely reports</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review Sales Report</td>
+          <td>Revenue Manager</td>
+          <td>Microsoft Power BI</td>
+          <td>Sales report</td>
+          <td>Action plan for improving sales</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Interpreting and acting on sales data</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Adjust Product Inventory</td>
+          <td>Spa Retail Associate</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>Sales report and inventory levels</td>
+          <td>Updated product inventory</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring timely restocking of products</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Communicate with Spa Team</td>
+          <td>Spa Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Teams</td>
+          <td>Action plan for improving sales</td>
+          <td>Team meeting minutes</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Effective communication and team alignment</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Closeout Process</td>
+          <td>Spa Retail Associate</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Final sales data for the day</td>
+          <td>Completed day's transactions and reports</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Completing all necessary end-of-day tasks</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-SP-04</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Spa &amp; Wellness Operations</li>
+          <li><span class="bullet">Process</span> Spa Retail &amp; Product Sales</li>
+          <li><span class="bullet">Trigger</span> Guest arrival or during spa treatment</li>
+          <li><span class="bullet">Outcome</span> Successful completion of spa retail and product sales, with accurate recording in the PMS and CRM systems.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 2 minutes for product identification and presentation</li><li><span class="bullet">▸</span> Less than 1 minute for payment processing</li><li><span class="bullet">▸</span> Less than 2 minutes for updating PMS with sales</li><li><span class="bullet">▸</span> Less than 10 minutes for generating daily sales reports</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the operational steps for Spa Retail &amp; Product Sales at a full-service Marriott hotel using Oracle OPERA Cloud PMS and other key Marriott systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inconsistent product recommendations based on guest profiles</li><li><span class="bullet risk">▸</span> Handling payment errors or declined transactions</li><li><span class="bullet risk">▸</span> Data synchronization issues between PMS and CRM</li><li><span class="bullet risk">▸</span> Generating accurate and timely reports</li><li><span class="bullet risk">▸</span> Ensuring timely restocking of products</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/spa-wellness/fo-sp-03/"><span>◀</span><div><span class="prev-lbl">Previous</span>Spa Reception &amp; Guest Journey</div></a>
+  <a href="../../../front-office/spa-wellness/fo-sp-05/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Therapist Scheduling &amp; Utilisation</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-SP-04 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

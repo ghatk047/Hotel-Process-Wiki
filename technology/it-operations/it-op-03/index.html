@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT-OP-03 — POS System Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">💻 Technology & Systems</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Technology & Systems</a><span class="sep">›</span><a href="../">IT Operations & Infrastructure</a><span class="sep">›</span>POS System Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">IT-OP-03</div>
+  <h1>POS System Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">IT Operations & Infrastructure</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">SynXis CRS</span> <span class="tag">Marriott Bonvoy CRM</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/it-op-03.png" alt="IT-OP-03 — POS System Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>IT Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">1.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Revenue Manager</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>Front Desk Agent</td>
+          <td><span class="step-badge">2.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>System Check</td>
+          <td>IT Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>None</td>
+          <td>System status report</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Hardware failures or connectivity issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Backup Data</td>
+          <td>IT Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Current database state</td>
+          <td>Data backup file</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Insufficient storage space or failed backups</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Update Software</td>
+          <td>IT Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Software update package</td>
+          <td>Updated software version</td>
+          <td>Less than 2 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Compatibility issues with existing systems</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Configure POS Settings</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Configuration parameters</td>
+          <td>Configured POS settings</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect configuration leading to operational errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Train Staff</td>
+          <td>Front Desk Agent, Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Training materials</td>
+          <td>Trained staff</td>
+          <td>Less than 1 hour per person</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lack of understanding or training resistance</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Test Transactions</td>
+          <td>Revenue Manager, IT Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Sample transactions</td>
+          <td>Transaction test results</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System bugs or integration issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review Logs</td>
+          <td>IT Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>System logs</td>
+          <td>Log review report</td>
+          <td>Less than 2 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Overlooked error messages causing system failures</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Report Issues</td>
+          <td>IT Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Log review report</td>
+          <td>Issue resolution plan</td>
+          <td>Less than 1 day</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Delayed issue resolution impacting operations</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Final System Check</td>
+          <td>IT Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>None</td>
+          <td>System readiness confirmation</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Last-minute system failures or errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Closeout Documentation</td>
+          <td>IT Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>System readiness confirmation</td>
+          <td>POS System Management report</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incomplete or inaccurate documentation</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> IT-OP-03</li>
+          <li><span class="bullet">Domain</span> Technology &amp; Systems</li>
+          <li><span class="bullet">Group</span> IT Operations &amp; Infrastructure</li>
+          <li><span class="bullet">Process</span> POS System Management</li>
+          <li><span class="bullet">Trigger</span> Daily opening, end-of-day closing, or any significant change in POS system configuration</li>
+          <li><span class="bullet">Outcome</span> Successful completion results in operational readiness of the POS system for the next day's transactions with minimal downtime and errors.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> System uptime greater than 99%</li><li><span class="bullet">▸</span> Less than 5 minutes for system check and final readiness confirmation</li><li><span class="bullet">▸</span> Less than 1 hour per person for staff training</li><li><span class="bullet">▸</span> Less than 2 hours for log review and issue resolution planning</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the management of Point of Sale (POS) systems in a full-service Marriott hotel using Oracle OPERA Cloud PMS. It ensures smooth transaction processing and maintains system integrity.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Hardware failures leading to extended downtime</li><li><span class="bullet risk">▸</span> Software update compatibility issues disrupting operations</li><li><span class="bullet risk">▸</span> Incorrect POS configuration causing operational errors</li><li><span class="bullet risk">▸</span> Staff resistance or lack of understanding during training</li><li><span class="bullet risk">▸</span> Overlooked error messages in logs resulting in system failures</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../technology/it-operations/it-op-02/"><span>◀</span><div><span class="prev-lbl">Previous</span>Network &amp; WiFi Infrastructure Management</div></a>
+  <a href="../../../technology/it-operations/it-op-04/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Guest Technology Support</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; IT-OP-03 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

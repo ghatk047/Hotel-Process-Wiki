@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-CI-05 — Late Check-Out &amp; Early Arrival Management | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Check-In & Check-Out Operations</a><span class="sep">›</span>Late Check-Out &amp; Early Arrival Management</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-CI-05</div>
+  <h1>Late Check-Out &amp; Early Arrival Management</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Check-In & Check-Out Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Book4Time</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-ci-05.png" alt="FO-CI-05 — Late Check-Out &amp; Early Arrival Management process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.3</span> <span class="step-badge">2.4</span> <span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Request</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest request form or verbal communication</td>
+          <td>Request logged in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling unexpected requests during peak hours.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Room Availability</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room availability data</td>
+          <td>Availability report</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Checking room status in real-time during high occupancy.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Consult with Revenue Manager</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Room availability report</td>
+          <td>Approval or alternative room suggestion</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Balancing guest needs with revenue targets.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Update Room Status</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Approval or alternative room suggestion</td>
+          <td>Updated room status in Oracle OPERA Cloud</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring accurate room status updates.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Prepare Late Check-Out or Early Arrival Notice</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Updated room status and guest details</td>
+          <td>Notice to housekeeping and concierge</td>
+          <td>Less than 3 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Coordinating with multiple departments efficiently.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Notify Housekeeping and Concierge</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Late check-out or early arrival notice</td>
+          <td>Acknowledgment from housekeeping and concierge</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring timely communication with support staff.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Update Billing System</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Late check-out or early arrival details</td>
+          <td>Updated billing record</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurate and timely billing updates.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Confirm with Guest</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Updated room status and billing details</td>
+          <td>Guest confirmation</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Handling guest inquiries and concerns.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Finalize Check-Out or Arrival Process</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Guest confirmation</td>
+          <td>Completed check-out or arrival record</td>
+          <td>Less than 3 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Closing out the process without errors.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update CRM System</td>
+          <td>Revenue Manager</td>
+          <td>Marriott Bonvoy CRM, Oracle OPERA Cloud</td>
+          <td>Guest satisfaction feedback</td>
+          <td>Updated guest profile in CRM</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Capturing and updating guest data accurately.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-CI-05</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Check-In &amp; Check-Out Operations</li>
+          <li><span class="bullet">Process</span> Late Check-Out &amp; Early Arrival Management</li>
+          <li><span class="bullet">Trigger</span> Guest requests a late check-out or an early arrival at the front desk.</li>
+          <li><span class="bullet">Outcome</span> Successful completion ensures smooth transition of rooms, accurate billing, and satisfied guests.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 2 minutes for receiving and logging requests</li><li><span class="bullet">▸</span> Less than 1 minute for verifying room availability</li><li><span class="bullet">▸</span> Less than 5 minutes for consulting with the Revenue Manager</li><li><span class="bullet">▸</span> Less than 3 minutes for preparing notices and confirming with guests</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">Manage late check-outs and early arrivals efficiently to ensure guest satisfaction and optimize hotel operations.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Inaccurate room status updates leading to guest dissatisfaction</li><li><span class="bullet risk">▸</span> Delays in communication between departments affecting service quality</li><li><span class="bullet risk">▸</span> Errors in billing updates causing financial discrepancies</li><li><span class="bullet risk">▸</span> Handling unexpected requests during peak hours impacting operations</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/checkin-checkout/fo-ci-04/"><span>◀</span><div><span class="prev-lbl">Previous</span>Express Check-Out Processing</div></a>
+  <a href="../../../front-office/checkin-checkout/fo-ci-06/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Group Check-In Coordination</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-CI-05 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SC-SE-02 — CCTV Monitoring &amp; Incident Detection | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🔒 Safety, Security & Compliance</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Safety, Security & Compliance</a><span class="sep">›</span><a href="../">Security Operations</a><span class="sep">›</span>CCTV Monitoring &amp; Incident Detection</div>
+
+<div class="page-header">
+  <div class="pid-badge">SC-SE-02</div>
+  <h1>CCTV Monitoring &amp; Incident Detection</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Security Operations</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Assa Abloy VingCard</span> <span class="tag">Microsoft Power BI</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/sc-se-02.png" alt="SC-SE-02 — CCTV Monitoring &amp; Incident Detection process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Security Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#a855f7"></span>Security Team Lead</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span> <span class="step-badge">2.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Security Officer</td>
+          <td><span class="step-badge">2.3</span> <span class="step-badge">2.4</span> <span class="step-badge">3.1</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Alert Generation</td>
+          <td>Security Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>CCTV footage analysis</td>
+          <td>Incident alert</td>
+          <td>Less than 30 seconds</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>False positives leading to unnecessary alerts</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Initial Notification</td>
+          <td>Security Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Incident alert</td>
+          <td>Notification sent to Security Team</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed notifications causing response delays</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Incident Assessment</td>
+          <td>Security Team Lead</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Notification</td>
+          <td>Assessment report</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inaccurate assessment leading to improper response</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Response Initiation</td>
+          <td>Security Team Lead</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Assessment report</td>
+          <td>Incident response plan</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lack of clear response protocols</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Dispatch Security Personnel</td>
+          <td>Security Team Lead</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Incident response plan</td>
+          <td>Dispatch order</td>
+          <td>Less than 1 minute</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Slow dispatch times</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Security Personnel Arrival</td>
+          <td>Security Officer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Dispatch order</td>
+          <td>Arrival confirmation</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inefficient routing or communication</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Incident Resolution</td>
+          <td>Security Officer</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Arrival confirmation</td>
+          <td>Resolution report</td>
+          <td>Less than 20 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Prolonged resolution times</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Post-Incident Review</td>
+          <td>Security Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Resolution report</td>
+          <td>Review document</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lack of thorough review leading to recurring issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Security Protocols</td>
+          <td>Security Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Review document</td>
+          <td>Updated protocols</td>
+          <td>Less than 1 day</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed updates causing ongoing vulnerabilities</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Close Incident Case</td>
+          <td>Security Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated protocols</td>
+          <td>Closed case record</td>
+          <td>Less than 1 day</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incomplete closure leading to ongoing concerns</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> SC-SE-02</li>
+          <li><span class="bullet">Domain</span> Safety, Security &amp; Compliance</li>
+          <li><span class="bullet">Group</span> Security Operations</li>
+          <li><span class="bullet">Process</span> CCTV Monitoring &amp; Incident Detection</li>
+          <li><span class="bullet">Trigger</span> Detection of an anomaly or potential security breach by the CCTV system</li>
+          <li><span class="bullet">Outcome</span> Incident reported, documented, and responded to in compliance with Marriott's safety and security protocols.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Alert Generation: Less than 30 seconds</li><li><span class="bullet">▸</span> Initial Notification: Less than 1 minute</li><li><span class="bullet">▸</span> Incident Assessment: Less than 5 minutes</li><li><span class="bullet">▸</span> Response Initiation: Less than 10 minutes</li><li><span class="bullet">▸</span> Dispatch Security Personnel: Less than 1 minute</li><li><span class="bullet">▸</span> Security Personnel Arrival: Less than 5 minutes</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the steps for CCTV monitoring and incident detection at a full-service Marriott hotel using Oracle OPERA Cloud PMS. The goal is to ensure real-time monitoring and swift response to any security incidents.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> False positives leading to unnecessary alerts</li><li><span class="bullet risk">▸</span> Delayed notifications causing response delays</li><li><span class="bullet risk">▸</span> Inaccurate assessment leading to improper response</li><li><span class="bullet risk">▸</span> Lack of clear response protocols</li><li><span class="bullet risk">▸</span> Slow dispatch times or inefficient routing</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../security-compliance/security-operations/sc-se-01/"><span>◀</span><div><span class="prev-lbl">Previous</span>Access Control &amp; Key Management</div></a>
+  <a href="../../../security-compliance/security-operations/sc-se-03/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Perimeter &amp; Car Park Security</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; SC-SE-02 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

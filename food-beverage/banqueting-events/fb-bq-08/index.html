@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB-BQ-08 — Group Dining &amp; Special Menus | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🍽️ Food & Beverage Operations</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Food & Beverage Operations</a><span class="sep">›</span><a href="../">Banqueting & Events Catering</a><span class="sep">›</span>Group Dining &amp; Special Menus</div>
+
+<div class="page-header">
+  <div class="pid-badge">FB-BQ-08</div>
+  <h1>Group Dining &amp; Special Menus</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Banqueting & Events Catering</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">Oracle MICROS Simphony</span> <span class="tag">Marriott Bonvoy CRM</span> <span class="tag">SAP S/4HANA</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fb-bq-08.png" alt="FB-BQ-08 — Group Dining &amp; Special Menus process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">1.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#10b981"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#f59e0b"></span>Event Coordinator</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.3</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Executive Chef</td>
+          <td><span class="step-badge">2.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#8b5cf6"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">3.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#eab308"></span>Waitstaff</td>
+          <td><span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Billing Specialist</td>
+          <td><span class="step-badge">3.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Group Dining Request</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Reservation request with group dining details</td>
+          <td>Updated reservation record in Oracle OPERA Cloud</td>
+          <td>Less than 3 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling last-minute requests</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Event Coordinator</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated reservation record</td>
+          <td>Event coordinator assigned to the group dining event</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Overbooking of events</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Confirm Event Details</td>
+          <td>Event Coordinator</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Reservation details and guest preferences</td>
+          <td>Confirmed event details including menu, date, time, and venue</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Mismatch between client expectations and available resources</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Procure Special Menu Items</td>
+          <td>Executive Chef</td>
+          <td>Birchstreet Procurement, Oracle OPERA Cloud</td>
+          <td>Special menu items list</td>
+          <td>Order placed for special menu items</td>
+          <td>Less than 2 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Supply chain disruptions</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Prepare Event Space</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud, Knowcross HotSOS</td>
+          <td>Confirmed event details</td>
+          <td>Event space prepared and cleaned</td>
+          <td>Less than 4 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Equipment malfunctions</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Serve Special Menu</td>
+          <td>Waitstaff</td>
+          <td>Oracle OPERA Cloud, Oracle MICROS Simphony</td>
+          <td>Confirmed event details and special menu items</td>
+          <td>Special menu served to guests</td>
+          <td>Less than 2 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Guest dietary restrictions not met</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Bill Event</td>
+          <td>Billing Specialist</td>
+          <td>Oracle OPERA Cloud, SAP S/4HANA</td>
+          <td>Event details and guest charges</td>
+          <td>Event bill generated and sent to the client</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect billing</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Follow-Up Survey</td>
+          <td>Event Coordinator</td>
+          <td>Marriott Bonvoy CRM, Oracle OPERA Cloud</td>
+          <td>Guest contact information</td>
+          <td>Follow-up survey sent to guests</td>
+          <td>Less than 24 hours</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Low response rates</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Update Reservation System</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Event details and status updates</td>
+          <td>Updated reservation record in Oracle OPERA Cloud</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Data entry errors</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Review and Adjust Menu</td>
+          <td>Executive Chef</td>
+          <td>Oracle OPERA Cloud, Oracle MICROS Simphony</td>
+          <td>Guest feedback on special menu</td>
+          <td>Adjusted menu for future events</td>
+          <td>Less than 1 week</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inconsistent guest satisfaction</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FB-BQ-08</li>
+          <li><span class="bullet">Domain</span> Food &amp; Beverage Operations</li>
+          <li><span class="bullet">Group</span> Banqueting &amp; Events Catering</li>
+          <li><span class="bullet">Process</span> Group Dining &amp; Special Menus</li>
+          <li><span class="bullet">Trigger</span> Receiving a request for a group dining event or special menu from a guest or through the reservation system.</li>
+          <li><span class="bullet">Outcome</span> Successful completion results in the successful planning, execution, and billing of the group dining event or special menu according to the client's specifications.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Event confirmation within 10 minutes of request (95% of the time)</li><li><span class="bullet">▸</span> Special menu items procurement completed within 2 hours (98% of the time)</li><li><span class="bullet">▸</span> Event space preparation completed within 4 hours (99% of the time)</li><li><span class="bullet">▸</span> Special menu served to guests within 2 hours (97% of the time)</li><li><span class="bullet">▸</span> Event bill generated and sent within 1 hour of event completion (95% of the time)</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the steps for managing group dining and special menus at a Marriott full-service hotel. It involves coordination between various departments to ensure smooth execution of banquets and events catering.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Overbooking of events leading to space or resource constraints</li><li><span class="bullet risk">▸</span> Supply chain disruptions affecting special menu item availability</li><li><span class="bullet risk">▸</span> Equipment malfunctions during event preparation</li><li><span class="bullet risk">▸</span> Incorrect billing causing client dissatisfaction</li><li><span class="bullet risk">▸</span> Low response rates to follow-up surveys impacting guest feedback</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../food-beverage/banqueting-events/fb-bq-07/"><span>◀</span><div><span class="prev-lbl">Previous</span>External Catering &amp; Offsite Events</div></a>
+  <a href="../../../food-beverage/kitchen-culinary/fb-kt-01/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Menu Engineering &amp; Recipe Costing</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FB-BQ-08 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

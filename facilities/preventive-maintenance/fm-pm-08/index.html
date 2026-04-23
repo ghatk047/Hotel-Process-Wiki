@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FM-PM-08 — Emergency Generator Testing | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🔧 Facilities & Engineering</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Facilities & Engineering</a><span class="sep">›</span><a href="../">Preventive Maintenance</a><span class="sep">›</span>Emergency Generator Testing</div>
+
+<div class="page-header">
+  <div class="pid-badge">FM-PM-08</div>
+  <h1>Emergency Generator Testing</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Preventive Maintenance</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Oracle MICROS Simphony</span> <span class="tag">Assa Abloy VingCard</span> <span class="tag">Schneider EcoStruxure</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fm-pm-08.png" alt="FM-PM-08 — Emergency Generator Testing process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Facilities Manager</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">3.1</span> <span class="step-badge">3.2</span> <span class="step-badge">3.3</span> <span class="step-badge">3.4</span> <span class="step-badge">3.5</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ec4899"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>Maintenance Technician</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">2.2</span> <span class="step-badge">2.3</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Emergency Generator Testing Plan</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Testing schedule and checklist</td>
+          <td>Approved testing plan</td>
+          <td>Less than 30 minutes to initiate the plan</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Overlooking critical safety protocols during generator testing</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Notify Guests and Staff</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Approved testing plan</td>
+          <td>Guest notification log</td>
+          <td>Less than 10 minutes to notify all guests and staff</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate or delayed communication leading to guest dissatisfaction</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Prepare Testing Equipment</td>
+          <td>Maintenance Technician</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Testing plan</td>
+          <td>Prepared testing equipment list</td>
+          <td>Less than 15 minutes to prepare equipment</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Missing or faulty test equipment affecting the reliability of the test</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Start Generator Testing</td>
+          <td>Maintenance Technician</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Prepared testing equipment list</td>
+          <td>Testing log</td>
+          <td>Less than 30 minutes to complete the initial test run</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Generator failure during testing requiring immediate repair</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Monitor Generator Performance</td>
+          <td>Maintenance Technician</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Testing log</td>
+          <td>Performance report</td>
+          <td>Less than 10 minutes to monitor performance post-test</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inadequate monitoring leading to undetected performance issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review Testing Results</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Performance report</td>
+          <td>Testing results summary</td>
+          <td>Less than 20 minutes to review results</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Misinterpretation of test data leading to incorrect conclusions</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Report Testing Outcome</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Testing results summary</td>
+          <td>Final report and action plan</td>
+          <td>Less than 15 minutes to compile the final report</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Lack of clear communication on test outcomes affecting future maintenance planning</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Maintenance Records</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Final report and action plan</td>
+          <td>Updated maintenance records</td>
+          <td>Less than 10 minutes to update records</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Failure to update records leading to outdated maintenance data</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Notify Stakeholders</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Updated maintenance records</td>
+          <td>Stakeholder notification log</td>
+          <td>Less than 10 minutes to notify all stakeholders</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inadequate or delayed communication with stakeholders</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Schedule Repairs if Necessary</td>
+          <td>Facilities Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Final report and action plan</td>
+          <td>Repair schedule</td>
+          <td>Less than 10 minutes to schedule repairs</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Delayed scheduling of repairs leading to prolonged generator downtime</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FM-PM-08</li>
+          <li><span class="bullet">Domain</span> Facilities &amp; Engineering</li>
+          <li><span class="bullet">Group</span> Preventive Maintenance</li>
+          <li><span class="bullet">Process</span> Emergency Generator Testing</li>
+          <li><span class="bullet">Trigger</span> Scheduled maintenance window or upon detection of generator issues</li>
+          <li><span class="bullet">Outcome</span> Successful completion ensures that the emergency generator is operational and ready for use in case of power failure.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 30 minutes to initiate the plan</li><li><span class="bullet">▸</span> Less than 10 minutes to notify all guests and staff</li><li><span class="bullet">▸</span> Less than 15 minutes to prepare equipment</li><li><span class="bullet">▸</span> Less than 30 minutes to complete the initial test run</li><li><span class="bullet">▸</span> Less than 20 minutes to review results</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the steps to test emergency generators at a full-service Marriott hotel using Oracle OPERA Cloud PMS and other key systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Generator failure during testing requiring immediate repair</li><li><span class="bullet risk">▸</span> Misinterpretation of test data leading to incorrect conclusions</li><li><span class="bullet risk">▸</span> Lack of clear communication on test outcomes affecting future maintenance planning</li><li><span class="bullet risk">▸</span> Failure to update records leading to outdated maintenance data</li><li><span class="bullet risk">▸</span> Delayed scheduling of repairs leading to prolonged generator downtime</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../facilities/preventive-maintenance/fm-pm-07/"><span>◀</span><div><span class="prev-lbl">Previous</span>Kitchen Equipment Service</div></a>
+  <a href="../../../facilities/energy-environment/fm-em-01/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Energy Consumption Monitoring</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FM-PM-08 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

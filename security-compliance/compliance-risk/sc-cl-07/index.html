@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SC-CL-07 — Crisis Management &amp; Business Continuity | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🔒 Safety, Security & Compliance</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Safety, Security & Compliance</a><span class="sep">›</span><a href="../">Compliance & Risk Management</a><span class="sep">›</span>Crisis Management &amp; Business Continuity</div>
+
+<div class="page-header">
+  <div class="pid-badge">SC-CL-07</div>
+  <h1>Crisis Management &amp; Business Continuity</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Compliance & Risk Management</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/sc-cl-07.png" alt="SC-CL-07 — Crisis Management &amp; Business Continuity process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">3.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ff5733"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">1.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#4caf50"></span>Property Manager</td>
+          <td><span class="step-badge">1.3</span> <span class="step-badge">2.2</span> <span class="step-badge">2.4</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#f44336"></span>Revenue Manager</td>
+          <td><span class="step-badge">2.1</span> <span class="step-badge">3.1</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Crisis Event</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Crisis event report</td>
+          <td>Crisis event log</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Delayed identification can lead to prolonged impact.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Notify Emergency Team</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Crisis event log</td>
+          <td>Emergency team notification</td>
+          <td>Less than 3 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Miscommunication can result in inadequate response.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Initiate Crisis Management Plan</td>
+          <td>Property Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Crisis event notification</td>
+          <td>Crisis management plan activation</td>
+          <td>Less than 2 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Failure to activate the plan can lead to chaos.</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>Communicate with Guests</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Crisis management plan activation</td>
+          <td>Guest communication log</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inaccurate or delayed communication can cause guest dissatisfaction.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Assess Impact on Operations</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Crisis event log</td>
+          <td>Impact assessment report</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Overlooking critical operational impacts can lead to financial losses.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Allocate Resources</td>
+          <td>Property Manager</td>
+          <td>Oracle OPERA Cloud, Birchstreet Procurement</td>
+          <td>Impact assessment report</td>
+          <td>Resource allocation plan</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Inadequate resource allocation can exacerbate the crisis.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Monitor Crisis Progress</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud, Knowcross HotSOS</td>
+          <td>Resource allocation plan</td>
+          <td>Crisis progress report</td>
+          <td>Every 15 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Lack of continuous monitoring can lead to missed opportunities for improvement.</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Adjust Crisis Management Plan</td>
+          <td>Property Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Crisis progress report</td>
+          <td>Updated crisis management plan</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Rigid adherence to the original plan can prevent effective resolution.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Evaluate Crisis Impact</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Crisis progress report</td>
+          <td>Impact evaluation report</td>
+          <td>Less than 30 minutes</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Inaccurate impact evaluation can lead to improper recovery strategies.</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Restore Normal Operations</td>
+          <td>Property Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Impact evaluation report</td>
+          <td>Normal operations restoration plan</td>
+          <td>Less than 1 hour</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Prolonged recovery can result in significant financial and reputational damage.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> SC-CL-07</li>
+          <li><span class="bullet">Domain</span> Safety, Security &amp; Compliance</li>
+          <li><span class="bullet">Group</span> Compliance &amp; Risk Management</li>
+          <li><span class="bullet">Process</span> Crisis Management &amp; Business Continuity</li>
+          <li><span class="bullet">Trigger</span> Detection of any crisis event that could impact operations, safety, or compliance.</li>
+          <li><span class="bullet">Outcome</span> Successful completion of the process results in the hotel's ability to continue operating with minimal disruption, ensuring guest safety and regulatory compliance.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes for identifying crisis events</li><li><span class="bullet">▸</span> Less than 3 minutes for notifying emergency teams</li><li><span class="bullet">▸</span> Less than 2 minutes for initiating the crisis management plan</li><li><span class="bullet">▸</span> Every 15 minutes for monitoring crisis progress</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">The SC-CL-07 process ensures a Marriott full-service hotel can effectively manage crises and maintain business continuity by following predefined protocols and leveraging key systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Delayed identification of crisis events leading to prolonged impact</li><li><span class="bullet risk">▸</span> Miscommunication during notification processes resulting in inadequate response</li><li><span class="bullet risk">▸</span> Failure to activate the crisis management plan causing chaos</li><li><span class="bullet risk">▸</span> Inaccurate or delayed communication with guests leading to dissatisfaction</li><li><span class="bullet risk">▸</span> Overlooking critical operational impacts leading to financial losses</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../security-compliance/compliance-risk/sc-cl-06/"><span>◀</span><div><span class="prev-lbl">Previous</span>Insurance &amp; Risk Assessment</div></a>
+  <a href="../../../security-compliance/compliance-risk/sc-cl-08/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Franchise &amp; Management Agreement Compliance</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; SC-CL-07 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

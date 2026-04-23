@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FO-CS-06 — Complaint Handling &amp; Service Recovery | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🏨 Front Office & Guest Services</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Front Office & Guest Services</a><span class="sep">›</span><a href="../">Concierge & Guest Services</a><span class="sep">›</span>Complaint Handling &amp; Service Recovery</div>
+
+<div class="page-header">
+  <div class="pid-badge">FO-CS-06</div>
+  <h1>Complaint Handling &amp; Service Recovery</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Concierge & Guest Services</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">IDeaS G3 RMS</span> <span class="tag">SynXis CRS</span> <span class="tag">Oracle MICROS Simphony</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fo-cs-06.png" alt="FO-CS-06 — Complaint Handling &amp; Service Recovery process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">2.3</span> <span class="step-badge">3.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Guest Services Manager</td>
+          <td><span class="step-badge">1.2</span> <span class="step-badge">2.1</span> <span class="step-badge">3.1</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#81e6d9"></span>General Manager</td>
+          <td><span class="step-badge">2.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#fbbf24"></span>Housekeeping Staff</td>
+          <td><span class="step-badge">2.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#ef4444"></span>Concierge</td>
+          <td><span class="step-badge">3.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Complaint</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Guest's complaint via phone, email, or in-person</td>
+          <td>Complaint logged in Oracle OPERA Cloud</td>
+          <td>Less than 5 minutes to log the complaint</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Handling complaints efficiently while maintaining guest satisfaction</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Identify Root Cause</td>
+          <td>Guest Services Manager</td>
+          <td>Oracle OPERA Cloud, IDeaS G3 RMS</td>
+          <td>Logged complaint details</td>
+          <td>Root cause analysis report</td>
+          <td>Less than 10 minutes to identify the root cause</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Accurately identifying the underlying issue</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Develop Solution</td>
+          <td>Guest Services Manager</td>
+          <td>Oracle OPERA Cloud, SynXis CRS</td>
+          <td>Root cause analysis report</td>
+          <td>Solution proposal</td>
+          <td>Less than 15 minutes to develop a solution</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Creating an effective and feasible solution</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Approve Solution</td>
+          <td>General Manager</td>
+          <td>Oracle OPERA Cloud, Workday HCM</td>
+          <td>Solution proposal</td>
+          <td>Approved solution</td>
+          <td>Less than 30 minutes to approve the solution</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Obtaining approval for the proposed solution</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Implement Solution</td>
+          <td>Front Desk Agent, Housekeeping Staff</td>
+          <td>Oracle OPERA Cloud, Oracle MICROS Simphony</td>
+          <td>Approved solution</td>
+          <td>Solution implemented and documented</td>
+          <td>Less than 20 minutes to implement the solution</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Executing the solution promptly and effectively</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Solution Effectiveness</td>
+          <td>Guest Services Manager</td>
+          <td>Oracle OPERA Cloud, Microsoft Power BI</td>
+          <td>Solution implementation details</td>
+          <td>Effectiveness report</td>
+          <td>Less than 5 minutes to monitor the solution</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Ensuring the solution resolves the guest's issue</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Follow-Up with Guest</td>
+          <td>Front Desk Agent, Concierge</td>
+          <td>Oracle OPERA Cloud, Book4Time</td>
+          <td>Effectiveness report</td>
+          <td>Guest feedback</td>
+          <td>Less than 10 minutes to follow up with the guest</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Ensuring guest satisfaction post-resolution</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Document and Close Case</td>
+          <td>Guest Services Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Guest feedback</td>
+          <td>Closed case in Oracle OPERA Cloud</td>
+          <td>Less than 5 minutes to document and close the case</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Properly documenting the resolution process</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Review and Improve Process</td>
+          <td>Revenue Manager, Guest Services Manager</td>
+          <td>Oracle OPERA Cloud, Salesforce</td>
+          <td>Closed case details</td>
+          <td>Process improvement recommendations</td>
+          <td>Less than 1 hour to review and improve the process</td>
+          <td><span class="badge-y">Y</span></td>
+          <td><span class="badge-n">N</span></td>
+          <td>Continuously improving complaint handling procedures</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FO-CS-06</li>
+          <li><span class="bullet">Domain</span> Front Office &amp; Guest Services</li>
+          <li><span class="bullet">Group</span> Concierge &amp; Guest Services</li>
+          <li><span class="bullet">Process</span> Complaint Handling &amp; Service Recovery</li>
+          <li><span class="bullet">Trigger</span> Receiving a complaint from a guest</li>
+          <li><span class="bullet">Outcome</span> Resolution of the complaint with satisfied guest, documented in the system for future reference.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Less than 5 minutes to log the complaint</li><li><span class="bullet">▸</span> Less than 10 minutes to identify the root cause</li><li><span class="bullet">▸</span> Less than 15 minutes to develop a solution</li><li><span class="bullet">▸</span> Less than 30 minutes to approve the solution</li><li><span class="bullet">▸</span> Less than 20 minutes to implement the solution</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines how to handle guest complaints and achieve service recovery at a full-service Marriott hotel using Oracle OPERA Cloud PMS and other key systems.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Delayed complaint resolution leading to guest dissatisfaction</li><li><span class="bullet risk">▸</span> Inaccurate root cause analysis affecting solution effectiveness</li><li><span class="bullet risk">▸</span> Difficulty in obtaining management approval for solutions</li><li><span class="bullet risk">▸</span> Poor execution of solutions resulting in unresolved issues</li><li><span class="bullet risk">▸</span> Incomplete documentation and follow-up processes</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../front-office/concierge-services/fo-cs-05/"><span>◀</span><div><span class="prev-lbl">Previous</span>Wake-Up Call &amp; Guest Communications</div></a>
+  <a href="../../../front-office/concierge-services/fo-cs-07/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Guest Information &amp; Local Knowledge</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FO-CS-06 &middot; Ref: Marriott International &middot; Generated 2026-03-23
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>

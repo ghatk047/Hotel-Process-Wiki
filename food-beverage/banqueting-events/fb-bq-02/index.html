@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB-BQ-02 — Banquet Room Setup &amp; Layout | Hotel Process Wiki</title>
+  <link rel="stylesheet" href="../../../assets/css/wiki.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand">🏨 Hotel Process Wiki</span>
+  <span class="sep">|</span>
+  <a href="../../../">Home</a>
+  <span class="sep">|</span>
+  <a href="../../">🍽️ Food & Beverage Operations</a>
+  <input type="text" id="searchBox" class="topbar-search" placeholder="Search processes… (/)" autocomplete="off">
+</nav>
+
+<div class="breadcrumb"><a href="../../../">Home</a><span class="sep">›</span><a href="../../">Food & Beverage Operations</a><span class="sep">›</span><a href="../">Banqueting & Events Catering</a><span class="sep">›</span>Banquet Room Setup &amp; Layout</div>
+
+<div class="page-header">
+  <div class="pid-badge">FB-BQ-02</div>
+  <h1>Banquet Room Setup &amp; Layout</h1>
+  <div class="meta">
+    <span class="tag">✅ Complete</span>
+    <span class="tag">Ref: Marriott International</span>
+    <span class="tag">Banqueting & Events Catering</span>
+    <span class="tag">Oracle OPERA Cloud</span> <span class="tag">Birchstreet Procurement</span> <span class="tag">Assa Abloy VingCard</span> <span class="tag">Marriott Bonvoy CRM</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📊 Process Flow Diagram</div>
+  <div class="card-body">
+    <div class="diagram-wrap">
+      <img src="../../../assets/img/fb-bq-02.png" alt="FB-BQ-02 — Banquet Room Setup &amp; Layout process flow diagram" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">🏊 Swim Lanes</div>
+  <div class="card-body">
+    <table class="swimlane-table">
+      <thead><tr><th>Role</th><th>Steps</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="role-swatch" style="background:#3b82f6"></span>Front Desk Agent</td>
+          <td><span class="step-badge">1.1</span> <span class="step-badge">3.3</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#f59e0b"></span>Revenue Manager</td>
+          <td><span class="step-badge">1.2</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#10b981"></span>Banquet Manager</td>
+          <td><span class="step-badge">1.3</span> <span class="step-badge">2.3</span> <span class="step-badge">3.2</span> <span class="step-badge">3.4</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#60a5fa"></span>Executive Housekeeper</td>
+          <td><span class="step-badge">1.4</span> <span class="step-badge">3.1</span></td>
+        </tr>
+        <tr>
+          <td><span class="role-swatch" style="background:#eab308"></span>Procurement Manager</td>
+          <td><span class="step-badge">2.2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">📋 L4 Process Steps</div>
+  <div class="card-body" style="overflow-x:auto">
+    <table class="l4-table">
+      <thead>
+        <tr>
+          <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+          <th>Input</th><th>Output</th><th>KPI</th>
+          <th>Dec?</th><th>Exc?</th><th>Pain Point / Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Review Reservation Details</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Confirmed reservation details</td>
+          <td>Reservation summary report</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Incorrect or missing information in the reservation</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Banquet Room</td>
+          <td>Revenue Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Reservation summary report</td>
+          <td>Room assignment confirmation</td>
+          <td>Less than 3 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Availability conflicts with other bookings</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Confirm Amenities and Services</td>
+          <td>Banquet Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Room assignment confirmation</td>
+          <td>Amenity list with quantities</td>
+          <td>Less than 4 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Mismatch between requested and available amenities</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Prepare Banquet Room Layout</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Amenity list with quantities</td>
+          <td>Room layout plan</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Physical constraints of the room affecting layout</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Order Necessary Supplies and Equipment</td>
+          <td>Procurement Manager</td>
+          <td>Birchstreet Procurement</td>
+          <td>Room layout plan</td>
+          <td>Purchase order confirmation</td>
+          <td>Less than 15 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Supply chain delays or stockouts</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Coordinate with External Vendors</td>
+          <td>Banquet Manager</td>
+          <td>Oracle OPERA Cloud, Assa Abloy VingCard</td>
+          <td>Purchase order confirmation</td>
+          <td>Vendor coordination report</td>
+          <td>Less than 20 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Communication breakdowns with vendors</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Finalize Room Setup</td>
+          <td>Executive Housekeeper</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Vendor coordination report</td>
+          <td>Setup completion checklist</td>
+          <td>Less than 25 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Technical issues with equipment</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Conduct Final Walkthrough</td>
+          <td>Banquet Manager</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Setup completion checklist</td>
+          <td>Walkthrough report</td>
+          <td>Less than 10 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Client's dissatisfaction with setup</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Reservation Status</td>
+          <td>Front Desk Agent</td>
+          <td>Oracle OPERA Cloud</td>
+          <td>Walkthrough report</td>
+          <td>Updated reservation status</td>
+          <td>Less than 5 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>System errors or connectivity issues</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Notify Client of Setup Completion</td>
+          <td>Banquet Manager</td>
+          <td>Oracle OPERA Cloud, Marriott Bonvoy CRM</td>
+          <td>Updated reservation status</td>
+          <td>Client notification</td>
+          <td>Less than 3 minutes</td>
+          <td><span class="badge-n">N</span></td>
+          <td><span class="badge-y">Y</span></td>
+          <td>Client's unavailability for confirmation</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">ℹ️ Process Attributes</div>
+  <div class="card-body">
+    <div class="attr-grid">
+      <div class="attr-section">
+        <h4>Identification</h4>
+        <ul class="attr-list">
+          <li><span class="bullet">ID</span> FB-BQ-02</li>
+          <li><span class="bullet">Domain</span> Food &amp; Beverage Operations</li>
+          <li><span class="bullet">Group</span> Banqueting &amp; Events Catering</li>
+          <li><span class="bullet">Process</span> Banquet Room Setup &amp; Layout</li>
+          <li><span class="bullet">Trigger</span> Receiving a confirmed reservation for a banquet event</li>
+          <li><span class="bullet">Outcome</span> Banquet room is fully set up and ready for use with all necessary equipment, decorations, and services provided according to the client's specifications.</li>
+        </ul>
+        <h4 style="margin-top:1rem">KPIs</h4>
+        <ul class="attr-list"><li><span class="bullet">▸</span> Room assignment confirmation within 3 minutes</li><li><span class="bullet">▸</span> Setup completion checklist finalized within 25 minutes</li><li><span class="bullet">▸</span> Client notification sent within 3 minutes</li><li><span class="bullet">▸</span> Less than 10% of reservations have incorrect or missing information</li><li><span class="bullet">▸</span> Less than 5% of amenity requests result in mismatches</li></ul>
+      </div>
+      <div class="attr-section">
+        <h4>Description</h4>
+        <p style="font-size:.875rem; line-height:1.7; margin-bottom:1rem">This process outlines the steps involved in setting up and laying out banquet rooms at a full-service Marriott hotel using Oracle OPERA Cloud PMS.</p>
+        <h4>Risks</h4>
+        <ul class="attr-list"><li><span class="bullet risk">▸</span> Incorrect reservation details leading to setup errors</li><li><span class="bullet risk">▸</span> Supply chain delays causing equipment shortages</li><li><span class="bullet risk">▸</span> Technical issues with banquet room equipment</li><li><span class="bullet risk">▸</span> Client dissatisfaction due to final setup</li><li><span class="bullet risk">▸</span> System connectivity problems affecting updates</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-nav">
+  <a href="../../../food-beverage/banqueting-events/fb-bq-01/"><span>◀</span><div><span class="prev-lbl">Previous</span>Event Enquiry &amp; BEO Creation</div></a>
+  <a href="../../../food-beverage/banqueting-events/fb-bq-03/" style="margin-left:auto;text-align:right"><div><span class="next-lbl">Next</span>Event Day Coordination &amp; Execution</div><span>▶</span></a>
+</div>
+
+<footer class="footer">
+  Hotel Process Wiki &middot; FB-BQ-02 &middot; Ref: Marriott International &middot; Generated 2026-03-24
+</footer>
+<script src="../../../assets/js/wiki.js"></script>
+</body>
+</html>
